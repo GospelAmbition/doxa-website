@@ -188,6 +188,109 @@ function gospel_ambition_remove_comments_admin_bar() {
 add_action('init', 'gospel_ambition_remove_comments_admin_bar');
 
 /**
+ * Add Custom Page Order Meta Box
+ */
+function add_page_order_meta_box() {
+    add_meta_box(
+        'page-order',
+        'Page Order',
+        'page_order_meta_box_callback',
+        'page',
+        'side',
+        'high'
+    );
+}
+add_action('add_meta_boxes', 'add_page_order_meta_box');
+
+/**
+ * Page Order Meta Box Callback
+ */
+function page_order_meta_box_callback($post) {
+    wp_nonce_field('save_page_order', 'page_order_nonce');
+    $order = $post->menu_order;
+
+    // Use 10 as default for new pages
+    if ($order == 0 && $post->post_status == 'auto-draft') {
+        $order = 10;
+    }
+    ?>
+    <p>
+        <label for="page_order" style="font-weight: bold;">Order:</label><br>
+        <input type="number" id="page_order" name="page_order" value="<?php echo esc_attr($order); ?>" min="0" style="width: 100%;" />
+    </p>
+    <p style="font-size: 12px; color: #666;">
+        Lower numbers appear first in the sidebar menu. Default is 10. Pages with the same order are sorted alphabetically.
+    </p>
+    <?php
+}
+
+/**
+ * Save Page Order Meta Box Data
+ */
+function save_page_order($post_id) {
+    // Only run for page post type
+    if (get_post_type($post_id) !== 'page') {
+        return;
+    }
+
+    // Verify nonce
+    if (!isset($_POST['page_order_nonce']) || !wp_verify_nonce($_POST['page_order_nonce'], 'save_page_order')) {
+        return;
+    }
+
+    // Skip autosave
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+
+    // Check user permissions
+    if (!current_user_can('edit_page', $post_id)) {
+        return;
+    }
+
+    // Save the order
+    if (isset($_POST['page_order'])) {
+        $order = intval($_POST['page_order']);
+
+        // Prevent infinite loop by removing the action before updating
+        remove_action('save_post', 'save_page_order');
+
+        // Update menu_order
+        wp_update_post(array(
+            'ID' => $post_id,
+            'menu_order' => $order
+        ));
+
+        // Re-add the action after updating
+        add_action('save_post', 'save_page_order');
+    }
+}
+add_action('save_post', 'save_page_order');
+
+/**
+ * Set default menu_order for new pages
+ */
+function set_default_page_order($post_id, $post, $update) {
+    // Only for new pages (not updates)
+    if ($update || $post->post_type !== 'page') {
+        return;
+    }
+
+    // If menu_order is 0 (default), set it to 10
+    if ($post->menu_order == 0) {
+        remove_action('wp_insert_post', 'set_default_page_order', 10);
+
+        wp_update_post(array(
+            'ID' => $post_id,
+            'menu_order' => 10
+        ));
+
+        add_action('wp_insert_post', 'set_default_page_order', 10, 3);
+    }
+}
+add_action('wp_insert_post', 'set_default_page_order', 10, 3);
+
+/**
  * Add Custom CSS Meta Box for Pages
  */
 function add_page_custom_css_meta_box() {
