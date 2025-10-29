@@ -1,7 +1,7 @@
 /*
 Theme Name: Gospel Ambition
 Description: A clean, elegant theme for Gospel Ambition - Fulfilling the Great Commission in this generation
-Version: 1.1.0
+Version: 1.1.1
 Author: Gospel Ambition Team
 Text Domain: gospel-ambition
 */
@@ -1198,7 +1198,7 @@ textarea.error {
 
 .children-nav .sidebar-title a:hover,
 .children-nav .sidebar-title a.current-page {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .children-menu {

@@ -47,15 +47,18 @@ add_action('after_setup_theme', 'gospel_ambition_setup');
  * Enqueue scripts and styles
  */
 function gospel_ambition_scripts() {
+    // Get theme version from style.css
+    $theme_version = wp_get_theme()->get('Version');
+
     // Enqueue theme stylesheet
-    wp_enqueue_style('gospel-ambition-style', get_stylesheet_uri(), array(), '1.1.0');
-    
+    wp_enqueue_style('gospel-ambition-style', get_stylesheet_uri(), array(), $theme_version);
+
     // Enqueue Google Fonts
-    wp_enqueue_style('gospel-ambition-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), '1.0.0');
-    
+    wp_enqueue_style('gospel-ambition-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), null);
+
     // Enqueue theme JavaScript
-    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array('jquery'), '1.1.0', true);
-    
+    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array('jquery'), $theme_version, true);
+
 
 }
 add_action('wp_enqueue_scripts', 'gospel_ambition_scripts');
