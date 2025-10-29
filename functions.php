@@ -48,13 +48,13 @@ add_action('after_setup_theme', 'gospel_ambition_setup');
  */
 function gospel_ambition_scripts() {
     // Enqueue theme stylesheet
-    wp_enqueue_style('gospel-ambition-style', get_stylesheet_uri(), array(), '1.0.0');
+    wp_enqueue_style('gospel-ambition-style', get_stylesheet_uri(), array(), '1.1.0');
     
     // Enqueue Google Fonts
     wp_enqueue_style('gospel-ambition-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), '1.0.0');
     
     // Enqueue theme JavaScript
-    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array('jquery'), '1.0.0', true);
+    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array('jquery'), '1.1.0', true);
     
 
 }
@@ -183,169 +183,6 @@ function gospel_ambition_remove_comments_admin_bar() {
     }
 }
 add_action('init', 'gospel_ambition_remove_comments_admin_bar');
-
-/**
- * Register Articles Custom Post Type
- */
-function create_articles_post_type() {
-    register_post_type('article', array(
-        'labels' => array(
-            'name' => 'Articles',
-            'singular_name' => 'Article',
-            'menu_name' => 'Articles',
-            'add_new' => 'Add New',
-            'add_new_item' => 'Add New Article',
-            'edit_item' => 'Edit Article',
-            'new_item' => 'New Article',
-            'view_item' => 'View Article',
-            'search_items' => 'Search Articles',
-            'not_found' => 'No articles found',
-            'not_found_in_trash' => 'No articles found in trash'
-        ),
-        'public' => true,
-        'publicly_queryable' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'query_var' => true,
-        'rewrite' => array('slug' => 'articles'),
-        'capability_type' => 'post',
-        'has_archive' => true,
-        'hierarchical' => false,
-        'menu_position' => 5,
-        'menu_icon' => 'dashicons-media-document',
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'author', 'page-attributes'),
-        'show_in_rest' => true
-    ));
-}
-add_action('init', 'create_articles_post_type');
-
-/**
- * Add custom order meta box for articles
- */
-function add_article_order_meta_box() {
-    add_meta_box(
-        'article-order',
-        'Article Order',
-        'article_order_meta_box_callback',
-        'article',
-        'side',
-        'high'
-    );
-}
-add_action('add_meta_boxes', 'add_article_order_meta_box');
-
-function article_order_meta_box_callback($post) {
-    wp_nonce_field('save_article_order', 'article_order_nonce');
-    $order = get_post_meta($post->ID, '_article_order', true);
-    ?>
-    <p>
-        <label for="article_order">Order (lower numbers appear first):</label><br>
-        <input type="number" id="article_order" name="article_order" value="<?php echo esc_attr($order); ?>" min="0" style="width: 100%;" />
-    </p>
-    <?php
-}
-
-function save_article_order($post_id) {
-    // Only run for article post type
-    if (get_post_type($post_id) !== 'article') {
-        return;
-    }
-    
-    if (!isset($_POST['article_order_nonce']) || !wp_verify_nonce($_POST['article_order_nonce'], 'save_article_order')) {
-        return;
-    }
-    
-    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
-        return;
-    }
-    
-    if (!current_user_can('edit_post', $post_id)) {
-        return;
-    }
-    
-    if (isset($_POST['article_order'])) {
-        update_post_meta($post_id, '_article_order', sanitize_text_field($_POST['article_order']));
-        
-        // Prevent infinite loop by removing the action before updating
-        remove_action('save_post', 'save_article_order');
-        
-        // Update menu_order for consistency
-        wp_update_post(array(
-            'ID' => $post_id,
-            'menu_order' => intval($_POST['article_order'])
-        ));
-        
-        // Re-add the action after updating
-        add_action('save_post', 'save_article_order');
-    }
-}
-add_action('save_post', 'save_article_order');
-
-/**
- * Get previous article based on menu_order
- */
-function get_previous_article($post_id = null) {
-    if (!$post_id) {
-        global $post;
-        $post_id = $post->ID;
-    }
-    
-    $current_post = get_post($post_id);
-    if (!$current_post || $current_post->post_type !== 'article') {
-        return null;
-    }
-    
-    // Get all articles ordered the same way as the sidebar
-    $all_articles = get_posts(array(
-        'post_type' => 'article',
-        'posts_per_page' => -1,
-        'orderby' => 'menu_order date',
-        'order' => 'ASC',
-        'post_status' => 'publish'
-    ));
-    
-    // Find current article and return previous one
-    for ($i = 0; $i < count($all_articles); $i++) {
-        if ($all_articles[$i]->ID == $post_id && $i > 0) {
-            return $all_articles[$i - 1];
-        }
-    }
-    
-    return null;
-}
-
-/**
- * Get next article based on menu_order
- */
-function get_next_article($post_id = null) {
-    if (!$post_id) {
-        global $post;
-        $post_id = $post->ID;
-    }
-    
-    $current_post = get_post($post_id);
-    if (!$current_post || $current_post->post_type !== 'article') {
-        return null;
-    }
-    
-    // Get all articles ordered the same way as the sidebar
-    $all_articles = get_posts(array(
-        'post_type' => 'article',
-        'posts_per_page' => -1,
-        'orderby' => 'menu_order date',
-        'order' => 'ASC',
-        'post_status' => 'publish'
-    ));
-    
-    // Find current article and return next one
-    for ($i = 0; $i < count($all_articles); $i++) {
-        if ($all_articles[$i]->ID == $post_id && $i < count($all_articles) - 1) {
-            return $all_articles[$i + 1];
-        }
-    }
-    
-    return null;
-}
 
 /**
  * Add Custom CSS Meta Box for Pages
