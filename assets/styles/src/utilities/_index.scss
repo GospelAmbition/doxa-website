@@ -52,6 +52,10 @@
   font-weight: var(--font-weight-regular);
 }
 
+.font-heading {
+  font-family: var(--font-family-heading);
+}
+
 .font-size-xs {
   font-size: var(--font-size-xs);
 }
@@ -76,8 +80,12 @@
   font-size: var(--font-size-2xl);
 }
 
-.font-size-xl {
-  font-size: var(--font-size-xl);
+.font-size-3xl {
+  font-size: var(--font-size-3xl);
+}
+
+.font-size-4xl {
+  font-size: var(--font-size-4xl);
 }
 
 // Background utilities
@@ -87,6 +95,7 @@
 
 .bg-secondary {
   background-color: var(--color-surface-secondary);
+  color: var(--color-text-secondary);
 }
 
 .bg-tertiary {
