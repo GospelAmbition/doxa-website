@@ -13,16 +13,19 @@
 }
 
 .stack > * + * {
-  margin-block-start: var(--spacing-comfortable-md, 1rem);
+  margin-block-start: var(--spacing-md, 1rem);
 }
 
-// Stack variants with different spacing
-.stack--tight > * + * {
-  margin-block-start: var(--spacing-tight-md, 0.5rem);
+.stack--xs > * + * {
+  margin-block-start: var(--spacing-xs, 0.5rem);
 }
 
-.stack--loose > * + * {
-  margin-block-start: var(--spacing-loose-md, 2rem);
+.stack--sm > * + * {
+  margin-block-start: var(--spacing-sm, 0.5rem);
+}
+
+.stack--lg > * + * {
+  margin-block-start: var(--spacing-lg, 2rem);
 }
 
 .stack--none > * + * {

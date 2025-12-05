@@ -2,9 +2,7 @@
 // Imports semantic tokens (which export CSS custom properties)
 // Sets up base typography and body styles
 
-@use '../tokens/semantic/colors';
-@use '../tokens/semantic/spacing';
-@use '../tokens/semantic/typography';
+@use '../tokens';
 
 html {
   font-size: var(--font-size-base);

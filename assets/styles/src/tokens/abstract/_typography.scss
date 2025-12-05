@@ -14,18 +14,20 @@ $font-weight-600: 600;
 $font-weight-700: 700;
 
 $font-density: 1.25;
-// Font Sizes (in rem, based on 16px base)
+// Font Sizes (in rem, based on 10px base)
 $font-size-base: 10px;
-$font-size-xxs: 1rem;
-$font-size-xs: $font-size-xxs * $font-density;    // 12px
-$font-size-sm: $font-size-xs * $font-density;   // 14px
-$font-size-md: $font-size-sm * $font-density;   // 18px
-$font-size-lg: $font-size-md * $font-density;    // 20px
-$font-size-xl: $font-size-lg * $font-density;     // 24px
-$font-size-2xl: $font-size-xl * $font-density;  // 30px
-$font-size-3xl: $font-size-2xl * $font-density;   // 36px
-$font-size-4xl: $font-size-3xl * $font-density;      // 48px
-$font-size-5xl: $font-size-4xl * $font-density;      // 60px
+$font-size-2xs: 1rem;
+$font-size-3xs: calc( $font-size-2xs / $font-density );
+$font-size-4xs: calc( $font-size-3xs / $font-density );
+$font-size-xs: $font-size-2xs * $font-density;
+$font-size-sm: $font-size-xs * $font-density;
+$font-size-md: $font-size-sm * $font-density;
+$font-size-lg: $font-size-md * $font-density;
+$font-size-xl: $font-size-lg * $font-density;
+$font-size-2xl: $font-size-xl * $font-density;
+$font-size-3xl: $font-size-2xl * $font-density;
+$font-size-4xl: $font-size-3xl * $font-density;
+$font-size-5xl: $font-size-4xl * $font-density;
 
 // Line Heights
 $line-height-tight: 1.25;
