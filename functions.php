@@ -51,6 +51,7 @@ function gospel_ambition_scripts() {
     $theme_version = wp_get_theme()->get('Version');
 
     // Enqueue theme stylesheet
+    wp_enqueue_style('bebas-kai-font', get_template_directory_uri() . '/assets/fonts/BebasKai/stylesheet.css', array(), filemtime(get_template_directory() . '/assets/fonts/BebasKai/stylesheet.css'));
     wp_enqueue_style('gospel-ambition-style', get_template_directory_uri() . '/assets/styles/dist/main.css', array(), filemtime(get_template_directory() . '/assets/styles/dist/main.css'));
 
     // Enqueue Google Fonts

@@ -2,27 +2,30 @@
 // Raw typography values extracted from design
 
 // Font Families
+$font-family-title: 'Bebas Kai', sans-serif;
 $font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-$font-family-mono: 'Courier New', Courier, monospace;
 $font-family-serif: Georgia, 'Times New Roman', Times, serif;
 
 // Font Weights
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-weight-600: 600;
+$font-weight-700: 700;
 
+$font-density: 1.25;
 // Font Sizes (in rem, based on 16px base)
-$font-size-xs: 0.75rem;    // 12px
-$font-size-sm: 0.875rem;   // 14px
-$font-size-base: 1rem;     // 16px
-$font-size-md: 1.125rem;   // 18px
-$font-size-lg: 1.25rem;    // 20px
-$font-size-xl: 1.5rem;     // 24px
-$font-size-2xl: 1.875rem;  // 30px
-$font-size-3xl: 2.25rem;   // 36px
-$font-size-4xl: 3rem;      // 48px
+$font-size-base: 10px;
+$font-size-xxs: 1rem;
+$font-size-xs: $font-size-xxs * $font-density;    // 12px
+$font-size-sm: $font-size-xs * $font-density;   // 14px
+$font-size-md: $font-size-sm * $font-density;   // 18px
+$font-size-lg: $font-size-md * $font-density;    // 20px
+$font-size-xl: $font-size-lg * $font-density;     // 24px
+$font-size-2xl: $font-size-xl * $font-density;  // 30px
+$font-size-3xl: $font-size-2xl * $font-density;   // 36px
+$font-size-4xl: $font-size-3xl * $font-density;      // 48px
+$font-size-5xl: $font-size-4xl * $font-density;      // 60px
 
 // Line Heights
 $line-height-tight: 1.25;

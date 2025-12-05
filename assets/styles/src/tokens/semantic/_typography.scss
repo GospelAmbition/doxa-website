@@ -3,16 +3,26 @@
 
 @use '../abstract/typography';
 
-$font-family-base: typography.$font-family-sans;
-$font-family-heading: typography.$font-family-sans;
-
-$font-size-base: typography.$font-size-base;
-$line-height-normal: typography.$line-height-normal;
-
 :root {
-  --font-family-base: #{$font-family-base};
-  --font-family-heading: #{$font-family-heading};
+  --font-family-base: #{typography.$font-family-sans};
+  --font-family-heading: #{typography.$font-family-title};
 
-  --font-size-base: #{$font-size-base};
-  --line-height-normal: #{$line-height-normal};
+  --font-size-base: #{typography.$font-size-base};
+  --font-size-xs: #{typography.$font-size-xs};
+  --font-size-sm: #{typography.$font-size-sm};
+  --font-size-md: #{typography.$font-size-md};
+  --font-size-lg: #{typography.$font-size-lg};
+  --font-size-xl: #{typography.$font-size-xl};
+  --font-size-2xl: #{typography.$font-size-2xl};
+  --font-size-3xl: #{typography.$font-size-3xl};
+  --font-size-4xl: #{typography.$font-size-4xl};
+  --font-size-5xl: #{typography.$font-size-5xl};
+
+  --font-weight-light: #{typography.$font-weight-300};
+  --font-weight-regular: #{typography.$font-weight-400};
+  --font-weight-medium: #{typography.$font-weight-500};
+  --font-weight-semibold: #{typography.$font-weight-600};
+  --font-weight-bold: #{typography.$font-weight-700};
+
+  --line-height-normal: #{typography.$line-height-normal};
 }
