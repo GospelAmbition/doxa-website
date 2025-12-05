@@ -1,0 +1,12 @@
+.button {
+    --button-text-color: var(--color-text-secondary);
+    --button-background-color: var(--color-status-success);
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    padding: var(--spacing-3xs) var(--spacing-2xl);
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border-radius: 100px;
+    text-transform: uppercase;
+}
