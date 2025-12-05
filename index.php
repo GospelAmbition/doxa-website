@@ -16,8 +16,8 @@ get_header(); ?>
     <?php endif; ?>
 
     <div class="container">
-        <span><?php echo __('Let\'s TOGETHER give Jesus a gift:', 'doxa-website'); ?></span>
-        <h1><?php echo __('Every unengaged people on earth engaged by 2033', 'doxa-website'); ?></h1>
+        <div class="text-center font-size-xl"><i><?php echo __('Let\'s TOGETHER give Jesus a gift:', 'doxa-website'); ?></i></div>
+        <h1 class="text-center"><?php echo __('Every unengaged people on earth engaged by 2033', 'doxa-website'); ?></h1>
     </div>
 </main>
 

@@ -26,5 +26,9 @@
   --font-weight-semibold: #{typography.$font-weight-600};
   --font-weight-bold: #{typography.$font-weight-700};
 
+  --line-height-tight: #{typography.$line-height-tight};
+  --line-height-snug: #{typography.$line-height-snug};
   --line-height-normal: #{typography.$line-height-normal};
+  --line-height-relaxed: #{typography.$line-height-relaxed};
+  --line-height-loose: #{typography.$line-height-loose};
 }
