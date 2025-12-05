@@ -12,7 +12,7 @@
 <?php wp_body_open(); ?>
 
 <div id="page" class="site">
-    <header id="masthead" class="site-header">
+    <header id="masthead" class="header">
         <div class="container">
             <div class="header-content">
                 <div class="site-branding">
@@ -20,7 +20,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/Small Banner/DOXA-small-light-banner.png"
                             class="custom-logo"
                             alt="<?php bloginfo('name'); ?>"
-                            width="200"
+                            width="250"
                             height="auto">
                     </a>
                 </div>
@@ -37,6 +37,8 @@
                         wp_nav_menu(array(
                             'theme_location' => 'primary',
                             'menu_id'        => 'primary-menu',
+                            'menu_class'     => 'role-list',
+                            'submenu_class'     => 'role-list',
                             'container'      => false,
                             'depth'          => 2,
                         ));

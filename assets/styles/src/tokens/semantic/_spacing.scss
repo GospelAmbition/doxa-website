@@ -5,5 +5,24 @@
 
 // CSS Custom Properties
 :root {
-  //
+  --spacing-base: #{spacing.$base}px;
+  --spacing-3xs: #{spacing.$modular-3xs}px;
+  --spacing-2xs: #{spacing.$modular-2xs}px;
+  --spacing-xs: #{spacing.$modular-xs}px;
+  --spacing-sm: #{spacing.$modular-sm}px;
+  --spacing-md: #{spacing.$modular-md}px;
+  --spacing-lg: #{spacing.$modular-lg}px;
+  --spacing-xl: #{spacing.$modular-xl}px;
+  --spacing-2xl: #{spacing.$modular-2xl}px;
+  --spacing-3xl: #{spacing.$modular-3xl}px;
+
+  --spacing-0: #{spacing.$linear-0}px;
+  --spacing-25: #{spacing.$linear-25}px;
+  --spacing-50: #{spacing.$linear-50}px;
+  --spacing-100: #{spacing.$linear-100}px;
+  --spacing-200: #{spacing.$linear-200}px;
+  --spacing-300: #{spacing.$linear-300}px;
+  --spacing-400: #{spacing.$linear-400}px;
+  --spacing-500: #{spacing.$linear-500}px;
+  --spacing-600: #{spacing.$linear-600}px;
 }
