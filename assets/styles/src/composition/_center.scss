@@ -1,0 +1,34 @@
+// Center
+// Everylayout component for centering content with max-width constraint
+// https://every-layout.dev/layouts/center/
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--center-max-width, 65ch);
+  padding-inline-start: var(--spacing-comfortable-md, 1rem);
+  padding-inline-end: var(--spacing-comfortable-md, 1rem);
+}
+
+// Center variants with different max-widths
+.center--narrow {
+  --center-max-width: 45ch;
+}
+
+.center--wide {
+  --center-max-width: 85ch;
+}
+
+.center--full {
+  --center-max-width: 100%;
+}
+
+.center--text {
+  text-align: center;
+}
+
+.center--intrinsic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,32 @@
+// Cluster
+// Everylayout component for grouping inline elements with spacing
+// https://every-layout.dev/layouts/cluster/
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-comfortable-sm, 0.75rem);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+// Cluster variants
+.cluster--tight {
+  gap: var(--spacing-tight-sm, 0.25rem);
+}
+
+.cluster--loose {
+  gap: var(--spacing-loose-sm, 1.5rem);
+}
+
+.cluster--justify-center {
+  justify-content: center;
+}
+
+.cluster--justify-end {
+  justify-content: flex-end;
+}
+
+.cluster--justify-space-between {
+  justify-content: space-between;
+}

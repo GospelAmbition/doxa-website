@@ -1,0 +1,16 @@
+// Root Styles
+// Imports semantic tokens (which export CSS custom properties)
+// Sets up base typography and body styles
+
+@use '../tokens/semantic/colors';
+@use '../tokens/semantic/spacing';
+@use '../tokens/semantic/typography';
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-primary);
+}

@@ -1,0 +1,15 @@
+{
+  "name": "doxa-website-theme",
+  "version": "1.0.0",
+  "description": "Design token-based styling system for Doxa website theme",
+  "scripts": {
+    "dev": "vite build --watch --mode development",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0",
+    "sass-migrator": "^2.4.2",
+    "vite": "^7.2.6"
+  }
+}

@@ -1,0 +1,71 @@
+// Utilities Layer
+// Single-purpose utility classes using semantic tokens
+
+// Visibility utilities
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+// Text utilities
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Color utilities
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.text-tertiary {
+  color: var(--color-text-tertiary);
+}
+
+.text-inverse {
+  color: var(--color-text-inverse);
+}
+
+.text-link {
+  color: var(--color-text-link);
+
+  &:hover {
+    color: var(--color-text-link-hover);
+  }
+}
+
+// Background utilities
+.bg-primary {
+  background-color: var(--color-surface-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-surface-secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--color-surface-tertiary);
+}
+
+.bg-inverse {
+  background-color: var(--color-surface-inverse);
+  color: var(--color-text-inverse);
+}

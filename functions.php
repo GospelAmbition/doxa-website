@@ -22,17 +22,17 @@ function gospel_ambition_setup() {
         'gallery',
         'caption',
     ));
-    
+
     // Add custom image sizes
     add_image_size('hero-image', 1200, 600, true);
     add_image_size('post-thumbnail', 400, 250, true);
-    
+
     // Register navigation menus
     register_nav_menus(array(
         'primary' => esc_html__('Primary Menu', 'gospel-ambition'),
         'footer' => esc_html__('Footer Menu', 'gospel-ambition'),
     ));
-    
+
     // Add support for custom logo
     add_theme_support('custom-logo', array(
         'height'      => 60,
@@ -51,7 +51,7 @@ function gospel_ambition_scripts() {
     $theme_version = wp_get_theme()->get('Version');
 
     // Enqueue theme stylesheet
-    wp_enqueue_style('gospel-ambition-style', get_stylesheet_uri(), array(), $theme_version);
+    wp_enqueue_style('gospel-ambition-style', get_template_directory_uri() . '/assets/styles/dist/main.css', array(), filemtime(get_template_directory() . '/assets/styles/dist/main.css'));
 
     // Enqueue Google Fonts
     wp_enqueue_style('gospel-ambition-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), null);
@@ -76,7 +76,7 @@ function gospel_ambition_widgets_init() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ));
-    
+
     register_sidebar(array(
         'name'          => esc_html__('Footer Widgets', 'gospel-ambition'),
         'id'            => 'footer-widgets',
@@ -112,9 +112,9 @@ add_filter('excerpt_more', 'gospel_ambition_excerpt_more');
  */
 function gospel_ambition_pagination() {
     global $wp_query;
-    
+
     $big = 999999999;
-    
+
     echo paginate_links(array(
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
         'format' => '?paged=%#%',
@@ -135,16 +135,16 @@ function gospel_ambition_cleanup() {
     // Remove WordPress emoji scripts
     remove_action('wp_head', 'print_emoji_detection_script', 7);
     remove_action('wp_print_styles', 'print_emoji_styles');
-    
+
     // Remove WordPress generator meta tag
     remove_action('wp_head', 'wp_generator');
-    
+
     // Remove RSD link
     remove_action('wp_head', 'rsd_link');
-    
+
     // Remove Windows Live Writer
     remove_action('wp_head', 'wlwmanifest_link');
-    
+
     // Remove feed links
     remove_action('wp_head', 'feed_links_extra', 3);
     remove_action('wp_head', 'feed_links', 2);
@@ -315,10 +315,10 @@ function page_custom_css_meta_box_callback($post) {
     <p>
         <label for="page_custom_css" style="font-weight: bold;">Add custom CSS for this page:</label>
     </p>
-    <textarea 
-        id="page_custom_css" 
-        name="page_custom_css" 
-        rows="10" 
+    <textarea
+        id="page_custom_css"
+        name="page_custom_css"
+        rows="10"
         style="width: 100%; font-family: 'Courier New', monospace; font-size: 12px;"
         placeholder="/* Enter your custom CSS here */&#10;.my-custom-class {&#10;    color: #bd1218;&#10;    font-size: 18px;&#10;}"
     ><?php echo esc_textarea($custom_css); ?></textarea>
@@ -336,22 +336,22 @@ function save_page_custom_css($post_id) {
     if (get_post_type($post_id) !== 'page') {
         return;
     }
-    
+
     // Verify nonce
     if (!isset($_POST['page_custom_css_nonce']) || !wp_verify_nonce($_POST['page_custom_css_nonce'], 'save_page_custom_css')) {
         return;
     }
-    
+
     // Skip autosave
     if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
         return;
     }
-    
+
     // Check user permissions
     if (!current_user_can('edit_page', $post_id)) {
         return;
     }
-    
+
     // Save the custom CSS
     if (isset($_POST['page_custom_css'])) {
         $custom_css = wp_strip_all_tags($_POST['page_custom_css']);
@@ -370,10 +370,10 @@ function output_page_custom_css() {
     if (!is_page()) {
         return;
     }
-    
+
     global $post;
     $custom_css = get_post_meta($post->ID, '_page_custom_css', true);
-    
+
     if (!empty($custom_css)) {
         echo '<style type="text/css" id="page-custom-css-' . $post->ID . '">' . "\n";
         echo '/* Custom CSS for page: ' . get_the_title($post->ID) . ' */' . "\n";

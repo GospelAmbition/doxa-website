@@ -1,0 +1,30 @@
+// Stack
+// Everylayout component for vertical spacing between children
+// https://every-layout.dev/layouts/stack/
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-block: 0;
+}
+
+.stack > * + * {
+  margin-block-start: var(--spacing-comfortable-md, 1rem);
+}
+
+// Stack variants with different spacing
+.stack--tight > * + * {
+  margin-block-start: var(--spacing-tight-md, 0.5rem);
+}
+
+.stack--loose > * + * {
+  margin-block-start: var(--spacing-loose-md, 2rem);
+}
+
+.stack--none > * + * {
+  margin-block-start: 0;
+}

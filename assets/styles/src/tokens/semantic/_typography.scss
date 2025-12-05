@@ -1,0 +1,18 @@
+// Semantic Typography Tokens
+// Context-aware typography mappings from abstract tokens
+
+@use '../abstract/typography';
+
+$font-family-base: typography.$font-family-sans;
+$font-family-heading: typography.$font-family-sans;
+
+$font-size-base: typography.$font-size-base;
+$line-height-normal: typography.$line-height-normal;
+
+:root {
+  --font-family-base: #{$font-family-base};
+  --font-family-heading: #{$font-family-heading};
+
+  --font-size-base: #{$font-size-base};
+  --line-height-normal: #{$line-height-normal};
+}

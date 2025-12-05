@@ -1,0 +1,51 @@
+// Semantic Color Tokens
+// Context-aware color mappings from abstract tokens
+
+@use '../abstract/colors';
+
+// Brand Colors
+$color-brand-primary: colors.$color-green-500;
+$color-brand-primary-light: colors.$color-green-400;
+$color-brand-primary-dark: colors.$color-green-600;
+$color-brand-secondary: colors.$color-beige-300;
+$color-brand-secondary-light: colors.$color-beige-50;
+$color-brand-secondary-dark: colors.$color-beige-600;
+
+// Surface Colors
+$color-surface-primary: colors.$color-beige-50;
+$color-surface-secondary: colors.$color-green-600;
+
+// Text Colors
+$color-text-primary: colors.$color-black;
+$color-text-secondary: colors.$color-beige-50;
+
+// Status Colors
+$color-status-error: colors.$color-red-500;
+$color-status-error-dark: colors.$color-red-600;
+$color-status-success: colors.$color-green-50;
+$color-status-warning: colors.$color-beige-500;
+
+// CSS Custom Properties
+:root {
+  // Brand
+  --color-brand-primary: #{$color-brand-primary};
+  --color-brand-primary-light: #{$color-brand-primary-light};
+  --color-brand-primary-dark: #{$color-brand-primary-dark};
+  --color-brand-secondary: #{$color-brand-secondary};
+  --color-brand-secondary-light: #{$color-brand-secondary-light};
+  --color-brand-secondary-dark: #{$color-brand-secondary-dark};
+
+  // Surface
+  --color-surface-primary: #{$color-surface-primary};
+  --color-surface-secondary: #{$color-surface-secondary};
+
+  // Text
+  --color-text-primary: #{$color-text-primary};
+  --color-text-secondary: #{$color-text-secondary};
+
+  // Status
+  --color-status-error: #{$color-status-error};
+  --color-status-error-dark: #{$color-status-error-dark};
+  --color-status-success: #{$color-status-success};
+  --color-status-warning: #{$color-status-warning};
+}
