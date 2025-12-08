@@ -12,6 +12,7 @@
     border-radius: 100px;
     border: none;
     text-transform: uppercase;
+    line-height: var(--line-height-none);
     transition: background-color, color 0.3s ease;
 }
 
@@ -33,4 +34,10 @@
     --button-background-color: var(--color-brand-secondary-light);
     --button-text-color-hover: var(--color-brand-secondary-very-light);
     --button-background-color-hover: var(--color-brand);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.button.compact {
+    padding: var(--spacing-3xs) var(--spacing-lg);
 }

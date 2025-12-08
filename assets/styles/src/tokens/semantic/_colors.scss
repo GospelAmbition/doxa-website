@@ -54,10 +54,12 @@ $color-red-600: #bd1218;
   // Surface
   --color-surface-primary: #{$color-beige-50};
   --color-surface-secondary: #{$color-green-600};
+  --color-surface-white: #{$color-white};
 
   // Text
   --color-text-primary: #{$color-green-600};
   --color-text-secondary: #{$color-beige-50};
+  --color-text-on-white: #{$color-green-600}
 
   // Status
   --color-status-error: #{$color-red-500};

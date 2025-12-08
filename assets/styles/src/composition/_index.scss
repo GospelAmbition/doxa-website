@@ -1,9 +1,11 @@
 // Composition Layer Index
 // Everylayout components
 
-@use 'stack';
 @use 'box';
 @use 'center';
 @use 'cluster';
-@use 'sidebar';
 @use 'container';
+@use 'grid';
+@use 'sidebar';
+@use 'stack';
+@use 'switcher';

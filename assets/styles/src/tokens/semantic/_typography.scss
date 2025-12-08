@@ -30,6 +30,7 @@ $font-size-4xl: $font-size-3xl * $font-density;
 $font-size-5xl: $font-size-4xl * $font-density;
 
 // Line Heights
+$line-height-none: 1;
 $line-height-tight: 1.25;
 $line-height-snug: 1.375;
 $line-height-normal: 1.5;
@@ -61,6 +62,7 @@ $line-height-loose: 2;
   --font-weight-semibold: #{$font-weight-600};
   --font-weight-bold: #{$font-weight-700};
 
+  --line-height-none: #{$line-height-none};
   --line-height-tight: #{$line-height-tight};
   --line-height-snug: #{$line-height-snug};
   --line-height-normal: #{$line-height-normal};

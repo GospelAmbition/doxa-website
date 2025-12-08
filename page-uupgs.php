@@ -13,14 +13,31 @@ get_header( 'top' ); ?>
 
     <main class="site-main">
         <div class="container page-content uupgs-page">
-            <!-- Custom content for UUPGS page goes here -->
             <h1 class="text-center"><?php echo __('Find a UUPG to adopt', 'doxa-website'); ?></h1>
-            <a class="button" href="<?php echo home_url('/uupgs'); ?>"><?php echo __('Reset filters', 'doxa-website'); ?></a>
-            <a class="button back-button" href="<?php echo home_url('/pray'); ?>"><?php echo __('Back to prayer', 'doxa-website'); ?></a>
-            <div class="filter-buttons">
-                <button class="button filter-button"><?php echo __('Blah', 'doxa-website'); ?></button>
-                <button class="button filter-button"><?php echo __('Foo', 'doxa-website'); ?></button>
-            </div>
+            <section id="filters"></section>
+            <h2 class="text-center"><?php echo __('Results', 'doxa-website'); ?></h2>
+            <section id="results" class="grid | uupgs-list">
+                <div class="card | uupg__card">
+                    <img class="uupg__image" src="https://picsum.photos/100" alt="<?php echo __('UUPG 1', 'doxa-website'); ?>">
+                    <div class="uupg__header">
+                        <h3><?php echo __('UUPG 1', 'doxa-website'); ?></h3>
+                        <p><?php echo __('Location of UUPG 1', 'doxa-website'); ?></p>
+                    </div>
+                    <div class="uupg_adopted"></div>
+                    <p class="uupg__content"><?php echo __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'doxa-website'); ?></p>
+                    <a class="uupg__more-button button compact" href="<?php echo home_url('/uupgs/1'); ?>"><?php echo __('Full Profile', 'doxa-website'); ?></a>
+                </div>
+                <div class="card | uupg__card">
+                    <img class="uupg__image" src="https://picsum.photos/100" alt="<?php echo __('UUPG 2', 'doxa-website'); ?>">
+                    <div class="uupg__header">
+                        <h3><?php echo __('UUPG 2', 'doxa-website'); ?></h3>
+                        <p><?php echo __('Location of UUPG 2', 'doxa-website'); ?></p>
+                    </div>
+                    <div class="uupg_adopted"></div>
+                    <p class="uupg__content"><?php echo __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'doxa-website'); ?></p>
+                    <a class="uupg__more-button button compact" href="<?php echo home_url('/uupgs/2'); ?>"><?php echo __('Full Profile', 'doxa-website'); ?></a>
+                </div>
+            </section>
         </div>
     </main>
 
