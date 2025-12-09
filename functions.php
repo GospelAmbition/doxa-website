@@ -52,13 +52,23 @@ function gospel_ambition_scripts() {
 
     // Enqueue theme stylesheet
     wp_enqueue_style('bebas-kai-font', get_template_directory_uri() . '/assets/fonts/BebasKai/stylesheet.css', array(), filemtime(get_template_directory() . '/assets/fonts/BebasKai/stylesheet.css'));
-    wp_enqueue_style('gospel-ambition-style', get_template_directory_uri() . '/assets/styles/dist/main.css', array(), filemtime(get_template_directory() . '/assets/styles/dist/main.css'));
+    wp_enqueue_style('gospel-ambition-style', get_template_directory_uri() . '/assets/dist/style.css', array(), filemtime(get_template_directory() . '/assets/dist/style.css'));
 
     // Enqueue Google Fonts
     wp_enqueue_style('gospel-ambition-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), null);
 
     // Enqueue theme JavaScript
-    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array(), $theme_version, true);
+
+    // unenqueue jquery
+    wp_dequeue_script('jquery');
+    if ( is_page('uupgs') ) {
+        wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
+    }
+/*
+    if ( is_template('template-uupg-detail.php') ) {
+        wp_enqueue_script('uupg-detail-script', get_template_directory_uri() . '/js/uupg-detail.js', array(), $theme_version, true);
+    } */
 
 
 }

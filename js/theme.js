@@ -2,113 +2,105 @@
  * Gospel Ambition Theme JavaScript
  */
 
-(function($) {
+(function() {
     'use strict';
 
-    $(document).ready(function() {
-        
+    document.addEventListener('DOMContentLoaded', function() {
+
         // Mobile menu toggle
-        $('.mobile-menu-toggle').on('click', function(e) {
-            e.preventDefault();
-            $(this).toggleClass('active');
-            $('.main-navigation').toggleClass('mobile-active');
-        });
-        
-        // Mobile sub-menu toggle
-        $('.main-navigation .menu-item-has-children > a').on('click', function(e) {
-            if ($(window).width() <= 768) {
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mainNavigation = document.querySelector('.main-navigation');
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function(e) {
                 e.preventDefault();
-                $(this).parent().toggleClass('mobile-open');
-            }
+                this.classList.toggle('active');
+                if (mainNavigation) {
+                    mainNavigation.classList.toggle('mobile-active');
+                }
+            });
+        }
+
+        // Mobile sub-menu toggle
+        const menuItemsWithChildren = document.querySelectorAll('.main-navigation .menu-item-has-children > a');
+        menuItemsWithChildren.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('mobile-open');
+                }
+            });
         });
-        
+
         // Close mobile menu when clicking outside
-        $(document).on('click', function(e) {
-            if (!$(e.target).closest('.main-navigation, .mobile-menu-toggle').length) {
-                $('.mobile-menu-toggle').removeClass('active');
-                $('.main-navigation').removeClass('mobile-active');
-                $('.menu-item-has-children').removeClass('mobile-open');
-            }
-        });
-        
-        // Handle window resize
-        $(window).on('resize', function() {
-            if ($(window).width() > 768) {
-                $('.mobile-menu-toggle').removeClass('active');
-                $('.main-navigation').removeClass('mobile-active');
-                $('.menu-item-has-children').removeClass('mobile-open');
+        document.addEventListener('click', function(e) {
+            const isClickInsideNav = e.target.closest('.main-navigation');
+            const isClickOnToggle = e.target.closest('.mobile-menu-toggle');
+
+            if (!isClickInsideNav && !isClickOnToggle) {
+                if (mobileMenuToggle) {
+                    mobileMenuToggle.classList.remove('active');
+                }
+                if (mainNavigation) {
+                    mainNavigation.classList.remove('mobile-active');
+                }
+                const openMenuItems = document.querySelectorAll('.menu-item-has-children.mobile-open');
+                openMenuItems.forEach(function(item) {
+                    item.classList.remove('mobile-open');
+                });
             }
         });
 
         // Smooth scrolling for anchor links
-        $('a[href*="#"]:not([href="#"])').on('click', function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top - 80
-                    }, 1000);
-                    return false;
+        const anchorLinks = document.querySelectorAll('a[href*="#"]:not([href="#"])');
+        anchorLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href.indexOf('#') !== -1) {
+                    const hash = href.substring(href.indexOf('#'));
+                    const pathname = location.pathname.replace(/^\//, '');
+                    const linkPathname = this.pathname.replace(/^\//, '');
+
+                    if (pathname === linkPathname && location.hostname === this.hostname) {
+                        let target = document.querySelector(hash);
+                        if (!target) {
+                            target = document.querySelector('[name="' + hash.slice(1) + '"]');
+                        }
+
+                        if (target) {
+                            e.preventDefault();
+                            const targetTop = target.getBoundingClientRect().top + window.scrollY - 80;
+
+                            window.scrollTo({
+                                top: targetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
                 }
-            }
+            });
         });
 
         // Animate elements on scroll
         function animateOnScroll() {
-            $('.post-card').each(function() {
-                var elementTop = $(this).offset().top;
-                var elementBottom = elementTop + $(this).outerHeight();
-                var viewportTop = $(window).scrollTop();
-                var viewportBottom = viewportTop + $(window).height();
+            const postCards = document.querySelectorAll('.post-card');
+            postCards.forEach(function(card) {
+                const rect = card.getBoundingClientRect();
+                const elementTop = rect.top + window.scrollY;
+                const elementBottom = elementTop + card.offsetHeight;
+                const viewportTop = window.scrollY;
+                const viewportBottom = viewportTop + window.innerHeight;
 
                 if (elementBottom > viewportTop && elementTop < viewportBottom) {
-                    $(this).addClass('animate-in');
+                    card.classList.add('animate-in');
                 }
             });
         }
 
         // Run animation on scroll and page load
-        $(window).on('scroll resize', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('resize', animateOnScroll);
         animateOnScroll();
 
-        // Form validation
-        $('form').on('submit', function(e) {
-            var isValid = true;
-            
-            $(this).find('input[required], textarea[required]').each(function() {
-                if ($(this).val().trim() === '') {
-                    $(this).addClass('error');
-                    isValid = false;
-                } else {
-                    $(this).removeClass('error');
-                }
-            });
-
-            // Email validation
-            $(this).find('input[type="email"]').each(function() {
-                var email = $(this).val();
-                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (email && !emailRegex.test(email)) {
-                    $(this).addClass('error');
-                    isValid = false;
-                } else if (email) {
-                    $(this).removeClass('error');
-                }
-            });
-
-            if (!isValid) {
-                e.preventDefault();
-                $('.form-error').remove();
-                $(this).prepend('<div class="form-error">Please fill in all required fields correctly.</div>');
-            }
-        });
-
-        // Remove error class on input focus
-        $('input, textarea').on('focus', function() {
-            $(this).removeClass('error');
-        });
-
     });
-
-})(jQuery);
+})();

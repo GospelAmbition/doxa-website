@@ -9,6 +9,6 @@
     }
 }
 
-.grid--min-width-200 {
-    --grid-min-width: 200px;
+.grid[data-width-lg] {
+    --grid-min-width: 400px;
 }
