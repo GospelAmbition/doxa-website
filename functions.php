@@ -65,11 +65,6 @@ function gospel_ambition_scripts() {
     if ( is_page('uupgs') ) {
         wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
     }
-/*
-    if ( is_template('template-uupg-detail.php') ) {
-        wp_enqueue_script('uupg-detail-script', get_template_directory_uri() . '/js/uupg-detail.js', array(), $theme_version, true);
-    } */
-
 
 }
 add_action('wp_enqueue_scripts', 'gospel_ambition_scripts');
@@ -423,3 +418,25 @@ function custom_uupgs_template($template) {
     return $template;
 }
 add_filter('template_include', 'custom_uupgs_template');
+
+function get_uupg_by_post_id( $post_id ) {
+    $site_url = get_site_url();
+
+
+    $site_parts = explode('://', $site_url);
+    $site_domain = $site_parts[1];
+    $protocol = $site_parts[0];
+    $api_url = $protocol . '://' . 'uupg.' . $site_domain . '/wp-json/dt-public/disciple-tools-people-groups-api/v1/';
+    $api_url = $api_url . 'detail/' . $post_id;
+
+    $response = wp_remote_get($api_url);
+    if (is_wp_error($response)) {
+        return [
+            'api_url' => $api_url,
+            'response' => $response,
+        ];
+    }
+    $data = json_decode($response['body'], true);
+
+    return $data;
+}

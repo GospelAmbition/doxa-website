@@ -5,7 +5,9 @@
  * Custom template for the UUPG detail page - completely independent of posts/archive templates
  */
 
-$uupg_slug = get_query_var('uupg_slug');
+$post_id = get_query_var('uupg_slug');
+
+$uupg = get_uupg_by_post_id($post_id);
 
 get_header( 'top' ); ?>
 
@@ -19,10 +21,10 @@ get_header( 'top' ); ?>
             <h1 class="text-center"><?php echo __('Find a UUPG to adopt', 'doxa-website'); ?></h1>
             <a class="button back-button compact" href="<?php echo home_url('/uupgs'); ?>"><?php echo __('< Back', 'doxa-website'); ?></a>
             <div class="card uupg__card">
-                <img class="uupg__image" data-size="medium" src="https://picsum.photos/200" alt="<?php echo __('UUPG 1', 'doxa-website'); ?>">
+                <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
                 <div class="uupg__header">
-                    <h3><?php echo __('UUPG 1', 'doxa-website'); ?></h3>
-                    <p><?php echo __('Location of UUPG 1', 'doxa-website'); ?></p>
+                    <h3><?php echo esc_html( $uupg['imb_display_name'] ); ?></h3>
+                    <p><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
                 </div>
                 <div class="uupg_adopted"></div>
                 <p class="uupg__content"><?php echo __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'doxa-website'); ?></p>

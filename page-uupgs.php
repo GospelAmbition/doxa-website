@@ -24,7 +24,6 @@ get_header( 'top' ); ?>
         </div>
     </main>
 
-
     <?php get_footer(); ?>
 
 </div>

@@ -48,7 +48,7 @@ export class UupgsList extends LitElement {
 
     getUUPGs({ search = '', sort = '', per_page = 10, page = 1 } = {}) {
 
-        const uupgAPIUrl = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
+        const uupgAPIUrl = 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
 
         const url = new URL(uupgAPIUrl);
         if (search.length) {
