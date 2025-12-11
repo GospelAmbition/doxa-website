@@ -6,15 +6,19 @@ $base: 8;
 $major-third: 1.25;
 
 $density: $major-third;
-$modular-3xs: $base * $density;
-$modular-2xs: $modular-3xs * $density;
-$modular-xs: $modular-2xs * $density;
-$modular-sm: $modular-xs * $density;
+$modular-sm: $base * $density;
 $modular-md: $modular-sm * $density;
 $modular-lg: $modular-md * $density;
 $modular-xl: $modular-lg * $density;
 $modular-2xl: $modular-xl * $density;
 $modular-3xl: $modular-2xl * $density;
+$modular-4xl: $modular-3xl * $density;
+$modular-5xl: $modular-4xl * $density;
+
+$modular-xs: $modular-sm / $density;
+$modular-2xs: $modular-xs / $density;
+$modular-3xs: $modular-2xs / $density;
+
 
 $linear-0: 0;
 $linear-25: $base * 0.25;
@@ -29,7 +33,6 @@ $linear-700: $base * 7;
 $linear-800: $base * 8;
 
 // Semantic Spacing Tokens
-// Context-aware spacing mappings from abstract tokens
 :root {
   --spacing-base: #{$base}px;
   --spacing-3xs: #{$modular-3xs}px;
@@ -41,6 +44,8 @@ $linear-800: $base * 8;
   --spacing-xl: #{$modular-xl}px;
   --spacing-2xl: #{$modular-2xl}px;
   --spacing-3xl: #{$modular-3xl}px;
+  --spacing-4xl: #{$modular-4xl}px;
+  --spacing-5xl: #{$modular-5xl}px;
 
   --spacing-0: #{$linear-0}px;
   --spacing-25: #{$linear-25}px;

@@ -1,6 +1,6 @@
 .footer {
     margin-top: auto;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .footer__content {
@@ -9,8 +9,8 @@
     grid-template-rows: 1fr;
     grid-template-areas:
         "left center right";
-    gap: var(--spacing-md);
-    padding: var(--spacing-xs);
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-lg);
     background-color: var(--color-brand);
     color: var(--color-text-secondary);
 

@@ -88,6 +88,10 @@
   font-size: var(--font-size-4xl);
 }
 
+.lh-0 {
+  line-height: var(--line-height-none);
+}
+
 // Background utilities
 .bg-primary {
   background-color: var(--color-surface-primary);

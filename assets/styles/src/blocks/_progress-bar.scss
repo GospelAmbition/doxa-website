@@ -1,0 +1,19 @@
+.progress-bar {
+    position: relative;
+    border-radius: 100px;
+    background: var(--color-brand-light);
+    border: none;
+
+    width: 100%;
+    padding-top: 4%;
+}
+.progress-bar__slider {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-out;
+    background-color: var(--color-brand-primary);
+    border-radius: 100px;
+}
+

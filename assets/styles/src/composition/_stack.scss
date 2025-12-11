@@ -16,6 +16,14 @@
   margin-block-start: var(--spacing-md, 1rem);
 }
 
+.stack--3xs > * + * {
+  margin-block-start: var(--spacing-3xs, 0.25rem);
+}
+
+.stack--2xs > * + * {
+  margin-block-start: var(--spacing-2xs, 0.25rem);
+}
+
 .stack--xs > * + * {
   margin-block-start: var(--spacing-xs, 0.5rem);
 }
@@ -26,6 +34,18 @@
 
 .stack--lg > * + * {
   margin-block-start: var(--spacing-lg, 2rem);
+}
+
+.stack--xl > * + * {
+  margin-block-start: var(--spacing-xl, 2rem);
+}
+
+.stack--2xl > * + * {
+  margin-block-start: var(--spacing-2xl, 2rem);
+}
+
+.stack--3xl > * + * {
+  margin-block-start: var(--spacing-3xl, 2rem);
 }
 
 .stack--none > * + * {

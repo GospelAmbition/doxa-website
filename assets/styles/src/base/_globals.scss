@@ -23,8 +23,8 @@ body {
   min-height: 100vh;
 }
 .page-content {
-  margin-top: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
+  margin-top: var(--spacing-3xl);
+  margin-bottom: var(--spacing-4xl);
 }
 
 h1 {
@@ -38,5 +38,19 @@ h2 {
   font-size: var(--font-size-4xl);
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tight);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
 }

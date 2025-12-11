@@ -1,6 +1,6 @@
 <footer id="colophon" class="footer">
     <div class="container footer__content">
-        <div class="footer__left stack--xs">
+        <div class="footer__left stack stack--xs">
             <div>
                 <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/DOXA-logo-light-with-text.png"
