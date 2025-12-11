@@ -10,6 +10,10 @@ export class UupgsList extends LitElement {
 
     @property({ type: Array, attribute: false })
     uupgs: Uupg[] = [];
+    @property({ type: Number, attribute: false })
+    total: number = 0;
+    @property({ type: Number, attribute: false })
+    page: number = 1;
     @property({ type: Boolean, attribute: false })
     loading: boolean = true;
 
@@ -21,10 +25,11 @@ export class UupgsList extends LitElement {
     render() {
         return html`
             <div>
-                <section id="filters"></section>
+                <section id="filters">
+
+                </section>
                 <h2 class="text-center">${this.t.results}</h2>
                 <section id="results" class="grid | uupgs-list" data-width-lg>
-                    ${this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
                     ${repeat(this.uupgs, (uupg: Uupg) => uupg.id, (uupg: Uupg) => html`
                         <div class="card | uupg__card">
                             <img class="uupg__image" src="${uupg.picture_url}" alt="${uupg.name}">
@@ -37,6 +42,13 @@ export class UupgsList extends LitElement {
                             <a class="uupg__more-button button compact" href="${'/uupgs/' + uupg.id}">${this.t.full_profile}</a>
                         </div>
                     `)}
+                    ${this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
+                    ${this.total > this.uupgs.length && !this.loading ? html`
+                        <button
+                            @click=${this.loadMore}
+                            class="button compact"
+                        >${this.t.load_more}</button>
+                    ` : ''}
                 </section>
             </div>
         `;
@@ -44,6 +56,14 @@ export class UupgsList extends LitElement {
 
     firstUpdated() {
         this.getUUPGs();
+    }
+
+    loadMore() {
+        this.loading = true;
+        this.page = this.page + 1;
+        this.getUUPGs({
+            page: this.page,
+        });
     }
 
     getUUPGs({ search = '', sort = '', per_page = 10, page = 1 } = {}) {
@@ -67,7 +87,12 @@ export class UupgsList extends LitElement {
         fetch(url.href)
             .then(response => response.json())
             .then(data => {
-                this.uupgs = data.posts;
+                if (page > 1) {
+                    this.uupgs = [...this.uupgs, ...data.posts];
+                } else {
+                    this.uupgs = data.posts;
+                    this.total = data.total;
+                }
             })
             .catch(error => {
                 console.error('Error:', error);

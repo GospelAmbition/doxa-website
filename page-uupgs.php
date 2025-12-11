@@ -19,6 +19,7 @@ get_header( 'top' ); ?>
                     'results' => __('Results', 'doxa-website'),
                     'full_profile' => __('Full Profile', 'doxa-website'),
                     'loading' => __('Loading results...', 'doxa-website'),
+                    'load_more' => __('Load More', 'doxa-website'),
                 ])); ?>"
             ></uupgs-list>
         </div>

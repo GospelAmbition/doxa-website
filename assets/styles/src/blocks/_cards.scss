@@ -10,7 +10,7 @@
     --card-background-color: var(--color-surface-white);
     --card-text-color: var(--color-text-on-white);
     border-radius: var(--border-radius-xlg);
-    padding: var(--spacing-2xl) var(--spacing-4xl);
+    padding: var(--spacing-2xl) var(--spacing-3xl);
     color: var(--card-text-color);
     background-color: var(--card-background-color);
 }
@@ -68,6 +68,7 @@
 
 .uupg__more-button {
     grid-area: footer;
+    align-self: flex-end;
 }
 
 .uupg__footer {
