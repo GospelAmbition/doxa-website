@@ -20,6 +20,7 @@ get_header( 'top' ); ?>
                     'full_profile' => __('Full Profile', 'doxa-website'),
                     'loading' => __('Loading results...', 'doxa-website'),
                     'load_more' => __('Load More', 'doxa-website'),
+                    'total' => __('Total', 'doxa-website'),
                 ])); ?>"
             ></uupgs-list>
         </div>

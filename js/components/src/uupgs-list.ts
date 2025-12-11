@@ -14,6 +14,12 @@ export class UupgsList extends LitElement {
     total: number = 0;
     @property({ type: Number, attribute: false })
     page: number = 1;
+    @property({ type: String, attribute: false })
+    searchTerm: string = '';
+    @property({ type: String, attribute: false })
+    sort: string = '';
+    @property({ type: Number, attribute: false })
+    per_page: number = 10;
     @property({ type: Boolean, attribute: false })
     loading: boolean = true;
 
@@ -26,9 +32,12 @@ export class UupgsList extends LitElement {
         return html`
             <div>
                 <section id="filters">
-
+                    <input type="search" placeholder="${this.t.search}" @input=${this.debounce(this.search, 500)} />
                 </section>
                 <h2 class="text-center">${this.t.results}</h2>
+                ${!this.loading ? html`
+                    <div class="font-size-sm">${this.t.total}: ${this.total}</div>
+                ` : ''}
                 <section id="results" class="grid | uupgs-list" data-width-lg>
                     ${repeat(this.uupgs, (uupg: Uupg) => uupg.id, (uupg: Uupg) => html`
                         <div class="card | uupg__card">
@@ -66,7 +75,27 @@ export class UupgsList extends LitElement {
         });
     }
 
-    getUUPGs({ search = '', sort = '', per_page = 10, page = 1 } = {}) {
+    debounce = (callback: (...args: any[]) => void, time = 500): ((...args: any[]) => void) => {
+        let timeout: any;
+        return (...args: any[]) => {
+            if (timeout) {
+                clearTimeout(timeout);
+            }
+            timeout = setTimeout(() => callback.apply(this, args as any), time);
+        };
+    };
+
+    search = (event: Event) => {
+        console.log('search', event.target);
+        this.searchTerm = (event.target as HTMLInputElement).value;
+        this.loading = true;
+        this.page = 1;
+        this.uupgs = [];
+        this.total = 0;
+        this.getUUPGs();
+    }
+
+    getUUPGs({ search = this.searchTerm, sort = this.sort, per_page = this.per_page, page = this.page } = {}) {
 
         const uupgAPIUrl = 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
 
