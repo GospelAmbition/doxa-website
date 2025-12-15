@@ -19,7 +19,7 @@ export class UupgsList extends LitElement {
     @property({ type: String, attribute: false })
     sort: string = '';
     @property({ type: Number, attribute: false })
-    per_page: number = 10;
+    per_page: number = 25;
     @property({ type: Boolean, attribute: false })
     loading: boolean = true;
 
