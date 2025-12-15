@@ -21,6 +21,12 @@ get_header( 'top' ); ?>
                     'loading' => __('Loading results...', 'doxa-website'),
                     'load_more' => __('Load More', 'doxa-website'),
                     'total' => __('Total', 'doxa-website'),
+                    'search' => __('Search', 'doxa-website'),
+                    'filters' => [
+                        'search' => __('Search', 'doxa-website'),
+                        'sort' => __('Sort', 'doxa-website'),
+                        'per_page' => __('Per Page', 'doxa-website'),
+                    ],
                 ])); ?>"
             ></uupgs-list>
         </div>

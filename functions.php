@@ -440,3 +440,145 @@ function get_uupg_by_post_id( $post_id ) {
 
     return $data;
 }
+
+function doxa_get_wagf_regions() {
+    return [
+        [
+            'value' => 'africa',
+            'label' => __( 'Africa', 'doxa-website' )
+        ],
+        [
+            'value' => 'asia',
+            'label' => __( 'Asia', 'doxa-website' )
+        ],
+        [
+            'value' => 'europe',
+            'label' => __( 'Europe', 'doxa-website' )
+        ],
+        [
+            'value' => 'latin_america_&_caribbean',
+            'label' => __( 'Latin America & Caribbean', 'doxa-website' )
+        ],
+        [
+            'value' => 'middle_east',
+            'label' => __( 'Middle East', 'doxa-website' )
+        ],
+        [
+            'value' => 'na',
+            'label' => __( 'N/A', 'doxa-website' )
+        ],
+        [
+            'value' => 'north_america_&_non-spanish_caribbean',
+            'label' => __( 'North America & Non-Spanish Caribbean', 'doxa-website' )
+        ],
+        [
+            'value' => 'oceania',
+            'label' => __( 'Oceania', 'doxa-website' )
+        ]
+    ];
+}
+
+function doxa_get_wagf_blocks() {
+    return [
+        [
+            'value' =>  'andean',
+            'label' =>  __( 'Andean', 'doxa-website' )
+        ],
+        [
+            'value' =>  'brazil',
+            'label' =>  __( 'Brazil', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_africa',
+            'label' =>  __( 'Central Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_america',
+            'label' =>  __( 'Central America', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_asia',
+            'label' =>  __( 'Central Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_europe',
+            'label' =>  __( 'Central Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'east_africa',
+            'label' =>  __( 'East Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'east_europe',
+            'label' =>  __( 'East Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'islands_of_east_africa',
+            'label' =>  __( 'Islands of East Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'mexico_&_latin_america',
+            'label' =>  __( 'Mexico & Latin America', 'doxa-website' )
+        ],
+        [
+            'value' =>  'middle_east',
+            'label' =>  __( 'Middle East', 'doxa-website' )
+        ],
+        [
+            'value' =>  'na',
+            'label' =>  __( 'N/A', 'doxa-website' )
+        ],
+        [
+            'value' =>  'non-spanish_caribbean',
+            'label' =>  __( 'Non-Spanish Caribbean', 'doxa-website' )
+        ],
+        [
+            'value' =>  'north_asia',
+            'label' =>  __( 'North Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'north_east_asia',
+            'label' =>  __( 'North East Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'north_europe',
+            'label' =>  __( 'North Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'oceania',
+            'label' =>  __( 'Oceania', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_asia',
+            'label' =>  __( 'South Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_cone',
+            'label' =>  __( 'South Cone', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_east_asia',
+            'label' =>  __( 'South East Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_europe',
+            'label' =>  __( 'South Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'southern_africa',
+            'label' =>  __( 'Southern Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'the_balkans',
+            'label' =>  __( 'The Balkans', 'doxa-website' )
+        ],
+        [
+            'value' =>  'west_africa',
+            'label' =>  __( 'West Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'west_europe',
+            'label' =>  __( 'West Europe', 'doxa-website' )
+        ]
+    ];
+}

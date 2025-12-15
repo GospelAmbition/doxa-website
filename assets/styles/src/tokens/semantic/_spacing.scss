@@ -1,5 +1,7 @@
 // Abstract Spacing Tokens
 
+@use 'sass:math';
+
 $base: 8;
 
 // modular scale
@@ -15,9 +17,9 @@ $modular-3xl: $modular-2xl * $density;
 $modular-4xl: $modular-3xl * $density;
 $modular-5xl: $modular-4xl * $density;
 
-$modular-xs: $modular-sm / $density;
-$modular-2xs: $modular-xs / $density;
-$modular-3xs: $modular-2xs / $density;
+$modular-xs: math.div($modular-sm, $density);
+$modular-2xs: math.div($modular-xs, $density);
+$modular-3xs: math.div($modular-2xs, $density);
 
 
 $linear-0: 0;

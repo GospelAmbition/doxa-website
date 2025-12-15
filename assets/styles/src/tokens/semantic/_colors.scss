@@ -70,4 +70,7 @@ $color-red-600: #bd1218;
   --color-status-error-dark: #{$color-red-600};
   --color-status-success: #{$color-green-50};
   --color-status-warning: #{$color-beige-500};
+
+  // forms
+  --input-border-color: #{$color-gray-500};
 }

@@ -30,35 +30,42 @@ export class UupgsList extends LitElement {
 
     render() {
         return html`
-            <div>
-                <section id="filters">
-                    <input type="search" placeholder="${this.t.search}" @input=${this.debounce(this.search, 500)} />
+            <div class="stack stack--3xl">
+                <section id="filters" class="filters">
+                    <input
+                        type="search"
+                        placeholder="${this.t.search}"
+                        @input=${this.debounce(this.search, 500)}
+                        class="center | max-width-md"
+                    />
                 </section>
-                <h2 class="text-center">${this.t.results}</h2>
-                ${!this.loading ? html`
-                    <div class="font-size-sm">${this.t.total}: ${this.total}</div>
-                ` : ''}
-                <section id="results" class="grid | uupgs-list" data-width-lg>
-                    ${repeat(this.uupgs, (uupg: Uupg) => uupg.id, (uupg: Uupg) => html`
-                        <div class="card | uupg__card">
-                            <img class="uupg__image" src="${uupg.picture_url}" alt="${uupg.name}">
-                            <div class="uupg__header">
-                                <h3>${uupg.name}</h3>
-                                <p>${uupg.country.label} (${uupg.rop1.label})</p>
+                <div class="stack stack--lg">
+                    <h2 class="text-center">${this.t.results}</h2>
+                    ${!this.loading ? html`
+                        <div class="font-size-sm">${this.t.total}: ${this.total}</div>
+                    ` : ''}
+                    <section id="results" class="grid | uupgs-list" data-width-lg>
+                        ${repeat(this.uupgs, (uupg: Uupg) => uupg.id, (uupg: Uupg) => html`
+                            <div class="card | uupg__card">
+                                <img class="uupg__image" src="${uupg.picture_url}" alt="${uupg.name}">
+                                <div class="uupg__header">
+                                    <h3>${uupg.name}</h3>
+                                    <p>${uupg.country.label} (${uupg.rop1.label})</p>
+                                </div>
+                                <div class="uupg_adopted"></div>
+                                <p class="uupg__content">${uupg.location_description}</p>
+                                <a class="uupg__more-button button compact" href="${'/uupgs/' + uupg.id}">${this.t.full_profile}</a>
                             </div>
-                            <div class="uupg_adopted"></div>
-                            <p class="uupg__content">${uupg.location_description}</p>
-                            <a class="uupg__more-button button compact" href="${'/uupgs/' + uupg.id}">${this.t.full_profile}</a>
-                        </div>
-                    `)}
-                    ${this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
+                        `)}
+                        ${this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
+                    </section>
                     ${this.total > this.uupgs.length && !this.loading ? html`
                         <button
                             @click=${this.loadMore}
-                            class="button compact"
+                            class="center | button compact"
                         >${this.t.load_more}</button>
                     ` : ''}
-                </section>
+                </div>
             </div>
         `;
     }
