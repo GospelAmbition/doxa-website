@@ -139,7 +139,7 @@ export class UupgsList extends LitElement {
 
     isDevelopment() {
         const url = new URL(window.location.href);
-        return url.hostname.includes('localhost') || url.hostname.includes('doxa.test');
+        return url.hostname !== 'doxa.life';
     }
 
     protected createRenderRoot(): HTMLElement | DocumentFragment {
