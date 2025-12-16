@@ -19,7 +19,7 @@ get_header( 'top' ); ?>
 
 
             <p class="text-center font-heading font-size-3xl"><?php echo __('"Prayer is the work" - Oswald Chambers', 'doxa-website'); ?></p>
-            <a class="button mx-auto" href="<?php echo home_url('/uupgs'); ?>"><?php echo __('Find a people group', 'doxa-website'); ?></a>
+            <a class="button mx-auto" href="<?php echo home_url('/discover'); ?>"><?php echo __('Find a people group', 'doxa-website'); ?></a>
         </div>
     </main>
 

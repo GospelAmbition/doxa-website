@@ -30,6 +30,7 @@ function gospel_ambition_setup() {
     // Register navigation menus
     register_nav_menus(array(
         'primary' => esc_html__('Primary Menu', 'gospel-ambition'),
+        'secondary' => esc_html__('Secondary Menu', 'gospel-ambition'),
         'footer' => esc_html__('Footer Menu', 'gospel-ambition'),
     ));
 
@@ -62,7 +63,7 @@ function gospel_ambition_scripts() {
 
     // unenqueue jquery
     wp_dequeue_script('jquery');
-    if ( is_page('uupgs') ) {
+    if ( is_page('discover') ) {
         wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
     }
 
@@ -391,8 +392,8 @@ add_action('wp_head', 'output_page_custom_css');
 
 function custom_uupgs_rewrite_rules() {
     add_rewrite_rule(
-        '^uupgs/([^/]+)/?$',
-        'index.php?pagename=uupgs&uupg_slug=$matches[1]',
+        '^discover/([^/]+)/?$',
+        'index.php?pagename=discover&uupg_slug=$matches[1]',
         'top'
     );
 }
@@ -408,7 +409,7 @@ add_filter('query_vars', 'custom_uupgs_query_vars');
 function custom_uupgs_template($template) {
     $uupg_slug = get_query_var('uupg_slug');
 
-    if ($uupg_slug && is_page('uupgs')) {
+    if ($uupg_slug && is_page('discover')) {
         $custom_template = locate_template('template-uupg-detail.php');
         if ($custom_template) {
             return $custom_template;

@@ -9,14 +9,14 @@
 
         // Mobile menu toggle
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const mainNavigation = document.querySelector('.main-navigation');
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
 
         if (mobileMenuToggle) {
             mobileMenuToggle.addEventListener('click', function(e) {
                 e.preventDefault();
-                this.classList.toggle('active');
-                if (mainNavigation) {
-                    mainNavigation.classList.toggle('mobile-active');
+                this.classList.toggle('open');
+                if (hamburgerMenu) {
+                    hamburgerMenu.dataset.state = hamburgerMenu.dataset.state === 'open' ? 'closed' : 'open';
                 }
             });
         }
@@ -41,8 +41,8 @@
                 if (mobileMenuToggle) {
                     mobileMenuToggle.classList.remove('active');
                 }
-                if (mainNavigation) {
-                    mainNavigation.classList.remove('mobile-active');
+                if (hamburgerMenu) {
+                    hamburgerMenu.classList.remove('mobile-active');
                 }
                 const openMenuItems = document.querySelectorAll('.menu-item-has-children.mobile-open');
                 openMenuItems.forEach(function(item) {

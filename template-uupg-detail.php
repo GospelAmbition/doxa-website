@@ -20,7 +20,7 @@ get_header( 'top' ); ?>
             <!-- Custom content for UUPGS page goes here -->
             <h1 class="text-center"><?php echo __('Find a UUPG to adopt', 'doxa-website'); ?></h1>
             <div class="stack stack--lg">
-                <a class="button back-button compact" href="<?php echo home_url('/uupgs'); ?>"><?php echo __('< Back', 'doxa-website'); ?></a>
+                <a class="button back-button compact" href="<?php echo home_url('/discover'); ?>"><?php echo __('< Back', 'doxa-website'); ?></a>
                 <div class="surface">
                     <div class="stack stack--2xl">
                         <div class="uupg__card">
