@@ -103,8 +103,7 @@ export class UupgsList extends LitElement {
     }
 
     getUUPGs({ search = this.searchTerm, sort = this.sort, per_page = this.per_page, page = this.page } = {}) {
-
-        const uupgAPIUrl = 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
+        const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
 
         const url = new URL(uupgAPIUrl);
         if (search.length) {
@@ -136,6 +135,11 @@ export class UupgsList extends LitElement {
             .finally(() => {
                 this.loading = false;
             });
+    }
+
+    isDevelopment() {
+        const url = new URL(window.location.href);
+        return url.hostname.includes('localhost') || url.hostname.includes('doxa.test');
     }
 
     protected createRenderRoot(): HTMLElement | DocumentFragment {
