@@ -2,20 +2,20 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
-  root: resolve(__dirname, 'assets/styles'),
   base: './',
   build: {
-    outDir: resolve(__dirname, 'assets/styles/dist'),
+    outDir: resolve(__dirname, 'assets/dist'),
     emptyOutDir: true,
+    modulePreload: false,
     rollupOptions: {
-      input: resolve(__dirname, 'assets/styles/src/main.scss'),
+      input: [
+        resolve(__dirname, 'assets/styles/src/main.scss'),
+        resolve(__dirname, 'js/components/src/main.ts'),
+      ],
       output: {
-        assetFileNames: (assetInfo) => {
-          if (assetInfo.name && assetInfo.name.endsWith('.css')) {
-            return 'main.css';
-          }
-          return assetInfo.name || '[name].[ext]';
-        },
+        entryFileNames: `[name].js`,
+        chunkFileNames: `[name].js`,
+        assetFileNames: `[name].[ext]`,
       },
     },
     cssCodeSplit: false,

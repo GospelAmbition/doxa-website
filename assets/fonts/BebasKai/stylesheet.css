@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url('BebasKai.eot');
+    src: url('BebasKai.eot?#iefix') format('embedded-opentype'),
+        url('BebasKai.woff2') format('woff2'),
+        url('BebasKai.woff') format('woff'),
+        url('BebasKai.ttf') format('truetype'),
+        url('BebasKai.svg#BebasKai') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,51 +1,76 @@
+// Abstract Color Tokens
+// Raw color values extracted from design
+
+// Primary Palette
+$color-green-50: #92b195;
+$color-green-300: #6d766e;
+$color-green-400: #4e594f;
+$color-green-500: #3b463d;
+$color-green-600: #2a332a;
+
+
+// Secondary Palette
+$color-beige-50: #F3F3F1;
+$color-beige-200: #d1d4cd;
+$color-beige-300: #cbc5b9;
+$color-beige-500: #b4ada3;
+$color-beige-600: #a59d92;
+
+// Neutral Grays
+$color-gray-50: #fff;
+$color-gray-100: #f8f9fa;
+$color-gray-200: #f0f0f0;
+$color-gray-300: #e1e5e9;
+$color-gray-400: #bdc3c7;
+$color-gray-500: #666;
+$color-gray-600: #555;
+$color-gray-700: #444;
+$color-gray-800: #333;
+$color-gray-900: #2c3e50;
+
+$color-white: #fff;
+$color-black: #1F1F1F;
+
+// Error/Alert Colors
+$color-red-500: #e74c3c;
+$color-red-600: #bd1218;
+
 // Semantic Color Tokens
 // Context-aware color mappings from abstract tokens
-
-@use '../abstract/colors';
-
-// Brand Colors
-$color-brand-primary: colors.$color-green-500;
-$color-brand-primary-light: colors.$color-green-400;
-$color-brand-primary-dark: colors.$color-green-600;
-$color-brand-secondary: colors.$color-beige-300;
-$color-brand-secondary-light: colors.$color-beige-50;
-$color-brand-secondary-dark: colors.$color-beige-600;
-
-// Surface Colors
-$color-surface-primary: colors.$color-beige-50;
-$color-surface-secondary: colors.$color-green-600;
-
-// Text Colors
-$color-text-primary: colors.$color-black;
-$color-text-secondary: colors.$color-beige-50;
-
-// Status Colors
-$color-status-error: colors.$color-red-500;
-$color-status-error-dark: colors.$color-red-600;
-$color-status-success: colors.$color-green-50;
-$color-status-warning: colors.$color-beige-500;
 
 // CSS Custom Properties
 :root {
   // Brand
-  --color-brand-primary: #{$color-brand-primary};
-  --color-brand-primary-light: #{$color-brand-primary-light};
-  --color-brand-primary-dark: #{$color-brand-primary-dark};
-  --color-brand-secondary: #{$color-brand-secondary};
-  --color-brand-secondary-light: #{$color-brand-secondary-light};
-  --color-brand-secondary-dark: #{$color-brand-secondary-dark};
+  --color-brand: #{$color-green-500};
+  --color-brand-lighter: #{$color-green-300};
+  --color-brand-light: #{$color-green-400};
+  --color-brand-dark: #{$color-green-600};
+  --color-brand-primary: #{$color-green-50};
+  --color-brand-secondary: #{$color-beige-300};
+  --color-brand-secondary-light: #{$color-beige-200};
+  --color-brand-secondary-very-light: #{$color-beige-50};
+  --color-brand-secondary-dark: #{$color-beige-600};
 
   // Surface
-  --color-surface-primary: #{$color-surface-primary};
-  --color-surface-secondary: #{$color-surface-secondary};
+  --color-surface-primary: #{$color-beige-50};
+  --color-surface-secondary: #{$color-green-600};
+  --color-surface-secondary-light: #{$color-beige-200};
+  --color-surface-secondary-lighter: #{$color-green-300};
+  --color-surface-white: #{$color-white};
 
   // Text
-  --color-text-primary: #{$color-text-primary};
-  --color-text-secondary: #{$color-text-secondary};
+  --color-text-primary: #{$color-green-600};
+  --color-text-secondary: #{$color-beige-50};
+  --color-text-secondary-light: #{$color-green-600};
+  --color-text-secondary-lighter: #{$color-beige-50};
+  --color-text-on-white: #{$color-green-600};
 
   // Status
-  --color-status-error: #{$color-status-error};
-  --color-status-error-dark: #{$color-status-error-dark};
-  --color-status-success: #{$color-status-success};
-  --color-status-warning: #{$color-status-warning};
+  --color-status-error: #{$color-red-500};
+  --color-status-error-dark: #{$color-red-600};
+  --color-status-success: #{$color-green-50};
+  --color-status-warning: #{$color-beige-500};
+
+  // forms
+  --input-border-color: #{$color-gray-500};
 }

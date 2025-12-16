@@ -1,0 +1,76 @@
+.surface {
+    --card-background-color: var(--color-surface-white);
+    --card-text-color: var(--color-text-on-white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-4xl);
+    color: var(--card-text-color);
+    background-color: var(--card-background-color);
+}
+.card {
+    --card-background-color: var(--color-surface-white);
+    --card-text-color: var(--color-text-on-white);
+    border-radius: var(--border-radius-xlg);
+    padding: var(--spacing-2xl) var(--spacing-3xl);
+    color: var(--card-text-color);
+    background-color: var(--card-background-color);
+}
+
+.card[data-variant="primary"] {
+    --card-background-color: var(--color-surface-primary);
+    --card-text-color: var(--color-text-primary);
+}
+.card[data-variant="secondary"] {
+    --card-background-color: var(--color-surface-secondary);
+    --card-text-color: var(--color-text-secondary);
+}
+.card[data-variant="secondary-light"] {
+    --card-background-color: var(--color-surface-secondary-light);
+    --card-text-color: var(--color-text-secondary-light);
+}
+.card[data-variant="secondary-lighter"] {
+    --card-background-color: var(--color-surface-secondary-lighter);
+    --card-text-color: var(--color-text-secondary-lighter);
+}
+.uupg__card {
+    display: grid;
+    grid-template-areas: "image header adopted"
+                        "image content content"
+                        "footer footer footer-right";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto auto;
+    gap: var(--spacing-2xl);
+}
+
+.uupg__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    grid-area: image;
+    border-radius: var(--border-radius-sm);
+}
+.uupg__image[data-size="medium"] {
+    width: 200px;
+    height: 200px;
+}
+
+.uupg__header {
+    grid-area: header;
+}
+
+.uupg_adopted {
+    grid-area: adopted;
+}
+
+.uupg__content {
+    display: none;
+    grid-area: content;
+}
+
+.uupg__more-button {
+    grid-area: footer;
+    align-self: flex-end;
+}
+
+.uupg__footer {
+    grid-area: footer;
+}

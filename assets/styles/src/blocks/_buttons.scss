@@ -1,0 +1,47 @@
+.wp-block-button__link,
+.button {
+    --button-text-color: var(--color-text-secondary);
+    --button-background-color: var(--color-brand-primary);
+    --button-text-color-hover: var(--color-text-secondary);
+    --button-background-color-hover: var(--color-brand-dark);
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    padding: var(--spacing-sm) var(--spacing-4xl);
+    color: var(--button-text-color);
+    background-color: var(--button-background-color);
+    border-radius: 100px;
+    border: none;
+    text-transform: uppercase;
+    line-height: var(--line-height-none);
+    transition: background-color, color 0.3s ease;
+}
+
+.wp-block-button__link:focus,
+.wp-block-button__link:active,
+.wp-block-button__link:hover,
+.button:focus,
+.button:active,
+.button:hover {
+    color: var(--button-text-color-hover, 'inherit');
+    background-color: var(--button-background-color-hover);
+}
+
+.button.filter-button {
+    --button-text-color: var(--color-text-secondary);
+    --button-background-color: var(--color-brand-lighter);
+    --button-background-color-hover: var(--color-brand-secondary-dark);
+}
+
+.button.back-button {
+    --button-text-color: var(--color-brand);
+    --button-background-color: var(--color-brand-secondary-light);
+    --button-text-color-hover: var(--color-brand-secondary-very-light);
+    --button-background-color-hover: var(--color-brand);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.button.compact {
+    padding: var(--spacing-sm) var(--spacing-2xl);
+}

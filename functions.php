@@ -30,6 +30,7 @@ function gospel_ambition_setup() {
     // Register navigation menus
     register_nav_menus(array(
         'primary' => esc_html__('Primary Menu', 'gospel-ambition'),
+        'secondary' => esc_html__('Secondary Menu', 'gospel-ambition'),
         'footer' => esc_html__('Footer Menu', 'gospel-ambition'),
     ));
 
@@ -51,14 +52,20 @@ function gospel_ambition_scripts() {
     $theme_version = wp_get_theme()->get('Version');
 
     // Enqueue theme stylesheet
-    wp_enqueue_style('gospel-ambition-style', get_template_directory_uri() . '/assets/styles/dist/main.css', array(), filemtime(get_template_directory() . '/assets/styles/dist/main.css'));
+    wp_enqueue_style('bebas-kai-font', get_template_directory_uri() . '/assets/fonts/BebasKai/stylesheet.css', array(), filemtime(get_template_directory() . '/assets/fonts/BebasKai/stylesheet.css'));
+    wp_enqueue_style('gospel-ambition-style', get_template_directory_uri() . '/assets/dist/style.css', array(), filemtime(get_template_directory() . '/assets/dist/style.css'));
 
     // Enqueue Google Fonts
     wp_enqueue_style('gospel-ambition-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), null);
 
     // Enqueue theme JavaScript
-    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array('jquery'), $theme_version, true);
+    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array(), $theme_version, true);
 
+    // unenqueue jquery
+    wp_dequeue_script('jquery');
+    if ( is_page('discover') ) {
+        wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
+    }
 
 }
 add_action('wp_enqueue_scripts', 'gospel_ambition_scripts');
@@ -382,3 +389,197 @@ function output_page_custom_css() {
     }
 }
 add_action('wp_head', 'output_page_custom_css');
+
+function custom_uupgs_rewrite_rules() {
+    add_rewrite_rule(
+        '^discover/([^/]+)/?$',
+        'index.php?pagename=discover&uupg_slug=$matches[1]',
+        'top'
+    );
+}
+add_action('init', 'custom_uupgs_rewrite_rules');
+
+// Register the query variable
+function custom_uupgs_query_vars($vars) {
+    $vars[] = 'uupg_slug';
+    return $vars;
+}
+add_filter('query_vars', 'custom_uupgs_query_vars');
+
+function custom_uupgs_template($template) {
+    $uupg_slug = get_query_var('uupg_slug');
+
+    if ($uupg_slug && is_page('discover')) {
+        $custom_template = locate_template('template-uupg-detail.php');
+        if ($custom_template) {
+            return $custom_template;
+        }
+    }
+
+    return $template;
+}
+add_filter('template_include', 'custom_uupgs_template');
+
+function get_uupg_by_post_id( $post_id ) {
+    $site_url = get_site_url();
+
+
+    $site_parts = explode('://', $site_url);
+    $site_domain = $site_parts[1];
+    $protocol = $site_parts[0];
+    $api_url = $protocol . '://' . 'uupg.' . $site_domain . '/wp-json/dt-public/disciple-tools-people-groups-api/v1/';
+    $api_url = $api_url . 'detail/' . $post_id;
+
+    $response = wp_remote_get($api_url);
+    if (is_wp_error($response)) {
+        return [
+            'api_url' => $api_url,
+            'response' => $response,
+        ];
+    }
+    $data = json_decode($response['body'], true);
+
+    return $data;
+}
+
+function doxa_get_wagf_regions() {
+    return [
+        [
+            'value' => 'africa',
+            'label' => __( 'Africa', 'doxa-website' )
+        ],
+        [
+            'value' => 'asia',
+            'label' => __( 'Asia', 'doxa-website' )
+        ],
+        [
+            'value' => 'europe',
+            'label' => __( 'Europe', 'doxa-website' )
+        ],
+        [
+            'value' => 'latin_america_&_caribbean',
+            'label' => __( 'Latin America & Caribbean', 'doxa-website' )
+        ],
+        [
+            'value' => 'middle_east',
+            'label' => __( 'Middle East', 'doxa-website' )
+        ],
+        [
+            'value' => 'na',
+            'label' => __( 'N/A', 'doxa-website' )
+        ],
+        [
+            'value' => 'north_america_&_non-spanish_caribbean',
+            'label' => __( 'North America & Non-Spanish Caribbean', 'doxa-website' )
+        ],
+        [
+            'value' => 'oceania',
+            'label' => __( 'Oceania', 'doxa-website' )
+        ]
+    ];
+}
+
+function doxa_get_wagf_blocks() {
+    return [
+        [
+            'value' =>  'andean',
+            'label' =>  __( 'Andean', 'doxa-website' )
+        ],
+        [
+            'value' =>  'brazil',
+            'label' =>  __( 'Brazil', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_africa',
+            'label' =>  __( 'Central Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_america',
+            'label' =>  __( 'Central America', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_asia',
+            'label' =>  __( 'Central Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'central_europe',
+            'label' =>  __( 'Central Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'east_africa',
+            'label' =>  __( 'East Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'east_europe',
+            'label' =>  __( 'East Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'islands_of_east_africa',
+            'label' =>  __( 'Islands of East Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'mexico_&_latin_america',
+            'label' =>  __( 'Mexico & Latin America', 'doxa-website' )
+        ],
+        [
+            'value' =>  'middle_east',
+            'label' =>  __( 'Middle East', 'doxa-website' )
+        ],
+        [
+            'value' =>  'na',
+            'label' =>  __( 'N/A', 'doxa-website' )
+        ],
+        [
+            'value' =>  'non-spanish_caribbean',
+            'label' =>  __( 'Non-Spanish Caribbean', 'doxa-website' )
+        ],
+        [
+            'value' =>  'north_asia',
+            'label' =>  __( 'North Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'north_east_asia',
+            'label' =>  __( 'North East Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'north_europe',
+            'label' =>  __( 'North Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'oceania',
+            'label' =>  __( 'Oceania', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_asia',
+            'label' =>  __( 'South Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_cone',
+            'label' =>  __( 'South Cone', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_east_asia',
+            'label' =>  __( 'South East Asia', 'doxa-website' )
+        ],
+        [
+            'value' =>  'south_europe',
+            'label' =>  __( 'South Europe', 'doxa-website' )
+        ],
+        [
+            'value' =>  'southern_africa',
+            'label' =>  __( 'Southern Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'the_balkans',
+            'label' =>  __( 'The Balkans', 'doxa-website' )
+        ],
+        [
+            'value' =>  'west_africa',
+            'label' =>  __( 'West Africa', 'doxa-website' )
+        ],
+        [
+            'value' =>  'west_europe',
+            'label' =>  __( 'West Europe', 'doxa-website' )
+        ]
+    ];
+}

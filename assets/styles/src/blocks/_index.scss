@@ -4,8 +4,10 @@
 
 // Blocks will be organized here as components are created
 // Example structure:
-// @import 'header';
-// @import 'footer';
-// @import 'navigation';
-// @import 'button';
-// etc.
+@use 'buttons';
+@use 'cards';
+@use 'filters';
+@use 'footer';
+@use 'form';
+@use 'header';
+@use 'progress-bar';

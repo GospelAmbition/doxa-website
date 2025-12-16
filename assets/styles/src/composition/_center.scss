@@ -6,8 +6,8 @@
   box-sizing: content-box;
   margin-inline: auto;
   max-inline-size: var(--center-max-width, 65ch);
-  padding-inline-start: var(--spacing-comfortable-md, 1rem);
-  padding-inline-end: var(--spacing-comfortable-md, 1rem);
+  padding-inline-start: var(--spacing-lg, 1rem);
+  padding-inline-end: var(--spacing-lg, 1rem);
 }
 
 // Center variants with different max-widths
