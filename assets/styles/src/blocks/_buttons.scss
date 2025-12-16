@@ -1,3 +1,4 @@
+.wp-block-button__link,
 .button {
     --button-text-color: var(--color-text-secondary);
     --button-background-color: var(--color-brand-primary);
@@ -16,6 +17,9 @@
     transition: background-color, color 0.3s ease;
 }
 
+.wp-block-button__link:focus,
+.wp-block-button__link:active,
+.wp-block-button__link:hover,
 .button:focus,
 .button:active,
 .button:hover {
