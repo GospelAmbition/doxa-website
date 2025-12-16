@@ -1,5 +1,5 @@
 <footer id="colophon" class="footer">
-    <div class="container footer__content">
+    <div class="container | footer__content">
         <div class="footer__left stack stack--xs">
             <div>
                 <img
@@ -10,11 +10,8 @@
                     height="auto"
                 >
             </div>
-            <div class="footer__copyright">
-                <p>&copy; <?php echo esc_html(date('Y')); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
-            </div>
         </div>
-        <div>
+        <div class="footer__center">
             <div class="footer__description">
                 <h3><?php bloginfo('name'); ?></h3>
                 <p>Global Partnership for the Unreached</p>
@@ -28,6 +25,7 @@
                 ));
                 ?>
             </nav>
+
         </div>
 
         <div class="footer__right">
@@ -39,7 +37,8 @@
             <?php endif; ?>
 
         </div>
-
-
+    </div>
+    <div class="center | footer__copyright">
+        <p>&copy; <?php echo esc_html(date('Y')); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
     </div>
 </footer>
