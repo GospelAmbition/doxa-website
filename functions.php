@@ -59,7 +59,7 @@ function gospel_ambition_scripts() {
     wp_enqueue_style('gospel-ambition-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap', array(), null);
 
     // Enqueue theme JavaScript
-    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array(), $theme_version, true);
+    wp_enqueue_script('gospel-ambition-script', get_template_directory_uri() . '/js/theme.js', array(), filemtime(get_template_directory() . '/js/theme.js'), true);
 
     // unenqueue jquery
     wp_dequeue_script('jquery');
