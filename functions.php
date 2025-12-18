@@ -48,11 +48,10 @@ add_action('after_setup_theme', 'gospel_ambition_setup');
  * Enqueue scripts and styles
  */
 function gospel_ambition_scripts() {
-    // Get theme version from style.css
-    $theme_version = wp_get_theme()->get('Version');
-
     // Enqueue theme stylesheet
-    wp_enqueue_style('bebas-kai-font', get_template_directory_uri() . '/assets/fonts/BebasKai/stylesheet.css', array(), filemtime(get_template_directory() . '/assets/fonts/BebasKai/stylesheet.css'));
+    wp_enqueue_style('bebas-neue-font', get_template_directory_uri() . '/assets/fonts/BebasNeue/stylesheet.css', array(), filemtime(get_template_directory() . '/assets/fonts/BebasNeue/stylesheet.css'));
+    wp_enqueue_style('brandon-grotesque-font', get_template_directory_uri() . '/assets/fonts/Brandon_Grotesque/stylesheet.css', array(), filemtime(get_template_directory() . '/assets/fonts/Brandon_Grotesque/stylesheet.css'));
+    wp_enqueue_style('poppins-font', get_template_directory_uri() . '/assets/fonts/Poppins/stylesheet.css', array(), filemtime(get_template_directory() . '/assets/fonts/Poppins/stylesheet.css'));
     wp_enqueue_style('gospel-ambition-style', get_template_directory_uri() . '/assets/dist/style.css', array(), filemtime(get_template_directory() . '/assets/dist/style.css'));
 
     // Enqueue Google Fonts
@@ -63,7 +62,7 @@ function gospel_ambition_scripts() {
 
     // unenqueue jquery
     wp_dequeue_script('jquery');
-    if ( is_page('discover') ) {
+    if ( is_page('research') ) {
         wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
     }
 
@@ -392,8 +391,8 @@ add_action('wp_head', 'output_page_custom_css');
 
 function custom_uupgs_rewrite_rules() {
     add_rewrite_rule(
-        '^discover/([^/]+)/?$',
-        'index.php?pagename=discover&uupg_slug=$matches[1]',
+        '^research/([^/]+)/?$',
+        'index.php?pagename=research&uupg_slug=$matches[1]',
         'top'
     );
 }
@@ -409,7 +408,7 @@ add_filter('query_vars', 'custom_uupgs_query_vars');
 function custom_uupgs_template($template) {
     $uupg_slug = get_query_var('uupg_slug');
 
-    if ($uupg_slug && is_page('discover')) {
+    if ($uupg_slug && is_page('research')) {
         $custom_template = locate_template('template-uupg-detail.php');
         if ($custom_template) {
             return $custom_template;

@@ -25,7 +25,7 @@ const D=globalThis,V=D.ShadowRoot&&(D.ShadyCSS===void 0||D.ShadyCSS.nativeShadow
                                 </div>
                                 <div class="uupg_adopted"></div>
                                 <p class="uupg__content">${r.location_description}</p>
-                                <a class="uupg__more-button button compact" href="${"/discover/"+r.id}">${this.t.full_profile}</a>
+                                <a class="uupg__more-button button compact" href="${"/research/"+r.id}">${this.t.full_profile}</a>
                             </div>
                         `)}
                         ${this.loading?M`<div class="loading">${this.t.loading}</div>`:""}

@@ -1,0 +1,54 @@
+{
+    "version": 1,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Brand Dark",
+                    "slug": "brand-dark",
+                    "color": "#2a332a"
+                },
+                {
+                    "name": "Brand",
+                    "slug": "brand",
+                    "color": "#3b463d"
+                },
+                {
+                    "name": "Brand Light",
+                    "slug": "brand-light",
+                    "color": "#4e594f"
+                },
+                {
+                    "name": "Brand Lighter",
+                    "slug": "brand-lighter",
+                    "color": "#6d766e"
+                },
+                {
+                    "name": "Primary",
+                    "slug": "primary",
+                    "color": "#92b195"
+                },
+                {
+                    "name": "Secondary",
+                    "slug": "secondary",
+                    "color": "#d1d4cd"
+                },
+                {
+                    "name": "Secondary Light",
+                    "slug": "secondary light",
+                    "color": "#F3F3F1"
+                },
+                {
+                    "name": "Doxa White",
+                    "slug": "doxa-white",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Doxa Black",
+                    "slug": "doxa-black",
+                    "color": "#1F1F1F"
+                }
+            ]
+        }
+    }
+}

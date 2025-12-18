@@ -6,14 +6,15 @@
     --button-background-color-hover: var(--color-brand-dark);
     display: block;
     width: fit-content;
-    text-decoration: none;
     padding: var(--spacing-sm) var(--spacing-4xl);
     color: var(--button-text-color);
     background-color: var(--button-background-color);
     border-radius: 100px;
     border: none;
-    text-transform: uppercase;
     line-height: var(--line-height-none);
+    font-family: var(--font-family-buttons);
+    text-decoration: none;
+    text-transform: uppercase;
     transition: background-color, color 0.3s ease;
 }
 
