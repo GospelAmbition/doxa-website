@@ -2,10 +2,10 @@
 
 @use 'sass:math';
 
-$base: 8;
+$base: 1;
 
 // modular scale
-$major-third: 1.25;
+$major-third: 1.33;
 
 $density: $major-third;
 $modular-sm: $base * $density;
@@ -36,26 +36,26 @@ $linear-800: $base * 8;
 
 // Semantic Spacing Tokens
 :root {
-  --spacing-base: #{$base}px;
-  --spacing-3xs: #{$modular-3xs}px;
-  --spacing-2xs: #{$modular-2xs}px;
-  --spacing-xs: #{$modular-xs}px;
-  --spacing-sm: #{$modular-sm}px;
-  --spacing-md: #{$modular-md}px;
-  --spacing-lg: #{$modular-lg}px;
-  --spacing-xl: #{$modular-xl}px;
-  --spacing-2xl: #{$modular-2xl}px;
-  --spacing-3xl: #{$modular-3xl}px;
-  --spacing-4xl: #{$modular-4xl}px;
-  --spacing-5xl: #{$modular-5xl}px;
+  --spacing-base: #{$base}rem;
+  --spacing-3xs: #{$modular-3xs}rem;
+  --spacing-2xs: #{$modular-2xs}rem;
+  --spacing-xs: #{$modular-xs}rem;
+  --spacing-sm: #{$modular-sm}rem;
+  --spacing-md: #{$modular-md}rem;
+  --spacing-lg: #{$modular-lg}rem;
+  --spacing-xl: #{$modular-xl}rem;
+  --spacing-2xl: #{$modular-2xl}rem;
+  --spacing-3xl: #{$modular-3xl}rem;
+  --spacing-4xl: #{$modular-4xl}rem;
+  --spacing-5xl: #{$modular-5xl}rem;
 
-  --spacing-0: #{$linear-0}px;
-  --spacing-25: #{$linear-25}px;
-  --spacing-50: #{$linear-50}px;
-  --spacing-100: #{$linear-100}px;
-  --spacing-200: #{$linear-200}px;
-  --spacing-300: #{$linear-300}px;
-  --spacing-400: #{$linear-400}px;
-  --spacing-500: #{$linear-500}px;
-  --spacing-600: #{$linear-600}px;
+  --spacing-0: #{$linear-0}rem;
+  --spacing-25: #{$linear-25}rem;
+  --spacing-50: #{$linear-50}rem;
+  --spacing-100: #{$linear-100}rem;
+  --spacing-200: #{$linear-200}rem;
+  --spacing-300: #{$linear-300}rem;
+  --spacing-400: #{$linear-400}rem;
+  --spacing-500: #{$linear-500}rem;
+  --spacing-600: #{$linear-600}rem;
 }

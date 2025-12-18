@@ -131,3 +131,21 @@
 .layer-10 {
   z-index: 10000;
 }
+
+/* Colours */
+
+.color-primary {
+  color: var(--color-brand-primary);
+}
+
+.color-brand {
+  color: var(--color-brand);
+}
+
+.color-brand-light {
+  color: var(--color-brand-light);
+}
+
+.color-brand-dark {
+  color: var(--color-brand-dark);
+}

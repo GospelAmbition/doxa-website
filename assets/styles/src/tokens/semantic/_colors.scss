@@ -59,7 +59,7 @@ $color-red-600: #bd1218;
   --color-surface-white: #{$color-white};
 
   // Text
-  --color-text-primary: #{$color-green-600};
+  --color-text-primary: var(--color-brand-dark);
   --color-text-secondary: #{$color-beige-50};
   --color-text-secondary-light: #{$color-green-600};
   --color-text-secondary-lighter: #{$color-beige-50};

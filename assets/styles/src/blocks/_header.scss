@@ -1,7 +1,7 @@
 .header {
     background-color: var(--color-brand);
     color: var(--color-text-secondary);
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-lg) 0;
     position: relative;
     z-index: 1500;
 }
@@ -101,7 +101,6 @@
     font-weight: var(--font-weight-medium);
     transition: color 0.3s ease;
     display: block;
-    padding: var(--spacing-lg) 0;
 }
 .hamburger-menu a {
     color: var(--color-text-primary);

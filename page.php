@@ -46,7 +46,7 @@ get_header( 'top' ); ?>
                                     ?>
                                     <h2 class="sidebar-title">
                                         <a href="<?php echo esc_url(get_permalink($menu_parent_id)); ?>"
-                                           class="<?php echo ($current_page_id === $menu_parent_id) ? 'current-page' : ''; ?>">
+                                            class="<?php echo ($current_page_id === $menu_parent_id) ? 'current-page' : ''; ?>">
                                             <?php echo esc_html($parent_page->post_title); ?>
                                         </a>
                                     </h2>

@@ -102,5 +102,41 @@
         window.addEventListener('resize', animateOnScroll);
         animateOnScroll();
 
+        // style changes
+        const highlightFirstAndLast = document.querySelectorAll('.highlight-first.highlight-last');
+        highlightFirstAndLast.forEach(function(item) {
+            const words = item.textContent.split(' ');
+            const firstWord = words[0];
+            const lastWord = words[words.length - 1];
+            const restWords = words.slice(1, words.length - 1);
+            const newInnerHTML = [
+                `<span class="color-primary">${firstWord}</span>`,
+                ...restWords,
+                `<span class="color-primary">${lastWord}</span>`,
+            ]
+            item.innerHTML = newInnerHTML.join(' ');
+        });
+        const highlightFirst = document.querySelectorAll('.highlight-first:not(.highlight-last)');
+        highlightFirst.forEach(function(item) {
+            const words = item.textContent.split(' ');
+            const firstWord = words[0];
+            const restWords = words.slice(1);
+            const newInnerHTML = [
+                `<span class="color-primary">${firstWord}</span>`,
+                ...restWords,
+            ]
+            item.innerHTML = newInnerHTML.join(' ');
+        });
+        const highlightLast = document.querySelectorAll('.highlight-last:not(.highlight-first)');
+        highlightLast.forEach(function(item) {
+            const words = item.textContent.split(' ');
+            const lastWord = words[words.length - 1];
+            const restWords = words.slice(0, words.length - 1);
+            const newInnerHTML = [
+                ...restWords,
+                `<span class="color-primary">${lastWord}</span>`,
+            ]
+            item.innerHTML = newInnerHTML.join(' ');
+        });
     });
 })();
