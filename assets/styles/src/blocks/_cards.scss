@@ -31,6 +31,54 @@
     --card-background-color: var(--color-surface-brand-lighter);
     --card-text-color: var(--color-text-on-brand-lighter);
 }
+
+.step-card {
+    position: relative;
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--color-brand-light);
+    background-color: var(--color-surface-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: center;
+    justify-content: space-between;
+    min-width: 275px;
+}
+
+.step-card__number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(30%, 30%);
+    background-color: var(--color-surface-brand-light);
+    color: var(--color-text-on-brand-light);
+    border-radius: 100px;
+    aspect-ratio: 1/1;
+    width: 40px;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-heading);
+    padding-top: 0.2rem;
+}
+
+.step-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step-card__title {
+    margin-top: var(--spacing-xl)
+}
+
 .uupg__card {
     display: grid;
     grid-template-areas: "image header adopted"

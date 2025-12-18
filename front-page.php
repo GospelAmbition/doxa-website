@@ -21,12 +21,42 @@ get_header( 'top' ); ?>
                     <img src="https://placehold.co/1200x600" alt="<?php echo __('Engage every people by 2033', 'doxa-website'); ?>">
                 </div>
             </section>
-            <section class="stack stack--md | surface-brand">
+            <section class="stack stack--md | surface-brand-light">
                 <div class="container stack stack--xl">
                     <h2 class="highlight-first"><?php echo sprintf( __( '%s unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
                     <p class="subtext">
                         <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
                     </p>
+                    <div class="reel">
+                        Reel big images going here
+                    </div>
+                    <h2 class="highlight-last"><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
+                    <div class="switcher | gap-md">
+                        <div class="step-card">
+                            <div class="step-card__number">1</div>
+                            <div class="step-card__content">
+                                <h2 class="step-card__title"><?php echo __('Pray', 'doxa-website'); ?></h2>
+                                <p><?php echo __('Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples.', 'doxa-website'); ?></p>
+                            </div>
+                            <a href="/pray" class="button | compact"><?php echo __('Join', 'doxa-website'); ?></a>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-card__number">2</div>
+                            <div class="step-card__content">
+                                <h2 class="step-card__title"><?php echo __('Adopt', 'doxa-website'); ?></h2>
+                                <p><?php echo __('Churches and networks take ownership - praying, giving and preparing the way for gospel workers.', 'doxa-website'); ?></p>
+                            </div>
+                            <a href="/adopt" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
+                        </div>
+                        <div class="step-card">
+                            <div class="step-card__number">3</div>
+                            <div class="step-card__content">
+                                <h2 class="step-card__title"><?php echo __('Engage', 'doxa-website'); ?></h2>
+                                <p><?php echo __('God raises up men and women to go, serve, and proclaim Christ among the nations', 'doxa-website'); ?></p>
+                            </div>
+                            <a href="/engage" class="button | compact"><?php echo __('Go', 'doxa-website'); ?></a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

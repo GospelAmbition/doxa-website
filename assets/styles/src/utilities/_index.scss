@@ -102,6 +102,11 @@
   color: var(--color-text-on-brand);
 }
 
+.surface-brand-light {
+  background-color: var(--color-surface-brand-light);
+  color: var(--color-text-on-brand-light);
+}
+
 .surface-secondary {
   background-color: var(--color-surface-brand-dark);
   color: var(--color-text-on-brand-light);
@@ -164,4 +169,18 @@
 .subtext {
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
+}
+
+/* Spacing */
+
+.gap-xs {
+  gap: var(--spacing-xs);
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
 }
