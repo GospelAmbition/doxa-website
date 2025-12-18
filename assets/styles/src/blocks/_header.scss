@@ -86,6 +86,9 @@
     margin: 0;
     padding: 0;
 }
+.main-navigation ul li::before {
+    content: "";
+}
 
 .main-navigation li {
     position: relative;
