@@ -1,6 +1,6 @@
 .header {
-    background-color: var(--color-brand);
-    color: var(--color-text-secondary);
+    background-color: var(--color-surface-brand);
+    color: var(--color-text-on-brand-light);
     padding: var(--spacing-lg) 0;
     position: relative;
     z-index: 1500;
@@ -97,13 +97,13 @@
 .hamburger-menu a,
 .main-navigation a {
     text-decoration: none;
-    color: var(--color-text-secondary);
+    color: var(--color-text-on-brand-light);
     font-weight: var(--font-weight-medium);
     transition: color 0.3s ease;
     display: block;
 }
 .hamburger-menu a {
-    color: var(--color-text-primary);
+    color: var(--color-text-on-default);
 }
 
 .hamburger-menu a:hover,
@@ -123,7 +123,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--color-surface-primary);
+    background: var(--color-surface-default);
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     border-radius: 5px;
     min-width: 200px;
@@ -145,13 +145,13 @@
 
 .main-navigation .sub-menu a {
     padding: var(--spacing-lg) var(--spacing-2xl);
-    color: var(--color-text-primary);
+    color: var(--color-text-on-default);
     border-bottom: none;
 }
 
 .main-navigation .sub-menu a:hover {
     background: var(--color-brand-secondary);
-    color: var(--color-text-primary);
+    color: var(--color-text-on-default);
 }
 
 /* Menu indicators */
@@ -175,7 +175,7 @@
     right: 0;
     transform: translateY(-100%);
 
-    background: var(--color-surface-primary);
+    background: var(--color-surface-default);
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     padding: var(--spacing-lg) 0;
     z-index: 1000;

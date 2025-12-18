@@ -29,11 +29,11 @@
 
 // Color utilities
 .text-primary {
-  color: var(--color-text-primary);
+  color: var(--color-text-on-default);
 }
 
 .text-secondary {
-  color: var(--color-text-secondary);
+  color: var(--color-text-on-brand-light);
 }
 
 .text-uppercase {
@@ -41,10 +41,10 @@
 }
 
 .text-link {
-  color: var(--color-text-link);
+  color: var(--color-text-on-link);
 
   &:hover {
-    color: var(--color-text-link-hover);
+    color: var(--color-text-on-link-hover);
   }
 }
 
@@ -93,22 +93,27 @@
 }
 
 // Background utilities
-.bg-primary {
-  background-color: var(--color-surface-primary);
+.surface-primary {
+  background-color: var(--color-surface-default);
 }
 
-.bg-secondary {
-  background-color: var(--color-surface-secondary);
-  color: var(--color-text-secondary);
+.surface-brand {
+  background-color: var(--color-surface-brand);
+  color: var(--color-text-on-brand);
 }
 
-.bg-tertiary {
+.surface-secondary {
+  background-color: var(--color-surface-brand-dark);
+  color: var(--color-text-on-brand-light);
+}
+
+.surface-tertiary {
   background-color: var(--color-surface-tertiary);
 }
 
-.bg-inverse {
+.surface-inverse {
   background-color: var(--color-surface-inverse);
-  color: var(--color-text-inverse);
+  color: var(--color-text-on-inverse);
 }
 
 .mx-auto {
@@ -148,4 +153,15 @@
 
 .color-brand-dark {
   color: var(--color-brand-dark);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+/* Typography */
+
+.subtext {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
 }

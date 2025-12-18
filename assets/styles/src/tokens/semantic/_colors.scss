@@ -52,18 +52,22 @@ $color-red-600: #bd1218;
   --color-brand-secondary-dark: #{$color-beige-600};
 
   // Surface
-  --color-surface-primary: #{$color-beige-50};
-  --color-surface-secondary: #{$color-green-600};
+  --color-surface-default: #{$color-beige-50};
+  --color-surface-brand-dark: #{$color-green-600};
+  --color-surface-brand: #{$color-green-500};
+  --color-surface-brand-light: #{$color-green-400};
+  --color-surface-brand-lighter: #{$color-green-300};
   --color-surface-secondary-light: #{$color-beige-200};
-  --color-surface-secondary-lighter: #{$color-green-300};
   --color-surface-white: #{$color-white};
 
   // Text
-  --color-text-primary: var(--color-brand-dark);
-  --color-text-secondary: #{$color-beige-50};
-  --color-text-secondary-light: #{$color-green-600};
-  --color-text-secondary-lighter: #{$color-beige-50};
-  --color-text-on-white: #{$color-green-600};
+  --color-text-on-default: #{$color-green-600};
+  --color-text-on-brand-dark: #{$color-white};
+  --color-text-on-brand: #{$color-white};
+  --color-text-on-brand-light: #{$color-beige-50};
+  --color-text-on-brand-lighter: #{$color-beige-50};
+  --color-text-on-secondary-light: #{$color-green-600};
+  --color-text-on-on-white: #{$color-green-600};
 
   // Status
   --color-status-error: #{$color-red-500};
