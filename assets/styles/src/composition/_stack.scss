@@ -48,6 +48,14 @@
   margin-block-start: var(--spacing-3xl, 2rem);
 }
 
+.stack--4xl > * + * {
+  margin-block-start: var(--spacing-4xl, 2rem);
+}
+
+.stack--5xl > * + * {
+  margin-block-start: var(--spacing-5xl, 2rem);
+}
+
 .stack--none > * + * {
   margin-block-start: 0;
 }

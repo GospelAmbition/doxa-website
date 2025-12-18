@@ -138,5 +138,44 @@
             ]
             item.innerHTML = newInnerHTML.join(' ');
         });
+        function initSlideshow(slideshow) {
+            // Fade in
+            slideshow.classList.add("in");
+
+            // Auto scroll slideshow
+            setInterval(() => {
+                const firstImage = [...slideshow.children].reduce((prev, current) => (Number(prev.style.order) < Number(current.style.order)) ? prev : current);
+
+                // Move the first image back in queue when it's out of view
+                if (firstImage.width < slideshow.scrollLeft) {
+                    slideshow.scrollLeft = slideshow.scrollLeft - firstImage.width;
+                    firstImage.style.order = slideshow.children.length;
+                    for (const image of [...slideshow.children]) {
+                        if (image != firstImage) image.style.order = image.style.order-1;
+                    }
+                } else {
+                    slideshow.scrollLeft += 1;
+                }
+            }, 20);
+        }
+        (async () => {
+            // Using a for..of loop in case you want more slideshows on page.
+            for (const reel of [...document.querySelectorAll(".reel[data-reel-mode='auto-scroll']")]) {
+                const images = reel.querySelectorAll('img');
+                for (const image of [...images]) {
+                    await new Promise(resolve => {
+                        if (image.complete) resolve();
+                        else image.onload = resolve;
+                    });
+                }
+                let index = 0;
+                for (const child of [...reel.children]) {
+                    child.style.order = index;
+                    index++;
+                }
+
+                initSlideshow(reel);
+            }
+        })();
     });
 })();

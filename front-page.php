@@ -22,39 +22,82 @@ get_header( 'top' ); ?>
                 </div>
             </section>
             <section class="stack stack--md | surface-brand-light">
-                <div class="container stack stack--xl">
-                    <h2 class="highlight-first"><?php echo sprintf( __( '%s unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
-                    <p class="subtext">
-                        <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
-                    </p>
-                    <div class="reel">
-                        Reel big images going here
+                <div class="container stack stack--4xl">
+                    <div class="stack stack--2xl">
+                        <h2 class="highlight-first"><?php echo sprintf( __( '%s unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
+                        <p class="subtext">
+                            <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
+                        </p>
                     </div>
-                    <h2 class="highlight-last"><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
-                    <div class="switcher | gap-md">
-                        <div class="step-card">
-                            <div class="step-card__number">1</div>
-                            <div class="step-card__content">
-                                <h2 class="step-card__title"><?php echo __('Pray', 'doxa-website'); ?></h2>
-                                <p><?php echo __('Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples.', 'doxa-website'); ?></p>
-                            </div>
-                            <a href="/pray" class="button | compact"><?php echo __('Join', 'doxa-website'); ?></a>
+                    <div class="reel" data-reel-mode="auto-scroll">
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Gulf Bedouin', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Gulf Bedouin', 'doxa-website'); ?></p>
                         </div>
-                        <div class="step-card">
-                            <div class="step-card__number">2</div>
-                            <div class="step-card__content">
-                                <h2 class="step-card__title"><?php echo __('Adopt', 'doxa-website'); ?></h2>
-                                <p><?php echo __('Churches and networks take ownership - praying, giving and preparing the way for gospel workers.', 'doxa-website'); ?></p>
-                            </div>
-                            <a href="/adopt" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Bobo Madare', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Bobo Madare', 'doxa-website'); ?></p>
                         </div>
-                        <div class="step-card">
-                            <div class="step-card__number">3</div>
-                            <div class="step-card__content">
-                                <h2 class="step-card__title"><?php echo __('Engage', 'doxa-website'); ?></h2>
-                                <p><?php echo __('God raises up men and women to go, serve, and proclaim Christ among the nations', 'doxa-website'); ?></p>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Bosniak', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Bosniak', 'doxa-website'); ?></p>
+                        </div>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Chhipa', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Chhipa', 'doxa-website'); ?></p>
+                        </div>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Rtahu Amdo', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Rtahu Amdo', 'doxa-website'); ?></p>
+                        </div>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Eastern Maninka', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Eastern Maninka', 'doxa-website'); ?></p>
+                        </div>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Algerian', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Algerian', 'doxa-website'); ?></p>
+                        </div>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Hadrami Arab', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Hadrami Arab', 'doxa-website'); ?></p>
+                        </div>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Awlad Hassan', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Awlad Hassan', 'doxa-website'); ?></p>
+                        </div>
+                        <div class="stack stack--sm | reel__item">
+                            <div><img class="square rounded-md" src="https://placehold.co/250x250" alt="<?php echo __('Jiluuk', 'doxa-website'); ?>"></div>
+                            <p class="text-center uppercase"><?php echo __('Jiluuk', 'doxa-website'); ?></p>
+                        </div>
+                    </div>
+                    <div class="stack stack--2xl">
+                        <h2 class="highlight-last"><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
+                        <div class="switcher | gap-md">
+                            <div class="step-card">
+                                <div class="step-card__number">1</div>
+                                <div class="step-card__content">
+                                    <h2 class="step-card__title"><?php echo __('Pray', 'doxa-website'); ?></h2>
+                                    <p><?php echo __('Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples.', 'doxa-website'); ?></p>
+                                </div>
+                                <a href="/pray" class="button | compact"><?php echo __('Join', 'doxa-website'); ?></a>
                             </div>
-                            <a href="/engage" class="button | compact"><?php echo __('Go', 'doxa-website'); ?></a>
+                            <div class="step-card">
+                                <div class="step-card__number">2</div>
+                                <div class="step-card__content">
+                                    <h2 class="step-card__title"><?php echo __('Adopt', 'doxa-website'); ?></h2>
+                                    <p><?php echo __('Churches and networks take ownership - praying, giving and preparing the way for gospel workers.', 'doxa-website'); ?></p>
+                                </div>
+                                <a href="/adopt" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
+                            </div>
+                            <div class="step-card">
+                                <div class="step-card__number">3</div>
+                                <div class="step-card__content">
+                                    <h2 class="step-card__title"><?php echo __('Engage', 'doxa-website'); ?></h2>
+                                    <p><?php echo __('God raises up men and women to go, serve, and proclaim Christ among the nations', 'doxa-website'); ?></p>
+                                </div>
+                                <a href="/engage" class="button | compact"><?php echo __('Go', 'doxa-website'); ?></a>
+                            </div>
                         </div>
                     </div>
                 </div>
