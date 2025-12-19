@@ -122,3 +122,26 @@
 .uupg__footer {
     grid-area: footer;
 }
+
+.info-card {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-family: var(--font-family-heading);
+    text-transform: uppercase;
+    text-align: center;
+
+    & > *:nth-child(1) {
+        font-size: var(--font-size-lg);
+    }
+
+    & > *:nth-child(2) {
+        font-size: var(--font-size-2xl);
+    }
+
+    & > *:nth-child(3) {
+        font-size: var(--font-size-md);
+    }
+
+    p {
+        font-family: var(--font-family-base);
+    }
+}

@@ -138,6 +138,9 @@
             ]
             item.innerHTML = newInnerHTML.join(' ');
         });
+
+        // Auto scrolling slideshow
+        // credit to https://codepen.io/knekk/pen/ZEQMjgb?editors=0010 for the original code
         function initSlideshow(slideshow) {
             // Fade in
             slideshow.classList.add("in");
