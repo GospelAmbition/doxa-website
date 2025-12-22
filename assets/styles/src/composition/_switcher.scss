@@ -13,3 +13,11 @@
 .switcher > :nth-last-child(n + 5) ~ * {
     flex-basis: 100%;
 }
+
+.switcher[data-width="lg"] {
+    --switcher-width: 50rem;
+}
+
+.switcher-item {
+    display: flex;
+}

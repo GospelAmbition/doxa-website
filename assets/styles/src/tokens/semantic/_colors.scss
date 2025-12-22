@@ -3,6 +3,7 @@
 
 // Primary Palette
 $color-green-50: #92b195;
+$color-green-200: #798279;
 $color-green-300: #6d766e;
 $color-green-400: #4e594f;
 $color-green-500: #3b463d;
@@ -42,6 +43,7 @@ $color-red-600: #bd1218;
 :root {
   // Brand
   --color-brand: #{$color-green-500};
+  --color-brand-lighter: #{$color-green-200};
   --color-brand-lighter: #{$color-green-300};
   --color-brand-light: #{$color-green-400};
   --color-brand-dark: #{$color-green-600};
@@ -57,6 +59,7 @@ $color-red-600: #bd1218;
   --color-surface-brand: #{$color-green-500};
   --color-surface-brand-light: #{$color-green-400};
   --color-surface-brand-lighter: #{$color-green-300};
+  --color-surface-brand-lightest: #{$color-green-200};
   --color-surface-secondary-light: #{$color-beige-200};
   --color-surface-white: #{$color-white};
 
@@ -66,6 +69,7 @@ $color-red-600: #bd1218;
   --color-text-on-brand: #{$color-white};
   --color-text-on-brand-light: #{$color-beige-50};
   --color-text-on-brand-lighter: #{$color-beige-50};
+  --color-text-on-brand-lightest: #{$color-beige-50};
   --color-text-on-secondary-light: #{$color-green-600};
   --color-text-on-on-white: #{$color-green-600};
 

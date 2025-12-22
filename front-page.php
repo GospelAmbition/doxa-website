@@ -18,7 +18,11 @@ get_header( 'top' ); ?>
                 </div>
                 <div>
                     <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front-page-image.jpg" alt="<?php echo __('Engage every people by 2033', 'doxa-website'); ?>"> -->
-                    <img src="https://placehold.co/1200x600" alt="<?php echo __('Engage every people by 2033', 'doxa-website'); ?>">
+                    <img
+                        class="rounded-xlg"
+                        src="https://placehold.co/1200x600"
+                        alt="<?php echo __('Engage every people by 2033', 'doxa-website'); ?>"
+                    >
                 </div>
             </section>
             <section class="stack stack--md | surface-brand-light">
@@ -108,30 +112,46 @@ get_header( 'top' ); ?>
             <section class="surface-white">
                 <div class="container stack stack--xl">
                     <h3 class="color-primary text-center"><?php echo __('48% of the world population', 'doxa-website'); ?></h3>
-                    <div class="switcher">
-                        <div class="stack stack--xs | card info-card">
-                            <h3><?php echo __('Unreached', 'doxa-website'); ?></h3>
-                            <span><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.9' ); ?></span>
-                            <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '6,602' ); ?></span>
-                            <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                    <div class="switcher | gap-md" data-width="lg">
+                        <div class="switcher-item">
+                            <div class="info-card surface-secondary-light">
+                                <div class="stack stack--lg | info-card__content">
+                                    <h3 class="color-brand-lighter"><?php echo __('Unreached', 'doxa-website'); ?></h3>
+                                    <span><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.9' ); ?></span>
+                                    <span class="color-brand-lighter"><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '6,602' ); ?></span>
+                                </div>
+                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                            </div>
                         </div>
-                        <div class="stack stack--xs | card info-card">
-                            <h3><?php echo __('Under-Engaged', 'doxa-website'); ?></h3>
-                            <span><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.3' ); ?></span>
-                            <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '5,119' ); ?></span>
-                            <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                        <div class="switcher-item">
+                            <div class="info-card surface-brand-lightest">
+                                <div class="stack stack--lg | info-card__content">
+                                    <h3><?php echo __('Under-Engaged', 'doxa-website'); ?></h3>
+                                    <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.3' ); ?></span>
+                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '5,119' ); ?></span>
+                                </div>
+                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                            </div>
                         </div>
-                        <div class="stack stack--xs | card info-card">
-                            <h3><?php echo __('Frontier People', 'doxa-website'); ?></h3>
-                            <span><?php echo sprintf( __( '%s Billion', 'doxa-website'), '2' ); ?></span>
-                            <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '4,788' ); ?></span>
-                            <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                        <div class="switcher-item">
+                            <div class="info-card surface-brand-light">
+                                <div class="stack stack--lg | info-card__content">
+                                    <h3><?php echo __('Frontier People', 'doxa-website'); ?></h3>
+                                    <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '2' ); ?></span>
+                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '4,788' ); ?></span>
+                                </div>
+                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                            </div>
                         </div>
-                        <div class="stack stack--xs | card info-card">
-                            <h3><?php echo __('Unengaged', 'doxa-website'); ?></h3>
-                            <span><?php echo sprintf( __( '%s Million', 'doxa-website'), '202' ); ?></span>
-                            <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '2,085' ); ?></span>
-                            <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                        <div class="switcher-item">
+                            <div class="info-card surface-brand-dark">
+                                <div class="stack stack--lg | info-card__content">
+                                    <h3><?php echo __('Unengaged', 'doxa-website'); ?></h3>
+                                    <span><?php echo sprintf( __( '%s Million', 'doxa-website'), '202' ); ?></span>
+                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '2,085' ); ?></span>
+                                </div>
+                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
+                            </div>
                         </div>
                     </div>
                 </div>

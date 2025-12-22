@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  --stack-spacing: var(--spacing-md, 1rem);
 }
 
 .stack > * {
@@ -13,49 +14,49 @@
 }
 
 .stack > * + * {
-  margin-block-start: var(--spacing-md, 1rem);
+  margin-block-start: var(--stack-spacing);
 }
 
-.stack--3xs > * + * {
-  margin-block-start: var(--spacing-3xs, 0.25rem);
+.stack--3xs {
+  --stack-spacing: var(--spacing-3xs, 0.25rem);
 }
 
-.stack--2xs > * + * {
-  margin-block-start: var(--spacing-2xs, 0.25rem);
+.stack--2xs {
+  --stack-spacing: var(--spacing-2xs, 0.25rem);
 }
 
-.stack--xs > * + * {
-  margin-block-start: var(--spacing-xs, 0.5rem);
+.stack--xs {
+  --stack-spacing: var(--spacing-xs, 0.5rem);
 }
 
-.stack--sm > * + * {
-  margin-block-start: var(--spacing-sm, 0.5rem);
+.stack--sm {
+  --stack-spacing: var(--spacing-sm, 0.5rem);
 }
 
-.stack--lg > * + * {
-  margin-block-start: var(--spacing-lg, 2rem);
+.stack--lg {
+  --stack-spacing: var(--spacing-lg, 2rem);
 }
 
-.stack--xl > * + * {
-  margin-block-start: var(--spacing-xl, 2rem);
+.stack--xl {
+  --stack-spacing: var(--spacing-xl, 2rem);
 }
 
-.stack--2xl > * + * {
-  margin-block-start: var(--spacing-2xl, 2rem);
+.stack--2xl {
+  --stack-spacing: var(--spacing-2xl, 2rem);
 }
 
-.stack--3xl > * + * {
-  margin-block-start: var(--spacing-3xl, 2rem);
+.stack--3xl {
+  --stack-spacing: var(--spacing-3xl, 2rem);
 }
 
-.stack--4xl > * + * {
-  margin-block-start: var(--spacing-4xl, 2rem);
+.stack--4xl {
+  --stack-spacing: var(--spacing-4xl, 2rem);
 }
 
-.stack--5xl > * + * {
-  margin-block-start: var(--spacing-5xl, 2rem);
+.stack--5xl {
+  --stack-spacing: var(--spacing-5xl, 2rem);
 }
 
-.stack--none > * + * {
-  margin-block-start: 0;
+.stack--none {
+  --stack-spacing: 0;
 }
