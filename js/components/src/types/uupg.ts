@@ -1,5 +1,6 @@
 export interface Uupg {
     id: string;
+    slug: string;
     name: string;
     display_name: string;
     wagf_region: KeyLabel;
@@ -13,7 +14,8 @@ export interface Uupg {
     picture_credit_html: string;
     population: number;
     religion: KeyLabel;
-    adopted: boolean;
+    adopted?: boolean;
+    people_praying?: number;
 }
 
 interface KeyLabel {

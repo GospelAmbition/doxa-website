@@ -10,7 +10,7 @@
     color: var(--button-text-color);
     background-color: var(--button-background-color);
     border-radius: 100px;
-    border: none;
+    border: 1px solid var(--button-border-color, transparent);
     line-height: var(--line-height-none);
     font-family: var(--font-family-buttons);
     text-decoration: none;
@@ -26,6 +26,7 @@
 .button:hover {
     color: var(--button-text-color-hover, 'inherit');
     background-color: var(--button-background-color-hover);
+    border-color: var(--button-border-color-hover, var(--button-border-color, transparent));
 }
 
 .button.filter-button {
@@ -45,4 +46,12 @@
 
 .button.compact {
     padding: var(--spacing-xs) var(--spacing-2xl);
+}
+
+.button.outline {
+    --button-text-color: var(--color-brand-primary);
+    --button-background-color: var(--color-surface-white);
+    --button-text-color-hover: var(--color-surface-white);
+    --button-background-color-hover: var(--color-brand-primary);
+    --button-border-color: var(--color-brand-primary);
 }

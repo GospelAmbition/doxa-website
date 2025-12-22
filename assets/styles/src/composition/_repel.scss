@@ -1,7 +1,6 @@
-.cluster {
+.repel {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--spacing-md, 0.75rem);
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }

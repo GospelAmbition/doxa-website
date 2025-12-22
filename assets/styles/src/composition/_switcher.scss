@@ -18,6 +18,11 @@
     --switcher-width: 50rem;
 }
 
+.switcher[data-width="md"] {
+    --switcher-width: 30rem;
+    gap: var(--spacing-2xs);
+}
+
 .switcher-item {
     display: flex;
 }

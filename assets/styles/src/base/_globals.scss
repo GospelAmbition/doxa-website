@@ -69,7 +69,7 @@ h5, .h5 {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-lg);
 }
 
 .bg-image {
@@ -79,7 +79,7 @@ img {
 }
 
 table {
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-lg);
   overflow: hidden;
   box-shadow: 0 0 0 1px var(--table-border-color);
   background-color: var(--color-surface-white);
@@ -110,7 +110,7 @@ ul[data-list-color="primary"] li::before {
 
 blockquote {
   padding: var(--spacing-md);
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-lg);
 }
 
 .wp-block-table td,
@@ -120,12 +120,12 @@ td {
 }
 
 .wp-block-group {
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-lg);
   padding: var(--spacing-4xl);
 }
 
 .page-body > *:not(.wp-block-table) {
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-lg);
 }
 .page-body > * + * {
   margin-top: var(--spacing-md);

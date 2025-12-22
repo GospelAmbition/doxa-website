@@ -47,6 +47,18 @@
   font-family: var(--font-family-buttons);
 }
 
+.font-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+
 .font-size-xs {
   font-size: var(--font-size-xs);
 }
@@ -186,12 +198,12 @@
   text-align: center;
 }
 
-.text-left {
-  text-align: left;
+.text-start {
+  text-align: start;
 }
 
-.text-right {
-  text-align: right;
+.text-end {
+  text-align: end;
 }
 
 .uppercase {
@@ -230,6 +242,9 @@
   flex-basis: auto;
 }
 
+.align-start {
+  align-items: flex-start;
+}
 .align-center {
   align-items: center;
 }
@@ -241,7 +256,7 @@
 /* Shapes */
 
 .rounded-md {
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-lg);
 }
 
 .rounded-xlg {

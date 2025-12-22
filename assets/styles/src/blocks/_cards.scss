@@ -1,7 +1,7 @@
 .surface {
     --card-background-color: var(--color-surface-white);
     --card-text-color: var(--color-text-on-on-white);
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-lg);
     padding: var(--spacing-4xl);
     color: var(--card-text-color);
     background-color: var(--card-background-color);
@@ -33,7 +33,7 @@
 }
 
 .card-two-tone {
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-lg);
     overflow: hidden;
 }
 .card-two-tone > *:first-child {
@@ -49,7 +49,7 @@
 
 .step-card {
     position: relative;
-    border-radius: var(--border-radius-md);
+    border-radius: var(--border-radius-lg);
     padding: var(--spacing-md) var(--spacing-lg);
     color: var(--color-brand-light);
     background-color: var(--color-surface-white);
@@ -140,6 +140,25 @@
 
 .uupg__footer {
     grid-area: footer;
+}
+
+.highlighted-uupg__card {
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md);
+    color: var(--color-brand);
+    font-weight: var(--font-weight-medium);
+
+    img {
+        border-radius: var(--border-radius-sm);
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .button {
+        padding: var(--spacing-2xs) var(--spacing-sm);
+        font-size: var(--font-size-sm);
+    }
 }
 
 .info-card {

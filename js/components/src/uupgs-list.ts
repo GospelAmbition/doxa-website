@@ -30,7 +30,7 @@ export class UupgsList extends LitElement {
 
     render() {
         return html`
-            <div class="stack stack--3xl">
+            <div class="stack stack--md">
                 <section id="filters" class="filters">
                     <input
                         type="search"

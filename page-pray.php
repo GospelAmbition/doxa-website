@@ -92,6 +92,30 @@ get_header( 'top' ); ?>
                     </div>
                 </div>
             </section>
+            <section class="surface-brand-dark">
+                <div class="container stack stack--lg">
+                    <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
+                    <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
+                    <highlighted-people-groups
+                        t="<?php echo esc_attr( json_encode( [
+                            'select' => __('Select', 'doxa-website'),
+                            'full_profile' => __('Full Profile', 'doxa-website'),
+                            'prayer_coverage' => __('Prayer Coverage', 'doxa-website'),
+                        ])); ?>"
+                        number-of-people-groups="6"
+                    ></highlighted-people-groups>
+                    <!-- <uupgs-list
+                        t="<?php echo esc_attr( json_encode( [
+                            'results' => __('Results', 'doxa-website'),
+                            'full_profile' => __('Full Profile', 'doxa-website'),
+                            'loading' => __('Loading results...', 'doxa-website'),
+                            'load_more' => __('Load More', 'doxa-website'),
+                            'total' => __('Total', 'doxa-website'),
+                        ])); ?>"
+                        show-first-results="false"
+                    ></uupgs-list> -->
+                </div>
+            </section>
         </div>
     </main>
 
