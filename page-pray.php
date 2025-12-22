@@ -71,6 +71,27 @@ get_header( 'top' ); ?>
                     <a href="#choose-people-group" class="button | compact mx-auto"><?php echo __('Get Started', 'doxa-website'); ?></a>
                 </div>
             </section>
+            <section>
+                <div class="container">
+                    <div class="switcher | align-center">
+                        <div class="stack | grow-2 align-center">
+                            <div class="stack stack--2xl">
+                                <h2 class="highlight-second"><?php echo __('Your daily prayer guide', 'doxa-website'); ?></h2>
+                                <ul class="stack stack--sm" data-list-color="primary">
+                                    <li><?php echo __('Scripture-centered prayer themes', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Spirit-led reflection and guidance', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Real prayer needs from the field', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Photos, stories and testimonies', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Key insights about the people group', 'doxa-website'); ?></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://placehold.co/400x600" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
