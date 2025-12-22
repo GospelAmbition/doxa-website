@@ -1,9 +1,9 @@
 /*
-Theme Name: Gospel Ambition
-Description: A clean, elegant theme for Gospel Ambition - Fulfilling the Great Commission in this generation
+Theme Name: DOXA Life
+Description: A clean, elegant theme for DOXA Life - Engaging every people group by 2033
 Version: 1.1.1
 Author: Gospel Ambition Team
-Text Domain: gospel-ambition
+Text Domain: doxa-website
 */
 
 /* Color Scheme */
@@ -410,9 +410,9 @@ article.single-post {
     width: 100%;
 }
 
-.page-body h1, 
-.page-body h2, 
-.page-body h3, 
+.page-body h1,
+.page-body h2,
+.page-body h3,
 .page-body h4 {
     margin: 2rem 0 1rem;
     color: #2c3e50;
@@ -856,27 +856,27 @@ textarea.error {
         align-items: center;
         position: relative;
     }
-    
+
     .site-branding .custom-logo-link {
         max-width: 150px;
         max-height: 45px;
     }
-    
+
     .site-branding .custom-logo {
         max-height: 45px;
     }
-    
+
     .site-logo {
         font-size: 1.3rem;
         max-width: 150px;
     }
-    
+
     /* Show mobile menu toggle */
     .mobile-menu-toggle {
         display: flex;
         order: 3;
     }
-    
+
     /* Hide navigation by default on mobile */
     .main-navigation {
         position: absolute;
@@ -890,32 +890,32 @@ textarea.error {
         display: none;
         z-index: 1000;
     }
-    
+
     /* Show navigation when active */
     .main-navigation.mobile-active {
         display: block;
     }
-    
+
     .main-navigation ul {
         flex-direction: column;
         gap: 0;
         text-align: center;
         padding: 0 1rem;
     }
-    
+
     .main-navigation li {
         border-bottom: 1px solid #f0f0f0;
     }
-    
+
     .main-navigation li:last-child {
         border-bottom: none;
     }
-    
+
     .main-navigation a {
         padding: 1rem 0;
         font-size: 1.1rem;
     }
-    
+
     /* Mobile sub-menus */
     .main-navigation .sub-menu {
         position: static;
@@ -926,59 +926,59 @@ textarea.error {
         border-radius: 0;
         padding: 0;
     }
-    
+
     .main-navigation .menu-item-has-children.mobile-open > .sub-menu {
         display: block;
     }
-    
+
     .main-navigation .menu-item-has-children > a::after {
         content: '▶';
         float: right;
     }
-    
+
     .main-navigation .menu-item-has-children.mobile-open > a::after {
         transform: rotate(90deg);
     }
-    
+
     .main-navigation .sub-menu a {
         padding: 0.75rem 1rem;
         font-size: 1rem;
         background: #f8f9fa;
         }
-    
+
     .posts-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .container {
         padding: 0 15px;
     }
-    
+
     .footer-links {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .error-404-content {
         grid-template-columns: 1fr;
     }
-    
+
     .blog-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 1rem 15px;
     }
-    
+
     .blog-sidebar {
         order: 2;
         position: static;
         margin-top: 2rem;
     }
-    
+
     .nav-links {
         grid-template-columns: 1fr;
     }
-    
+
     .popular-content ul {
         flex-direction: column;
         align-items: center;
@@ -990,20 +990,20 @@ textarea.error {
         max-width: 120px;
         max-height: 35px;
     }
-    
+
     .site-branding .custom-logo {
         max-height: 35px;
     }
-    
+
     .site-logo {
         font-size: 1.1rem;
         max-width: 120px;
     }
-    
+
     .single-post-title {
         font-size: 2rem;
     }
-    
+
     .search-form {
         max-width: 100%;
     }
