@@ -16,7 +16,7 @@ get_header( 'top' ); ?>
             <section>
                 <div class="container stack stack--2xl">
                     <div class="stack stack-md">
-                        <h1 class="h2 highlight-first"><?php echo __('Prayer for an unengaged people group', 'doxa-website'); ?></h1>
+                        <h1 class="h2 highlight" data-highlight-index="1"><?php echo __('Prayer for an unengaged people group', 'doxa-website'); ?></h1>
                         <p class="subtext"><?php echo __('Help prepare the way for gospel engagement through prayer.', 'doxa-website'); ?></p>
                     </div>
                     <div class="switcher">
@@ -76,7 +76,7 @@ get_header( 'top' ); ?>
                     <div class="switcher | align-center">
                         <div class="stack | grow-2 align-center">
                             <div class="stack stack--2xl">
-                                <h2 class="highlight-second"><?php echo __('Your daily prayer guide', 'doxa-website'); ?></h2>
+                                <h2 class="highlight" data-highlight-index="2"><?php echo __('Your daily prayer guide', 'doxa-website'); ?></h2>
                                 <ul class="stack stack--sm" data-list-color="primary">
                                     <li><?php echo __('Scripture-centered prayer themes', 'doxa-website'); ?></li>
                                     <li><?php echo __('Spirit-led reflection and guidance', 'doxa-website'); ?></li>

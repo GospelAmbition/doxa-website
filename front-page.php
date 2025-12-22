@@ -14,7 +14,7 @@ get_header( 'top' ); ?>
             <section class="stack stack--md container">
                 <div>
                     <h2 class="color-brand"><?php echo __('Our gift to Jesus', 'doxa-website'); ?>:</h2>
-                    <h1 class="color-brand-light highlight-first highlight-last" data-highlight-color="primary"><?php echo __('Engage every people by 2033', 'doxa-website'); ?></h1>
+                    <h1 class="color-brand-light highlight" data-highlight-index="1" data-highlight-last data-highlight-color="primary"><?php echo __('Engage every people by 2033', 'doxa-website'); ?></h1>
                 </div>
                 <div>
                     <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front-page-image.jpg" alt="<?php echo __('Engage every people by 2033', 'doxa-website'); ?>"> -->
@@ -28,7 +28,7 @@ get_header( 'top' ); ?>
             <section class="stack stack--md | surface-brand-light">
                 <div class="container stack stack--4xl">
                     <div class="stack stack--2xl">
-                        <h2 class="highlight-first"><?php echo sprintf( __( '%s unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
+                        <h2 class="highlight" data-highlight-index="1"><?php echo sprintf( __( '%s unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
                         <p class="subtext">
                             <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
                         </p>
@@ -76,7 +76,7 @@ get_header( 'top' ); ?>
                         </div>
                     </div>
                     <div class="stack stack--2xl">
-                        <h2 class="highlight-last"><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
+                        <h2 class="highlight" data-highlight-last><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
                         <div class="switcher | gap-md">
                             <div class="step-card">
                                 <div class="step-card__number">1</div>
@@ -182,7 +182,7 @@ get_header( 'top' ); ?>
             </section>
             <section class="surface-brand-light">
                 <div class="container stack stack--3xl">
-                    <h2 class="highlight-last"><?php echo __('Engagement starts with prayer', 'doxa-website'); ?></h2>
+                    <h2 class="highlight" data-highlight-last><?php echo __('Engagement starts with prayer', 'doxa-website'); ?></h2>
                     <div class="switcher | align-center">
                         <div class="switcher-item grow-none">
                             <img src="https://placehold.co/250x250" alt="<?php echo __('Engagement starts with prayer', 'doxa-website'); ?>">
