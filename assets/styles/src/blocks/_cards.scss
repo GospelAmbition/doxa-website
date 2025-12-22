@@ -89,6 +89,10 @@
     align-items: center;
     justify-content: space-between;
 }
+.step-card__content[data-no-action] {
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-4xl);
+}
 
 .step-card__title {
     margin-top: var(--spacing-xl)

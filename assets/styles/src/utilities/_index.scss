@@ -212,6 +212,10 @@
   gap: var(--spacing-md);
 }
 
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
 .grow-1 {
   flex-grow: 1;
   flex-basis: 0;
