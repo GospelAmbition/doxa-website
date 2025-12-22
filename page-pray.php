@@ -12,9 +12,7 @@ get_header( 'top' ); ?>
     <?php get_header(); ?>
 
     <main class="site-main">
-
-        <div class="container page-content pray-page">
-            <!-- Custom content for Pray page goes here -->
+        <div class="page-content pray-page">
             <h1 class="text-center"><?php echo __('Unengaged people groups adopted in prayer', 'doxa-website'); ?></h1>
 
 

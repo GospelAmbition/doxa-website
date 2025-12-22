@@ -1,10 +1,10 @@
 .reel {
     display: flex;
-    gap: var(--spacing-md);
     overflow: hidden;
 }
 .reel > * {
     flex: 0 0 auto;
+    padding-inline: var(--spacing-sm);
 }
 
 .reel[data-reel-mode='auto-scroll'] {

@@ -141,23 +141,23 @@
 
         // Auto scrolling slideshow
         // credit to https://codepen.io/knekk/pen/ZEQMjgb?editors=0010 for the original code
-        function initSlideshow(slideshow) {
+        function initSlideshow(reel) {
             // Fade in
-            slideshow.classList.add("in");
+            reel.classList.add("in");
 
             // Auto scroll slideshow
             setInterval(() => {
-                const firstImage = [...slideshow.children].reduce((prev, current) => (Number(prev.style.order) < Number(current.style.order)) ? prev : current);
+                const firstImage = [...reel.children].reduce((prev, current) => (Number(prev.style.order) < Number(current.style.order)) ? prev : current);
 
                 // Move the first image back in queue when it's out of view
-                if (firstImage.width < slideshow.scrollLeft) {
-                    slideshow.scrollLeft = slideshow.scrollLeft - firstImage.width;
-                    firstImage.style.order = slideshow.children.length;
-                    for (const image of [...slideshow.children]) {
+                if (firstImage.offsetWidth < reel.scrollLeft) {
+                    reel.scrollLeft = reel.scrollLeft - firstImage.offsetWidth;
+                    firstImage.style.order = reel.children.length;
+                    for (const image of [...reel.children]) {
                         if (image != firstImage) image.style.order = image.style.order-1;
                     }
                 } else {
-                    slideshow.scrollLeft += 1;
+                    reel.scrollLeft += 1;
                 }
             }, 20);
         }

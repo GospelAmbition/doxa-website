@@ -10,7 +10,7 @@ get_header( 'top' ); ?>
     <?php get_header(); ?>
 
     <main class="site-main">
-        <div class="page-content front-page">
+        <div class="front-page">
             <section class="stack stack--md container">
                 <div>
                     <h2 class="color-brand"><?php echo __('Our gift to Jesus', 'doxa-website'); ?>:</h2>
