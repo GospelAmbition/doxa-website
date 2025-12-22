@@ -159,12 +159,12 @@ get_header( 'top' ); ?>
             <section>
                 <div class="container stack stack--xl">
                     <h2><?php echo __('Vision 2033', 'doxa-website'); ?></h2>
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="switcher">
                             <div class="switcher-item grow-none">
                                 <img src="https://placehold.co/200x400" alt="<?php echo __('Vision 2033', 'doxa-website'); ?>">
                             </div>
-                            <div class="switcher-item align-center">
+                            <div class="switcher-item align-center justify-center">
                                 <div class="stack stack--xl">
                                     <h3 class="subtext"><?php echo __('In partnership with the global church, our vision is to...', 'doxa-website'); ?></h3>
                                     <ul class="stack stack--md" data-list-color="primary">
@@ -179,6 +179,22 @@ get_header( 'top' ); ?>
                     </div>
                 </div>
 
+            </section>
+            <section class="surface-brand-light">
+                <div class="container stack stack--3xl">
+                    <h2 class="highlight-last"><?php echo __('Engagement starts with prayer', 'doxa-website'); ?></h2>
+                    <div class="switcher | align-center">
+                        <div class="switcher-item grow-none">
+                            <img src="https://placehold.co/250x250" alt="<?php echo __('Engagement starts with prayer', 'doxa-website'); ?>">
+                        </div>
+                        <div>
+                            <div class="stack stack--3xl | align-center">
+                                <p class="text-center max-width-md"><?php echo __('Every momevent of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way.', 'doxa-website'); ?></p>
+                                <a href="/pray" class="button | compact"><?php echo __('Pray', 'doxa-website'); ?></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>

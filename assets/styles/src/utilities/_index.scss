@@ -14,7 +14,7 @@
   border-width: 0;
 }
 
-// Color utilities
+// Typography utilities
 .text-primary {
   color: var(--color-text-on-default);
 }
@@ -89,7 +89,7 @@
 }
 
 .max-width-md {
-  max-width: 400px;
+  max-width: 50ch;
 }
 
 .position-relative {
@@ -100,7 +100,7 @@
   z-index: 10000;
 }
 
-/* Colours */
+/* Colors */
 .color-primary {
   color: var(--color-brand-primary);
 }
@@ -173,6 +173,10 @@
   color: var(--color-text-on-secondary-light);
 }
 
+.shadow {
+  box-shadow: 0 2px 5px var(--color-brand-secondary);
+}
+
 /* Typography */
 .text-center {
   text-align: center;
@@ -217,6 +221,10 @@
 
 .align-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-items: center;
 }
 
 /* Shapes */
