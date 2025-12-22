@@ -156,6 +156,30 @@ get_header( 'top' ); ?>
                     </div>
                 </div>
             </section>
+            <section>
+                <div class="container stack stack--xl">
+                    <h2><?php echo __('Vision 2033', 'doxa-website'); ?></h2>
+                    <div class="card">
+                        <div class="switcher">
+                            <div class="switcher-item grow-none">
+                                <img src="https://placehold.co/200x400" alt="<?php echo __('Vision 2033', 'doxa-website'); ?>">
+                            </div>
+                            <div class="switcher-item align-center">
+                                <div class="stack stack--xl">
+                                    <h3 class="subtext"><?php echo __('In partnership with the global church, our vision is to...', 'doxa-website'); ?></h3>
+                                    <ul class="stack stack--md" data-list-color="primary">
+                                        <li><?php echo __('Engage all unengaged peoples by 2033.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Mobilize 20,000+ DOXA partnership missionaries', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Advance fruitful engagement among frontier and under-engaged peoples.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Catalyze church-planting movements among all unreached peoples.', 'doxa-website'); ?></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </div>
     </main>
 

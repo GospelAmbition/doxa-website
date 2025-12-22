@@ -129,6 +129,11 @@
   color: var(--color-white);
 }
 
+.surface-white {
+  background-color: var(--color-surface-white);
+  color: var(--color-text-on-on-white);
+}
+
 .surface-primary {
   background-color: var(--color-surface-default);
 }
@@ -182,6 +187,7 @@
 }
 
 .subtext {
+  font-family: var(--font-family-base);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-medium);
 }
@@ -202,6 +208,15 @@
 
 .gap-md {
   gap: var(--spacing-md);
+}
+
+.grow-none {
+  flex-grow: 0;
+  flex-basis: auto;
+}
+
+.align-center {
+  align-items: center;
 }
 
 /* Shapes */

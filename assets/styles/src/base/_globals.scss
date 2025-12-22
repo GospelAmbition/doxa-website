@@ -83,7 +83,7 @@ table {
 ul:not([role="list"]) {
   list-style: none;
   margin-inline-start: 0;
-  padding-inline-start: 4rem;
+  padding-inline-start: 1.8em;
   line-height: var(--line-height-normal);
 }
 ul:not([role="list"]) li {
@@ -94,9 +94,12 @@ ul:not([role="list"]) li::before {
   content: "●";
   font-size: 1.5em;
   position: absolute;
-  top: 0.1em;
+  top: 0em;
   line-height: 0.9;
-  margin-inline-start: -0.8em;
+  margin-inline-start: -1.3em;
+}
+ul[data-list-color="primary"] li::before {
+  color: var(--color-brand-primary);
 }
 
 blockquote {
