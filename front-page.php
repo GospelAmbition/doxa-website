@@ -196,6 +196,20 @@ get_header( 'top' ); ?>
                     </div>
                 </div>
             </section>
+            <section>
+                <div class="switcher container | gap-md">
+                    <div class="switcher-item card | bg-image align-center" style="background-image: url('https://placehold.co/800x600');">
+                        <div class="stack stack--md | text-center text-secondary">
+                            <h2><?php echo __('What does "DOXA" mean?', 'doxa-website'); ?></h2>
+                            <p class="subtext"><?php echo __('DOXA is the Greek word for "GLORY".', 'doxa-website'); ?></p>
+                            <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA remindns us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
+                        </div>
+                    </div>
+                    <div class="switcher-item | grow-none">
+                        <img class="rounded-xlg" src="https://placehold.co/250x400" alt="<?php echo __('Engagement starts with prayer', 'doxa-website'); ?>">
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
