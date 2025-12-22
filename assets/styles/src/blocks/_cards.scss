@@ -32,6 +32,21 @@
     --card-text-color: var(--color-text-on-brand-lighter);
 }
 
+.card-two-tone {
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+.card-two-tone > *:first-child {
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    background-color: var(--color-surface-brand-lighter);
+    color: var(--color-text-on-brand-lighter);
+}
+.card-two-tone > *:last-child {
+    padding: var(--spacing-xl) var(--spacing-2xl);
+    background-color: var(--color-surface-brand);
+    color: var(--color-text-on-brand);
+}
+
 .step-card {
     position: relative;
     border-radius: var(--border-radius-md);

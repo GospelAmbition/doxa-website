@@ -43,6 +43,10 @@
   font-family: var(--font-family-heading);
 }
 
+.font-button {
+  font-family: var(--font-family-buttons);
+}
+
 .font-size-xs {
   font-size: var(--font-size-xs);
 }
@@ -190,12 +194,6 @@
   text-align: right;
 }
 
-.subtext {
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-medium);
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -214,6 +212,15 @@
   gap: var(--spacing-md);
 }
 
+.grow-1 {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.grow-2 {
+  flex-grow: 2;
+  flex-basis: 0;
+}
 .grow-none {
   flex-grow: 0;
   flex-basis: auto;

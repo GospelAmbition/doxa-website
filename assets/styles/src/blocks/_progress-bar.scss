@@ -7,6 +7,9 @@
     width: 100%;
     padding-top: 4%;
 }
+.progress-bar[data-size="md"] {
+    padding-top: 6%;
+}
 .progress-bar__slider {
     position: absolute;
     top: 0;

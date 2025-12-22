@@ -198,7 +198,7 @@ get_header( 'top' ); ?>
             </section>
             <section>
                 <div class="switcher container | gap-md">
-                    <div class="switcher-item card | bg-image align-center" style="background-image: url('https://placehold.co/800x600');">
+                    <div class="switcher-item card | bg-image align-center" style="background-image: url('https://placehold.co/800x600/455449/bbb');">
                         <div class="stack stack--md | text-center text-secondary">
                             <h2><?php echo __('What does "DOXA" mean?', 'doxa-website'); ?></h2>
                             <p class="subtext"><?php echo __('DOXA is the Greek word for "GLORY".', 'doxa-website'); ?></p>
