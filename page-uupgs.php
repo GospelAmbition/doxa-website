@@ -12,8 +12,8 @@ get_header( 'top' ); ?>
     <?php get_header(); ?>
 
     <main class="site-main">
-        <div class="container page-content uupgs-page">
-            <h1 class="text-center"><?php echo __('Find a UUPG to adopt', 'doxa-website'); ?></h1>
+        <div class="container page-content uupgs-page stack stack--3xl">
+            <h1 class="text-center highlight" data-highlight-last><?php echo __('Find a UUPG', 'doxa-website'); ?></h1>
             <uupgs-list
                 t="<?php echo esc_attr( json_encode( [
                     'results' => __('Results', 'doxa-website'),
@@ -21,7 +21,7 @@ get_header( 'top' ); ?>
                     'loading' => __('Loading results...', 'doxa-website'),
                     'load_more' => __('Load More', 'doxa-website'),
                     'total' => __('Total', 'doxa-website'),
-                    'search' => __('Search', 'doxa-website'),
+                    'search' => __('Search people names', 'doxa-website'),
                     'filters' => [
                         'search' => __('Search', 'doxa-website'),
                         'sort' => __('Sort', 'doxa-website'),

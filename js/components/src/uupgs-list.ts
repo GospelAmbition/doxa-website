@@ -31,20 +31,19 @@ export class UupgsList extends LitElement {
     render() {
         return html`
             <div class="stack stack--md">
-                <section id="filters" class="filters">
+                <div id="filters" class="filters">
                     <input
                         type="search"
                         placeholder="${this.t.search}"
                         @input=${this.debounce(this.search, 500)}
                         class="center | max-width-md"
                     />
-                </section>
-                <div class="stack stack--lg">
-                    <h2 class="text-center">${this.t.results}</h2>
+                </div>
+                <div class="stack stack--xs">
                     ${!this.loading ? html`
                         <div class="font-size-sm">${this.t.total}: ${this.total}</div>
                     ` : ''}
-                    <section id="results" class="grid | uupgs-list" data-width-lg>
+                    <div id="results" class="grid | uupgs-list" data-width-lg>
                         ${repeat(this.uupgs, (uupg: Uupg) => uupg.id, (uupg: Uupg) => html`
                             <div class="card | uupg__card">
                                 <img class="uupg__image" src="${uupg.picture_url}" alt="${uupg.name}">
@@ -58,7 +57,7 @@ export class UupgsList extends LitElement {
                             </div>
                         `)}
                         ${this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
-                    </section>
+                    </div>
                     ${this.total > this.uupgs.length && !this.loading ? html`
                         <button
                             @click=${this.loadMore}
