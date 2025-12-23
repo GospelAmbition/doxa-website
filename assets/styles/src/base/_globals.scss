@@ -111,6 +111,28 @@ ul[data-list-color="primary"] li::before {
 blockquote {
   padding: var(--spacing-md);
   border-radius: var(--border-radius-lg);
+  line-height: var(--line-height-tight);
+  position: relative;
+}
+blockquote::before {
+  content: "“";
+  font-size: 2em;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-primary);
+  margin-right: 0.25em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+blockquote::after {
+  content: "”";
+  font-size: 2em;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-primary);
+  margin-left: 0.25em;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .wp-block-table td,

@@ -116,6 +116,15 @@ get_header( 'top' ); ?>
                     ></uupgs-list> -->
                 </div>
             </section>
+            <section>
+                <div class="container stack stack--5xl">
+                    <figure class="text-center font-size-5xl font-heading">
+                        <blockquote><?php echo __('Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]', 'doxa-website'); ?></blockquote>
+                        <figcaption>-<?php echo __('Jesus', 'doxa-website'); ?></figcaption>
+                    </figure>
+                    <div><img src="https://placehold.co/1200x300" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
+                </div>
+            </section>
         </div>
     </main>
 
