@@ -97,6 +97,26 @@
     position: relative;
 }
 
+.hamburger-menu {
+    position: relative;
+}
+.hamburger-menu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-brand-light);
+    opacity: 0.5;
+    height: 100vh;
+}
+.hamburger-menu-overlay[data-state="closed"] {
+    opacity: 0;
+    height: 0;
+}
+.hamburger-menu[data-state="closed"]::before {
+    opacity: 0;
+    height: 0;
+}
 .hamburger-menu a,
 .main-navigation a {
     text-decoration: none;

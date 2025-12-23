@@ -1,4 +1,5 @@
 <header id="masthead" class="position-relative">
+    <div class="hamburger-menu-overlay" data-state="closed"></div>
     <nav id="hamburger-menu" class="hamburger-menu" aria-label="Hamburger menu" data-state="closed">
         <?php
         if (has_nav_menu('secondary')) {

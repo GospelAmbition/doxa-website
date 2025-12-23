@@ -10,15 +10,18 @@
         // Mobile menu toggle
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
         const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const hamburgerMenuOverlay = document.querySelector('.hamburger-menu-overlay');
 
         if (mobileMenuToggle) {
-            mobileMenuToggle.addEventListener('click', function(e) {
-                e.preventDefault();
-                this.classList.toggle('open');
+            const toggleMenu = function() {
                 if (hamburgerMenu) {
                     hamburgerMenu.dataset.state = hamburgerMenu.dataset.state === 'open' ? 'closed' : 'open';
+                    mobileMenuToggle.classList.toggle('open');
+                    hamburgerMenuOverlay.dataset.state = hamburgerMenuOverlay.dataset.state === 'open' ? 'closed' : 'open';
                 }
-            });
+            }
+            mobileMenuToggle.addEventListener('click', toggleMenu);
+            hamburgerMenuOverlay.addEventListener('click', toggleMenu);
         }
 
         // Mobile sub-menu toggle
