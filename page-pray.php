@@ -104,16 +104,16 @@ get_header( 'top' ); ?>
                         ])); ?>"
                         number-of-people-groups="6"
                     ></highlighted-people-groups>
-                    <!-- <uupgs-list
+                    <uupgs-list
                         t="<?php echo esc_attr( json_encode( [
-                            'results' => __('Results', 'doxa-website'),
-                            'full_profile' => __('Full Profile', 'doxa-website'),
-                            'loading' => __('Loading results...', 'doxa-website'),
-                            'load_more' => __('Load More', 'doxa-website'),
-                            'total' => __('Total', 'doxa-website'),
+                            'results' => __('results', 'doxa-website'),
+                            'full_profile' => __('full profile', 'doxa-website'),
+                            'loading' => __('loading results...', 'doxa-website'),
+                            'load_more' => __('load more', 'doxa-website'),
+                            'total' => __('total', 'doxa-website'),
                         ])); ?>"
                         show-first-results="false"
-                    ></uupgs-list> -->
+                    ></uupgs-list>
                 </div>
             </section>
             <section>

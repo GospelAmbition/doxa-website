@@ -5,7 +5,7 @@
             wp_nav_menu(array(
                 'theme_location' => 'secondary',
                 'menu_id'        => 'secondary-menu',
-                'menu_class'     => 'role-list',
+                'menu_class'     => 'role-list stack',
                 'submenu_class'     => 'role-list',
                 'container'      => false,
                 'depth'          => 2,
