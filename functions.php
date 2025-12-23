@@ -398,6 +398,15 @@ function custom_uupgs_rewrite_rules() {
 }
 add_action('init', 'custom_uupgs_rewrite_rules');
 
+function custom_adoption_form_rewrite_rules() {
+    add_rewrite_rule(
+        '^adopt/([^/]+)/?$',
+        'index.php?pagename=adopt&uupg_slug=$matches[1]',
+        'top'
+    );
+}
+add_action('init', 'custom_adoption_form_rewrite_rules');
+
 // Register the query variable
 function custom_uupgs_query_vars($vars) {
     $vars[] = 'uupg_slug';
@@ -418,6 +427,20 @@ function custom_uupgs_template($template) {
     return $template;
 }
 add_filter('template_include', 'custom_uupgs_template');
+
+function custom_adoption_form_template($template) {
+    $uupg_slug = get_query_var('uupg_slug');
+
+    if ($uupg_slug && is_page('adopt')) {
+        $custom_template = locate_template('template-adoption-form.php');
+        if ($custom_template) {
+            return $custom_template;
+        }
+    }
+
+    return $template;
+}
+add_filter('template_include', 'custom_adoption_form_template');
 
 function get_uupg_by_post_id( $post_id ) {
     $site_url = get_site_url();

@@ -17,7 +17,6 @@ get_header( 'top' ); ?>
 
     <main class="site-main">
         <div class="container page-content uupg-detail-page">
-            <!-- Custom content for UUPGS page goes here -->
             <h1 class="text-center"><?php echo __('Find a UUPG to adopt', 'doxa-website'); ?></h1>
             <div class="stack stack--lg">
                 <a class="button back-button compact" href="<?php echo home_url('/research'); ?>"><?php echo __('< Back', 'doxa-website'); ?></a>

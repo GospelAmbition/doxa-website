@@ -104,6 +104,10 @@
   margin-right: auto;
 }
 
+.ms-auto {
+  margin-block-start: auto;
+}
+
 .fit-content {
   width: fit-content;
 }
@@ -123,6 +127,10 @@
 /* Colors */
 .color-primary {
   color: var(--color-brand-primary);
+}
+
+.color-primary-darker {
+  color: var(--color-brand-primary-darker);
 }
 
 .color-secondary-light {

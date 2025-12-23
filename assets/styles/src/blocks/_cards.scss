@@ -115,6 +115,10 @@
     grid-area: image;
     border-radius: var(--border-radius-sm);
 }
+.uupg__image[data-size="small"] {
+    width: 150px;
+    height: 150px;
+}
 .uupg__image[data-size="medium"] {
     width: 200px;
     height: 200px;
@@ -199,4 +203,8 @@
 .text-card {
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-md) var(--spacing-3xl);
+}
+.adoption-card {
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-md) var(--spacing-md);
 }

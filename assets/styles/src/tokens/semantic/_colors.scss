@@ -3,6 +3,7 @@
 
 // Primary Palette
 $color-green-50: #92b195;
+$color-green-100: #73A17F;
 $color-green-200: #798279;
 $color-green-300: #6d766e;
 $color-green-400: #4e594f;
@@ -48,6 +49,7 @@ $color-red-600: #bd1218;
   --color-brand-light: #{$color-green-400};
   --color-brand-dark: #{$color-green-600};
   --color-brand-primary: #{$color-green-50};
+  --color-brand-primary-darker: #{$color-green-100};
   --color-brand-secondary: #{$color-beige-300};
   --color-brand-secondary-light: #{$color-beige-200};
   --color-brand-secondary-very-light: #{$color-beige-50};

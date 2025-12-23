@@ -9,7 +9,7 @@ export class HighlightedPeopleGroups extends LitElement {
     t: Record<string, any> = {};
 
     @property({ type: String })
-    rootUrl: string = '';
+    selectUrl: string = '';
 
     @property({ type: Number, attribute: false })
     numberOfPeopleGroups: number = 6;
@@ -26,9 +26,9 @@ export class HighlightedPeopleGroups extends LitElement {
 
     connectedCallback() {
         super.connectedCallback();
-        if (this.rootUrl === '') {
+        if (this.selectUrl === '') {
             const url = new URL(window.location.origin);
-            this.rootUrl = url.protocol + '//' + 'pray.' + url.hostname;
+            this.selectUrl = url.protocol + '//' + 'pray.' + url.hostname;
         }
     }
 
@@ -48,7 +48,7 @@ export class HighlightedPeopleGroups extends LitElement {
                     </div>
                     <div class="switcher | text-center" data-width="md">
                         <a class="highlighted-uupg__more-button button compact outline" href="${'/research/' + uupg.id}">${this.t.full_profile}</a>
-                        <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.rootUrl + '/' + uupg.id}">${this.t.select}</a>
+                        <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl + '/' + uupg.id}">${this.t.select}</a>
                     </div>
                 </div>
             `)}
