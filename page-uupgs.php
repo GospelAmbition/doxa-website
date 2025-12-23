@@ -16,7 +16,6 @@ get_header( 'top' ); ?>
             <h1 class="text-center highlight" data-highlight-last><?php echo __('Find a UUPG', 'doxa-website'); ?></h1>
             <uupgs-list
                 t="<?php echo esc_attr( json_encode( [
-                    'results' => __('Results', 'doxa-website'),
                     'full_profile' => __('Full Profile', 'doxa-website'),
                     'loading' => __('Loading results...', 'doxa-website'),
                     'load_more' => __('Load More', 'doxa-website'),

@@ -8,6 +8,11 @@ export class UupgsList extends LitElement {
     @property({ type: Object })
     t: Record<string, any> = {};
 
+    @property({ type: Number })
+    perPage: number = 25;
+    @property({ type: Boolean })
+    preventInitialFetch: boolean = false;
+
     @property({ type: Array, attribute: false })
     uupgs: Uupg[] = [];
     @property({ type: Number, attribute: false })
@@ -18,10 +23,10 @@ export class UupgsList extends LitElement {
     searchTerm: string = '';
     @property({ type: String, attribute: false })
     sort: string = '';
-    @property({ type: Number, attribute: false })
-    per_page: number = 25;
     @property({ type: Boolean, attribute: false })
     loading: boolean = true;
+    @property({ type: Boolean, attribute: false })
+    firstLoaded: boolean = true;
 
     constructor() {
         super();
@@ -40,7 +45,7 @@ export class UupgsList extends LitElement {
                     />
                 </div>
                 <div class="stack stack--xs">
-                    ${!this.loading ? html`
+                    ${!this.firstLoaded && !this.loading ? html`
                         <div class="font-size-sm">${this.t.total}: ${this.total}</div>
                     ` : ''}
                     <div id="results" class="grid | uupgs-list" data-width-lg>
@@ -70,7 +75,11 @@ export class UupgsList extends LitElement {
     }
 
     firstUpdated() {
-        this.getUUPGs();
+        if (!this.preventInitialFetch) {
+            this.getUUPGs();
+        } else {
+            this.loading = false;
+        }
     }
 
     loadMore() {
@@ -101,7 +110,8 @@ export class UupgsList extends LitElement {
         this.getUUPGs();
     }
 
-    getUUPGs({ search = this.searchTerm, sort = this.sort, per_page = this.per_page, page = this.page } = {}) {
+    getUUPGs({ search = this.searchTerm, sort = this.sort, perPage = this.perPage, page = this.page } = {}) {
+        this.firstLoaded = false;
         const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
 
         const url = new URL(uupgAPIUrl);
@@ -111,11 +121,11 @@ export class UupgsList extends LitElement {
         if (sort.length) {
             url.searchParams.set('sort', sort);
         }
-        if (per_page !== 0) {
-            url.searchParams.set('limit', per_page.toString());
+        if (perPage !== 0) {
+            url.searchParams.set('limit', perPage.toString());
         }
         if (page > 1) {
-            url.searchParams.set('offset', ((page - 1) * per_page).toString());
+            url.searchParams.set('offset', ((page - 1) * perPage).toString());
         }
 
         fetch(url.href)

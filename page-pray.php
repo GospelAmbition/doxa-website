@@ -93,7 +93,7 @@ get_header( 'top' ); ?>
                 </div>
             </section>
             <section class="surface-brand-dark">
-                <div class="container stack stack--lg">
+                <div class="container stack stack--xl">
                     <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
                     <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
                     <highlighted-people-groups
@@ -106,13 +106,14 @@ get_header( 'top' ); ?>
                     ></highlighted-people-groups>
                     <uupgs-list
                         t="<?php echo esc_attr( json_encode( [
-                            'results' => __('results', 'doxa-website'),
-                            'full_profile' => __('full profile', 'doxa-website'),
-                            'loading' => __('loading results...', 'doxa-website'),
-                            'load_more' => __('load more', 'doxa-website'),
-                            'total' => __('total', 'doxa-website'),
+                            'full_profile' => __('Full Profile', 'doxa-website'),
+                            'loading' => __('Loading results...', 'doxa-website'),
+                            'load_more' => __('Load More', 'doxa-website'),
+                            'total' => __('Total', 'doxa-website'),
+                            'search' => __('Search people names', 'doxa-website'),
                         ])); ?>"
-                        show-first-results="false"
+                        perPage="6"
+                        preventInitialFetch="true"
                     ></uupgs-list>
                 </div>
             </section>
