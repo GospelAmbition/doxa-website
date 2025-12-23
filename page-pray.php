@@ -93,20 +93,26 @@ get_header( 'top' ); ?>
                 </div>
             </section>
             <section class="surface-brand-dark">
-                <div class="container stack stack--xl">
-                    <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
-                    <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
+                <div class="container stack stack--3xl">
+                    <div class="stack stack--md">
+                        <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
+                        <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
+                    </div>
                     <highlighted-people-groups
+                        selectUrl="https://pray.doxa.life"
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Select', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),
                             'prayer_coverage' => __('Prayer Coverage', 'doxa-website'),
                         ])); ?>"
-                        number-of-people-groups="6"
+                        numberOfPeopleGroups="6"
                     ></highlighted-people-groups>
                     <uupgs-list
+                        selectUrl="https://pray.doxa.life"
                         t="<?php echo esc_attr( json_encode( [
+                            'select' => __('Select', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),
+                            'prayer_coverage' => __('Prayer Coverage', 'doxa-website'),
                             'loading' => __('Loading results...', 'doxa-website'),
                             'load_more' => __('Load More', 'doxa-website'),
                             'total' => __('Total', 'doxa-website'),

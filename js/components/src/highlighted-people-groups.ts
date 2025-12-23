@@ -8,6 +8,9 @@ export class HighlightedPeopleGroups extends LitElement {
     @property({ type: Object })
     t: Record<string, any> = {};
 
+    @property({ type: String })
+    rootUrl: string = '';
+
     @property({ type: Number, attribute: false })
     numberOfPeopleGroups: number = 6;
 
@@ -16,14 +19,17 @@ export class HighlightedPeopleGroups extends LitElement {
     @property({ type: Boolean, attribute: false })
     loading: boolean = true;
 
-    rootUrl: string = '';
-
     constructor() {
         super();
         this.uupgs = [];
-        const url = new URL(window.location.origin);
+    }
 
-        this.rootUrl = url.protocol + '//' + 'pray.' + url.hostname;
+    connectedCallback() {
+        super.connectedCallback();
+        if (this.rootUrl === '') {
+            const url = new URL(window.location.origin);
+            this.rootUrl = url.protocol + '//' + 'pray.' + url.hostname;
+        }
     }
 
     render() {

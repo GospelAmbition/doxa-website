@@ -17,46 +17,57 @@
   margin-block-start: var(--stack-spacing);
 }
 
+.stack-spacing-3xs,
 .stack--3xs > * + * {
   --stack-spacing: var(--spacing-3xs, 0.25rem);
 }
 
+.stack-spacing-2xs,
 .stack--2xs > * + * {
   --stack-spacing: var(--spacing-2xs, 0.25rem);
 }
 
+.stack-spacing-xs,
 .stack--xs > * + * {
   --stack-spacing: var(--spacing-xs, 0.5rem);
 }
 
+.stack-spacing-sm,
 .stack--sm > * + * {
   --stack-spacing: var(--spacing-sm, 0.5rem);
 }
 
+.stack-spacing-lg,
 .stack--lg > * + * {
   --stack-spacing: var(--spacing-lg, 2rem);
 }
 
+.stack-spacing-xl,
 .stack--xl > * + * {
   --stack-spacing: var(--spacing-xl, 2rem);
 }
 
+.stack-spacing-2xl,
 .stack--2xl > * + * {
   --stack-spacing: var(--spacing-2xl, 2rem);
 }
 
+.stack-spacing-3xl,
 .stack--3xl > * + * {
   --stack-spacing: var(--spacing-3xl, 2rem);
 }
 
+.stack-spacing-4xl,
 .stack--4xl > * + * {
   --stack-spacing: var(--spacing-4xl, 2rem);
 }
 
+.stack-spacing-5xl,
 .stack--5xl > * + * {
   --stack-spacing: var(--spacing-5xl, 2rem);
 }
 
+.stack-spacing-none,
 .stack--none > * + * {
   --stack-spacing: 0;
 }
