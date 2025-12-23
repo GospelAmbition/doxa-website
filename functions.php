@@ -62,7 +62,7 @@ function gospel_ambition_scripts() {
 
     // unenqueue jquery
     wp_dequeue_script('jquery');
-    if ( is_page('research') || is_page('pray') ) {
+    if ( is_page('research') || is_page('pray') || is_page('adopt') ) {
         wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
     }
 

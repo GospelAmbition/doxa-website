@@ -196,3 +196,7 @@
         font-family: var(--font-family-base);
     }
 }
+.text-card {
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-md) var(--spacing-3xl);
+}
