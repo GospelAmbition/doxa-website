@@ -20,7 +20,7 @@
                 <div class="site-branding">
                     <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/Small Banner/DOXA-small-light-banner.png"
-                            class="custom-logo"
+                            class="logo"
                             alt="<?php bloginfo('name'); ?>"
                             width="250"
                             height="auto">

@@ -5,6 +5,9 @@
     position: relative;
     z-index: 1500;
 }
+.logo {
+    border-radius: 0;
+}
 
 .header-content {
     display: flex;
@@ -82,7 +85,7 @@
 .main-navigation ul {
     list-style: none;
     display: flex;
-    gap: var(--spacing-4xl);
+    gap: var(--spacing-3xl);
     margin: 0;
     padding: 0;
 }
