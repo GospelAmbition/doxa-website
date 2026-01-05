@@ -81,7 +81,9 @@ export class UupgsList extends LitElement {
                                     <p>${uupg.country.label} (${uupg.rop1.label})</p>
                                 </div>
                                 <div class="uupg_adopted"></div>
-                                <p class="uupg__content">${uupg.location_description}</p>
+                                ${uupg.location_description ? html`
+                                    <p class="uupg__content">${uupg.location_description}</p>
+                                ` : ''}
                                 <a class="uupg__more-button button compact" href="${'/research/' + uupg.id}">${this.t.full_profile}</a>
                             </div>
                         `})}
