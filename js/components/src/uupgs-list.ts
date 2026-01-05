@@ -15,7 +15,7 @@ export class UupgsList extends LitElement {
     @property({ type: Boolean })
     preventInitialFetch: boolean = false;
     @property({ type: Boolean })
-    useSelectCard: boolean = true;
+    useSelectCard: boolean = false;
 
     @property({ type: Array, attribute: false })
     uupgs: Uupg[] = [];

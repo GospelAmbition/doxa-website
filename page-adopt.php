@@ -133,6 +133,7 @@ get_header( 'top' ); ?>
                         ])); ?>"
                         perPage="6"
                         preventInitialFetch="true"
+                        useSelectCard
                     ></uupgs-list>
                 </div>
             </section>
