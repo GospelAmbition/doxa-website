@@ -64,6 +64,9 @@ function gospel_ambition_scripts() {
     wp_dequeue_script('jquery');
     if ( is_page('research') || is_page('pray') || is_page('adopt') ) {
         wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
+        wp_localize_script('uupgs-script', 'uupgsData', array(
+            'images_url' => trailingslashit( get_template_directory_uri() ) . 'assets/images/',
+        ));
     }
 
 }
@@ -338,7 +341,7 @@ function page_custom_css_meta_box_callback($post) {
  * Save Custom CSS Meta Box Data
  */
 function save_page_custom_css($post_id) {
-    // Only run for page post type
+    // Only runJan 17, 2026 for page post type
     if (get_post_type($post_id) !== 'page') {
         return;
     }

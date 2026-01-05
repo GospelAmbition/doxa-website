@@ -37,7 +37,7 @@ get_header( 'top' ); ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="grow-2 bg-image rounded-md" style="background-image: url('https://placehold.co/800x600/455449/bbb');">
+                        <div class="grow-2 bg-image rounded-md" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/pray-01-hero.jpg');">
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                         <div>
-                            <img src="https://placehold.co/400x600" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pray-02-PrayerFUEL-Phone-graphic-2.png" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ get_header( 'top' ); ?>
                         <blockquote><?php echo __('Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]', 'doxa-website'); ?></blockquote>
                         <figcaption>-<?php echo __('Jesus', 'doxa-website'); ?></figcaption>
                     </figure>
-                    <div><img src="https://placehold.co/1200x300" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pray-03-bottom-unsplash.jpg" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
                 </div>
             </section>
         </div>

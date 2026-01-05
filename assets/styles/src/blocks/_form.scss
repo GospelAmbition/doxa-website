@@ -4,6 +4,7 @@ input {
     background-color: var(--color-surface-white);
     width: 100%;
 }
+input[type="search"],
 input[type="text"] {
     padding: var(--spacing-xs) var(--spacing-lg);
 }

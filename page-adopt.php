@@ -36,7 +36,7 @@ get_header( 'top' ); ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="grow-2 bg-image rounded-md" style="background-image: url('https://placehold.co/800x600/455449/bbb');">
+                        <div class="grow-2 bg-image rounded-md" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/adopt-01-africa-4women.jpg');">
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ get_header( 'top' ); ?>
                             <div class="grow-none">
                                 <img src="https://placehold.co/150x200" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
-                            <div class="stack stack--lg | text-card | surface-brand-lightest">
+                            <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4><?php echo __('They have no gospel access', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Unengaged people groups have no missionaries, no churches, and often no known believers. Adoption helps ensure they are finally seen, prayed for, and intentionally pursued with the gospel.', 'doxa-website'); ?></p>
                             </div>
@@ -87,7 +87,7 @@ get_header( 'top' ); ?>
                             <div class="grow-none">
                                 <img src="https://placehold.co/150x200" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
-                            <div class="stack stack--lg | text-card | surface-brand-lightest">
+                            <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4><?php echo __('Prayer opens the door for engagement', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spritual barriers, and supports workers who go. Every gospel movement begins with prayer.', 'doxa-website'); ?></p>
                             </div>
@@ -95,7 +95,7 @@ get_header( 'top' ); ?>
                             <div class="grow-none">
                                 <img src="https://placehold.co/150x200" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
-                            <div class="stack stack--lg | text-card | surface-brand-lightest">
+                            <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4><?php echo __('Churches become active partners in God\'s mission', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Adoptoin invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
                             </div>
@@ -142,7 +142,7 @@ get_header( 'top' ); ?>
                         <blockquote><?php echo __('A great quote about praying, giving and sending', 'doxa-website'); ?></blockquote>
                         <figcaption>-<?php echo __('The Bible', 'doxa-website'); ?></figcaption>
                     </figure>
-                    <div><img src="https://placehold.co/1200x300" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
+                    <div class="center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-bottom-banner.jpg" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
                 </div>
             </section>
         </div>
