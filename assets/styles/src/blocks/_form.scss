@@ -5,6 +5,16 @@ input {
     width: 100%;
 }
 input[type="search"],
+input[type="phone"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="number"],
+input[type="url"],
+input[type="week"],
 input[type="text"] {
     padding: var(--spacing-xs) var(--spacing-lg);
 }

@@ -84,7 +84,7 @@ export class UupgsList extends LitElement {
                                 ${uupg.location_description ? html`
                                     <p class="uupg__content">${uupg.location_description}</p>
                                 ` : ''}
-                                <a class="uupg__more-button button compact" href="${'/research/' + uupg.id}">${this.t.full_profile}</a>
+                                <a class="uupg__more-button button compact" href="${'/research/' + uupg.slug}">${this.t.full_profile}</a>
                             </div>
                         `})}
                         ${this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
@@ -173,6 +173,7 @@ export class UupgsList extends LitElement {
     }
 
     isDevelopment() {
+        return false
         const url = new URL(window.location.href);
         return url.hostname !== 'doxa.life';
     }

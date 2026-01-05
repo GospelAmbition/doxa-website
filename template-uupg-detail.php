@@ -5,9 +5,9 @@
  * Custom template for the UUPG detail page - completely independent of posts/archive templates
  */
 
-$post_id = get_query_var('uupg_slug');
+$slug = get_query_var( 'uupg_slug' );
 
-$uupg = get_uupg_by_post_id($post_id);
+$uupg = get_uupg_by_slug( $slug );
 
 get_header( 'top' ); ?>
 
@@ -27,9 +27,7 @@ get_header( 'top' ); ?>
                             <div class="stack stack--sm | uupg__header">
                                 <h3><?php echo esc_html( $uupg['imb_display_name'] ); ?></h3>
                                 <h4><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</h4>
-                                <p>
-                                    Aliquam erat volutpat. Nullam scelerisque auctor libero, id volutpat est dignissim vitae. Aliquam erat volutpat. Integer laoreet, nisi a tincidunt tincidunt, odio nisl commodo libero, id ultricies sapien purus non odio. Phasellus ac ultricies ex, vel scelerisque libero.
-                                </p>
+                                <p><?php echo esc_html( $uupg['imb_people_description'] ); ?></p>
                             </div>
                             <div class="uupg_adopted"></div>
                             <p class="uupg__content"><?php echo __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'doxa-website'); ?></p>
@@ -48,7 +46,7 @@ get_header( 'top' ); ?>
                                 <p class="font-size-4xl font-weight-bold"><?php echo __('2', 'doxa-website'); ?></p>
                                 <p class="font-size-lg font-weight-bold"><?php echo __('Churches have adopted this people group', 'doxa-website'); ?></p>
                             </div>
-                            <div><a class="button fit-content mx-auto" href="<?php echo home_url('#'); ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a></div>
+                            <div><a class="button fit-content mx-auto" href="https://pray.doxa.life/<?php echo $uupg['slug']; ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a></div>
                             <div><a class="button fit-content mx-auto" href="<?php echo home_url('#'); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a></div>
                             <div class="card" data-variant="primary">
                                 <h2><?php echo __('Overview', 'doxa-website'); ?></h2>

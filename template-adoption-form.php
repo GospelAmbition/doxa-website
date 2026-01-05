@@ -1,8 +1,8 @@
 <?php
 
-$post_id = get_query_var('uupg_slug');
+$slug = get_query_var( 'uupg_slug' );
 
-$uupg = get_uupg_by_post_id($post_id);
+$uupg = get_uupg_by_slug( $slug );
 
 get_header( 'top' ); ?>
 

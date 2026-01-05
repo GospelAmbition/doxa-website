@@ -445,6 +445,20 @@ function custom_adoption_form_template($template) {
 }
 add_filter('template_include', 'custom_adoption_form_template');
 
+function get_uupg_by_slug( $slug ) {
+    $api_url = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
+
+    $response = wp_remote_get($api_url);
+    if (is_wp_error($response)) {
+        return [
+            'api_url' => $api_url,
+            'response' => $response,
+        ];
+    }
+    $data = json_decode($response['body'], true);
+    return $data;
+}
+
 function get_uupg_by_post_id( $post_id ) {
     $site_url = get_site_url();
 
