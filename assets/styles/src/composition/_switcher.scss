@@ -14,6 +14,10 @@
     flex-basis: 100%;
 }
 
+.switcher[data-width="xl"] {
+    --switcher-width: 70rem;
+}
+
 .switcher[data-width="lg"] {
     --switcher-width: 50rem;
 }

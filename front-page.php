@@ -155,7 +155,7 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--xl">
                     <h2><?php echo __('Vision 2033', 'doxa-website'); ?></h2>
                     <div class="card shadow">
-                        <div class="switcher">
+                        <div class="switcher" data-width="xl">
                             <div class="switcher-item grow-none">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-03-Vision-2033.jpg" alt="<?php echo __('Vision 2033', 'doxa-website'); ?>">
                             </div>
@@ -192,7 +192,7 @@ get_header( 'top' ); ?>
                 </div>
             </section>
             <section>
-                <div class="switcher container | gap-md">
+                <div class="switcher container | gap-md" data-width="xl">
                     <div class="switcher-item card | bg-image align-center" style="background-image: url('https://placehold.co/800x600/455449/bbb');">
                         <div class="stack stack--md | text-center text-secondary">
                             <h2><?php echo __('What does "DOXA" mean?', 'doxa-website'); ?></h2>
