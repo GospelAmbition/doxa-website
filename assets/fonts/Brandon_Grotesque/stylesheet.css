@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Brandon Grotesque';
-    src: url('Brandon_Grotesque_bold.otf') format('opentype');
-    font-weight: 700;
+    src: url('Brandon_Grotesque_medium.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
