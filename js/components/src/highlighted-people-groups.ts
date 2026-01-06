@@ -47,8 +47,8 @@ export class HighlightedPeopleGroups extends LitElement {
                         <p class="font-size-xl font-button">${uupg.people_praying ?? 0}/144</p>
                     </div>
                     <div class="switcher | text-center" data-width="md">
-                        <a class="highlighted-uupg__more-button button compact outline" href="${'/research/' + uupg.slug}">${this.t.full_profile}</a>
                         <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl + '/' + uupg.slug}">${this.t.select}</a>
+                        <a class="highlighted-uupg__more-button button compact outline" href="${'/research/' + uupg.slug}">${this.t.full_profile}</a>
                     </div>
                 </div>
             `)}

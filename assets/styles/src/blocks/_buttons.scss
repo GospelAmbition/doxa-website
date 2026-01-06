@@ -49,9 +49,9 @@
 }
 
 .button.outline {
-    --button-text-color: var(--color-brand-primary);
+    --button-text-color: var(--color-brand);
     --button-background-color: var(--color-surface-white);
     --button-text-color-hover: var(--color-surface-white);
     --button-background-color-hover: var(--color-brand-primary);
-    --button-border-color: var(--color-brand-primary);
+    --button-border-color: transparent;
 }

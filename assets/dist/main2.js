@@ -14,8 +14,8 @@ const k=globalThis,F=k.ShadowRoot&&(k.ShadyCSS===void 0||k.ShadyCSS.nativeShadow
                         <p class="font-size-xl font-button">${s.people_praying??0}/144</p>
                     </div>
                     <div class="switcher | text-center" data-width="md">
-                        <a class="highlighted-uupg__more-button button compact outline" href="${"/research/"+s.slug}">${this.t.full_profile}</a>
                         <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl+"/"+s.slug}">${this.t.select}</a>
+                        <a class="highlighted-uupg__more-button button compact outline" href="${"/research/"+s.slug}">${this.t.full_profile}</a>
                     </div>
                 </div>
             `)}
@@ -48,8 +48,8 @@ const k=globalThis,F=k.ShadowRoot&&(k.ShadyCSS===void 0||k.ShadyCSS.nativeShadow
                                             <p class="font-size-xl font-button">${s.people_praying??0}/144</p>
                                         </div>
                                         <div class="switcher | text-center" data-width="md">
-                                            <a class="highlighted-uupg__more-button button compact outline" href="${"/research/"+s.id}">${this.t.full_profile}</a>
                                             <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl+"/"+s.id}">${this.t.select}</a>
+                                            <a class="highlighted-uupg__more-button button compact outline" href="${"/research/"+s.id}">${this.t.full_profile}</a>
                                         </div>
                                     </div>
                                 `:v`<div class="card | uupg__card">

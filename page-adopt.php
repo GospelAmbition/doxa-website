@@ -123,7 +123,7 @@ get_header( 'top' ); ?>
                     <uupgs-list
                         selectUrl="/adopt"
                         t="<?php echo esc_attr( json_encode( [
-                            'select' => __('Select', 'doxa-website'),
+                            'select' => __('Adopt', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),
                             'prayer_coverage' => __('Prayer Coverage', 'doxa-website'),
                             'loading' => __('Loading results...', 'doxa-website'),
