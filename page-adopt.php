@@ -90,7 +90,7 @@ get_header( 'top' ); ?>
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="surface-white">
                 <div class="container">
                     <div class="stack stack--lg">
                         <h2><?php echo __('Why adoption matters', 'doxa-website'); ?></h2>
