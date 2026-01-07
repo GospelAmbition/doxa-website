@@ -55,8 +55,8 @@ const I=globalThis,F=I.ShadowRoot&&(I.ShadyCSS===void 0||I.ShadyCSS.nativeShadow
                                 `;const t=s.adopted_by_churches&&s.adopted_by_churches>0,e=t?window.uupgsData.icons_url+"/Check-GreenCircle.png":window.uupgsData.icons_url+"/Check-MutedCircle.png",i=t?this.t.adopted:this.t.not_adopted;return y`<div class="card | uupg__card">
                                 <img class="uupg__image" src="${s.picture_url}" alt="${s.name}">
                                 <div class="uupg__header">
-                                    <h3>${s.name}</h3>
-                                    <p>${s.country.label} (${s.rop1.label})</p>
+                                    <h3 class="uupg__name">${s.name}</h3>
+                                    <p class="uupg__country">${s.country.label} (${s.rop1.label})</p>
                                 </div>
                                 <div class="uupg_adopted">
                                     <div>

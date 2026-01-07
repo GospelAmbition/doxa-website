@@ -83,8 +83,8 @@ export class UupgsList extends LitElement {
                             return html`<div class="card | uupg__card">
                                 <img class="uupg__image" src="${uupg.picture_url}" alt="${uupg.name}">
                                 <div class="uupg__header">
-                                    <h3>${uupg.name}</h3>
-                                    <p>${uupg.country.label} (${uupg.rop1.label})</p>
+                                    <h3 class="uupg__name">${uupg.name}</h3>
+                                    <p class="uupg__country">${uupg.country.label} (${uupg.rop1.label})</p>
                                 </div>
                                 <div class="uupg_adopted">
                                     <div>

@@ -105,7 +105,8 @@
                         "footer footer footer-right";
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto auto;
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
 }
 
 .uupg__image {
@@ -126,6 +127,14 @@
 
 .uupg__header {
     grid-area: header;
+    .uupg__name {
+        font-family: var(--font-family-base);
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-medium);
+    }
+    .uupg__country {
+        font-size: var(--font-size-md);
+    }
 }
 
 .uupg_adopted {
