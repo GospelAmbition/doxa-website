@@ -15,6 +15,7 @@ get_header( 'top' ); ?>
 
     <?php get_header(); ?>
 
+    <?php print_r($response); ?>
     <main class="site-main">
         <div class="container page-content uupg-detail-page">
             <div class="stack stack--lg">

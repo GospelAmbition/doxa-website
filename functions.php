@@ -451,7 +451,6 @@ function get_uupg_by_slug( $slug ) {
 
     $response = wp_remote_get($api_url);
 
-    print_r($response);
     if (is_wp_error($response)) {
         return [
             'api_url' => $api_url,
