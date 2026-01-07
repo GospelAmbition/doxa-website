@@ -115,7 +115,6 @@ get_header( 'top' ); ?>
                                     <span><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.9' ); ?></span>
                                     <span class="color-brand-lighter"><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '6,602' ); ?></span>
                                 </div>
-                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
                             </div>
                         </div>
                         <div class="switcher-item">
@@ -125,7 +124,6 @@ get_header( 'top' ); ?>
                                     <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.3' ); ?></span>
                                     <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '5,119' ); ?></span>
                                 </div>
-                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
                             </div>
                         </div>
                         <div class="switcher-item">
@@ -135,7 +133,6 @@ get_header( 'top' ); ?>
                                     <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '2' ); ?></span>
                                     <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '4,788' ); ?></span>
                                 </div>
-                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
                             </div>
                         </div>
                         <div class="switcher-item">
@@ -145,7 +142,6 @@ get_header( 'top' ); ?>
                                     <span><?php echo sprintf( __( '%s Million', 'doxa-website'), '202' ); ?></span>
                                     <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '2,085' ); ?></span>
                                 </div>
-                                <button class="button | compact"><?php echo __('More', 'doxa-website'); ?></button>
                             </div>
                         </div>
                     </div>

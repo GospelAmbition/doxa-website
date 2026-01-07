@@ -81,7 +81,7 @@ export class HighlightedPeopleGroups extends LitElement {
     }
 
     isDevelopment() {
-        return false
+        //return false
         const url = new URL(window.location.href);
         return url.hostname !== 'doxa.life';
     }
