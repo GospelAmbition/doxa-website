@@ -36,7 +36,7 @@ get_header( 'top' ); ?>
                         </div>
                     </div>
                 </div>
-                <div class="text-card stack stack--lg">
+                <div class="stack stack--lg | text-card shadow">
                     <div class="stack">
                         <h3 class="h5"><?php echo __('Partnering Church', 'doxa-website'); ?></h3>
                         <div class="">
@@ -76,12 +76,12 @@ get_header( 'top' ); ?>
                             <input type="email" id="endorsement-email" name="endorsement-email" required placeholder="<?php echo __('Email of the pastor or church leader confirming this adoption and the Prayer Champion', 'doxa-website'); ?>">
                         </div>
                     </div>
+                    <section class="ms-auto form-control color-primary-darker font-weight-medium text-end">
+                        <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
+                        <input type="checkbox" id="confirm-adoption" name="confirm-adoption">
+                    </section>
+                    <button class="button ms-auto compact" href="<?php echo home_url('#'); ?>"><?php echo __('Submit', 'doxa-website'); ?></button>
                 </div>
-                <div class="ms-auto form-control color-primary-darker font-weight-medium">
-                    <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
-                    <input type="checkbox" id="confirm-adoption" name="confirm-adoption">
-                </div>
-                <button class="button ms-auto" href="<?php echo home_url('#'); ?>"><?php echo __('Submit Adoption', 'doxa-website'); ?></button>
             </div>
         </div>
     </main>

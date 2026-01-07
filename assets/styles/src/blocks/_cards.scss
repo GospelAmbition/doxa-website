@@ -201,10 +201,12 @@
     }
 }
 .text-card {
-    border-radius: var(--border-radius-lg);
-    padding: var(--spacing-md) var(--spacing-3xl);
+    background-color: var(--color-surface-white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-md) var(--spacing-xl);
 }
 .adoption-card {
-    border-radius: var(--border-radius-lg);
+    background-color: var(--color-surface-white);
+    border-radius: var(--border-radius-md);
     padding: var(--spacing-md) var(--spacing-md);
 }
