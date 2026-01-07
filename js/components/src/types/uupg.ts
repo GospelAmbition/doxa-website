@@ -15,6 +15,7 @@ export interface Uupg {
     population: number;
     religion: KeyLabel;
     adopted?: boolean;
+    adopted_by_churches?: number;
     people_praying?: number;
 }
 

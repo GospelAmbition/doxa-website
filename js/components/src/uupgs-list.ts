@@ -74,13 +74,24 @@ export class UupgsList extends LitElement {
                                 `
                             }
 
+                            const isAdopted = uupg.adopted_by_churches && uupg.adopted_by_churches > 0;
+                            const adoptedBadgeImage = isAdopted
+                                ? window.uupgsData.icons_url + '/Check-GreenCircle.png'
+                                : window.uupgsData.icons_url + '/Check-MutedCircle.png';
+                            const adoptedBadgeText = isAdopted ? this.t.adopted : this.t.not_adopted;
+
                             return html`<div class="card | uupg__card">
                                 <img class="uupg__image" src="${uupg.picture_url}" alt="${uupg.name}">
                                 <div class="uupg__header">
                                     <h3>${uupg.name}</h3>
                                     <p>${uupg.country.label} (${uupg.rop1.label})</p>
                                 </div>
-                                <div class="uupg_adopted"></div>
+                                <div class="uupg_adopted">
+                                    <div>
+                                        <img src="${adoptedBadgeImage}" alt="${adoptedBadgeText}">
+                                        <span>${adoptedBadgeText}</span>
+                                    </div>
+                                </div>
                                 ${uupg.location_description ? html`
                                     <p class="uupg__content">${uupg.location_description}</p>
                                 ` : ''}
@@ -173,7 +184,6 @@ export class UupgsList extends LitElement {
     }
 
     isDevelopment() {
-        return false
         const url = new URL(window.location.href);
         return url.hostname !== 'doxa.life';
     }

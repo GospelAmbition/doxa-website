@@ -21,6 +21,8 @@ get_header( 'top' ); ?>
                     'load_more' => __('Load More', 'doxa-website'),
                     'total' => __('Total', 'doxa-website'),
                     'search' => __('Search people names', 'doxa-website'),
+                    'adopted' => __('Adopted', 'doxa-website'),
+                    'not_adopted' => __('Not Adopted', 'doxa-website'),
                     'filters' => [
                         'search' => __('Search', 'doxa-website'),
                         'sort' => __('Sort', 'doxa-website'),

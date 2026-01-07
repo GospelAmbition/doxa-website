@@ -65,7 +65,8 @@ function gospel_ambition_scripts() {
     if ( is_page('research') || is_page('pray') || is_page('adopt') ) {
         wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
         wp_localize_script('uupgs-script', 'uupgsData', array(
-            'images_url' => trailingslashit( get_template_directory_uri() ) . 'assets/images/',
+            'images_url' => trailingslashit( get_template_directory_uri() ) . 'assets/images',
+            'icons_url' => trailingslashit( get_template_directory_uri() ) . 'assets/icons',
         ));
     }
 

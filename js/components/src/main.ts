@@ -5,6 +5,7 @@ declare global {
     interface Window {
         uupgsData: {
             images_url: string;
+            icons_url: string;
         };
         doxaData: {
             statistics: {
