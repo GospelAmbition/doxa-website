@@ -43,7 +43,7 @@ get_header( 'top' ); ?>
             </section>
             <section class="surface-brand-light">
                 <div class="container stack stack--3xl">
-                    <h2><?php echo __('Where do I start?', 'doxa-website'); ?></h2>
+                    <h2><?php echo __('How Adoption Works', 'doxa-website'); ?></h2>
                     <div class="switcher | gap-md">
                         <div class="step-card">
                             <div class="step-card__number">1</div>
@@ -72,11 +72,31 @@ get_header( 'top' ); ?>
             </section>
             <section>
                 <div class="container">
+                    <div class="switcher | align-center">
+                        <div class="stack | grow-2 align-center">
+                            <div class="stack stack--2xl">
+                                <h2 class="highlight" data-highlight-index="1"><?php echo __('Adoption Guide & Resources', 'doxa-website'); ?></h2>
+                                <ul class="stack stack--sm" data-list-color="primary">
+                                    <li><?php echo __('Step-by-step guidance for churches adopting a peopele group', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Tools to mobilize prayer and participation across your congregation', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Printable and digital resources to promote awareness and engagement', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Helpful tips for sustaining long-term commitment', 'doxa-website'); ?></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-02-ipad-mockup.png" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
                     <div class="stack stack--lg">
                         <h2><?php echo __('Why adoption matters', 'doxa-website'); ?></h2>
                         <div class="switcher | gap-md">
                             <div class="grow-none">
-                                <img src="https://placehold.co/150x200" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-03-DurbetInMongolia.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4><?php echo __('They have no gospel access', 'doxa-website'); ?></h4>
@@ -85,7 +105,7 @@ get_header( 'top' ); ?>
                         </div>
                         <div class="switcher | gap-md">
                             <div class="grow-none">
-                                <img src="https://placehold.co/150x200" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-04-Maha-Brahmin-in-India.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4><?php echo __('Prayer opens the door for engagement', 'doxa-website'); ?></h4>
@@ -93,7 +113,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div><div class="switcher | gap-md">
                             <div class="grow-none">
-                                <img src="https://placehold.co/150x200" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-05-KamaraInGhana.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4><?php echo __('Churches become active partners in God\'s mission', 'doxa-website'); ?></h4>
@@ -140,10 +160,10 @@ get_header( 'top' ); ?>
             <section>
                 <div class="container stack stack--5xl">
                     <figure class="text-center font-size-5xl font-heading">
-                        <blockquote><?php echo __('A great quote about praying, giving and sending', 'doxa-website'); ?></blockquote>
-                        <figcaption>-<?php echo __('The Bible', 'doxa-website'); ?></figcaption>
+                        <blockquote><?php echo __('I was a stranger and you invited me in', 'doxa-website'); ?></blockquote>
+                        <figcaption>-<?php echo __('Jesus', 'doxa-website'); ?></figcaption>
                     </figure>
-                    <div class="center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-bottom-banner.jpg" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-bottom-banner.jpg" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
                 </div>
             </section>
         </div>
