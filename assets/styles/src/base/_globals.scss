@@ -111,6 +111,8 @@ ul[data-list-color="primary"] li::before {
 
 blockquote {
   padding: var(--spacing-md);
+  padding-left: 5rem;
+  padding-right: 5rem;
   border-radius: var(--border-radius-lg);
   line-height: var(--line-height-tight);
   position: relative;
