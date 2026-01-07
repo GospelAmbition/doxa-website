@@ -16,8 +16,8 @@
 }
 
 .card[data-variant="primary"] {
-    --card-background-color: var(--color-surface-default);
-    --card-text-color: var(--color-text-on-default);
+    --card-background-color: var(--color-surface-white);
+    --card-text-color: var(--color-text-on-white);
 }
 .card[data-variant="secondary"] {
     --card-background-color: var(--color-surface-brand-dark);
