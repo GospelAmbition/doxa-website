@@ -44,7 +44,7 @@ get_header( 'top' ); ?>
                             <h2><?php echo __('Adoption Status', 'doxa-website'); ?></h2>
                             <p class="font-size-4xl font-weight-bold"><?php echo count( $uupg['adopted_by_churches'] ) ?? 0; ?></p>
                             <p class="font-size-lg font-weight-bold"><?php echo __('Churches have adopted this people group', 'doxa-website'); ?></p>
-                            <a class="button fit-content mx-auto mt-auto" href="<?php echo home_url('#'); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
+                            <a class="button fit-content mx-auto mt-auto" href="<?php echo home_url('adopt/' . $uupg['slug']); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
                         </div>
                         <div class="card" data-variant="primary">
                             <h2><?php echo __('Overview', 'doxa-website'); ?></h2>
