@@ -450,6 +450,8 @@ function get_uupg_by_slug( $slug ) {
     $api_url = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
 
     $response = wp_remote_get($api_url);
+
+    print_r($response);
     if (is_wp_error($response)) {
         return [
             'api_url' => $api_url,
