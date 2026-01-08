@@ -92,3 +92,19 @@ input[type=radio] {
         box-shadow: inset 1em 1em var(--color-brand-primary-darker);
     }
 }
+.search-box {
+    position: relative;
+}
+.search-icon {
+    position: absolute;
+    inset-inline-start: 1em;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    width: 1em;
+    height: 1em;
+    fill: var(--color-brand-secondary-light);
+}
+input[type=search] {
+    text-indent: 1.5em;
+}

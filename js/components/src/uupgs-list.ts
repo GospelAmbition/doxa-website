@@ -41,12 +41,17 @@ export class UupgsList extends LitElement {
         return html`
             <div class="stack stack--md">
                 <div id="filters" class="filters">
-                    <input
-                        type="search"
-                        placeholder="${this.t.search}"
-                        @input=${this.debounce(this.search, 500)}
-                        class="center | max-width-md"
-                    />
+                    <div class="search-box | center | max-width-md">
+                        <span class="sr-only">${this.t.search}</span>
+                        <svg class="search-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/wp-content/themes/doxa-website/assets/icons/search.svg#search" />
+                        </svg>
+                        <input
+                            type="search"
+                            placeholder="${this.t.search}"
+                            @input=${this.debounce(this.search, 500)}
+                        />
+                    </div>
                 </div>
                 <div class="stack stack--xs">
                     ${!this.firstLoaded && !this.loading ? html`
