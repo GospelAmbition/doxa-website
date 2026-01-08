@@ -159,11 +159,18 @@ get_header( 'top' ); ?>
                                 <div class="stack stack--xl">
                                     <h3 class="subtext"><?php echo __('In partnership with the global church, our vision is to...', 'doxa-website'); ?></h3>
                                     <ul class="stack stack--md" data-list-color="primary">
-                                        <li><?php echo __('Engage all unengaged peoples by 2033.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('24-hour prayer coverage for all 2,085 unengaged peoples.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('No unengaged people groups by 2033.', 'doxa-website'); ?></li>
                                         <li><?php echo __('Mobilize 20,000+ DOXA partnership missionaries', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Advance fruitful engagement among frontier and under-engaged peoples.', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Catalyze church-planting movements among all unreached peoples.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Fruitful engagement among frontier and the under-engaged.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Church-planting movements among every unreached people on earth.', 'doxa-website'); ?></li>
                                     </ul>
+                                    <a href="/about" class="button outline | with-icon | color-primary-darker ms-auto">
+                                        <?php echo __('More', 'doxa-website'); ?>
+                                        <svg class="icon | rotate-90">
+                                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
                         </div>
