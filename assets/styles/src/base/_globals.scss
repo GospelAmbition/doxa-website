@@ -109,6 +109,20 @@ ul[data-list-color="primary"] li::before {
   color: var(--color-brand-primary);
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-brand-light);
+  font-weight: var(--font-weight-medium);
+  transition: color 0.3s ease;
+  display: block;
+}
+a:hover {
+  color: var(--color-brand-lighter);
+}
+
+figure[class*="wp-block-"]:has(blockquote) {
+  padding-inline: var(--spacing-lg);
+}
 blockquote {
   padding: var(--spacing-md);
   padding-left: 5rem;

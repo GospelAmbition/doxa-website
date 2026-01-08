@@ -13,7 +13,7 @@ get_header( 'top' ); ?>
     <?php get_header(); ?>
 
     <main class="site-main">
-        <div class="container page-content children-archive-template">
+        <div class="container page-content">
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php
@@ -36,54 +36,45 @@ get_header( 'top' ); ?>
                     ));
                     ?>
 
-                    <div class="children-archive-container">
+                    <div class="with-sidebar">
                         <?php if ($child_pages) : ?>
-                            <aside class="children-sidebar">
-                                <nav class="children-nav" aria-label="Child pages navigation">
+                            <aside class="sidebar">
+                                <nav class="stack" aria-label="Child pages navigation">
                                     <?php
                                     // Get the parent page title for the sidebar header
                                     $parent_page = get_post($menu_parent_id);
                                     ?>
+
                                     <h2 class="sidebar-title">
-                                        <a href="<?php echo esc_url(get_permalink($menu_parent_id)); ?>"
-                                            class="<?php echo ($current_page_id === $menu_parent_id) ? 'current-page' : ''; ?>">
+                                        <a href="<?php echo esc_url(get_permalink($menu_parent_id)); ?>">
                                             <?php echo esc_html($parent_page->post_title); ?>
                                         </a>
                                     </h2>
 
-                                    <ul class="children-menu">
-                                        <?php foreach ($child_pages as $child) : ?>
-                                            <li class="<?php echo ($current_page_id === $child->ID) ? 'current-menu-item' : ''; ?>">
-                                                <a href="<?php echo esc_url(get_permalink($child->ID)); ?>">
-                                                    <?php echo esc_html($child->post_title); ?>
-                                                </a>
-                                            </li>
-                                        <?php endforeach; ?>
-                                    </ul>
+                                    <div>
+                                        <ul class="stack" role="list">
+                                            <?php foreach ($child_pages as $child) : ?>
+                                                <li>
+                                                    <a href="<?php echo esc_url(get_permalink($child->ID)); ?>">
+                                                        <?php echo esc_html($child->post_title); ?>
+                                                    </a>
+                                                </li>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </div>
                                 </nav>
                             </aside>
                         <?php endif; ?>
 
-                        <article id="page-<?php the_ID(); ?>" <?php post_class('page-content children-archive-content'); ?>>
+                        <article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <?php if (has_post_thumbnail()) : ?>
                                 <div class="page-featured-image">
                                     <?php the_post_thumbnail('large'); ?>
                                 </div>
                             <?php endif; ?>
 
-                            <div class="page-header">
-                                <h1 class="page-title"><?php the_title(); ?></h1>
-                            </div>
-
                             <div class="page-body">
                                 <?php the_content(); ?>
-
-                                <?php
-                                wp_link_pages(array(
-                                    'before' => '<div class="page-links">',
-                                    'after'  => '</div>',
-                                ));
-                                ?>
                             </div>
 
                             <?php
@@ -91,9 +82,9 @@ get_header( 'top' ); ?>
                             if (!$parent_id && empty(trim(strip_tags(get_the_content())))) :
                                 if ($child_pages) :
                             ?>
-                                <div class="children-grid">
+                                <div class="grid">
                                     <?php foreach ($child_pages as $child) : ?>
-                                        <div class="child-card">
+                                        <div class="card" data-variant="secondary">
                                             <?php if (has_post_thumbnail($child->ID)) : ?>
                                                 <div class="child-thumbnail">
                                                     <a href="<?php echo esc_url(get_permalink($child->ID)); ?>">
@@ -102,9 +93,9 @@ get_header( 'top' ); ?>
                                                 </div>
                                             <?php endif; ?>
 
-                                            <div class="child-content">
-                                                <h3 class="child-title">
-                                                    <a href="<?php echo esc_url(get_permalink($child->ID)); ?>">
+                                            <div class="stack">
+                                                <h3>
+                                                    <a class="color-white" href="<?php echo esc_url(get_permalink($child->ID)); ?>">
                                                         <?php echo esc_html($child->post_title); ?>
                                                     </a>
                                                 </h3>
