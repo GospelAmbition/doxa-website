@@ -16,13 +16,17 @@ get_header( 'top' ); ?>
                     <h2 class="color-brand"><?php echo __('Our gift to Jesus', 'doxa-website'); ?>:</h2>
                     <h1 class="color-brand-light highlight" data-highlight-index="1" data-highlight-last data-highlight-color="primary"><?php echo __('Engage every people by 2033', 'doxa-website'); ?></h1>
                 </div>
-                <div>
+                <div class="video-modal-button">
+                    <svg class="icon">
+                        <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/play-button.svg#play-button"></use>
+                    </svg>
                     <img
                         class="rounded-xlg"
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/home-01-hero.jpg"
                         alt="<?php echo __('Engage every people by 2033', 'doxa-website'); ?>"
                     >
                 </div>
+
             </section>
             <section class="stack stack--md | surface-brand-light">
                 <div class="container stack stack--4xl">
@@ -208,6 +212,13 @@ get_header( 'top' ); ?>
                     </div>
                 </div>
             </section>
+        </div>
+        <div class="video-modal-overlay" data-state="closed"></div>
+        <div class="video-modal" data-state="closed">
+            <div style="padding:41.89% 0 0 0;position:relative;">
+                <iframe src="https://player.vimeo.com/video/1143355099?h=39f8c1f131&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Doxa Video"></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
     </main>
 

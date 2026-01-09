@@ -167,5 +167,22 @@
                 initSlideshow(reel);
             }
         })();
+
+        // Video modal toggle
+        const videoModalButton = document.querySelector('.video-modal-button');
+        const videoModal = document.querySelector('.video-modal');
+        const videoModalOverlay = document.querySelector('.video-modal-overlay');
+
+        if (videoModalButton) {
+            videoModalButton.addEventListener('click', function() {
+                videoModal.dataset.state = videoModal.dataset.state === 'open' ? 'closed' : 'open';
+                videoModalOverlay.dataset.state = videoModalOverlay.dataset.state === 'open' ? 'closed' : 'open';
+            });
+
+            videoModalOverlay.addEventListener('click', function() {
+                videoModal.dataset.state = 'closed';
+                videoModalOverlay.dataset.state = 'closed';
+            });
+        }
     });
 })();
