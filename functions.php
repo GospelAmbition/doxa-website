@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
 }
 
 function coming_soon_redirect() {
-    if ( !is_page( 'coming-soon' ) && !is_user_logged_in() ) {
+    if ( !is_admin() && !is_page( 'coming-soon' ) && !is_user_logged_in() ) {
         wp_redirect( home_url( '/coming-soon' ) );
         exit;
     }
