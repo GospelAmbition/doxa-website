@@ -1,11 +1,14 @@
 input {
     border: 1px solid var(--input-border-color);
-    border-radius: 100px;
+    border-radius: 8px;
     background-color: var(--color-surface-white);
     width: 100%;
 }
+input[type="search"] {
+    padding: var(--spacing-xs) var(--spacing-lg);
+    border-radius: 100px;
+}
 
-input[type="search"],
 input[type="phone"],
 input[type="email"],
 input[type="tel"],
@@ -17,7 +20,7 @@ input[type="number"],
 input[type="url"],
 input[type="week"],
 input[type="text"] {
-    padding: var(--spacing-xs) var(--spacing-lg);
+    padding: var(--spacing-3xs) var(--spacing-sm);
 }
 
 .form-control {

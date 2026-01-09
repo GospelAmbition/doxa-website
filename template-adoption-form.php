@@ -15,7 +15,7 @@ get_header( 'top' ); ?>
             <div class="stack stack--lg">
                 <button class="button back-button compact" onclick="window.history.back();"><?php echo __('< Back', 'doxa-website'); ?></button>
                 <h1 class="highlight" data-highlight-index="1"><?php echo __('Adoption Form', 'doxa-website'); ?></h1>
-                <p class="subtext"><?php echo __('Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church\'s adoption, connect with your Prayer Champion, and beign sending prayer updates and resources', 'doxa-website'); ?></p>
+                <p class="subtext"><?php echo __('Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church\'s adoption, connect with your Prayer Champion, and begin sending prayer updates and resources', 'doxa-website'); ?></p>
                 <div class="switcher | adoption-card shadow">
                     <div class="grow-none">
                         <img
@@ -29,10 +29,6 @@ get_header( 'top' ); ?>
                         <div class="stack stack--md lh-0">
                             <p class="font-size-xl font-weight-medium"><?php echo esc_html( $uupg['imb_display_name'] ); ?></p>
                             <p class="font-size-lg font-weight-medium"><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
-                        </div>
-                        <div class="form-control color-primary-darker font-weight-medium">
-                            <label for="confirm-uupg"><?php echo __('Confirm People Group', 'doxa-website'); ?></label>
-                            <input type="checkbox" id="confirm-uupg" name="confirm-uupg">
                         </div>
                     </div>
                 </div>
@@ -68,17 +64,12 @@ get_header( 'top' ); ?>
                             <input type="text" id="role" name="role" required placeholder="<?php echo __('Emample: Missions Pastor, Elder, Volunteer Leader etc.', 'doxa-website'); ?>">
                         </div>
                     </div>
-                    <div class="stack">
-                        <h3 class="h5"><?php echo __('Pastoral Approval', 'doxa-website'); ?></h3>
-                        <i class="color-primary font-size-sm"><?php echo __('We will send a confirmation email to this pastor to verify the adoption', 'doxa-website'); ?></i>
-                        <div class="">
-                            <label for="endorsement-email"><?php echo __('Pastor Endorsement Email', 'doxa-website'); ?></label>
-                            <input type="email" id="endorsement-email" name="endorsement-email" required placeholder="<?php echo __('Email of the pastor or church leader confirming this adoption and the Prayer Champion', 'doxa-website'); ?>">
+                    <section>
+
+                        <div class="ms-auto form-control color-primary-darker font-weight-medium text-end">
+                            <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
+                            <input type="checkbox" id="confirm-adoption" name="confirm-adoption">
                         </div>
-                    </div>
-                    <section class="ms-auto form-control color-primary-darker font-weight-medium text-end">
-                        <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
-                        <input type="checkbox" id="confirm-adoption" name="confirm-adoption">
                     </section>
                     <button class="button ms-auto compact" href="<?php echo home_url('#'); ?>"><?php echo __('Submit', 'doxa-website'); ?></button>
                 </div>
