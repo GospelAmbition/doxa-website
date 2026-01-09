@@ -8,6 +8,14 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+function coming_soon_redirect() {
+    if ( !is_page( 'coming-soon' ) && !is_user_logged_in() ) {
+        wp_redirect( home_url( '/coming-soon' ) );
+        exit;
+    }
+}
+add_action( 'template_redirect', 'coming_soon_redirect' );
+
 /**
  * Theme Setup
  */

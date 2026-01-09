@@ -18,11 +18,13 @@
             </div>
             <nav class="main-navigation">
                 <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'footer',
-                    'menu_class'     => 'main-navigation role-list',
-                    'depth'          => 1,
-                ));
+                if (!is_page( 'coming-soon' ) && has_nav_menu('footer')) {
+                    wp_nav_menu(array(
+                        'theme_location' => 'footer',
+                        'menu_class'     => 'main-navigation role-list',
+                        'depth'          => 1,
+                    ));
+                }
                 ?>
             </nav>
 

@@ -1,19 +1,24 @@
 <header id="masthead" class="position-relative">
     <div class="hamburger-menu-overlay" data-state="closed"></div>
-    <nav id="hamburger-menu" class="hamburger-menu" aria-label="Hamburger menu" data-state="closed">
-        <?php
-        if (has_nav_menu('secondary')) {
-            wp_nav_menu(array(
-                'theme_location' => 'secondary',
-                'menu_id'        => 'secondary-menu',
-                'menu_class'     => 'role-list stack',
-                'submenu_class'     => 'role-list',
-                'container'      => false,
-                'depth'          => 2,
-            ));
-        }
-        ?>
-    </nav>
+
+    <?php if (!is_page( 'coming-soon' )) : ?>
+
+        <nav id="hamburger-menu" class="hamburger-menu" aria-label="Hamburger menu" data-state="closed">
+            <?php
+            if (has_nav_menu('secondary')) {
+                wp_nav_menu(array(
+                    'theme_location' => 'secondary',
+                    'menu_id'        => 'secondary-menu',
+                    'menu_class'     => 'role-list stack',
+                    'submenu_class'     => 'role-list',
+                    'container'      => false,
+                    'depth'          => 2,
+                ));
+            }
+            ?>
+        </nav>
+
+    <?php endif; ?>
 
     <div class="header">
         <div class="container">
@@ -30,7 +35,7 @@
                 <div class="header-menu">
                     <nav id="site-navigation" class="main-navigation">
                         <?php
-                        if (has_nav_menu('primary')) {
+                        if (!is_page( 'coming-soon' ) && has_nav_menu('primary')) {
                             wp_nav_menu(array(
                                 'theme_location' => 'primary',
                                 'menu_id'        => 'primary-menu',
@@ -42,7 +47,7 @@
                         }
                         ?>
                     </nav>
-                    <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <button style="<?php echo is_page( 'coming-soon' ) ? 'display: none;' : ''; ?>" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
