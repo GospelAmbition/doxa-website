@@ -1,3 +1,4 @@
+textarea,
 select,
 input {
     border: 1px solid var(--input-border-color);
@@ -10,6 +11,7 @@ input[type="search"] {
     border-radius: 100px;
 }
 
+textarea,
 select,
 input[type="phone"],
 input[type="email"],
