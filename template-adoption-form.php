@@ -73,8 +73,30 @@ get_header( 'top' ); ?>
                             <input type="text" id="role" name="role" required placeholder="<?php echo __('Emample: Missions Pastor, Elder, Volunteer Leader etc.', 'doxa-website'); ?>">
                         </div>
                     </div>
-                    <section>
-
+                    <section class="stack">
+                        <h3><?php echo __('Champion Commitments: Pray. Give. Go.', 'doxa-website'); ?></h3>
+                        <p><?php echo esc_html__( 'When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:', 'doxa-website' ); ?></p>
+                        <div class="ms-auto form-control color-primary-darker font-weight-medium text-end">
+                            <label for="confirm-pray">
+                                <strong><?php echo __('Pray', 'doxa-website'); ?> – </strong>
+                                <?php echo __('Mobilize toward the goal of at least 144 prayer partners to cover the people group in continuous, daily prayer (10 minutes each, 24 hours a day).', 'doxa-website'); ?>
+                            </label>
+                            <input type="checkbox" id="confirm-pray" name="confirm-pray">
+                        </div>
+                        <div class="ms-auto form-control color-primary-darker font-weight-medium text-end">
+                            <label for="confirm-give">
+                                <strong><?php echo __('Give', 'doxa-website'); ?> – </strong>
+                                <?php echo __('Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers.', 'doxa-website'); ?>
+                            </label>
+                            <input type="checkbox" id="confirm-give" name="confirm-give">
+                        </div>
+                        <div class="ms-auto form-control color-primary-darker font-weight-medium text-end">
+                            <label for="confirm-go">
+                                <strong><?php echo __('Go', 'doxa-website'); ?> – </strong>
+                                <?php echo __('Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly.', 'doxa-website'); ?>
+                            </label>
+                            <input type="checkbox" id="confirm-go" name="confirm-go">
+                        </div>
                         <div class="ms-auto form-control color-primary-darker font-weight-medium text-end">
                             <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
                             <input type="checkbox" id="confirm-adoption" name="confirm-adoption">
