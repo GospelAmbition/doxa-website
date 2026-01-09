@@ -31,9 +31,7 @@
         </div>
 
         <div class="footer__right">
-
             <a href="<?php echo esc_url(home_url('/contact')); ?>" class="button compact white"><?php echo esc_html__('Contact Us', 'doxa-website'); ?></a>
-
         </div>
     </div>
     <div class="center | footer__copyright">
