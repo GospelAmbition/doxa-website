@@ -46,3 +46,10 @@
     --button-background-color-hover: var(--color-brand-primary);
     --button-border-color: transparent;
 }
+
+.icon-button {
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
