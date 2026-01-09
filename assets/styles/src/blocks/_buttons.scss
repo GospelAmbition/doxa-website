@@ -46,6 +46,13 @@
     --button-background-color-hover: var(--color-brand-primary);
     --button-border-color: transparent;
 }
+.button.white {
+    --button-background-color: var(--color-surface-white);
+    --button-text-color: var(--color-text-on-white);
+    --button-text-color-hover: var(--color-text-on-white);
+    --button-background-color-hover: var(--color-surface-secondary-light);
+    --button-border-color: transparent;
+}
 
 .icon-button {
     display: inline-flex;

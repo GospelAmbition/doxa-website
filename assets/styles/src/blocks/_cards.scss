@@ -1,6 +1,6 @@
 .surface {
     --card-background-color: var(--color-surface-white);
-    --card-text-color: var(--color-text-on-on-white);
+    --card-text-color: var(--color-text-on-white);
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-4xl);
     color: var(--card-text-color);
@@ -8,7 +8,7 @@
 }
 .card {
     --card-background-color: var(--color-surface-white);
-    --card-text-color: var(--color-text-on-on-white);
+    --card-text-color: var(--color-text-on-white);
     border-radius: var(--border-radius-xlg);
     padding: var(--spacing-2xl) var(--spacing-3xl);
     color: var(--card-text-color);

@@ -32,11 +32,7 @@
 
         <div class="footer__right">
 
-            <?php if (is_active_sidebar('footer-widgets')) : ?>
-
-                <?php dynamic_sidebar('footer-widgets'); ?>
-
-            <?php endif; ?>
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="button compact white"><?php echo esc_html__('Contact Us', 'doxa-website'); ?></a>
 
         </div>
     </div>

@@ -37,6 +37,12 @@
     gap: var(--spacing-sm);
 }
 
+.footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer__copyright {
     font-size: var(--font-size-xs);
     color: var(--color-brand-secondary);
