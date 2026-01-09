@@ -39,6 +39,15 @@ get_header( 'top' ); ?>
                             <label for="church-name"><?php echo __('Church Name', 'doxa-website'); ?></label>
                             <input type="text" id="church-name" name="church-name" required placeholder="<?php echo __('Enter Church Name', 'doxa-website'); ?>">
                         </div>
+                        <div>
+                            <label for="wagf-block"><?php echo __('WAGF Block', 'doxa-website'); ?></label>
+                            <select id="wagf-block" name="wagf-block" required>
+                                <option value="" disabled selected hidden><?php echo __('Select WAGF Block', 'doxa-website'); ?></option>
+                                <?php foreach (doxa_get_wagf_blocks() as $block) : ?>
+                                    <option value="<?php echo esc_attr( $block['value'] ); ?>"><?php echo esc_html( $block['label'] ); ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
                     </div>
                     <div class="stack">
                         <h3 class="h5"><?php echo __('Prayer Champion Details', 'doxa-website'); ?></h3>
