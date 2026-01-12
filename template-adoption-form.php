@@ -31,10 +31,11 @@ $uupg = get_uupg_by_slug( $slug );
     <?php get_footer( 'bottom' ); ?>
 <?php endif; ?>
 
+<?php get_header( 'top' ); ?>
 
 <div class="page">
 
-    <?php get_header(); print_r($uupg); ?>
+    <?php get_header(); ?>
 
     <main class="site-main">
         <div class="container page-content uupg-detail-page">
@@ -96,7 +97,7 @@ $uupg = get_uupg_by_slug( $slug );
                         </div>
                         <div class="">
                             <label for="role"><?php echo __('Role', 'doxa-website'); ?></label>
-                            <input type="text" id="role" name="role" required placeholder="<?php echo __('Emample: Missions Pastor, Elder, Volunteer Leader etc.', 'doxa-website'); ?>">
+                            <input type="text" id="role" name="role" required placeholder="<?php echo __('Example: Missions Pastor, Elder, Volunteer Leader etc.', 'doxa-website'); ?>">
                         </div>
                     </div>
                     <section class="stack">
