@@ -15,7 +15,7 @@
     font-family: var(--font-family-buttons);
     text-decoration: none;
     text-transform: uppercase;
-    transition: background-color, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .wp-block-button__link:focus,
