@@ -96,7 +96,7 @@ function doxa_handle_contact_form( WP_REST_Request $request ) {
     $note .= "Message: " . $message;
 
     // Send to CRM
-    $crm_response = wp_remote_post( 'https://' . $var['url'] . '/wp-json/dt-posts/v2/contac3ts?check_for_duplicates=contact_email', [
+    $crm_response = wp_remote_post( 'https://' . $var['url'] . '/wp-json/dt-posts/v2/contacts?check_for_duplicates=contact_email', [
         'body'    => wp_json_encode( [
             'title'            => $name ?: $email,
             'contact_email'    => [ [ 'value' => $email ] ],
