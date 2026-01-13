@@ -172,20 +172,21 @@
         const videoModalButton = document.querySelector('.video-modal-button');
         const videoModal = document.querySelector('.video-modal');
         const videoModalOverlay = document.querySelector('.video-modal-overlay');
-        const  vimeoPlayer = document.getElementById('vimeo-player');
+        const vimeoPlayer = document.getElementById('vimeo-player');
 
         if (videoModalButton) {
+            const videoSrc = vimeoPlayer.src;
             videoModalButton.addEventListener('click', function() {
                 videoModal.dataset.state = videoModal.dataset.state === 'open' ? 'closed' : 'open';
                 videoModalOverlay.dataset.state = videoModalOverlay.dataset.state === 'open' ? 'closed' : 'open';
+                vimeoPlayer.src = videoSrc + '&autoplay=1';
             });
 
             videoModalOverlay.addEventListener('click', function() {
                 videoModal.dataset.state = 'closed';
                 videoModalOverlay.dataset.state = 'closed';
-                const src = vimeoPlayer.src;
                 vimeoPlayer.src = '';
-                vimeoPlayer.src = src;
+                vimeoPlayer.src = videoSrc;
             });
         }
     });
