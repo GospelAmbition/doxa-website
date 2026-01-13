@@ -189,5 +189,23 @@
                 vimeoPlayer.src = videoSrc;
             });
         }
+
+        // Back button
+        const backButtons = document.querySelectorAll('[data-action="back"]');
+        if (backButtons) {
+            backButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    if ( window.history.length > 1 ) {
+                        if ( window.navigation.canGoBack === false ) {
+                            window.location.href = button.dataset.url;
+                            return
+                        }
+                        window.history.back();
+                    } else {
+                        window.location.href = button.dataset.url;
+                    }
+                });
+            });
+        }
     });
 })();

@@ -19,7 +19,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
 
             <h1 class="page-title"><?php echo esc_html__('Contact Us', 'doxa-website'); ?></h1>
 
-            <form class="stack stack--md" id="contact-form">
+            <form class="stack stack--md max-width-lg center" id="contact-form">
                 <input type="hidden" name="action" value="contact_us">
                 <input type="email" name="email" style="display:none;" autocomplete="off" tabindex="-1">
                 <div class="">

@@ -26,7 +26,7 @@ get_header( 'top' ); ?>
                         alt="<?php echo __('Engage every people by 2033', 'doxa-website'); ?>"
                     >
                 </div>
-
+                <p class="text-center color-primary uppercase font-button font-weight-medium"><?php echo __('The DOXA Vision: Click image to watch the video', 'doxa-website'); ?></p>
             </section>
             <section class="stack stack--md | surface-brand-light">
                 <div class="container stack stack--4xl">
