@@ -24,7 +24,7 @@ get_header( 'top' ); ?>
 
             <h1 class="page-title"><?php echo esc_html__('Contact Us', 'doxa-website'); ?></h1>
 
-            <form action="" method="POST" class="stack stack--md" id="contact-form">
+            <form action="" method="POST" class="stack stack--md max-width-lg center" id="contact-form">
                 <input type="hidden" name="action" value="contact_us">
                 <div class="">
                     <label for="name"><?php echo esc_html__('Name', 'doxa-website'); ?></label>
