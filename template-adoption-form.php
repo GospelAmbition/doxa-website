@@ -1,8 +1,8 @@
 <?php
 
 $slug = get_query_var( 'uupg_slug' );
-
 $uupg = get_uupg_by_slug( $slug );
+$cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
 
 ?>
 
@@ -29,7 +29,7 @@ $uupg = get_uupg_by_slug( $slug );
         <?php get_footer(); ?>
     </div>
     <?php get_footer( 'bottom' ); ?>
-<?php endif; ?>
+<?php else : ?>
 
 <?php get_header( 'top' ); ?>
 
@@ -64,20 +64,22 @@ $uupg = get_uupg_by_slug( $slug );
                         </div>
                     </div>
                 </div>
-                <div class="text-card shadow">
+                <form id="adoption-form" class="text-card shadow">
+                    <input type="email" name="email" style="display:none;" autocomplete="off" tabindex="-1">
+                    <input type="hidden" name="people_group" value="<?php echo esc_attr( $uupg['imb_display_name'] . ' (' . $uupg['imb_isoalpha3']['label'] . ')' ); ?>">
                     <div class="stack stack--lg | max-width-lg mx-auto">
                         <div class="stack">
                             <h3 class="h5"><?php echo __('Partnering Church', 'doxa-website'); ?></h3>
                             <div class="">
                                 <label for="church-name"><?php echo __('Church Name', 'doxa-website'); ?></label>
-                                <input type="text" id="church-name" name="church-name" required placeholder="<?php echo __('Enter Church Name', 'doxa-website'); ?>">
+                                <input type="text" id="church-name" name="church_name" required placeholder="<?php echo __('Enter Church Name', 'doxa-website'); ?>">
                             </div>
                             <div>
                                 <label for="wagf-block"><?php echo __('WAGF Block', 'doxa-website'); ?></label>
-                                <select id="wagf-block" name="wagf-block" required>
+                                <select id="wagf-block" name="wagf_block" required>
                                     <option value="" disabled selected hidden><?php echo __('Select WAGF Block', 'doxa-website'); ?></option>
                                     <?php foreach (doxa_get_wagf_blocks() as $block) : ?>
-                                        <option value="<?php echo esc_attr( $block['value'] ); ?>"><?php echo esc_html( $block['label'] ); ?></option>
+                                        <option value="<?php echo esc_attr( $block['label'] ); ?>"><?php echo esc_html( $block['label'] ); ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
@@ -87,15 +89,15 @@ $uupg = get_uupg_by_slug( $slug );
                             <i class="color-primary font-size-sm"><?php echo __('The Prayer Champion is the person who will organize the 144 intercessors and receive updates.', 'doxa-website'); ?></i>
                             <div class="">
                                 <label for="first-name"><?php echo __('First Name', 'doxa-website'); ?></label>
-                                <input type="text" id="first-name" name="first-name" required placeholder="<?php echo __('First Name', 'doxa-website'); ?>">
+                                <input type="text" id="first-name" name="first_name" required placeholder="<?php echo __('First Name', 'doxa-website'); ?>">
                             </div>
                             <div class="">
                                 <label for="last-name"><?php echo __('Last Name', 'doxa-website'); ?></label>
-                                <input type="text" id="last-name" name="last-name" required placeholder="<?php echo __('Last Name', 'doxa-website'); ?>">
+                                <input type="text" id="last-name" name="last_name" required placeholder="<?php echo __('Last Name', 'doxa-website'); ?>">
                             </div>
                             <div class="">
-                                <label for="email"><?php echo __('Email', 'doxa-website'); ?></label>
-                                <input type="email" id="email" name="email" required placeholder="<?php echo __('Enter Email', 'doxa-website'); ?>">
+                                <label for="contact-email"><?php echo __('Email', 'doxa-website'); ?></label>
+                                <input type="email" id="contact-email" name="contact_email" required placeholder="<?php echo __('Enter Email', 'doxa-website'); ?>">
                             </div>
                             <div class="">
                                 <label for="phone"><?php echo __('Phone', 'doxa-website'); ?></label>
@@ -125,18 +127,115 @@ $uupg = get_uupg_by_slug( $slug );
                             </ul>
                             <div class="ms-auto form-control color-primary-darker font-weight-medium">
                                 <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
-                                <input type="checkbox" id="confirm-adoption" name="confirm-adoption">
+                                <input type="checkbox" id="confirm-adoption" name="confirm_adoption">
                             </div>
                         </section>
-                        <button class="button compact" href="<?php echo home_url('#'); ?>"><?php echo __('Submit', 'doxa-website'); ?></button>
+                        <div class="cf-turnstile" data-sitekey="<?php echo esc_attr( $cf_site_key ); ?>" data-theme="light" data-callback="onTurnstileSuccess"></div>
+                        <div id="adoption-message" class="contact-message" style="display: none;"></div>
+                        <button type="submit" class="button compact" id="adoption-submit" disabled><?php echo __('Submit', 'doxa-website'); ?></button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </main>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+    <script>
+        let turnstileToken = '';
+
+        function onTurnstileSuccess(token) {
+            turnstileToken = token;
+            document.getElementById('adoption-submit').disabled = false;
+        }
+
+        document.getElementById('adoption-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('adoption-submit');
+            const messageDiv = document.getElementById('adoption-message');
+
+            // Check honeypot
+            const honeypot = form.querySelector('input[name="email"]');
+            if (honeypot && honeypot.value) {
+                return;
+            }
+
+            // Validate form
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Check confirmation checkbox
+            if (!form.querySelector('#confirm-adoption').checked) {
+                messageDiv.className = 'contact-message error';
+                messageDiv.textContent = '<?php echo esc_js(__('Please confirm your adoption commitment.', 'doxa-website')); ?>';
+                messageDiv.style.display = 'block';
+                return;
+            }
+
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.textContent = '<?php echo esc_js(__('Submitting...', 'doxa-website')); ?>';
+
+            const formData = {
+                first_name: form.querySelector('#first-name').value,
+                last_name: form.querySelector('#last-name').value,
+                email: form.querySelector('#contact-email').value,
+                phone: form.querySelector('#phone').value,
+                church_name: form.querySelector('#church-name').value,
+                wagf_block: form.querySelector('#wagf-block').value,
+                role: form.querySelector('#role').value,
+                confirm_adoption: form.querySelector('#confirm-adoption').checked,
+                people_group: form.querySelector('input[name="people_group"]').value,
+                cf_turnstile: turnstileToken
+            };
+
+            fetch('<?php echo esc_url( rest_url( 'doxa/v1/adopt' ) ); ?>', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-WP-Nonce': '<?php echo wp_create_nonce( 'wp_rest' ); ?>'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                return response.json().then(data => ({ ok: response.ok, data }));
+            })
+            .then(({ ok, data }) => {
+                if (ok && data === 'success') {
+                    messageDiv.className = 'contact-message success';
+                    messageDiv.textContent = '<?php echo esc_js(__('Thank you for your adoption commitment! We will be in touch soon.', 'doxa-website')); ?>';
+                    messageDiv.style.display = 'block';
+                    form.reset();
+                    turnstile.reset();
+                    turnstileToken = '';
+                    submitBtn.disabled = true;
+                } else {
+                    messageDiv.className = 'contact-message error';
+                    messageDiv.textContent = data.message || '<?php echo esc_js(__('There was an error submitting your adoption. Please try again.', 'doxa-website')); ?>';
+                    messageDiv.style.display = 'block';
+                    turnstile.reset();
+                    turnstileToken = '';
+                }
+                submitBtn.textContent = '<?php echo esc_js(__('Submit', 'doxa-website')); ?>';
+            })
+            .catch(error => {
+                messageDiv.className = 'contact-message error';
+                messageDiv.textContent = '<?php echo esc_js(__('There was an error submitting your adoption. Please try again.', 'doxa-website')); ?>';
+                messageDiv.style.display = 'block';
+                turnstile.reset();
+                turnstileToken = '';
+                submitBtn.textContent = '<?php echo esc_js(__('Submit', 'doxa-website')); ?>';
+            });
+        });
+    </script>
 
     <?php get_footer(); ?>
 
 </div>
 
 <?php get_footer( 'bottom' ); ?>
+
+<?php endif; ?>

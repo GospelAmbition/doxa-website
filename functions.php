@@ -638,3 +638,4 @@ function doxa_get_wagf_blocks() {
  * Load theme functions
  */
 require_once get_template_directory() . '/functions/contact-rest-api.php';
+require_once get_template_directory() . '/functions/adopt-rest-api.php';
