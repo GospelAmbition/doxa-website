@@ -16,6 +16,7 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
 }
 
 .wp-block-button__link:focus,
@@ -27,6 +28,11 @@
     color: var(--button-text-color-hover, 'inherit');
     background-color: var(--button-background-color-hover);
     border-color: var(--button-border-color-hover, var(--button-border-color, transparent));
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .button.filter-button {

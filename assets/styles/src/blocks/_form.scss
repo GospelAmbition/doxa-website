@@ -116,3 +116,12 @@ input[type=radio] {
 input[type=search] {
     text-indent: 1.5em;
 }
+
+.contact-message {
+    &.error {
+        color: var(--color-error, #c00);
+    }
+    &.success {
+        color: var(--color-success, #080);
+    }
+}
