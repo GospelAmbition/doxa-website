@@ -2,6 +2,7 @@
 // Everylayout component for vertical spacing between children
 // https://every-layout.dev/layouts/stack/
 
+.type-page .page-body,
 .stack {
   display: flex;
   flex-direction: column;
@@ -9,6 +10,7 @@
   --stack-spacing: var(--spacing-md, 1rem);
 }
 
+.type-page .page-body,
 .stack > * {
   margin-block: 0;
 }
@@ -16,6 +18,11 @@
 .stack > * + * {
   margin-block-start: var(--stack-spacing);
 }
+
+.type-page .page-body > * + * {
+  margin-top: var(--spacing-lg);
+}
+
 
 .stack-spacing-3xs,
 .stack--3xs > * + * {
