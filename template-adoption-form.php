@@ -109,7 +109,7 @@ $uupg = get_uupg_by_slug( $slug );
                         <section class="stack">
                             <h3 class="highlight" data-highlight-index="1"><?php echo __('Champion Commitments: Pray. Give. Go.', 'doxa-website'); ?></h3>
                             <p><?php echo esc_html__( 'When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:', 'doxa-website' ); ?></p>
-                            <ul class="stack">
+                            <ul class="stack" data-list-color="primary">
                                 <li>
                                     <strong><?php echo __('Pray', 'doxa-website'); ?> – </strong>
                                     <?php echo __('Mobilize toward the goal of at least 144 prayer partners to cover the people group in continuous, daily prayer (10 minutes each, 24 hours a day).', 'doxa-website'); ?>
