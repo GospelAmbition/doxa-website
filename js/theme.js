@@ -172,6 +172,7 @@
         const videoModalButton = document.querySelector('.video-modal-button');
         const videoModal = document.querySelector('.video-modal');
         const videoModalOverlay = document.querySelector('.video-modal-overlay');
+        const  vimeoPlayer = document.getElementById('vimeo-player');
 
         if (videoModalButton) {
             videoModalButton.addEventListener('click', function() {
@@ -182,6 +183,9 @@
             videoModalOverlay.addEventListener('click', function() {
                 videoModal.dataset.state = 'closed';
                 videoModalOverlay.dataset.state = 'closed';
+                const src = vimeoPlayer.src;
+                vimeoPlayer.src = '';
+                vimeoPlayer.src = src;
             });
         }
     });
