@@ -20,7 +20,7 @@ get_header( 'top' ); ?>
                     'loading' => __('Loading results...', 'doxa-website'),
                     'load_more' => __('Load More', 'doxa-website'),
                     'total' => __('Total', 'doxa-website'),
-                    'search' => __('Search people names', 'doxa-website'),
+                    'search' => __('Search names, locations, religions...', 'doxa-website'),
                     'adopted' => __('Adopted', 'doxa-website'),
                     'not_adopted' => __('Not Adopted', 'doxa-website'),
                     'filters' => [
