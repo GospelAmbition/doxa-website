@@ -11,14 +11,16 @@ export class UupgsList extends LitElement {
     selectUrl: string = '';
 
     @property({ type: Number })
-    perPage: number = 25;
+    perPage: number = 24;
     @property({ type: Boolean })
-    preventInitialFetch: boolean = false;
+    dontShowListOnLoad: boolean = false;
     @property({ type: Boolean })
     useSelectCard: boolean = false;
 
     @property({ type: Array, attribute: false })
     uupgs: Uupg[] = [];
+    @property({ type: Array, attribute: false })
+    filteredUUPGs: Uupg[] = [];
     @property({ type: Number, attribute: false })
     total: number = 0;
     @property({ type: Number, attribute: false })
@@ -54,11 +56,11 @@ export class UupgsList extends LitElement {
                     </div>
                 </div>
                 <div class="stack stack--xs">
-                    ${!this.firstLoaded && !this.loading ? html`
+                    ${ !this.dontShowListOnLoad && !this.loading ? html`
                         <div class="font-size-sm">${this.t.total}: ${this.total}</div>
                     ` : ''}
                     <div id="results" class="grid | uupgs-list ${this.useSelectCard ? 'gap-md' : ''}" ?data-width-lg=${!this.useSelectCard} ?data-width-md=${this.useSelectCard}>
-                        ${repeat(this.uupgs, (uupg: Uupg) => uupg.id, (uupg: Uupg) => {
+                        ${repeat(this.filteredUUPGs.slice(0, this.page * this.perPage), (uupg: Uupg) => uupg.id, (uupg: Uupg) => {
                             if (this.useSelectCard) {
                                 return html`
                                     <div class="stack stack--sm | card | highlighted-uupg__card">
@@ -72,8 +74,8 @@ export class UupgsList extends LitElement {
                                             <p class="font-size-xl font-button">${uupg.people_praying ?? 0}/144</p>
                                         </div>
                                         <div class="switcher | text-center" data-width="md">
-                                            <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl + '/' + uupg.id}">${this.t.select}</a>
-                                            <a class="highlighted-uupg__more-button button compact outline" href="${'/research/' + uupg.id}">${this.t.full_profile}</a>
+                                            <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl + '/' + uupg.slug}">${this.t.select}</a>
+                                            <a class="highlighted-uupg__more-button button compact outline" href="${'/research/' + uupg.slug}">${this.t.full_profile}</a>
                                         </div>
                                     </div>
                                 `
@@ -103,9 +105,9 @@ export class UupgsList extends LitElement {
                                 <a class="uupg__more-button button compact" href="${'/research/' + uupg.slug}">${this.t.full_profile}</a>
                             </div>
                         `})}
-                        ${this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
+                        ${!this.dontShowListOnLoad && this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
                     </div>
-                    ${this.total > this.uupgs.length && !this.loading ? html`
+                    ${this.total > this.page * this.perPage && !this.loading && this.filteredUUPGs.length > 0 ? html`
                         <button
                             @click=${this.loadMore}
                             class="center | button compact stack-spacing-2xl"
@@ -117,19 +119,11 @@ export class UupgsList extends LitElement {
     }
 
     firstUpdated() {
-        if (!this.preventInitialFetch) {
-            this.getUUPGs();
-        } else {
-            this.loading = false;
-        }
+        this.getUUPGs();
     }
 
     loadMore() {
-        this.loading = true;
         this.page = this.page + 1;
-        this.getUUPGs({
-            page: this.page,
-        });
     }
 
     debounce = (callback: (...args: any[]) => void, time = 500): ((...args: any[]) => void) => {
@@ -143,41 +137,38 @@ export class UupgsList extends LitElement {
     };
 
     search = (event: Event) => {
-        console.log('search', event.target);
         this.searchTerm = (event.target as HTMLInputElement).value;
         this.loading = true;
         this.page = 1;
-        this.uupgs = [];
         this.total = 0;
-        this.getUUPGs();
+        this.filteredUUPGs = [];
+        this.filterUUPGs();
     }
 
-    getUUPGs({ search = this.searchTerm, sort = this.sort, perPage = this.perPage, page = this.page } = {}) {
-        this.firstLoaded = false;
+    filterUUPGs() {
+        this.dontShowListOnLoad = false;
+        this.filteredUUPGs = this.uupgs.filter(uupg => {
+            return uupg.name.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+                uupg.country.label.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+                uupg.rop1.label.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+                uupg.religion.label.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+                uupg.wagf_region.label.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+                uupg.wagf_block.label.toLowerCase().includes(this.searchTerm.toLowerCase())
+        });
+        this.total = this.filteredUUPGs.length;
+        this.loading = false;
+    }
+
+    getUUPGs() {
         const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
 
-        const url = new URL(uupgAPIUrl);
-        if (search.length) {
-            url.searchParams.set('s', search);
-        }
-        if (sort.length) {
-            url.searchParams.set('sort', sort);
-        }
-        if (perPage !== 0) {
-            url.searchParams.set('limit', perPage.toString());
-        }
-        if (page > 1) {
-            url.searchParams.set('offset', ((page - 1) * perPage).toString());
-        }
-
-        fetch(url.href)
+        fetch(uupgAPIUrl)
             .then(response => response.json())
             .then(data => {
-                if (page > 1) {
-                    this.uupgs = [...this.uupgs, ...data.posts];
-                } else {
-                    this.uupgs = data.posts;
-                    this.total = data.total;
+                this.uupgs = data.posts;
+                this.total = data.total;
+                if (!this.dontShowListOnLoad) {
+                    this.filterUUPGs();
                 }
             })
             .catch(error => {

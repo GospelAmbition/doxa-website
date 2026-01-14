@@ -153,7 +153,7 @@ get_header( 'top' ); ?>
                             'search' => __('Search people names', 'doxa-website'),
                         ])); ?>"
                         perPage="6"
-                        preventInitialFetch="true"
+                        dontShowListOnLoad="true"
                         useSelectCard
                     ></uupgs-list>
                 </div>
