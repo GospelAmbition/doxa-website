@@ -259,6 +259,9 @@
     text-align: center;
     max-width: 20rem;
     transform: rotate(8deg) translate(10%, -10%);
+    -webkit-mask-image: url('/wp-content/themes/doxa-website/assets/images/crop.png');
+    -webkit-mask-size: 500px 350px;
+    mix-blend-mode: multiply;
 }
 
 .engaged-stamp[data-engaged="false"] {
