@@ -69,7 +69,7 @@ $uupg = get_uupg_by_slug( $slug );
                                     <p><?php echo __('Prayer Status', 'doxa-website'); ?></p>
                                 </div>
                                 <div class="status-item">
-                                    <?php if ( $uupg['adopted_by_churches'] > 0 ) : ?>
+                                    <?php if ( isset( $uupg['adopted_by_churches'] ) && count( $uupg['adopted_by_churches'] ) > 0 ) : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                     <?php else : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
