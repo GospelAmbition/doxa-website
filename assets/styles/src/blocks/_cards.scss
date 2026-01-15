@@ -9,10 +9,14 @@
 .card {
     --card-background-color: var(--color-surface-white);
     --card-text-color: var(--color-text-on-white);
+    position: relative;
     border-radius: var(--border-radius-xlg);
     padding: var(--spacing-2xl) var(--spacing-3xl);
     color: var(--card-text-color);
     background-color: var(--card-background-color);
+}
+.card[padding-small] {
+    padding: var(--spacing-lg);
 }
 
 .card[data-variant="primary"] {
@@ -238,4 +242,30 @@
     background-color: var(--color-surface-white);
     border-radius: var(--border-radius-md);
     padding: var(--spacing-md) var(--spacing-md);
+}
+
+.engaged-stamp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: var(--border-radius-md);
+    border: 5px solid;
+    padding: var(--spacing-2xs);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-family-heading);
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    max-width: 20rem;
+    transform: rotate(8deg) translate(10%, -10%);
+}
+
+.engaged-stamp[data-engaged="false"] {
+    border-color: var(--color-status-failure);
+    color: var(--color-status-failure);
+}
+.engaged-stamp[data-engaged="true"] {
+    border-color: var(--color-status-success);
+    color: var(--color-status-success);
 }

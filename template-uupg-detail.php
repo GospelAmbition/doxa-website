@@ -53,15 +53,15 @@ $uupg = get_uupg_by_slug( $slug );
             <div class="stack stack--lg">
 
                 <div class="stack stack--2xl">
-                    <div class="card uupg__card">
-                        <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
-                        <div class="stack stack--sm | uupg__header">
-                            <h3><?php echo esc_html( $uupg['imb_display_name'] ); ?></h3>
-                            <h4><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</h4>
+                    <div class="card switcher align-center" padding-small>
+                        <div class="engaged-stamp" data-engaged="false">
+                            <span><?php echo __('Not Engaged', 'doxa-website'); ?></span></div>
+                        <img class="uupg__image | grow-none" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
+                        <div class="stack stack--xs | uupg__header">
+                            <h4 class="font-base font-weight-medium font-size-2xl"><?php echo esc_html( $uupg['imb_display_name'] ); ?></h4>
+                            <p class="font-weight-medium font-size-lg"><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
                             <p><?php echo esc_html( $uupg['imb_people_description'] ); ?></p>
                         </div>
-                        <div class="uupg_adopted"></div>
-                        <p class="uupg__content"><?php echo __('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', 'doxa-website'); ?></p>
                     </div>
                     <div class="grid" data-width-lg>
                         <div class="stack stack--3xl | card | text-center lh-0" data-variant="secondary">

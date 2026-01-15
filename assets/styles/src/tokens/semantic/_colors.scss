@@ -34,6 +34,7 @@ $color-white: #fff;
 $color-black: #1F1F1F;
 
 // Error/Alert Colors
+$color-red-300: #E29186;
 $color-red-500: #e74c3c;
 $color-red-600: #bd1218;
 
@@ -78,6 +79,7 @@ $color-red-600: #bd1218;
   // Status
   --color-status-error: #{$color-red-500};
   --color-status-error-dark: #{$color-red-600};
+  --color-status-failure: #{$color-red-300};
   --color-status-success: #{$color-green-50};
   --color-status-warning: #{$color-beige-500};
   --color-status-disabled: #{$color-gray-400};
