@@ -114,10 +114,11 @@ a {
   color: var(--color-brand-light);
   font-weight: var(--font-weight-medium);
   transition: color 0.3s ease;
-  display: block;
 }
+
 a:hover {
   color: var(--color-brand-lighter);
+  text-decoration: underline;
 }
 
 figure[class*="wp-block-"]:has(blockquote) {
