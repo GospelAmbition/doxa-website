@@ -148,6 +148,12 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                     </div>
+                    <a href="/about/definitions" class="with-icon | color-primary-darker mx-auto">
+                        <?php echo __('Learn More', 'doxa-website'); ?>
+                        <svg class="icon | rotate-90">
+                            <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
+                        </svg>
+                    </a>
                 </div>
             </section>
             <section>
@@ -168,7 +174,7 @@ get_header( 'top' ); ?>
                                         <li><?php echo __('Fruitful engagement among frontier and the under-engaged.', 'doxa-website'); ?></li>
                                         <li><?php echo __('Church-planting movements among every unreached people on earth.', 'doxa-website'); ?></li>
                                     </ul>
-                                    <a href="/about" class="button outline | with-icon | color-primary-darker ms-auto">
+                                    <a href="/about/vision" class="with-icon | color-primary-darker ms-auto">
                                         <?php echo __('More', 'doxa-website'); ?>
                                         <svg class="icon | rotate-90">
                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
