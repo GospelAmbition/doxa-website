@@ -8,14 +8,14 @@
         right: 0;
         width: 30%;
         height: 30%;
-        fill: white;
+        fill: var(--color-brand-secondary-light);
         transform: translateY(30%);
         transition: fill 0.3s ease, transform 0.3s ease;
     }
 
     &:hover {
         .icon {
-            fill: var(--color-brand-primary);
+            fill: var(--color-surface-white);
             transform: translateY(30%) scale(1.1);
         }
     }
