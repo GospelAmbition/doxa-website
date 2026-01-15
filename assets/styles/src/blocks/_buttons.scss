@@ -1,3 +1,4 @@
+.wp-element-button,
 .wp-block-button__link,
 .button {
     --button-text-color: var(--color-text-on-brand-light);
@@ -17,6 +18,12 @@
     text-transform: uppercase;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
+}
+a.wp-element-button {
+    display: inline;
+}
+a.wp-element-button {
+    color: var(--button-text-color-hover);
 }
 
 .wp-block-button__link:focus,
