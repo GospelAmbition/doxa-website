@@ -84,7 +84,7 @@ export class UupgsList extends LitElement {
                             const isAdopted = uupg.adopted_by_churches && uupg.adopted_by_churches > 0;
                             const adoptedBadgeImage = isAdopted
                                 ? window.uupgsData.icons_url + '/Check-GreenCircle.png'
-                                : window.uupgsData.icons_url + '/Check-MutedCircle.png';
+                                : window.uupgsData.icons_url + '/RedX-Circle.png';
                             const adoptedBadgeText = isAdopted ? this.t.adopted : this.t.not_adopted;
 
                             return html`<div class="card | uupg__card">
