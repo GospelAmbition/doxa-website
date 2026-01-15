@@ -63,6 +63,53 @@ $uupg = get_uupg_by_slug( $slug );
                             <p><?php echo esc_html( $uupg['imb_people_description'] ); ?></p>
                         </div>
                     </div>
+                    <div class="card stack stack--2xs" id="engagement-status" padding-small>
+                        <h2 class="text-center"><?php echo __('Engagement Status', 'doxa-website'); ?></h2>
+                        <div class="cluster justify-center">
+                            <div class="cluster justify-center align-start" data-width="md">
+                                <div class="status-item">
+                                    <?php if ( $uupg['people_praying'] > 0 ) : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
+                                    <?php endif; ?>
+                                    <p><?php echo __('Prayer Status', 'doxa-website'); ?></p>
+                                </div>
+                                <div class="status-item">
+                                    <?php if ( $uupg['adopted_by_churches'] > 0 ) : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
+                                    <?php endif; ?>
+                                    <p><?php echo __('Adoption Status', 'doxa-website'); ?></p>
+                                </div>
+                                <div class="status-item">
+                                    <?php if ( $uupg['cross_cultural_workers_present'] > 0 ) : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
+                                    <?php endif; ?>
+                                    <p><?php echo __('Cross-cultural workers present', 'doxa-website'); ?></p>
+                                </div>
+                                <div class="status-item">
+                                    <?php if ( $uupg['work_in_local_language'] ) : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
+                                    <?php endif; ?>
+                                    <p><?php echo __('Work in local language &amp; culture', 'doxa-website'); ?></p>
+                                </div>
+                                <div class="status-item">
+                                    <?php if ( $uupg['disciple_and_church_multiplication'] ) : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
+                                    <?php else : ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
+                                    <?php endif; ?>
+                                    <p><?php echo __('Disciple &amp; church multiplication', 'doxa-website'); ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="grid" data-width-lg>
                         <div class="stack stack--3xl | card | text-center lh-0" data-variant="secondary">
                             <h2><?php echo __('Prayer Status', 'doxa-website'); ?></h2>

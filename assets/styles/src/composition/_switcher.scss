@@ -9,8 +9,8 @@
     flex-basis: calc((var(--switcher-width, 30rem) - 100%) * 999);
 }
 
-.switcher > :nth-last-child(n + 5),
-.switcher > :nth-last-child(n + 5) ~ * {
+.switcher > :nth-last-child(n + 6),
+.switcher > :nth-last-child(n + 6) ~ * {
     flex-basis: 100%;
 }
 

@@ -269,3 +269,22 @@
     border-color: var(--color-status-success);
     color: var(--color-status-success);
 }
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2xs);
+    width: 210px;
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    p {
+        font-size: var(--font-size-lg);
+        font-family: var(--font-family-heading);
+        line-height: 1;
+        text-align: center;
+    }
+}
