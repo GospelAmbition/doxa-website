@@ -110,22 +110,27 @@ $uupg = get_uupg_by_slug( $slug );
                             </div>
                         </div>
                     </div>
-                    <div class="grid" data-width-lg>
-                        <div class="stack stack--3xl | card | text-center lh-0" data-variant="secondary">
+                    <div class="switcher">
+                        <div class="stack stack--xl | card | text-center lh-0" data-variant="secondary">
                             <h2><?php echo __('Prayer Status', 'doxa-website'); ?></h2>
-                            <p class="font-size-4xl font-weight-bold"><?php echo $uupg['people_praying'] . ' / 144'; ?></p>
-                            <p class="font-size-lg font-weight-bold"><?php echo __('People praying 10 minutes a day for this people group', 'doxa-website'); ?></p>
-                            <div class="progress-bar">
-                                <div class="progress-bar__slider" style="width: <?php echo esc_attr( $uupg['people_praying'] / 144 * 100 ); ?>%"></div>
+                            <p class="font-size-4xl font-weight-medium"><?php echo $uupg['people_praying'] ?></p>
+                            <p class="font-size-lg"><?php echo __('people praying', 'doxa-website'); ?></p>
+                            <div class="stack stack--sm">
+                                <div class="progress-bar" data-size="md">
+                                    <div class="progress-bar__slider" style="width: <?php echo esc_attr( $uupg['people_praying'] / 144 * 100 ); ?>%"></div>
+                                </div>
+                                <p class="font-size-lg font-weight-medium"><?php echo __('24-hour Prayer Coverage', 'doxa-website'); ?></p>
                             </div>
-                            <a class="button fit-content mx-auto" href="https://pray.doxa.life/<?php echo $uupg['slug']; ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a>
+                            <a class="button fit-content mx-auto stack-spacing-4xl" href="https://pray.doxa.life/<?php echo $uupg['slug']; ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a>
                         </div>
-                        <div class="stack stack--3xl | card | text-center lh-0" data-variant="primary">
+                        <div class="stack stack--xl | card | text-center lh-0" data-variant="primary">
                             <h2><?php echo __('Adoption Status', 'doxa-website'); ?></h2>
-                            <p class="font-size-4xl font-weight-bold"><?php echo count( $uupg['adopted_by_churches'] ) ?? 0; ?></p>
-                            <p class="font-size-lg font-weight-bold"><?php echo __('Churches have adopted this people group', 'doxa-website'); ?></p>
+                            <p class="font-size-4xl font-weight-medium"><?php echo count( $uupg['adopted_by_churches'] ) ?? 0; ?></p>
+                            <p class="font-size-lg"><?php echo __('churches/individuals have adopted this people group', 'doxa-website'); ?></p>
                             <a class="button fit-content mx-auto mt-auto" href="<?php echo home_url('adopt/' . $uupg['slug']); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
                         </div>
+                    </div>
+                    <div class="switcher">
                         <div class="card" data-variant="primary">
                             <h2><?php echo __('Overview', 'doxa-website'); ?></h2>
                             <div class="stack stack--2xs">
