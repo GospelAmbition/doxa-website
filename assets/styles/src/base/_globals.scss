@@ -152,6 +152,10 @@ blockquote::after {
   right: 0;
 }
 
+strong {
+  font-weight: var(--font-weight-medium);
+}
+
 .wp-block-table td,
 td {
   border: 1px solid var(--table-border-color);

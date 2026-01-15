@@ -288,3 +288,12 @@
         text-align: center;
     }
 }
+.progress-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
