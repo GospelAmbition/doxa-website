@@ -99,7 +99,6 @@ get_header( 'top' ); ?>
                                     <h2 class="step-card__title"><?php echo __('Engage', 'doxa-website'); ?></h2>
                                     <p><?php echo __('God raises up men and women to go, serve, and proclaim Christ among the nations', 'doxa-website'); ?></p>
                                 </div>
-                                <a href="/engage" class="button | compact"><?php echo __('Go', 'doxa-website'); ?></a>
                             </div>
                         </div>
                     </div>
