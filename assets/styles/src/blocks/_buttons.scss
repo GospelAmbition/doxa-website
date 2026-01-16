@@ -19,6 +19,9 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
 }
+a.button:hover {
+    text-decoration: none;
+}
 a.wp-element-button {
     display: inline;
 }
