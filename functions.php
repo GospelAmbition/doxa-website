@@ -638,6 +638,985 @@ function doxa_get_wagf_blocks() {
     ];
 }
 
+function doxa_get_countries() {
+    $countries = [
+        [
+            "value" => "VAT",
+            "label" => "Vatican City"
+        ],
+        [
+            "value" => "MAC",
+            "label" => "Macao"
+        ],
+        [
+            "value" => "HKG",
+            "label" => "Hong Kong"
+        ],
+        [
+            "value" => "KEN",
+            "label" => "Kenya"
+        ],
+        [
+            "value" => "CAN",
+            "label" => "Canada"
+        ],
+        [
+            "value" => "DEU",
+            "label" => "Germany"
+        ],
+        [
+            "value" => "USA",
+            "label" => "the United States"
+        ],
+        [
+            "value" => "SPM",
+            "label" => "Saint Pierre and Miquelon"
+        ],
+        [
+            "value" => "ESH",
+            "label" => "Western Sahara"
+        ],
+        [
+            "value" => "FLK",
+            "label" => "Falkland Islands (Islas Malvinas)"
+        ],
+        [
+            "value" => "ZAF",
+            "label" => "South Africa"
+        ],
+        [
+            "value" => "GIN",
+            "label" => "Guinea"
+        ],
+        [
+            "value" => "ESP",
+            "label" => "Spain"
+        ],
+        [
+            "value" => "MMR",
+            "label" => "Myanmar"
+        ],
+        [
+            "value" => "BGD",
+            "label" => "Bangladesh"
+        ],
+        [
+            "value" => "MOZ",
+            "label" => "Mozambique"
+        ],
+        [
+            "value" => "MUS",
+            "label" => "Mauritius"
+        ],
+        [
+            "value" => "IND",
+            "label" => "India"
+        ],
+        [
+            "value" => "PSE",
+            "label" => "Palestine"
+        ],
+        [
+            "value" => "PAK",
+            "label" => "Pakistan"
+        ],
+        [
+            "value" => "GRC",
+            "label" => "Greece"
+        ],
+        [
+            "value" => "NPL",
+            "label" => "Nepal"
+        ],
+        [
+            "value" => "LKA",
+            "label" => "Sri Lanka"
+        ],
+        [
+            "value" => "FRA",
+            "label" => "France"
+        ],
+        [
+            "value" => "BRA",
+            "label" => "Brazil"
+        ],
+        [
+            "value" => "HUN",
+            "label" => "Hungary"
+        ],
+        [
+            "value" => "UGA",
+            "label" => "Uganda"
+        ],
+        [
+            "value" => "KOR",
+            "label" => "South Korea"
+        ],
+        [
+            "value" => "GBR",
+            "label" => "the United Kingdom"
+        ],
+        [
+            "value" => "LAO",
+            "label" => "Laos"
+        ],
+        [
+            "value" => "ERI",
+            "label" => "Eritrea"
+        ],
+        [
+            "value" => "EGY",
+            "label" => "Egypt"
+        ],
+        [
+            "value" => "MRT",
+            "label" => "Mauritania"
+        ],
+        [
+            "value" => "ISL",
+            "label" => "Iceland"
+        ],
+        [
+            "value" => "KAZ",
+            "label" => "Kazakhstan"
+        ],
+        [
+            "value" => "MAR",
+            "label" => "Morocco"
+        ],
+        [
+            "value" => "ETH",
+            "label" => "Ethiopia"
+        ],
+        [
+            "value" => "IRQ",
+            "label" => "Iraq"
+        ],
+        [
+            "value" => "OMN",
+            "label" => "Oman"
+        ],
+        [
+            "value" => "ITA",
+            "label" => "Italy"
+        ],
+        [
+            "value" => "JOR",
+            "label" => "Jordan"
+        ],
+        [
+            "value" => "MKD",
+            "label" => "North Macedonia"
+        ],
+        [
+            "value" => "TUR",
+            "label" => "Turkiye"
+        ],
+        [
+            "value" => "LBN",
+            "label" => "Lebanon"
+        ],
+        [
+            "value" => "JPN",
+            "label" => "Japan"
+        ],
+        [
+            "value" => "BHR",
+            "label" => "Bahrain"
+        ],
+        [
+            "value" => "AFG",
+            "label" => "Afghanistan"
+        ],
+        [
+            "value" => "SAU",
+            "label" => "Saudi Arabia"
+        ],
+        [
+            "value" => "IRN",
+            "label" => "Iran"
+        ],
+        [
+            "value" => "KGZ",
+            "label" => "Kyrgyzstan"
+        ],
+        [
+            "value" => "TJK",
+            "label" => "Tajikistan"
+        ],
+        [
+            "value" => "RUS",
+            "label" => "the Russian Federation"
+        ],
+        [
+            "value" => "MDG",
+            "label" => "Madagascar"
+        ],
+        [
+            "value" => "SSD",
+            "label" => "South Sudan"
+        ],
+        [
+            "value" => "THA",
+            "label" => "Thailand"
+        ],
+        [
+            "value" => "UZB",
+            "label" => "Uzbekistan"
+        ],
+        [
+            "value" => "ARM",
+            "label" => "Armenia"
+        ],
+        [
+            "value" => "MYS",
+            "label" => "Malaysia"
+        ],
+        [
+            "value" => "GEO",
+            "label" => "Georgia"
+        ],
+        [
+            "value" => "SEN",
+            "label" => "Senegal"
+        ],
+        [
+            "value" => "BTN",
+            "label" => "Bhutan"
+        ],
+        [
+            "value" => "ZMB",
+            "label" => "Zambia"
+        ],
+        [
+            "value" => "CYP",
+            "label" => "Cyprus"
+        ],
+        [
+            "value" => "ISR",
+            "label" => "Israel"
+        ],
+        [
+            "value" => "GMB",
+            "label" => "The Gambia"
+        ],
+        [
+            "value" => "PHL",
+            "label" => "the Philippines"
+        ],
+        [
+            "value" => "TTO",
+            "label" => "Trinidad and Tobago"
+        ],
+        [
+            "value" => "GLP",
+            "label" => "Guadeloupe"
+        ],
+        [
+            "value" => "TKM",
+            "label" => "Turkmenistan"
+        ],
+        [
+            "value" => "MTQ",
+            "label" => "Martinique"
+        ],
+        [
+            "value" => "MWI",
+            "label" => "Malawi"
+        ],
+        [
+            "value" => "CHN",
+            "label" => "China"
+        ],
+        [
+            "value" => "REU",
+            "label" => "Reunion"
+        ],
+        [
+            "value" => "NLD",
+            "label" => "the Netherlands"
+        ],
+        [
+            "value" => "SUR",
+            "label" => "Suriname"
+        ],
+        [
+            "value" => "ATG",
+            "label" => "Antigua and Barbuda"
+        ],
+        [
+            "value" => "BWA",
+            "label" => "Botswana"
+        ],
+        [
+            "value" => "DZA",
+            "label" => "Algeria"
+        ],
+        [
+            "value" => "YEM",
+            "label" => "Yemen"
+        ],
+        [
+            "value" => "HRV",
+            "label" => "Croatia"
+        ],
+        [
+            "value" => "GNB",
+            "label" => "Guinea-Bissau"
+        ],
+        [
+            "value" => "AZE",
+            "label" => "Azerbaijan"
+        ],
+        [
+            "value" => "QAT",
+            "label" => "Qatar"
+        ],
+        [
+            "value" => "BEL",
+            "label" => "Belgium"
+        ],
+        [
+            "value" => "ARE",
+            "label" => "the United Arab Emirates"
+        ],
+        [
+            "value" => "DJI",
+            "label" => "Djibouti"
+        ],
+        [
+            "value" => "GTM",
+            "label" => "Guatemala"
+        ],
+        [
+            "value" => "CHL",
+            "label" => "Chile"
+        ],
+        [
+            "value" => "GUY",
+            "label" => "Guyana"
+        ],
+        [
+            "value" => "GRD",
+            "label" => "Grenada"
+        ],
+        [
+            "value" => "ARG",
+            "label" => "Argentina"
+        ],
+        [
+            "value" => "VEN",
+            "label" => "Venezuela"
+        ],
+        [
+            "value" => "TCD",
+            "label" => "Chad"
+        ],
+        [
+            "value" => "LBY",
+            "label" => "Libya"
+        ],
+        [
+            "value" => "SYC",
+            "label" => "Seychelles"
+        ],
+        [
+            "value" => "TZA",
+            "label" => "Tanzania"
+        ],
+        [
+            "value" => "RWA",
+            "label" => "Rwanda"
+        ],
+        [
+            "value" => "BDI",
+            "label" => "Burundi"
+        ],
+        [
+            "value" => "DNK",
+            "label" => "Denmark"
+        ],
+        [
+            "value" => "ZWE",
+            "label" => "Zimbabwe"
+        ],
+        [
+            "value" => "NIC",
+            "label" => "Nicaragua"
+        ],
+        [
+            "value" => "GUF",
+            "label" => "French Guiana"
+        ],
+        [
+            "value" => "JAM",
+            "label" => "Jamaica"
+        ],
+        [
+            "value" => "PAN",
+            "label" => "Panama"
+        ],
+        [
+            "value" => "IDN",
+            "label" => "Indonesia"
+        ],
+        [
+            "value" => "KWT",
+            "label" => "Kuwait"
+        ],
+        [
+            "value" => "ROU",
+            "label" => "Romania"
+        ],
+        [
+            "value" => "BGR",
+            "label" => "Bulgaria"
+        ],
+        [
+            "value" => "BIH",
+            "label" => "Bosnia and Herzegovina"
+        ],
+        [
+            "value" => "SDN",
+            "label" => "Sudan"
+        ],
+        [
+            "value" => "FIN",
+            "label" => "Finland"
+        ],
+        [
+            "value" => "UKR",
+            "label" => "Ukraine"
+        ],
+        [
+            "value" => "VCT",
+            "label" => "Saint Vincent and the Grenadines"
+        ],
+        [
+            "value" => "BLZ",
+            "label" => "Belize"
+        ],
+        [
+            "value" => "LCA",
+            "label" => "Saint Lucia"
+        ],
+        [
+            "value" => "BRB",
+            "label" => "Barbados"
+        ],
+        [
+            "value" => "SOM",
+            "label" => "Somalia"
+        ],
+        [
+            "value" => "SVN",
+            "label" => "Slovenia"
+        ],
+        [
+            "value" => "COL",
+            "label" => "Colombia"
+        ],
+        [
+            "value" => "PER",
+            "label" => "Peru"
+        ],
+        [
+            "value" => "ECU",
+            "label" => "Ecuador"
+        ],
+        [
+            "value" => "TWN",
+            "label" => "Taiwan"
+        ],
+        [
+            "value" => "MLT",
+            "label" => "Malta"
+        ],
+        [
+            "value" => "SWE",
+            "label" => "Sweden"
+        ],
+        [
+            "value" => "AUT",
+            "label" => "Austria"
+        ],
+        [
+            "value" => "DMA",
+            "label" => "Dominica"
+        ],
+        [
+            "value" => "VNM",
+            "label" => "Vietnam"
+        ],
+        [
+            "value" => "MNG",
+            "label" => "Mongolia"
+        ],
+        [
+            "value" => "MDA",
+            "label" => "Moldova"
+        ],
+        [
+            "value" => "SGP",
+            "label" => "Singapore"
+        ],
+        [
+            "value" => "POL",
+            "label" => "Poland"
+        ],
+        [
+            "value" => "LVA",
+            "label" => "Latvia"
+        ],
+        [
+            "value" => "LTU",
+            "label" => "Lithuania"
+        ],
+        [
+            "value" => "NOR",
+            "label" => "Norway"
+        ],
+        [
+            "value" => "CZE",
+            "label" => "the Czech Republic"
+        ],
+        [
+            "value" => "PRY",
+            "label" => "Paraguay"
+        ],
+        [
+            "value" => "BOL",
+            "label" => "Bolivia"
+        ],
+        [
+            "value" => "CHE",
+            "label" => "Switzerland"
+        ],
+        [
+            "value" => "PRT",
+            "label" => "Portugal"
+        ],
+        [
+            "value" => "CUB",
+            "label" => "Cuba"
+        ],
+        [
+            "value" => "BHS",
+            "label" => "The Bahamas"
+        ],
+        [
+            "value" => "HTI",
+            "label" => "Haiti"
+        ],
+        [
+            "value" => "CUW",
+            "label" => "Curaçao"
+        ],
+        [
+            "value" => "DOM",
+            "label" => "Dominican Republic"
+        ],
+        [
+            "value" => "BLR",
+            "label" => "Belarus"
+        ],
+        [
+            "value" => "CRI",
+            "label" => "Costa Rica"
+        ],
+        [
+            "value" => "BRN",
+            "label" => "Brunei"
+        ],
+        [
+            "value" => "HND",
+            "label" => "Honduras"
+        ],
+        [
+            "value" => "MAF",
+            "label" => "Saint Martin"
+        ],
+        [
+            "value" => "IRL",
+            "label" => "Ireland"
+        ],
+        [
+            "value" => "BES",
+            "label" => "Bonaire, Sint Eustatius, and Saba"
+        ],
+        [
+            "value" => "MEX",
+            "label" => "Mexico"
+        ],
+        [
+            "value" => "KOS",
+            "label" => "Kosovo"
+        ],
+        [
+            "value" => "AUS",
+            "label" => "Australia"
+        ],
+        [
+            "value" => "PNG",
+            "label" => "Papua New Guinea"
+        ],
+        [
+            "value" => "ASM",
+            "label" => "American Samoa"
+        ],
+        [
+            "value" => "NGA",
+            "label" => "Nigeria"
+        ],
+        [
+            "value" => "BEN",
+            "label" => "Benin"
+        ],
+        [
+            "value" => "MLI",
+            "label" => "Mali"
+        ],
+        [
+            "value" => "AGO",
+            "label" => "Angola"
+        ],
+        [
+            "value" => "COD",
+            "label" => "the Democratic Republic of the Congo"
+        ],
+        [
+            "value" => "SLE",
+            "label" => "Sierra Leone"
+        ],
+        [
+            "value" => "TGO",
+            "label" => "Togo"
+        ],
+        [
+            "value" => "CMR",
+            "label" => "Cameroon"
+        ],
+        [
+            "value" => "SYR",
+            "label" => "Syria"
+        ],
+        [
+            "value" => "NER",
+            "label" => "Niger"
+        ],
+        [
+            "value" => "COG",
+            "label" => "the Republic of the Congo"
+        ],
+        [
+            "value" => "KHM",
+            "label" => "Cambodia"
+        ],
+        [
+            "value" => "GHA",
+            "label" => "Ghana"
+        ],
+        [
+            "value" => "MYT",
+            "label" => "Mayotte"
+        ],
+        [
+            "value" => "CAF",
+            "label" => "Central African Republic"
+        ],
+        [
+            "value" => "NFK",
+            "label" => "Norfolk Island"
+        ],
+        [
+            "value" => "MNP",
+            "label" => "the Northern Mariana Islands"
+        ],
+        [
+            "value" => "TLS",
+            "label" => "Timor-Leste"
+        ],
+        [
+            "value" => "GUM",
+            "label" => "Guam"
+        ],
+        [
+            "value" => "ALB",
+            "label" => "Albania"
+        ],
+        [
+            "value" => "NZL",
+            "label" => "New Zealand"
+        ],
+        [
+            "value" => "NCL",
+            "label" => "New Caledonia"
+        ],
+        [
+            "value" => "VUT",
+            "label" => "Vanuatu"
+        ],
+        [
+            "value" => "LBR",
+            "label" => "Liberia"
+        ],
+        [
+            "value" => "CIV",
+            "label" => "Côte d’Ivoire"
+        ],
+        [
+            "value" => "CXR",
+            "label" => "Christmas Island"
+        ],
+        [
+            "value" => "TUN",
+            "label" => "Tunisia"
+        ],
+        [
+            "value" => "BFA",
+            "label" => "Burkina Faso"
+        ],
+        [
+            "value" => "SLB",
+            "label" => "the Solomon Islands"
+        ],
+        [
+            "value" => "NAM",
+            "label" => "Namibia"
+        ],
+        [
+            "value" => "NRU",
+            "label" => "Nauru"
+        ],
+        [
+            "value" => "PYF",
+            "label" => "French Polynesia"
+        ],
+        [
+            "value" => "TCA",
+            "label" => "the Turks and Caicos Islands"
+        ],
+        [
+            "value" => "MSR",
+            "label" => "Montserrat"
+        ],
+        [
+            "value" => "ABW",
+            "label" => "Aruba"
+        ],
+        [
+            "value" => "SMR",
+            "label" => "San Marino"
+        ],
+        [
+            "value" => "LIE",
+            "label" => "Liechtenstein"
+        ],
+        [
+            "value" => "PRK",
+            "label" => "North Korea"
+        ],
+        [
+            "value" => "MNE",
+            "label" => "Montenegro"
+        ],
+        [
+            "value" => "GAB",
+            "label" => "Gabon"
+        ],
+        [
+            "value" => "GNQ",
+            "label" => "Equatorial Guinea"
+        ],
+        [
+            "value" => "COK",
+            "label" => "Cook Islands"
+        ],
+        [
+            "value" => "LSO",
+            "label" => "Lesotho"
+        ],
+        [
+            "value" => "CPV",
+            "label" => "Cabo Verde"
+        ],
+        [
+            "value" => "FJI",
+            "label" => "Fiji"
+        ],
+        [
+            "value" => "STP",
+            "label" => "Sao Tome and Principe"
+        ],
+        [
+            "value" => "SWZ",
+            "label" => "Eswatini"
+        ],
+        [
+            "value" => "TUV",
+            "label" => "Tuvalu"
+        ],
+        [
+            "value" => "PLW",
+            "label" => "Palau"
+        ],
+        [
+            "value" => "FSM",
+            "label" => "the Federated States of Micronesia"
+        ],
+        [
+            "value" => "BLM",
+            "label" => "Saint Barthelemy"
+        ],
+        [
+            "value" => "WSM",
+            "label" => "Samoa"
+        ],
+        [
+            "value" => "SXM",
+            "label" => "Sint Maarten"
+        ],
+        [
+            "value" => "WLF",
+            "label" => "Wallis and Futuna"
+        ],
+        [
+            "value" => "SLV",
+            "label" => "El Salvador"
+        ],
+        [
+            "value" => "EST",
+            "label" => "Estonia"
+        ],
+        [
+            "value" => "MHL",
+            "label" => "the Marshall Islands"
+        ],
+        [
+            "value" => "SVK",
+            "label" => "Slovakia"
+        ],
+        [
+            "value" => "VGB",
+            "label" => "the British Virgin Islands"
+        ],
+        [
+            "value" => "CYM",
+            "label" => "Cayman Islands"
+        ],
+        [
+            "value" => "PRI",
+            "label" => "Puerto Rico"
+        ],
+        [
+            "value" => "SRB",
+            "label" => "Serbia"
+        ],
+        [
+            "value" => "GIB",
+            "label" => "Gibraltar"
+        ],
+        [
+            "value" => "MCO",
+            "label" => "Monaco"
+        ],
+        [
+            "value" => "LUX",
+            "label" => "Luxembourg"
+        ],
+        [
+            "value" => "VIR",
+            "label" => "the Virgin Islands"
+        ],
+        [
+            "value" => "GGY",
+            "label" => "Guernsey"
+        ],
+        [
+            "value" => "JEY",
+            "label" => "Jersey"
+        ],
+        [
+            "value" => "COM",
+            "label" => "Comoros"
+        ],
+        [
+            "value" => "MDV",
+            "label" => "the Maldives"
+        ],
+        [
+            "value" => "KIR",
+            "label" => "Kiribati"
+        ],
+        [
+            "value" => "NIU",
+            "label" => "Niue"
+        ],
+        [
+            "value" => "CCK",
+            "label" => "Cocos (Keeling) Islands"
+        ],
+        [
+            "value" => "AIA",
+            "label" => "Anguilla"
+        ],
+        [
+            "value" => "SJM",
+            "label" => "Svalbard"
+        ],
+        [
+            "value" => "SHN",
+            "label" => "Saint Helena, Ascension, and Tristan da Cunha"
+        ],
+        [
+            "value" => "TKL",
+            "label" => "Tokelau"
+        ],
+        [
+            "value" => "BMU",
+            "label" => "Bermuda"
+        ],
+        [
+            "value" => "FRO",
+            "label" => "Faroe Islands"
+        ],
+        [
+            "value" => "TON",
+            "label" => "Tonga"
+        ],
+        [
+            "value" => "KNA",
+            "label" => "Saint Kitts and Nevis"
+        ],
+        [
+            "value" => "GRL",
+            "label" => "Greenland"
+        ],
+        [
+            "value" => "AND",
+            "label" => "Andorra"
+        ],
+        [
+            "value" => "IMN",
+            "label" => "Isle of Man"
+        ],
+        [
+            "value" => "PCN",
+            "label" => "the Pitcairn Islands"
+        ],
+        [
+            "value" => "URY",
+            "label" => "Uruguay"
+        ]
+    ];
+
+    usort($countries, function($a, $b) {
+        return strcmp($a['label'], $b['label']);
+    });
+
+    return $countries;
+}
+
 /**
  * Load theme functions
  */
