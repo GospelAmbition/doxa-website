@@ -180,13 +180,26 @@
                 videoModal.dataset.state = videoModal.dataset.state === 'open' ? 'closed' : 'open';
                 videoModalOverlay.dataset.state = videoModalOverlay.dataset.state === 'open' ? 'closed' : 'open';
                 vimeoPlayer.src = videoSrc + '&autoplay=1';
+                history.pushState(null, '', '#playing-video');
             });
 
-            videoModalOverlay.addEventListener('click', function() {
+            function closeVideoModal() {
                 videoModal.dataset.state = 'closed';
                 videoModalOverlay.dataset.state = 'closed';
                 vimeoPlayer.src = '';
                 vimeoPlayer.src = videoSrc;
+            }
+            videoModalOverlay.addEventListener('click', closeVideoModal);
+            window.addEventListener('keydown', function(e) {
+                if (videoModal.dataset.state === 'open' && e.key === 'Escape') {
+                    closeVideoModal();
+                }
+            });
+            window.addEventListener('popstate', function(e) {
+                if (videoModal.dataset.state === 'open') {
+                    e.preventDefault();
+                    closeVideoModal();
+                }
             });
         }
 
