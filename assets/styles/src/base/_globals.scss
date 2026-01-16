@@ -18,7 +18,8 @@ body {
 }
 
 section {
-  padding-block: var(--spacing-4xl);
+  padding-top: var(--spacing-4xl);
+  padding-bottom: var(--spacing-4xl);
 }
 
 .page {
@@ -98,15 +99,15 @@ ul:not([role="list"]):not(.role-list) li {
 }
 
 ul:not([role="list"]):not(.role-list) li::before {
-  content: "●";
-  font-size: 1.5em;
+  content: "";
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='%2392b195' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='7' stroke='%2392b195' stroke-width='1.5'/%3E%3C/svg%3E");
+  width: 1.5em;
+  height: 1.5em;
   position: absolute;
-  top: 0em;
+  top: 0.3em;
   line-height: 0.9;
   margin-inline-start: -1.3em;
-}
-ul[data-list-color="primary"] li::before {
-  color: var(--color-brand-primary);
 }
 
 a {
