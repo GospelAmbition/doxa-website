@@ -61,23 +61,25 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 <form id="adoption-form" class="text-card shadow">
                     <input type="email" name="email" style="display:none;" autocomplete="off" tabindex="-1">
                     <input type="hidden" name="people_group" value="<?php echo esc_attr( $uupg['imb_display_name'] . ' (' . $uupg['imb_isoalpha3']['label'] . ')' ); ?>">
+                    <section class="stack">
+                        <h3 class="highlight" data-highlight-index="1"><?php echo __('Champion Commitments: Pray. Give. Go.', 'doxa-website'); ?></h3>
+                        <p><?php echo esc_html__( 'When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:', 'doxa-website' ); ?></p>
+                        <ul class="stack" data-list-color="primary">
+                            <li>
+                                <strong><?php echo __('Pray', 'doxa-website'); ?> – </strong>
+                                <?php echo __('Mobilize toward the goal of at least 144 prayer partners to cover the people group in continuous, daily prayer (10 minutes each, 24 hours a day).', 'doxa-website'); ?>
+                            </li>
+                            <li>
+                                <strong><?php echo __('Give', 'doxa-website'); ?> – </strong>
+                                <?php echo __('Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers.', 'doxa-website'); ?>
+                            </li>
+                            <li>
+                                <strong><?php echo __('Go', 'doxa-website'); ?> – </strong>
+                                <?php echo __('Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly.', 'doxa-website'); ?>
+                            </li>
+                        </ul>
+                    </section>
                     <div class="stack stack--lg | max-width-lg mx-auto">
-                        <div class="stack">
-                            <h3 class="h5"><?php echo __('Partnering Church', 'doxa-website'); ?></h3>
-                            <div class="">
-                                <label for="church-name"><?php echo __('Church Name', 'doxa-website'); ?></label>
-                                <input type="text" id="church-name" name="church_name" required placeholder="<?php echo __('Enter Church Name', 'doxa-website'); ?>">
-                            </div>
-                            <div>
-                                <label for="wagf-block"><?php echo __('WAGF Block', 'doxa-website'); ?></label>
-                                <select id="wagf-block" name="wagf_block" required>
-                                    <option value="" disabled selected hidden><?php echo __('Select WAGF Block', 'doxa-website'); ?></option>
-                                    <?php foreach (doxa_get_wagf_blocks() as $block) : ?>
-                                        <option value="<?php echo esc_attr( $block['label'] ); ?>"><?php echo esc_html( $block['label'] ); ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </div>
-                        </div>
                         <div class="stack">
                             <h3 class="h5"><?php echo __('Prayer Champion Details', 'doxa-website'); ?></h3>
                             <i class="color-primary font-size-sm"><?php echo __('The Prayer Champion is the person who will organize the 144 intercessors and receive updates.', 'doxa-website'); ?></i>
@@ -102,28 +104,26 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                                 <input type="text" id="role" name="role" required placeholder="<?php echo __('Example: Missions Pastor, Elder, Volunteer Leader etc.', 'doxa-website'); ?>">
                             </div>
                         </div>
-                        <section class="stack">
-                            <h3 class="highlight" data-highlight-index="1"><?php echo __('Champion Commitments: Pray. Give. Go.', 'doxa-website'); ?></h3>
-                            <p><?php echo esc_html__( 'When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:', 'doxa-website' ); ?></p>
-                            <ul class="stack" data-list-color="primary">
-                                <li>
-                                    <strong><?php echo __('Pray', 'doxa-website'); ?> – </strong>
-                                    <?php echo __('Mobilize toward the goal of at least 144 prayer partners to cover the people group in continuous, daily prayer (10 minutes each, 24 hours a day).', 'doxa-website'); ?>
-                                </li>
-                                <li>
-                                    <strong><?php echo __('Give', 'doxa-website'); ?> – </strong>
-                                    <?php echo __('Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers.', 'doxa-website'); ?>
-                                </li>
-                                <li>
-                                    <strong><?php echo __('Go', 'doxa-website'); ?> – </strong>
-                                    <?php echo __('Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly.', 'doxa-website'); ?>
-                                </li>
-                            </ul>
-                            <div class="ms-auto form-control color-primary-darker font-weight-medium">
-                                <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
-                                <input type="checkbox" id="confirm-adoption" name="confirm_adoption">
+                        <div class="stack">
+                            <h3 class="h5"><?php echo __('Partnering Church', 'doxa-website'); ?></h3>
+                            <div class="">
+                                <label for="church-name"><?php echo __('Church Name', 'doxa-website'); ?></label>
+                                <input type="text" id="church-name" name="church_name" required placeholder="<?php echo __('Enter Church Name', 'doxa-website'); ?>">
                             </div>
-                        </section>
+                            <div>
+                                <label for="wagf-block"><?php echo __('WAGF Block', 'doxa-website'); ?></label>
+                                <select id="wagf-block" name="wagf_block" required></select>
+                                    <option value="" disabled selected hidden><?php echo __('Select WAGF Block', 'doxa-website'); ?></option>
+                                    <?php foreach (doxa_get_wagf_blocks() as $block) : ?>
+                                        <option value="<?php echo esc_attr( $block['label'] ); ?>"><?php echo esc_html( $block['label'] ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ms-auto form-control color-primary-darker font-weight-medium">
+                            <label for="confirm-adoption"><?php echo __('Our church commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
+                            <input type="checkbox" id="confirm-adoption" name="confirm_adoption">
+                        </div>
                         <div class="cf-turnstile" data-sitekey="<?php echo esc_attr( $cf_site_key ); ?>" data-theme="light" data-callback="onTurnstileSuccess"></div>
                         <div id="adoption-message" class="contact-message" style="display: none;"></div>
                         <button type="submit" class="button compact" id="adoption-submit" disabled><?php echo __('Submit', 'doxa-website'); ?></button>
