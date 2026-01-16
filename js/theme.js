@@ -207,5 +207,33 @@
                 });
             });
         }
+
+        const mapOverlay = document.querySelector('.map-card .overlay')
+        if (mapOverlay) {
+            let clicks = 0
+            let timeout
+            const resetOverlayTimeout = function() {
+                clearTimeout(timeout)
+                timeout = setTimeout(() => {
+                    clicks = 0
+                    mapOverlay.style.display = 'flex'
+                }, 120000)
+            }
+            mapOverlay.addEventListener('click', function() {
+                if (clicks === 0) {
+                    const span = document.createElement('span')
+                    span.innerHTML = window.uupgsData.translations.click_twice
+                    mapOverlay.parentElement.appendChild(span)
+                }
+
+                if ( clicks === 1 ) {
+                    mapOverlay.style.display = 'none'
+                    resetOverlayTimeout()
+                    const span = mapOverlay.parentElement.querySelector('span')
+                    if (span) mapOverlay.parentElement.removeChild(span)
+                }
+                clicks += 1
+            })
+        }
     });
 })();

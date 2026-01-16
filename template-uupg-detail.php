@@ -123,10 +123,20 @@ $uupg = get_uupg_by_slug( $slug );
                             <a class="button fit-content mx-auto mt-auto" href="<?php echo home_url('adopt/' . $uupg['slug']); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
                         </div>
                     </div>
-                    <div class="card">
-                        <h2><?php echo __('Map', 'doxa-website'); ?></h2>
-                        <p>Vivamus lacinia lacus vel neque egestas, vitae volutpat purus dapibus. Nullam nec ultricies erat. Etiam ac urna metus. Sed cursus libero id ullamcorper interdum. Donec non urna et erat vehicula porttitor. Vivamus a sagittis dolor. Nulla facilisi. Cras euismod orci at felis cursus, vel vulputate sapien suscipit.</p>
-                    </div>
+
+                    <?php if ( isset( $uupg['imb_lat'] ) && isset( $uupg['imb_lng'] )) : ?>
+
+                        <div class="map-card">
+                            <iframe
+                                class="map"
+                                src="https://www.openstreetmap.org/export/embed.html?bbox=<?php echo esc_html( (float) $uupg['imb_lng'] - 10 ) ?>,<?php echo esc_html( (float) $uupg['imb_lat'] - 10 ) ?>,<?php echo esc_html( (float) $uupg['imb_lng'] + 10 ) ?>,<?php echo esc_html( (float) $uupg['imb_lat'] + 10 ) ?>&layer=mapnik&marker=<?php echo esc_html( $uupg['imb_lat'] ) ?>,<?php echo esc_html( $uupg['imb_lng'] ) ?>"
+                                loading="lazy"
+                            ></iframe>
+                            <div class="overlay"></div>
+                        </div>
+
+                    <?php endif; ?>
+
                     <div class="switcher">
                         <div class="card" data-variant="primary">
                             <div class="stack">

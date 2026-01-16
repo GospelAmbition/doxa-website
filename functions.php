@@ -76,6 +76,9 @@ function gospel_ambition_scripts() {
         wp_localize_script('uupgs-script', 'uupgsData', array(
             'images_url' => trailingslashit( get_template_directory_uri() ) . 'assets/images',
             'icons_url' => trailingslashit( get_template_directory_uri() ) . 'assets/icons',
+            'translations' => [
+                'click_twice' => 'Click again to interact with map'
+            ],
         ));
     }
 
