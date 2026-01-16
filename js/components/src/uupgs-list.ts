@@ -46,7 +46,7 @@ export class UupgsList extends LitElement {
 
     render() {
         return html`
-            <div class="stack stack--md">
+            <div class="stack stack--md bg-image" style="background-image: url(${window.uupgsData.images_url}/worldmap.svg); background-size: 60%; background-position: top">
                 <div id="filters" class="filters">
                     <div class="search-box | center | max-width-md">
                         <span class="sr-only">${this.t.search}</span>
