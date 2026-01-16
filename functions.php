@@ -460,6 +460,7 @@ add_filter('template_include', 'custom_adoption_form_template');
 
 function get_uupg_by_slug( $slug ) {
     $api_url = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
+    //$api_url = 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
 
     $response = wp_remote_get($api_url);
 

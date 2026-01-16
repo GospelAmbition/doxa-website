@@ -47,8 +47,13 @@ $uupg = get_uupg_by_slug( $slug );
             <div class="stack stack--lg">
                 <div class="stack stack--2xl">
                     <div class="card switcher align-center" padding-small>
-                        <div class="engaged-stamp" data-engaged="false">
-                            <span><?php echo __('Not Engaged', 'doxa-website'); ?></span></div>
+                        <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['key'] === 'engaged' ? 'true' : 'false'; ?>">
+                            <?php if ( $uupg['imb_engagement_status']['key'] === 'engaged' ) : ?>
+                                <span><?php echo __('Engaged', 'doxa-website'); ?></span>
+                            <?php else : ?>
+                                <span><?php echo __('Not Engaged', 'doxa-website'); ?></span>
+                            <?php endif; ?>
+                        </div>
                         <img class="uupg__image | grow-none" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
                         <div class="stack stack--xs | uupg__header">
                             <h4 class="font-base font-weight-medium font-size-2xl"><?php echo esc_html( $uupg['imb_display_name'] ); ?></h4>
@@ -77,7 +82,7 @@ $uupg = get_uupg_by_slug( $slug );
                                     <p><?php echo __('Adoption Status', 'doxa-website'); ?></p>
                                 </div>
                                 <div class="status-item">
-                                    <?php if ( $uupg['cross_cultural_workers_present'] > 0 ) : ?>
+                                    <?php if ( $uupg['cross_cultural_workers_present'] ) : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                     <?php else : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
