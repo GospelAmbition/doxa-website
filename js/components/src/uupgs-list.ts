@@ -16,9 +16,13 @@ export class UupgsList extends LitElement {
     dontShowListOnLoad: boolean = false;
     @property({ type: Boolean })
     useSelectCard: boolean = false;
+    @property({ type: Boolean })
+    useHighlightedUUPGs: boolean = false;
 
     @property({ type: Array, attribute: false })
     uupgs: Uupg[] = [];
+    @property({ type: Array, attribute: false })
+    highlightedUUPGs: Uupg[] = [];
     @property({ type: Array, attribute: false })
     filteredUUPGs: Uupg[] = [];
     @property({ type: Number, attribute: false })
@@ -37,6 +41,7 @@ export class UupgsList extends LitElement {
     constructor() {
         super();
         this.uupgs = [];
+        this.highlightedUUPGs = [];
     }
 
     render() {
@@ -119,7 +124,14 @@ export class UupgsList extends LitElement {
     }
 
     firstUpdated() {
-        this.getUUPGs();
+        if (this.useHighlightedUUPGs) {
+            this.getHighlightedUUPGs()
+                .then(() => {
+                    this.getUUPGs();
+                });
+        } else {
+            this.getUUPGs();
+        }
     }
 
     loadMore() {
@@ -162,14 +174,42 @@ export class UupgsList extends LitElement {
     getUUPGs() {
         const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
 
-        fetch(uupgAPIUrl)
+        this.loading = true
+        return fetch(uupgAPIUrl)
             .then(response => response.json())
             .then(data => {
-                this.uupgs = data.posts;
                 this.total = data.total;
-                if (!this.dontShowListOnLoad) {
+                this.uupgs = data.posts;
+                if (this.useHighlightedUUPGs) {
+                    this.filteredUUPGs = [
+                        ...this.filteredUUPGs,
+                        ...data.posts,
+                    ]
+                } {
+                }
+                if (!this.dontShowListOnLoad && !this.useHighlightedUUPGs) {
                     this.filterUUPGs();
                 }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                this.loading = false;
+            });
+    }
+
+    getHighlightedUUPGs() {
+        const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted';
+
+        const url = new URL(uupgAPIUrl);
+
+        return fetch(url.href)
+            .then(response => response.json())
+            .then(data => {
+                this.highlightedUUPGs = data.posts;
+                this.total = data.total;
+                this.filteredUUPGs = this.highlightedUUPGs;
             })
             .catch(error => {
                 console.error('Error:', error);

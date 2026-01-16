@@ -129,17 +129,6 @@ get_header( 'top' ); ?>
                         <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
                         <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
                     </div>
-                    <highlighted-people-groups
-                        selectUrl="/adopt"
-                        t="<?php echo esc_attr( json_encode( [
-                            'select' => __('Adopt', 'doxa-website'),
-                            'full_profile' => __('Full Profile', 'doxa-website'),
-                            'prayer_coverage' => __('Prayer Coverage', 'doxa-website'),
-                            'loading' => __('Loading results...', 'doxa-website'),
-                        ])); ?>"
-                        numberOfPeopleGroups="6"
-                    ></highlighted-people-groups>
-
                     <uupgs-list
                         selectUrl="/adopt"
                         t="<?php echo esc_attr( json_encode( [
@@ -152,8 +141,9 @@ get_header( 'top' ); ?>
                             'search' => __('Search names, locations, religions...', 'doxa-website'),
                         ])); ?>"
                         perPage="6"
-                        dontShowListOnLoad="true"
+                        dontShowListOnLoad
                         useSelectCard
+                        useHighlightedUUPGs
                     ></uupgs-list>
                 </div>
             </section>
