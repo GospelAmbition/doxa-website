@@ -12,6 +12,8 @@ export class UupgsList extends LitElement {
 
     @property({ type: Number })
     perPage: number = 24;
+    @property({ type: Number })
+    morePerPage: number = 0;
     @property({ type: Boolean })
     dontShowListOnLoad: boolean = false;
     @property({ type: Boolean })
@@ -67,7 +69,7 @@ export class UupgsList extends LitElement {
                         ` : html`<span class="invisible-placeholder">Placeholder</span>`}
                     </div>
                     <div id="results" class="grid | uupgs-list ${this.useSelectCard ? 'gap-md' : ''}" ?data-width-lg=${!this.useSelectCard} ?data-width-md=${this.useSelectCard}>
-                        ${repeat(this.filteredUUPGs.slice(0, this.page * this.perPage), (uupg: Uupg) => uupg.id, (uupg: Uupg) => {
+                        ${repeat(this.getUUPGsToDisplay(), (uupg: Uupg) => uupg.id, (uupg: Uupg) => {
                             if (this.useSelectCard) {
                                 return html`
                                     <div class="stack stack--sm | card | highlighted-uupg__card">
@@ -114,7 +116,7 @@ export class UupgsList extends LitElement {
                         `})}
                         ${!this.dontShowListOnLoad && this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
                     </div>
-                    ${this.total > this.page * this.perPage && !this.loading && this.filteredUUPGs.length > 0 ? html`
+                    ${this.hasMore() ? html`
                         <button
                             @click=${this.loadMore}
                             class="center | button compact stack-spacing-2xl"
@@ -136,8 +138,22 @@ export class UupgsList extends LitElement {
         }
     }
 
+    hasMore() {
+        if (this.morePerPage > 0) {
+            return this.total > this.perPage + ( this.page - 1 ) * this.morePerPage && !this.loading && this.filteredUUPGs.length > 0
+        }
+        return this.total > this.page * this.perPage && !this.loading && this.filteredUUPGs.length > 0
+    }
+
     loadMore() {
         this.page = this.page + 1;
+    }
+
+    getUUPGsToDisplay() {
+        if (this.morePerPage > 0) {
+            return this.filteredUUPGs.slice(0, this.perPage + ( this.page - 1 ) * this.morePerPage)
+        }
+        return this.filteredUUPGs.slice(0, this.page * this.perPage)
     }
 
     debounce = (callback: (...args: any[]) => void, time = 500): ((...args: any[]) => void) => {

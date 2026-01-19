@@ -141,6 +141,7 @@ get_header( 'top' ); ?>
                             'search' => __('Search names, locations, religions...', 'doxa-website'),
                         ])); ?>"
                         perPage="6"
+                        morePerPage="12"
                         dontShowListOnLoad
                         useSelectCard
                         useHighlightedUUPGs
