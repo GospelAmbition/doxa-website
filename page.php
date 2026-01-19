@@ -43,19 +43,24 @@ get_header( 'top' ); ?>
                                     <?php
                                     // Get the parent page title for the sidebar header
                                     $parent_page = get_post($menu_parent_id);
+
+                                    global $wp;
+                                    $current_link = $wp->request;
+                                    $parent_slug = $parent_page->post_name;
                                     ?>
 
-                                    <h2 class="sidebar-title">
-                                        <a href="<?php echo esc_url(get_permalink($menu_parent_id)); ?>">
-                                            <?php echo esc_html($parent_page->post_title); ?>
-                                        </a>
-                                    </h2>
 
                                     <div>
                                         <ul class="stack" role="list">
+                                        <li>
+                                            <a class="<?php echo $current_link == $parent_slug ? 'current-link' : ''; ?>" href="<?php echo esc_url(get_permalink($menu_parent_id)); ?>">
+                                                <?php echo esc_html($parent_page->post_title); ?>
+                                            </a>
+                                        </li>
+
                                             <?php foreach ($child_pages as $child) : ?>
                                                 <li>
-                                                    <a href="<?php echo esc_url(get_permalink($child->ID)); ?>">
+                                                    <a class="<?php echo $current_link === $parent_slug . '/' . $child->post_name ? 'current-link' : ''; ?>" href="<?php echo esc_url(get_permalink($child->ID)); ?>">
                                                         <?php echo esc_html($child->post_title); ?>
                                                     </a>
                                                 </li>
