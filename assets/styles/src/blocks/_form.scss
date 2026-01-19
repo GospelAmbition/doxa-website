@@ -27,6 +27,13 @@ input[type="text"] {
     padding: var(--spacing-3xs) var(--spacing-sm);
 }
 
+select:required:invalid {
+    color: gray;
+}
+select option {
+    color: black;
+}
+
 .form-control {
     line-height: var(--line-height-none);
     display: grid;
