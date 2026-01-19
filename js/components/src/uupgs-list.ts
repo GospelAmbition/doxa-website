@@ -9,6 +9,8 @@ export class UupgsList extends LitElement {
     t: Record<string, any> = {};
     @property({ type: String })
     selectUrl: string = '';
+    @property({ type: String })
+    initialSearchTerm: string = '';
 
     @property({ type: Number })
     perPage: number = 24;
@@ -57,16 +59,23 @@ export class UupgsList extends LitElement {
                         </svg>
                         <input
                             type="search"
-                            placeholder="${this.t.search}"
-                            @input=${this.debounce(this.search, 500)}
+                            placeholder="${this.initialSearchTerm ? this.initialSearchTerm : this.t.search}"
+                            @input=${this.debounce(this.onSearch, 500)}
                         />
                     </div>
                 </div>
                 <div class="stack stack--xs">
-                    <div class="font-size-sm">
-                        ${ !this.dontShowListOnLoad && !this.loading ? `
-                            ${this.t.total}: ${this.total}
-                        ` : html`<span class="invisible-placeholder">Placeholder</span>`}
+                    <div class="repel">
+                        <div class="font-size-sm">
+                            ${ !this.dontShowListOnLoad && !this.loading ? `
+                                ${this.t.total}: ${this.total}
+                            ` : html`<span class="invisible-placeholder">Placeholder</span>`}
+                        </div>
+                        ${
+                            !this.dontShowListOnLoad && this.hasMore() ? html`
+                                <a class="light-link" href="/research/search/${this.searchTerm}">${this.t.see_all}</a>
+                            ` : ''
+                        }
                     </div>
                     <div id="results" class="grid | uupgs-list ${this.useSelectCard ? 'gap-md' : ''}" ?data-width-lg=${!this.useSelectCard} ?data-width-md=${this.useSelectCard}>
                         ${repeat(this.getUUPGsToDisplay(), (uupg: Uupg) => uupg.id, (uupg: Uupg) => {
@@ -136,6 +145,10 @@ export class UupgsList extends LitElement {
         } else {
             this.getUUPGs();
         }
+
+        if (this.initialSearchTerm) {
+            this.searchTerm = this.initialSearchTerm;
+        }
     }
 
     hasMore() {
@@ -166,8 +179,12 @@ export class UupgsList extends LitElement {
         };
     };
 
-    search = (event: Event) => {
+    onSearch = (event: Event) => {
         this.searchTerm = (event.target as HTMLInputElement).value;
+        this.search(this.searchTerm);
+    }
+
+    search(searchTerm: string) {
         this.loading = true;
         this.page = 1;
         this.total = 0;

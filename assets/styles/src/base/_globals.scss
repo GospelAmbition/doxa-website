@@ -118,12 +118,21 @@ a {
   color: var(--color-brand-light);
   font-weight: var(--font-weight-medium);
   transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--color-brand-lighter);
+    text-decoration: underline;
+  }
+
+  &.light-link {
+    color: var(--color-brand-secondary);
+
+    &:hover {
+      color: var(--color-brand-secondary-light);
+    }
+  }
 }
 
-a:hover {
-  color: var(--color-brand-lighter);
-  text-decoration: underline;
-}
 
 figure[class*="wp-block-"]:has(blockquote) {
   padding-inline: var(--spacing-lg);

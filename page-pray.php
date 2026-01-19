@@ -141,6 +141,7 @@ get_header( 'top' ); ?>
                             'load_more' => __('Load More', 'doxa-website'),
                             'total' => __('Total', 'doxa-website'),
                             'search' => __('Search names, locations, religions...', 'doxa-website'),
+                            'see_all' => __('See All', 'doxa-website'),
                         ])); ?>"
                         perPage="6"
                         morePerPage="12"

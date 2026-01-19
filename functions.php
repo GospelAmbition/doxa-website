@@ -407,6 +407,11 @@ add_action('wp_head', 'output_page_custom_css');
 
 function custom_uupgs_rewrite_rules() {
     add_rewrite_rule(
+        '^research/search/([^/]+)/?$',
+        'index.php?pagename=research&uupg_search=$matches[1]',
+        'top'
+    );
+    add_rewrite_rule(
         '^research/([^/]+)/?$',
         'index.php?pagename=research&uupg_slug=$matches[1]',
         'top'
@@ -426,6 +431,7 @@ add_action('init', 'custom_adoption_form_rewrite_rules');
 // Register the query variable
 function custom_uupgs_query_vars($vars) {
     $vars[] = 'uupg_slug';
+    $vars[] = 'uupg_search';
     return $vars;
 }
 add_filter('query_vars', 'custom_uupgs_query_vars');

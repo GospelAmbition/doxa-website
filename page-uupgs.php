@@ -7,6 +7,8 @@
 
 get_header( 'top' ); ?>
 
+<?php $search = get_query_var( 'uupg_search' ); ?>
+
 <div class="page">
 
     <?php get_header(); ?>
@@ -29,6 +31,7 @@ get_header( 'top' ); ?>
                         'per_page' => __('Per Page', 'doxa-website'),
                     ],
                 ])); ?>"
+                initialSearchTerm="<?php echo esc_attr( $search ); ?>"
             ></uupgs-list>
         </div>
     </main>
