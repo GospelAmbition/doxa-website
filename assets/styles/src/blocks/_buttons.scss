@@ -23,9 +23,8 @@ a.button:hover {
     text-decoration: none;
 }
 a.wp-element-button {
+    padding: 0.5em 1em;
     display: inline;
-}
-a.wp-element-button {
     color: var(--button-text-color-hover);
 }
 
