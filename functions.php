@@ -15,7 +15,7 @@ function coming_soon_redirect() {
         exit;
     }
 }
-add_action( 'template_redirect', 'coming_soon_redirect' );
+//add_action( 'template_redirect', 'coming_soon_redirect' );
 
 /**
  * Theme Setup
