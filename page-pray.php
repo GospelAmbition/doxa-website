@@ -101,7 +101,7 @@ get_header( 'top' ); ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pray-04-Doxa.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
-                                <h4><?php echo __('They have no one praying for them', 'doxa-website'); ?></h4>
+                                <h4 class="font-heading font-size-2xl"><?php echo __('They have no one praying for them', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Many unengaged people groups have no churches, no missionaries, and often no believers, meaning little to no consistent prayer is being offered on their behalf.', 'doxa-website'); ?></p>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ get_header( 'top' ); ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pray-05-Doxa.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
-                                <h4><?php echo __('Prayer prepares the way for the gospel', 'doxa-website'); ?></h4>
+                                <h4 class="font-heading font-size-2xl"><?php echo __('Prayer prepares the way for the gospel', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Prayer softens hearts, opens doors, and invites the work of the Holy Spirit long before workers arrive or the gospel is proclaimed.', 'doxa-website'); ?></p>
                             </div>
                         </div><div class="switcher | gap-md">
@@ -118,7 +118,7 @@ get_header( 'top' ); ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pray-06-Doxa.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
-                                <h4><?php echo __('Prayer unites the global church', 'doxa-website'); ?></h4>
+                                <h4 class="font-heading font-size-2xl"><?php echo __('Prayer unites the global church', 'doxa-website'); ?></h4>
                                 <p><?php echo __('When we pray, we join believers around the world in God\'s mission, standing together for peoples still waiting to hear the name of Jesus.', 'doxa-website'); ?></p>
                             </div>
                         </div>

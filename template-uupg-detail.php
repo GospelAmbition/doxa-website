@@ -56,7 +56,7 @@ $uupg = get_uupg_by_slug( $slug );
                         </div>
                         <img class="uupg__image | grow-none" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
                         <div class="stack stack--xs | uupg__header">
-                            <h4 class="font-base font-weight-medium font-size-2xl"><?php echo esc_html( $uupg['imb_display_name'] ); ?></h4>
+                            <h4 class="font-base font-weight-medium"><?php echo esc_html( $uupg['imb_display_name'] ); ?></h4>
                             <p class="font-weight-medium font-size-lg"><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
                             <p><?php echo esc_html( $uupg['imb_people_description'] ); ?></p>
                         </div>

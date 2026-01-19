@@ -99,7 +99,7 @@ get_header( 'top' ); ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-03-DurbetInMongolia.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
-                                <h4><?php echo __('They have no gospel access', 'doxa-website'); ?></h4>
+                                <h4 class="font-heading font-size-2xl"><?php echo __('They have no gospel access', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Unengaged people groups have no missionaries, no churches, and often no known believers. Adoption helps ensure they are finally seen, prayed for, and intentionally pursued with the gospel.', 'doxa-website'); ?></p>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ get_header( 'top' ); ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-04-Maha-Brahmin-in-India.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
-                                <h4><?php echo __('Prayer opens the door for engagement', 'doxa-website'); ?></h4>
+                                <h4 class="font-heading font-size-2xl"><?php echo __('Prayer opens the door for engagement', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spritual barriers, and supports workers who go. Every gospel movement begins with prayer.', 'doxa-website'); ?></p>
                             </div>
                         </div><div class="switcher | gap-md">
@@ -116,7 +116,7 @@ get_header( 'top' ); ?>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-05-KamaraInGhana.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
-                                <h4><?php echo __('Churches become active partners in God\'s mission', 'doxa-website'); ?></h4>
+                                <h4 class="font-heading font-size-2xl"><?php echo __('Churches become active partners in God\'s mission', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Adoptoin invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
                             </div>
                         </div>
