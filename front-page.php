@@ -109,7 +109,7 @@ get_header( 'top' ); ?>
             </section>
             <section class="surface-white">
                 <div class="container stack stack--xl">
-                    <h3 class="color-primary text-center"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h3>
+                    <h2 class="color-primary text-center"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
                     <div class="switcher | gap-md" data-width="lg">
                         <div class="switcher-item">
                             <div class="info-card surface-secondary-light">
