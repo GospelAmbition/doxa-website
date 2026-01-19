@@ -63,7 +63,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                     <input type="hidden" name="people_group" value="<?php echo esc_attr( $uupg['imb_display_name'] . ' (' . $uupg['imb_isoalpha3']['label'] . ')' ); ?>">
                     <div class="stack stack--lg | max-width-lg mx-auto">
                         <section class="stack">
-                            <h3 class="highlight" data-highlight-index="4"><?php echo __('What is your committment? Pray. Give. Go.', 'doxa-website'); ?></h3>
+                            <h3 class="highlight" data-highlight-index="4"><?php echo __('What is your committment? Pray. Give. Send.', 'doxa-website'); ?></h3>
                             <p><?php echo esc_html__( 'When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:', 'doxa-website' ); ?></p>
                             <ul class="stack" data-list-color="primary">
                                 <li>
@@ -75,7 +75,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                                     <?php echo __('Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers.', 'doxa-website'); ?>
                                 </li>
                                 <li>
-                                    <strong><?php echo __('Go', 'doxa-website'); ?> – </strong>
+                                    <strong><?php echo __('Send', 'doxa-website'); ?> – </strong>
                                     <?php echo __('Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly.', 'doxa-website'); ?>
                                 </li>
                             </ul>
