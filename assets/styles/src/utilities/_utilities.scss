@@ -14,6 +14,10 @@
   border-width: 0;
 }
 
+.invisible-placeholder {
+  visibility: hidden;
+}
+
 // Typography utilities
 .text-primary {
   color: var(--color-text-on-default);

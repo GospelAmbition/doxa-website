@@ -61,9 +61,11 @@ export class UupgsList extends LitElement {
                     </div>
                 </div>
                 <div class="stack stack--xs">
-                    ${ !this.dontShowListOnLoad && !this.loading ? html`
-                        <div class="font-size-sm">${this.t.total}: ${this.total}</div>
-                    ` : ''}
+                    <div class="font-size-sm">
+                        ${ !this.dontShowListOnLoad && !this.loading ? `
+                            ${this.t.total}: ${this.total}
+                        ` : html`<span class="invisible-placeholder">Placeholder</span>`}
+                    </div>
                     <div id="results" class="grid | uupgs-list ${this.useSelectCard ? 'gap-md' : ''}" ?data-width-lg=${!this.useSelectCard} ?data-width-md=${this.useSelectCard}>
                         ${repeat(this.filteredUUPGs.slice(0, this.page * this.perPage), (uupg: Uupg) => uupg.id, (uupg: Uupg) => {
                             if (this.useSelectCard) {
