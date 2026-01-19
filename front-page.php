@@ -105,11 +105,11 @@ get_header( 'top' ); ?>
                 </div>
             </section>
             <section class="bg-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-02-WhoAreTheUnreached.jpg');">
-                <h2 class="text-center banner-title"><?php echo __('Who are the unreached?', 'doxa-website'); ?></h2>
+                <h2 class="text-center banner-title"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
             </section>
             <section class="surface-white">
                 <div class="container stack stack--xl">
-                    <h3 class="color-primary text-center"><?php echo __('48% of the world population', 'doxa-website'); ?></h3>
+                    <h3 class="color-primary text-center"><?php echo __('The least of the least reached', 'doxa-website'); ?></h3>
                     <div class="switcher | gap-md" data-width="lg">
                         <div class="switcher-item">
                             <div class="info-card surface-secondary-light">
