@@ -125,6 +125,21 @@ $uupg = get_uupg_by_slug( $slug );
                             <h2><?php echo __('Adoption Status', 'doxa-website'); ?></h2>
                             <p class="font-size-4xl font-weight-medium"><?php echo $uupg['adopted_by_churches'] ? count( $uupg['adopted_by_churches'] ) : 0; ?></p>
                             <p class="font-size-lg"><?php echo __('churches/individuals have adopted this people group', 'doxa-website'); ?></p>
+                            <?php if ( count( $uupg['adopted_by_churches'] ) > 0 ) : ?>
+                                <ul>
+                                    <?php foreach ( $uupg['adopted_by_churches'] as $church ) : ?>
+
+                                        <?php if ( isset( $church['confirm_public_display'] ) && $church['confirm_public_display'] === 'Yes' ) : ?>
+
+                                            <li><?php echo $church['name']; ?></li>
+
+                                        <?php endif; ?>
+
+                                    <?php endforeach; ?>
+                                </ul>
+
+                            <?php endif; ?>
+
                             <a class="button fit-content mx-auto mt-auto" href="<?php echo home_url('adopt/' . $uupg['slug']); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
                         </div>
                     </div>

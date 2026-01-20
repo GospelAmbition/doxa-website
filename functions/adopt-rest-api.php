@@ -60,9 +60,11 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
     $email            = sanitize_email( $params['email'] ?? '' );
     $phone            = sanitize_text_field( $params['phone'] ?? '' );
     $church_name      = sanitize_text_field( $params['church_name'] ?? '' );
-    $wagf_block       = sanitize_text_field( $params['wagf_block'] ?? '' );
+    $country          = sanitize_text_field( $params['country'] ?? '' );
     $role             = sanitize_text_field( $params['role'] ?? '' );
     $confirm_adoption = ! empty( $params['confirm_adoption'] );
+    $permission_to_contact = ! empty( $params['permission_to_contact'] ) ? 'Yes' : 'No';
+    $confirm_public_display = ! empty( $params['confirm_public_display'] ) ? 'Yes' : 'No';
     $people_group     = sanitize_text_field( $params['people_group'] ?? '' );
 
     // Validate required fields
@@ -103,9 +105,11 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
     $note = "Adoption Form Submission\n\n";
     $note .= "People Group: " . $people_group . "\n";
     $note .= "Church Name: " . $church_name . "\n";
-    $note .= "WAGF Block: " . $wagf_block . "\n";
+    $note .= "Country: " . $country . "\n";
     $note .= "Role: " . $role . "\n";
     $note .= "Champion Commitment Confirmed: Yes";
+    $note .= "Permission to Contact: " . $permission_to_contact . "\n";
+    $note .= "Confirm Public Display: " . $confirm_public_display . "\n";
 
     $full_name = trim( $first_name . ' ' . $last_name );
 
