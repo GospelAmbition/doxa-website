@@ -93,14 +93,17 @@
 
 .font-size-3xl {
   font-size: var(--font-size-3xl);
+  font-size: clamp(var(--font-size-xl), 5vw, var(--font-size-3xl));
 }
 
 .font-size-4xl {
   font-size: var(--font-size-4xl);
+  font-size: clamp(var(--font-size-2xl), 6vw, var(--font-size-4xl));
 }
 
 .font-size-5xl {
   font-size: var(--font-size-5xl);
+  font-size: clamp(var(--font-size-3xl), 7vw, var(--font-size-5xl));
 }
 
 .lh-0 {
