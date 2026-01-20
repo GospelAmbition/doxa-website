@@ -63,7 +63,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                     <input type="hidden" name="people_group" value="<?php echo esc_attr( $uupg['imb_display_name'] . ' (' . $uupg['imb_isoalpha3']['label'] . ')' ); ?>">
                     <div class="stack stack--lg | max-width-lg mx-auto">
                         <section class="stack">
-                            <h3 class="highlight" data-highlight-index="4"><?php echo __('What is your committment? Pray. Give. Send.', 'doxa-website'); ?></h3>
+                            <h3 class="highlight" data-highlight-index="4"><?php echo __('What is your commitment? Pray. Give. Send.', 'doxa-website'); ?></h3>
                             <p><?php echo esc_html__( 'When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:', 'doxa-website' ); ?></p>
                             <ul class="stack" data-list-color="primary">
                                 <li>
@@ -112,7 +112,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             </div>
                             <div class="ms-auto form-control color-primary-darker font-weight-medium">
                                 <label for="confirm-public-display"><?php echo __('I am happy for this church name to appear publicly on this site.', 'doxa-website'); ?></label>
-                                <input type="checkbox" id="confirm-public-display" name="confirm-public-display">
+                                <input type="checkbox" id="confirm-public-display" name="confirm_public_display">
                             </div>
                             <div>
                                 <label for="country"><?php echo __('Location of Church/Group', 'doxa-website'); ?></label>
@@ -130,7 +130,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                         </div>
                         <div class="ms-auto form-control color-primary-darker font-weight-medium">
                             <label for="permission-to-contact"><?php echo __('I give permission for Doxa to connect me with others adopting this people group.', 'doxa-website'); ?></label>
-                            <input type="checkbox" id="permission-to-contact" name="permission-to-contact">
+                            <input type="checkbox" id="permission-to-contact" name="permission_to_contact">
                         </div>
                         <div class="cf-turnstile" data-sitekey="<?php echo esc_attr( $cf_site_key ); ?>" data-theme="light" data-callback="onTurnstileSuccess"></div>
                         <div id="adoption-message" class="contact-message" style="display: none;"></div>
@@ -187,7 +187,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 email: form.querySelector('#contact-email').value,
                 phone: form.querySelector('#phone').value,
                 church_name: form.querySelector('#church-name').value,
-                wagf_block: form.querySelector('#wagf-block').value,
+                country: form.querySelector('#country').value,
                 role: form.querySelector('#role').value,
                 confirm_adoption: form.querySelector('#confirm-adoption').checked,
                 people_group: form.querySelector('input[name="people_group"]').value,
