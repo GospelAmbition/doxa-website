@@ -31,6 +31,9 @@
                             width="250"
                             height="auto">
                     </a>
+                    <span class="wagf-text">
+                        <?php echo __('World assemblies of God Fellowship', 'doxa-website'); ?>
+                    </span>
                 </div>
                 <div class="header-menu">
                     <nav id="site-navigation" class="main-navigation">
