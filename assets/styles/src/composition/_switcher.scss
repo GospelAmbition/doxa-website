@@ -30,3 +30,39 @@
 .switcher-item {
     display: flex;
 }
+
+.three-part-switcher {
+    display: flex;
+    gap: var(--spacing-2xl);
+}
+
+@media (max-width: 992px) {
+    .three-part-switcher {
+        flex-direction: column;
+
+        .grow-1 {
+            flex-basis: auto;
+        }
+        .grow-2 {
+            flex-basis: auto;
+        }
+        .bg-image {
+            height: 300px;
+            background-position: 0% 20%;
+        }
+        .card-two-tone {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .three-part-switcher {
+        .card-two-tone {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+}

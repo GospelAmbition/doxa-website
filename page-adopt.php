@@ -19,7 +19,7 @@ get_header( 'top' ); ?>
                         <h1 class="h2 highlight" data-highlight-index="1"><?php echo __('Adopt an unengaged people group', 'doxa-website'); ?></h1>
                         <p class="subtext"><?php echo __('A church-led commitment to pray, give, and send so that gospel access begins.', 'doxa-website'); ?></p>
                     </div>
-                    <div class="switcher">
+                    <div class="three-part-switcher">
                         <div class="card-two-tone | text-center grow-1">
                             <div class="stack stack--lg">
                                 <h2 class="h3"><?php echo __('Adoption Goal', 'doxa-website'); ?></h2>
