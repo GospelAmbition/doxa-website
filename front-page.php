@@ -160,13 +160,13 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--xl">
                     <h2><?php echo __('Vision 2033', 'doxa-website'); ?></h2>
                     <div class="">
-                        <div class="image-switcher" data-width="xl">
+                        <div class="switcher" data-width="xl">
                             <div class="switcher-item center grow-none">
                                 <img
                                     class="center"
                                     src="<?php echo get_template_directory_uri(); ?>/assets/images/home-03-Vision-2033.jpg"
                                     alt="<?php echo __('Vision 2033', 'doxa-website'); ?>"
-                                    style="width: clamp(150px, 25vw, 500px);"
+                                    style="width: clamp(150px, 25vw, 350px);"
                                 >
                             </div>
                             <div class="switcher-item align-center justify-center">

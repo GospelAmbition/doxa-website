@@ -96,8 +96,8 @@ get_header( 'top' ); ?>
                 <div class="container">
                     <div class="stack stack--lg">
                         <h2><?php echo __('Why prayer matters', 'doxa-website'); ?></h2>
-                        <div class="switcher | gap-md">
-                            <div class="grow-none">
+                        <div class="switcher | gap-md" data-width="xl">
+                            <div class="switcher-item center grow-none">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pray-04-Doxa.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
@@ -105,16 +105,16 @@ get_header( 'top' ); ?>
                                 <p><?php echo __('Many unengaged people groups have no churches, no missionaries, and often no believers, meaning little to no consistent prayer is being offered on their behalf.', 'doxa-website'); ?></p>
                             </div>
                         </div>
-                        <div class="switcher | gap-md">
-                            <div class="grow-none">
+                        <div class="switcher | gap-md" data-width="xl">
+                            <div class="switcher-item center grow-none">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pray-05-Doxa.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4 class="font-heading font-size-2xl"><?php echo __('Prayer prepares the way for the gospel', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Prayer softens hearts, opens doors, and invites the work of the Holy Spirit long before workers arrive or the gospel is proclaimed.', 'doxa-website'); ?></p>
                             </div>
-                        </div><div class="switcher | gap-md">
-                            <div class="grow-none">
+                        </div><div class="switcher | gap-md" data-width="xl">
+                            <div class="switcher-item center grow-none">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Pray-06-Doxa.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">

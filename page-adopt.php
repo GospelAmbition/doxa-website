@@ -72,7 +72,7 @@ get_header( 'top' ); ?>
             </section>
             <section>
                 <div class="container">
-                    <div class="switcher | align-center">
+                    <div class="switcher | align-center" data-width="xl">
                         <div class="stack | grow-2 align-center">
                             <div class="stack stack--2xl">
                                 <h2 class="highlight" data-highlight-index="1"><?php echo __('Adoption Guide & Resources', 'doxa-website'); ?></h2>
@@ -85,7 +85,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-02-ipad-mockup.png" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
+                            <img class="center" src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-02-ipad-mockup.png" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
                         </div>
                     </div>
                 </div>
@@ -94,8 +94,8 @@ get_header( 'top' ); ?>
                 <div class="container">
                     <div class="stack stack--lg">
                         <h2><?php echo __('Why adoption matters', 'doxa-website'); ?></h2>
-                        <div class="switcher | gap-md">
-                            <div class="grow-none">
+                        <div class="switcher | gap-md" data-width="xl">
+                            <div class="switcher-item center grow-none">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-03-DurbetInMongolia.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
@@ -103,16 +103,16 @@ get_header( 'top' ); ?>
                                 <p><?php echo __('Unengaged people groups have no missionaries, no churches, and often no known believers. Adoption helps ensure they are finally seen, prayed for, and intentionally pursued with the gospel.', 'doxa-website'); ?></p>
                             </div>
                         </div>
-                        <div class="switcher | gap-md">
-                            <div class="grow-none">
+                        <div class="switcher | gap-md" data-width="xl">
+                            <div class="switcher-item center grow-none">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-04-Maha-Brahmin-in-India.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4 class="font-heading font-size-2xl"><?php echo __('Prayer opens the door for engagement', 'doxa-website'); ?></h4>
                                 <p><?php echo __('Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spritual barriers, and supports workers who go. Every gospel movement begins with prayer.', 'doxa-website'); ?></p>
                             </div>
-                        </div><div class="switcher | gap-md">
-                            <div class="grow-none">
+                        </div><div class="switcher | gap-md" data-width="xl">
+                            <div class="switcher-item center grow-none">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Adopt-05-KamaraInGhana.jpg" alt="<?php echo __('Adopt an unengaged people group', 'doxa-website'); ?>">
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
