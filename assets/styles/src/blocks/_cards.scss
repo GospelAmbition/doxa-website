@@ -314,6 +314,12 @@
     border-color: var(--color-status-success);
     color: var(--color-status-success);
 }
+@media (max-width: 1024px) {
+    .engaged-stamp {
+        position: static;
+        transform: rotate(8deg) translate(0%, 10%);
+    }
+}
 
 .status-item {
     display: flex;

@@ -46,15 +46,17 @@ $uupg = get_uupg_by_slug( $slug );
         <div class="container page-content uupg-detail-page">
             <div class="stack stack--lg">
                 <div class="stack stack--2xl">
-                    <div class="card switcher align-center" padding-small>
-                        <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['key'] === 'engaged' ? 'true' : 'false'; ?>">
-                            <?php if ( $uupg['imb_engagement_status']['key'] === 'engaged' ) : ?>
-                                <span><?php echo __('Engaged', 'doxa-website'); ?></span>
-                            <?php else : ?>
-                                <span><?php echo __('Not Engaged', 'doxa-website'); ?></span>
-                            <?php endif; ?>
+                    <div class="card switcher" padding-small>
+                        <div class="grow-none">
+                            <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
+                            <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['key'] === 'engaged' ? 'true' : 'false'; ?>">
+                                <?php if ( $uupg['imb_engagement_status']['key'] === 'engaged' ) : ?>
+                                    <span><?php echo __('Engaged', 'doxa-website'); ?></span>
+                                <?php else : ?>
+                                    <span><?php echo __('Not Engaged', 'doxa-website'); ?></span>
+                                <?php endif; ?>
+                            </div>
                         </div>
-                        <img class="uupg__image | grow-none" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
                         <div class="stack stack--xs | uupg__header">
                             <h4 class="font-base font-weight-medium"><?php echo esc_html( $uupg['imb_display_name'] ); ?></h4>
                             <p class="font-weight-medium font-size-lg"><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
