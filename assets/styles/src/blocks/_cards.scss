@@ -12,6 +12,7 @@
     position: relative;
     border-radius: var(--border-radius-xlg);
     padding: var(--spacing-2xl) var(--spacing-3xl);
+    padding: clamp(var(--spacing-lg), 6vw, var(--spacing-2xl)) clamp(var(--spacing-lg), 6vw, var(--spacing-3xl));
     color: var(--card-text-color);
     background-color: var(--card-background-color);
 }
@@ -343,6 +344,7 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
+    flex-wrap: wrap;
     img {
         width: 20px;
         height: 20px;

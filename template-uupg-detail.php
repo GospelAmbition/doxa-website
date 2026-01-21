@@ -47,7 +47,7 @@ $uupg = get_uupg_by_slug( $slug );
             <div class="stack stack--lg">
                 <div class="stack stack--2xl">
                     <div class="card switcher" padding-small>
-                        <div class="grow-none">
+                        <div class="center | grow-none">
                             <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
                             <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['key'] === 'engaged' ? 'true' : 'false'; ?>">
                                 <?php if ( $uupg['imb_engagement_status']['key'] === 'engaged' ) : ?>
@@ -110,7 +110,7 @@ $uupg = get_uupg_by_slug( $slug );
                             </div>
                         </div>
                     </div>
-                    <div class="switcher">
+                    <div class="switcher" data-width="xl">
                         <div class="stack stack--xl | card | text-center lh-0" data-variant="secondary">
                             <h2><?php echo __('Prayer Status', 'doxa-website'); ?></h2>
                             <p class="font-size-4xl font-weight-medium"><?php echo $uupg['people_praying'] ?></p>
@@ -121,12 +121,12 @@ $uupg = get_uupg_by_slug( $slug );
                                 </div>
                                 <p class="font-size-lg font-weight-medium"><?php echo __('24-hour Prayer Coverage', 'doxa-website'); ?></p>
                             </div>
-                            <a class="button fit-content mx-auto stack-spacing-4xl" href="https://pray.doxa.life/<?php echo $uupg['slug']; ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a>
+                            <a class="button fit-content mx-auto stack-spacing-4xl clamp-padding" href="https://pray.doxa.life/<?php echo $uupg['slug']; ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a>
                         </div>
                         <div class="stack stack--xl | card | text-center lh-0" data-variant="primary">
                             <h2><?php echo __('Adoption Status', 'doxa-website'); ?></h2>
                             <p class="font-size-4xl font-weight-medium"><?php echo $uupg['adopted_by_churches'] ? count( $uupg['adopted_by_churches'] ) : 0; ?></p>
-                            <p class="font-size-lg"><?php echo __('churches/individuals have adopted this people group', 'doxa-website'); ?></p>
+                            <p class="font-size-lg margin-bottom-md"><?php echo __('churches / individuals have adopted this people group', 'doxa-website'); ?></p>
                             <?php if ( count( $uupg['adopted_by_churches'] ) > 0 ) : ?>
                                 <ul>
                                     <?php foreach ( $uupg['adopted_by_churches'] as $church ) : ?>
@@ -142,7 +142,7 @@ $uupg = get_uupg_by_slug( $slug );
 
                             <?php endif; ?>
 
-                            <a class="button fit-content mx-auto mt-auto" href="<?php echo home_url('adopt/' . $uupg['slug']); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
+                            <a class="button fit-content mx-auto mt-auto clamp-padding" href="<?php echo home_url('adopt/' . $uupg['slug']); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
                         </div>
                     </div>
 
@@ -159,7 +159,7 @@ $uupg = get_uupg_by_slug( $slug );
 
                     <?php endif; ?>
 
-                    <div class="switcher">
+                    <div class="switcher" data-width="xl">
                         <div class="card" data-variant="primary">
                             <div class="stack">
                                 <h2 class="color-primary"><?php echo __('Overview', 'doxa-website'); ?></h2>

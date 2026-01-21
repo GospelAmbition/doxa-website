@@ -27,6 +27,9 @@ a.wp-element-button {
     display: inline;
     color: var(--button-text-color-hover);
 }
+.button.clamp-padding {
+    padding: clamp(var(--spacing-xs), 2vw, var(--spacing-sm)) clamp(var(--spacing-lg), 6vw, var(--spacing-4xl));
+}
 
 .wp-block-button__link:focus,
 .wp-block-button__link:active,

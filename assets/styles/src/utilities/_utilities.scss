@@ -250,6 +250,10 @@
   padding: clamp(var(--spacing-md), 6vw, var(--spacing-2xl));
 }
 
+.margin-bottom-md {
+  margin-bottom: var(--spacing-md);
+}
+
 .gap-xs {
   gap: var(--spacing-xs);
 }
