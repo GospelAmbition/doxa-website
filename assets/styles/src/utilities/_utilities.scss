@@ -246,6 +246,10 @@
 
 /* Spacing */
 
+.padding-clamp-2xl {
+  padding: clamp(var(--spacing-md), 6vw, var(--spacing-2xl));
+}
+
 .gap-xs {
   gap: var(--spacing-xs);
 }

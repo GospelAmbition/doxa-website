@@ -47,6 +47,7 @@
     font-size: var(--font-size-xs);
     color: var(--color-brand-secondary);
     text-align: center;
+    margin-top: var(--spacing-sm);
 }
 
 @media (max-width: 768px) {
@@ -62,7 +63,7 @@
 @media (max-width: 992px) {
     .footer__content {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
             "top"
             "center"
@@ -70,6 +71,7 @@
     }
     .footer__center {
         grid-area: top;
+        gap: var(--spacing-xl);
     }
     .footer__right {
         grid-area: bottom;

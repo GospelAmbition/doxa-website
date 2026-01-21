@@ -107,7 +107,7 @@ get_header( 'top' ); ?>
             <section class="bg-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-02-WhoAreTheUnreached-new.jpg');">
                 <h2 class="text-center banner-title invisible-placeholder"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
             </section>
-            <section class="surface-white">
+            <section class="">
                 <div class="container stack stack--xl">
                     <h2 class="color-primary text-center"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
                     <div class="switcher | gap-md" data-width="lg">
@@ -156,13 +156,18 @@ get_header( 'top' ); ?>
                     </a>
                 </div>
             </section>
-            <section>
+            <section class="surface-white">
                 <div class="container stack stack--xl">
                     <h2><?php echo __('Vision 2033', 'doxa-website'); ?></h2>
-                    <div class="card shadow">
-                        <div class="switcher" data-width="xl">
-                            <div class="switcher-item grow-none">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-03-Vision-2033.jpg" alt="<?php echo __('Vision 2033', 'doxa-website'); ?>">
+                    <div class="">
+                        <div class="image-switcher" data-width="xl">
+                            <div class="switcher-item center grow-none">
+                                <img
+                                    class="center"
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/home-03-Vision-2033.jpg"
+                                    alt="<?php echo __('Vision 2033', 'doxa-website'); ?>"
+                                    style="width: clamp(150px, 25vw, 500px);"
+                                >
                             </div>
                             <div class="switcher-item align-center justify-center">
                                 <div class="stack stack--xl">
@@ -191,7 +196,7 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--3xl">
                     <h2 class="highlight" data-highlight-last><?php echo __('Engagement starts with prayer', 'doxa-website'); ?></h2>
                     <div class="switcher | align-center">
-                        <div class="switcher-item grow-none">
+                        <div class="switcher-item center grow-none">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home-04-EngagementStartsWithPrayer.jpg" alt="<?php echo __('Engagement starts with prayer', 'doxa-website'); ?>">
                         </div>
                         <div>
@@ -205,14 +210,14 @@ get_header( 'top' ); ?>
             </section>
             <section>
                 <div class="switcher container | gap-md" data-width="xl">
-                    <div class="switcher-item card | bg-image align-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-doxa-background.jpg');">
+                    <div class="switcher-item card | padding-clamp-2xl bg-image align-center" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-doxa-background.jpg');">
                         <div class="stack stack--md | text-center text-secondary">
                             <h2><?php echo __('What does "DOXA" mean?', 'doxa-website'); ?></h2>
                             <p class="subtext"><?php echo __('DOXA is the Greek word for "GLORY".', 'doxa-website'); ?></p>
                             <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA remindns us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
                         </div>
                     </div>
-                    <div class="switcher-item | grow-none">
+                    <div class="switcher-item center grow-none">
                         <img class="rounded-xlg" src="<?php echo get_template_directory_uri(); ?>/assets/images/home-05-WhatDoesDoxaMean.jpg" alt="<?php echo __('Engagement starts with prayer', 'doxa-website'); ?>">
                     </div>
                 </div>
