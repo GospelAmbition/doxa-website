@@ -172,6 +172,9 @@
 .uupg_adopted {
     grid-area: adopted;
 
+    display: flex;
+    justify-content: flex-end;
+
     & > div {
         border-radius: var(--border-radius-sm);
         display: flex;
@@ -204,6 +207,18 @@
 
 .uupg__footer {
     grid-area: footer;
+}
+
+@media (max-width: 576px) {
+    .uupg__card {
+        grid-template-areas: "image adopted"
+        "header header"
+        "content content"
+        "footer footer";
+
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
 }
 
 .highlighted-uupg__card {
