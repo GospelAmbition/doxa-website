@@ -22,6 +22,10 @@ export class UupgsList extends LitElement {
     useSelectCard: boolean = false;
     @property({ type: Boolean })
     useHighlightedUUPGs: boolean = false;
+    @property({ type: Boolean })
+    randomizeList: boolean = false;
+    @property({ type: Boolean })
+    hideSeeAllLink: boolean = false;
 
     @property({ type: Array, attribute: false })
     uupgs: Uupg[] = [];
@@ -72,6 +76,7 @@ export class UupgsList extends LitElement {
                             ` : html`<span class="invisible-placeholder">Placeholder</span>`}
                         </div>
                         ${
+                            !this.hideSeeAllLink &&
                             !this.dontShowListOnLoad && this.hasMore() ? html`
                                 <a class="light-link" href="/research/search/${this.searchTerm}">${this.t.see_all}</a>
                             ` : ''
@@ -215,6 +220,9 @@ export class UupgsList extends LitElement {
             .then(data => {
                 this.total = data.total;
                 this.uupgs = data.posts;
+                if (this.randomizeList) {
+                    this.uupgs = this.uupgs.sort(() => Math.random() - 0.5);
+                }
                 if (this.useHighlightedUUPGs) {
                     this.filteredUUPGs = [
                         ...this.filteredUUPGs,
