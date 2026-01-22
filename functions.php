@@ -8,6 +8,8 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+require_once get_template_directory() . '/shortcodes/uupg-list-shortcode.php';
+
 function coming_soon_redirect() {
     $url = $_SERVER['REQUEST_URI'];
     if ( !is_admin() && !str_contains($url, 'admin') && !is_page( 'coming-soon' ) && !is_user_logged_in() ) {
@@ -71,16 +73,14 @@ function gospel_ambition_scripts() {
 
     // unenqueue jquery
     wp_dequeue_script('jquery');
-    if ( is_page('research') || is_page('pray') || is_page('adopt') ) {
-        wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
-        wp_localize_script('uupgs-script', 'uupgsData', array(
-            'images_url' => trailingslashit( get_template_directory_uri() ) . 'assets/images',
-            'icons_url' => trailingslashit( get_template_directory_uri() ) . 'assets/icons',
-            'translations' => [
-                'click_twice' => 'Click again to interact with map'
-            ],
-        ));
-    }
+    wp_enqueue_script('uupgs-script', get_template_directory_uri() . '/assets/dist/main2.js', array(), filemtime(get_template_directory() . '/assets/dist/main2.js'), true);
+    wp_localize_script('uupgs-script', 'uupgsData', array(
+        'images_url' => trailingslashit( get_template_directory_uri() ) . 'assets/images',
+        'icons_url' => trailingslashit( get_template_directory_uri() ) . 'assets/icons',
+        'translations' => [
+            'click_twice' => 'Click again to interact with map'
+        ],
+    ));
 
 }
 add_action('wp_enqueue_scripts', 'gospel_ambition_scripts');
