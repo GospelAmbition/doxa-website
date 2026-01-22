@@ -31,7 +31,7 @@ get_header( 'top' ); ?>
                                 <div class="stack stack--3xs">
                                     <p class="subtext font-size-md"><?php echo __('people groups adopted', 'doxa-website'); ?></p>
                                     <div class="progress-bar" data-size="md">
-                                        <div class="progress-bar__slider" id="adopted-current-status-percentage" style="width: <?php echo esc_attr( 124 / 2085 * 100 ); ?>%"></div>
+                                        <div class="progress-bar__slider" id="adopted-current-status-percentage" style="width: 0%"></div>
                                     </div>
                                 </div>
                             </div>

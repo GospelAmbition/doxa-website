@@ -30,9 +30,9 @@ get_header( 'top' ); ?>
                                 <h2 class="h3"><?php echo __('Current Status', 'doxa-website'); ?></h2>
                                 <span class="font-size-4xl font-weight-bold font-button"><span id="prayer-current-status">0</span> / 2085</span>
                                 <div class="stack stack--3xs">
-                                    <p class="subtext font-size-md"><?php echo __('People groups with 24-hour prayer coverage.', 'doxa-website'); ?></p>
+                                    <p class="subtext font-size-md"><?php echo __('People groups with committed 24-hour prayer coverage.', 'doxa-website'); ?></p>
                                     <div class="progress-bar" data-size="md">
-                                        <div class="progress-bar__slider" id="prayer-current-status-percentage" style="width: <?php echo esc_attr( 124 / 2085 * 100 ); ?>%"></div>
+                                        <div class="progress-bar__slider" id="prayer-current-status-percentage" style="width: 0%"></div>
                                     </div>
                                 </div>
                             </div>
