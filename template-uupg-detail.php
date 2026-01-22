@@ -68,7 +68,7 @@ $uupg = get_uupg_by_slug( $slug );
                         <div class="cluster justify-center">
                             <div class="cluster justify-center align-start" data-width="md">
                                 <div class="status-item">
-                                    <?php if ( $uupg['people_praying'] > 0 ) : ?>
+                                    <?php if ( $uupg['people_committed'] > 0 ) : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                     <?php else : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
@@ -113,8 +113,8 @@ $uupg = get_uupg_by_slug( $slug );
                     <div class="switcher" data-width="xl">
                         <div class="stack stack--xl | card | text-center lh-0" data-variant="secondary">
                             <h2><?php echo __('Prayer Status', 'doxa-website'); ?></h2>
-                            <p class="font-size-4xl font-weight-medium"><?php echo $uupg['people_praying'] ?></p>
-                            <p class="font-size-lg"><?php echo __('people praying', 'doxa-website'); ?></p>
+                            <p class="font-size-4xl font-weight-medium"><?php echo $uupg['people_committed'] ?></p>
+                            <p class="font-size-lg"><?php echo __('People committed to praying', 'doxa-website'); ?></p>
                             <div class="stack stack--sm">
                                 <div class="progress-bar" data-size="md">
                                     <div class="progress-bar__slider" style="width: <?php echo esc_attr( $uupg['people_praying'] / 144 * 100 ); ?>%"></div>
@@ -133,7 +133,7 @@ $uupg = get_uupg_by_slug( $slug );
 
                                         <?php if ( isset( $church['confirm_public_display'] ) && $church['confirm_public_display'] === 'Yes' ) : ?>
 
-                                            <li><?php echo $church['name']; ?></li>
+                                            <li><?php echo $church['post_title']; ?></li>
 
                                         <?php endif; ?>
 
