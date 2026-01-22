@@ -243,7 +243,8 @@
 
 .info-card {
     padding: var(--spacing-2xl);
-    border-radius: var(--border-radius-xlg);
+    border-radius: 100%;
+    aspect-ratio: 1/1;
     font-family: var(--font-family-heading);
     text-transform: uppercase;
     text-align: center;
