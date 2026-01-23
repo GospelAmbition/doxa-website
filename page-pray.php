@@ -73,7 +73,7 @@ get_header( 'top' ); ?>
             </section>
             <section>
                 <div class="container">
-                    <div class="switcher | align-center">
+                    <div class="switcher | align-center" data-width="xl">
                         <div class="stack | grow-2 align-center">
                             <div class="stack stack--2xl">
                                 <h2 class="highlight" data-highlight-index="2"><?php echo __('Your daily prayer guide', 'doxa-website'); ?></h2>
@@ -87,7 +87,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                         <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pray-02-PrayerFUEL-Phone-graphic-2.png" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
+                            <img class="center" src="<?php echo get_template_directory_uri(); ?>/assets/images/pray-02-PrayerFUEL-Phone-graphic-2.png" alt="<?php echo __('Your daily prayer guide', 'doxa-website'); ?>">
                         </div>
                     </div>
                 </div>
