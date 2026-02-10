@@ -148,7 +148,44 @@
                 }
             }, 20);
         }
-        (async () => {
+        function getLanguage() {
+            return 'en';
+        }
+        async function getPeopleGroupsForReel() {
+            const reel = document.getElementById('reel-people-groups');
+            if (!reel) return;
+
+            const numberOfPeopleGroups = 20;
+            const language = getLanguage();
+            const response = await fetch('https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list?lang=' + language);
+            const data = await response.json();
+
+            const peopleGroups = data.posts.filter(group => group.has_photo === '1')
+            peopleGroups.sort(() => Math.random() - 0.5)
+
+            let hasDeafPeopleGroup = false;
+            let filteredPeopleGroups = peopleGroups.filter((group) => {
+                if (hasDeafPeopleGroup) return false;
+                if (group.display_name.toLowerCase().includes('deaf')) {
+                    hasDeafPeopleGroup = true;
+                }
+                return true
+            });
+            filteredPeopleGroups = filteredPeopleGroups.slice(0, numberOfPeopleGroups);
+
+            filteredPeopleGroups.forEach(group => {
+                const item = document.createElement('a');
+                item.classList.add('stack', 'stack--sm', 'reel__item', 'light-link');
+                item.href = '/research/' + group.slug;
+                item.target = '_blank';
+                item.innerHTML = `
+                    <div><img class="square rounded-md size-md" src="${group.picture_url}" alt="${group.display_name}"></div>
+                    <p class="text-center uppercase width-md">${group.display_name}</p>
+                `;
+                reel.appendChild(item);
+            });
+        }
+        async function initSlideshows() {
             // Using a for..of loop in case you want more slideshows on page.
             for (const reel of [...document.querySelectorAll(".reel[data-reel-mode='auto-scroll']")]) {
                 const images = reel.querySelectorAll('img');
@@ -166,7 +203,11 @@
 
                 initSlideshow(reel);
             }
-        })();
+        };
+        getPeopleGroupsForReel()
+            .then(() => {
+                initSlideshows();
+            });
 
         // Video modal toggle
         const videoModalButton = document.querySelector('.video-modal-button');

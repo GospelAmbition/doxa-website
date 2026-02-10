@@ -36,44 +36,7 @@ get_header( 'top' ); ?>
                             <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
                         </p>
                     </div>
-                    <div class="reel" data-reel-mode="auto-scroll">
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-bedouin-gulf.jpg" alt="<?php echo __('Gulf Bedouin', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Gulf Bedouin', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-bobo-madare.jpg" alt="<?php echo __('Bobo Madare', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Bobo Madare', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-bosniak.jpg" alt="<?php echo __('Bosniak', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Bosniak', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-chhipa.jpg" alt="<?php echo __('Chhipa', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Chhipa', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-rtaho-amdo.jpg" alt="<?php echo __('Rtahu Amdo', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Rtahu Amdo', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-maninka-eastern.jpg" alt="<?php echo __('Eastern Maninka', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Eastern Maninka', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-algerian.jpg" alt="<?php echo __('Algerian', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Algerian', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-hadrami.jpg" alt="<?php echo __('Hadrami Arab', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Hadrami Arab', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-awlad-hassan.jpg" alt="<?php echo __('Awlad Hassan', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Awlad Hassan', 'doxa-website'); ?></p>
-                        </div>
-                    </div>
+                    <div class="reel" id="reel-people-groups" data-reel-mode="auto-scroll"></div>
                     <div class="stack stack--2xl">
                         <h2 class="highlight" data-highlight-last><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
                         <div class="switcher | gap-md">
