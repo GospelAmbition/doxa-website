@@ -5,44 +5,49 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-10T15:03:19+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-02-11 11:39+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Spanish <https://translate.disciple.tools/projects/doxa/doxa-"
+"life/es_ES/>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: WP-CLI 2.6.0\n"
+"X-Generator: Weblate 5.15.2\n"
 "X-Domain: doxa-website\n"
 
 #. Theme Name of the theme
 msgid "DOXA Life"
-msgstr ""
+msgstr "DOXA Vida"
 
 #. Description of the theme
 msgid "A clean, elegant theme for DOXA Life - Engaging every people group by 2033"
 msgstr ""
+"Un tema limpio y elegante para DOXA Life: involucrar a todos los grupos de "
+"personas para 2033."
 
 #. Author of the theme
 msgid "Gospel Ambition Team"
-msgstr ""
+msgstr "Equipo Gospel Ambition"
 
 #: 404.php:15
 msgid "Page Not Found"
-msgstr ""
+msgstr "Página no encontrada"
 
 #: 404.php:16
 msgid "It looks like nothing was found at this location. Perhaps one of the links below can help."
 msgstr ""
+"Parece que no se ha encontrado nada en esta ubicación. Quizás alguno de los "
+"enlaces siguientes pueda ayudarte."
 
 #: 404.php:19
 msgid "Popular Pages:"
-msgstr ""
+msgstr "Páginas populares:"
 
 #: 404.php:21
 msgid "Home"
-msgstr ""
+msgstr "Inicio"
 
 #. Template Name of the theme
 #: 404.php:22
@@ -51,98 +56,106 @@ msgstr ""
 #: page-pray.php:66
 #: template-adoption-form.php:70
 msgid "Pray"
-msgstr ""
+msgstr "Reza"
 
 #. Template Name of the theme
 #: 404.php:23
 #: front-page.php:54
 #: page-adopt.php:135
 msgid "Adopt"
-msgstr ""
+msgstr "Adoptar"
 
 #: 404.php:24
 msgid "Research"
-msgstr ""
+msgstr "Investigación"
 
 #: 404.php:25
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: 404.php:26
 msgid "Contact"
-msgstr ""
+msgstr "Contactos"
 
 #: footer.php:34
 #: page-contact.php:20
 msgid "Contact Us"
-msgstr ""
+msgstr "Contáctenos"
 
 #: front-page.php:16
 msgid "Our gift to Jesus"
-msgstr ""
+msgstr "Nuestro regalo para Jesús"
 
 #: front-page.php:17
 #: front-page.php:26
 msgid "Engage every people by 2033"
-msgstr ""
+msgstr "Involucrar a todos los pueblos para 2033"
 
 #: front-page.php:29
 msgid "The DOXA Vision: Click image to watch the video"
-msgstr ""
+msgstr "La visión de DOXA: Haga clic en la imagen para ver el vídeo."
 
 #: front-page.php:34
 msgctxt "number of unengaged people groups"
 msgid "%s unengaged people groups"
-msgstr ""
+msgstr "%s grupos étnicos no comprometidos"
 
 #: front-page.php:36
 msgid "Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it."
 msgstr ""
+"Nuestra esperanza es ver a cada uno de ellos cubiertos por la oración las 24 "
+"horas del día, y tu iglesia puede ser parte de ello."
 
 #: front-page.php:41
 msgid "A simple path to faithful obedience"
-msgstr ""
+msgstr "Un camino sencillo hacia la obediencia fiel"
 
 #: front-page.php:47
 msgid "Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples."
 msgstr ""
+"Reciba puntos de oración diarios y únase a creyentes de todo el mundo en "
+"oración por los pueblos no alcanzados."
 
 #: front-page.php:49
 msgid "Join"
-msgstr ""
+msgstr "Unirse"
 
 #: front-page.php:55
 msgid "Churches and networks take ownership - praying, giving and preparing the way for gospel workers."
 msgstr ""
+"Las iglesias y las redes asumen la responsabilidad: oran, dan y preparan el "
+"camino para los obreros del evangelio."
 
 #: front-page.php:57
 #: front-page.php:65
 msgid "Commit"
-msgstr ""
+msgstr "Confirmar"
 
 #: front-page.php:62
 msgid "Engage"
-msgstr ""
+msgstr "Participar"
 
 #: front-page.php:63
 msgid "God raises up men and women to go, serve, and proclaim Christ among the nations."
 msgstr ""
+"Dios levanta a hombres y mujeres para ir, servir y proclamar a Cristo entre "
+"las naciones."
 
 #: front-page.php:72
 #: front-page.php:76
 msgid "Who are the unengaged?"
-msgstr ""
+msgstr "¿Quiénes son los no comprometidos?"
 
 #: front-page.php:81
 msgid "Unreached"
-msgstr ""
+msgstr "Sin alcanzar"
 
 #: front-page.php:82
 #: front-page.php:91
 #: front-page.php:100
 msgctxt "number of billions"
 msgid "%s Billion"
-msgstr ""
+msgstr "%s Mil millones"
 
 #: front-page.php:83
 #: front-page.php:92
@@ -150,95 +163,105 @@ msgstr ""
 #: front-page.php:110
 msgctxt "number of people groups"
 msgid "%s People Groups"
-msgstr ""
+msgstr "%s Grupos de personas"
 
 #: front-page.php:90
 msgid "Under-Engaged"
-msgstr ""
+msgstr "Poco comprometido"
 
 #: front-page.php:99
 msgid "Frontier People"
-msgstr ""
+msgstr "Gente de la frontera"
 
 #: front-page.php:108
 msgid "Unengaged"
-msgstr ""
+msgstr "Sin compromiso"
 
 #: front-page.php:109
 msgctxt "number of millions"
 msgid "%s Million"
-msgstr ""
+msgstr "%s Millón"
 
 #: front-page.php:116
 msgid "Learn More"
-msgstr ""
+msgstr "Aprende más"
 
 #: front-page.php:125
 #: front-page.php:132
 msgid "Vision 2033"
-msgstr ""
+msgstr "Visión 2033"
 
 #: front-page.php:138
 msgid "In partnership with the global church, our vision is to..."
-msgstr ""
+msgstr "En colaboración con la iglesia global, nuestra visión es..."
 
 #: front-page.php:140
 msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples."
 msgstr ""
+"Cobertura diaria de oración las 24 horas para los 2085 pueblos no alcanzados."
 
 #: front-page.php:141
 msgid "No unengaged people groups by 2033."
-msgstr ""
+msgstr "No habrá grupos étnicos sin evangelizar para 2033."
 
 #: front-page.php:142
 msgid "Mobilize 20,000+ DOXA partnership missionaries"
-msgstr ""
+msgstr "Movilizar a más de 20 000 misioneros asociados a DOXA."
 
 #: front-page.php:143
 msgid "Fruitful engagement among frontier and the under-engaged."
-msgstr ""
+msgstr "Compromiso fructífero entre los pioneros y los menos comprometidos."
 
 #: front-page.php:144
 msgid "Church-planting movements among every unreached people on earth."
 msgstr ""
+"Movimientos de plantación de iglesias entre todos los pueblos no alcanzados "
+"de la tierra."
 
 #: front-page.php:147
 msgid "More"
-msgstr ""
+msgstr "Más"
 
 #: front-page.php:161
 #: front-page.php:164
 #: front-page.php:185
 msgid "Engagement starts with prayer"
-msgstr ""
+msgstr "El compromiso comienza con la oración."
 
 #: front-page.php:168
 msgid "Every movement of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way."
 msgstr ""
+"Todo movimiento del evangelio comienza con la intercesión. Cubre a un grupo "
+"étnico no alcanzado con oración diaria y ayuda a preparar el camino."
 
 #: front-page.php:179
 msgid "What does \"DOXA\" mean?"
-msgstr ""
+msgstr "¿Qué significa «DOXA»?"
 
 #: front-page.php:180
 msgid "DOXA is the Greek word for \"GLORY\"."
-msgstr ""
+msgstr "DOXA es la palabra griega para «GLORIA»."
 
 #: front-page.php:181
 msgid "We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory."
 msgstr ""
+"Elegimos este nombre porque Jesús es digno de la gloria de cada tribu, "
+"lengua, pueblo y nación. DOXA nos recuerda que colaboramos con toda la "
+"Iglesia para llevar el evangelio completo al mundo entero, hasta que las "
+"personas de todas las naciones adoren a Jesús y solo Él reciba toda la "
+"gloria."
 
 #: header.php:35
 msgid "World assemblies of God Fellowship"
-msgstr ""
+msgstr "Asambleas mundiales de la Fraternidad de Dios"
 
 #: index.php:24
 msgid "Let's TOGETHER give Jesus a gift:"
-msgstr ""
+msgstr "Demos JUNTOS un regalo a Jesús:"
 
 #: index.php:25
 msgid "Every unengaged people on earth engaged by 2033"
-msgstr ""
+msgstr "Todas las personas solteras del mundo estarán comprometidas para 2033."
 
 #: page-adopt.php:19
 #: page-adopt.php:99
@@ -248,212 +271,236 @@ msgstr ""
 #: page-pray.php:110
 #: page-pray.php:118
 msgid "Adopt an unengaged people group"
-msgstr ""
+msgstr "Adopta un grupo étnico no alcanzado"
 
 #: page-adopt.php:20
 msgid "A church-led commitment to pray, give, and send so that gospel access begins."
 msgstr ""
+"Un compromiso impulsado por la iglesia para orar, dar y enviar, con el fin "
+"de que comience el acceso al evangelio."
 
 #: page-adopt.php:25
 msgid "Adoption Goal"
-msgstr ""
+msgstr "Objetivo de adopción"
 
 #: page-adopt.php:26
 msgid "Every unengaged people group adopted by a church committed to prayer, giving, and sending."
 msgstr ""
+"Cada grupo étnico no alcanzado es adoptado por una iglesia comprometida con "
+"la oración, la ofrenda y el envío."
 
 #: page-adopt.php:29
 #: page-pray.php:30
 msgid "Current Status"
-msgstr ""
+msgstr "Estado actual"
 
 #: page-adopt.php:32
 msgid "people groups adopted"
-msgstr ""
+msgstr "grupos de personas adoptados"
 
 #: page-adopt.php:46
 msgid "How Adoption Works"
-msgstr ""
+msgstr "Cómo funciona la adopción"
 
 #: page-adopt.php:51
 #: page-pray.php:52
 msgid "Choose"
-msgstr ""
+msgstr "Elija"
 
 #: page-adopt.php:52
 msgid "Prayerfully select an unengaged people group to adopt."
-msgstr ""
+msgstr "Selecciona en oración un grupo étnico no alcanzado para adoptar."
 
 #: page-adopt.php:58
 msgid "Mobilize"
-msgstr ""
+msgstr "Movilizar"
 
 #: page-adopt.php:59
 msgid "Raise up 144+ daily intercessors to pray 10 minutes a day."
 msgstr ""
+"Reúna a más de 144 intercesores diarios para que oren 10 minutos al día."
 
 #: page-adopt.php:65
 msgid "Partner"
-msgstr ""
+msgstr "Socio"
 
 #: page-adopt.php:66
 msgid "Partner through prayer, giving, and sending so that gospel access begins."
 msgstr ""
+"Colabora mediante la oración, las donaciones y el envío de misioneros para "
+"que el evangelio llegue a todos."
 
 #: page-adopt.php:70
 #: page-pray.php:71
 msgid "Get Started"
-msgstr ""
+msgstr "Empezar"
 
 #: page-adopt.php:78
 msgid "Adoption Guide & Resources"
-msgstr ""
+msgstr "Guía y recursos para la adopción"
 
 #: page-adopt.php:80
 msgid "Step-by-step guidance for churches adopting a people group"
-msgstr ""
+msgstr "Guía paso a paso para iglesias que adoptan un grupo étnico"
 
 #: page-adopt.php:81
 msgid "Tools to mobilize prayer and participation across your congregation"
 msgstr ""
+"Herramientas para movilizar la oración y la participación en toda su "
+"congregación"
 
 #: page-adopt.php:82
 msgid "Printable and digital resources to promote awareness and engagement"
 msgstr ""
+"Recursos impresos y digitales para promover la concienciación y la "
+"participación."
 
 #: page-adopt.php:83
 msgid "Helpful tips for sustaining long-term commitment"
-msgstr ""
+msgstr "Consejos útiles para mantener un compromiso a largo plazo"
 
 #: page-adopt.php:88
 #: page-pray.php:79
 #: page-pray.php:90
 msgid "Your daily prayer guide"
-msgstr ""
+msgstr "Tu guía de oración diaria"
 
 #: page-adopt.php:96
 msgid "Why adoption matters"
-msgstr ""
+msgstr "Por qué es importante la adopción"
 
 #: page-adopt.php:102
 msgid "They have no gospel access"
-msgstr ""
+msgstr "No tienen acceso al evangelio."
 
 #: page-adopt.php:103
 msgid "Unengaged people groups have no missionaries, no churches, and often no known believers. Adoption helps ensure they are finally seen, prayed for, and intentionally pursued with the gospel."
 msgstr ""
+"Los grupos étnicos no evangelizados no tienen misioneros, ni iglesias y, a "
+"menudo, tampoco creyentes conocidos. La adopción ayuda a garantizar que "
+"finalmente sean vistos, que se ore por ellos y que se les alcance "
+"intencionalmente con el evangelio."
 
 #: page-adopt.php:111
 msgid "Prayer opens the door for engagement"
-msgstr ""
+msgstr "La oración abre la puerta al compromiso."
 
 #: page-adopt.php:112
 msgid "Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spiritual barriers, and supports workers who go. Every gospel movement begins with prayer."
 msgstr ""
+"La adopción moviliza a más de 144 intercesores diarios, creando 24 horas de "
+"oración que preparan el terreno, rompen barreras espirituales y apoyan a los "
+"trabajadores que van. Todo movimiento evangélico comienza con la oración."
 
 #: page-adopt.php:119
 msgid "Churches become active partners in God's mission"
-msgstr ""
+msgstr "Las iglesias se convierten en socios activos en la misión de Dios."
 
 #: page-adopt.php:120
 msgid "Adoption invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus."
 msgstr ""
+"La adopción invita a la iglesia local a participar de manera significativa —"
+"orando, dando y enviando— para que un grupo étnico pase de no estar "
+"comprometido a estarlo y, en última instancia, se convierta en una comunidad "
+"que adora a Jesús."
 
 #: page-adopt.php:129
 #: page-pray.php:131
 msgid "Choose a people group"
-msgstr ""
+msgstr "Elige un grupo étnico"
 
 #: page-adopt.php:130
 #: page-pray.php:132
 msgid "Select one of these six highlighted engaged people groups - or search for more below."
 msgstr ""
+"Seleccione uno de estos seis grupos de personas comprometidas resaltados, o "
+"busque más abajo."
 
 #: page-adopt.php:136
 #: page-pray.php:138
 #: page-uupgs.php:21
 #: shortcodes/uupg-list-shortcode.php:14
 msgid "Full Profile"
-msgstr ""
+msgstr "Perfil completo"
 
 #: page-adopt.php:137
 #: page-pray.php:139
 #: shortcodes/uupg-list-shortcode.php:15
 msgid "Prayer Coverage"
-msgstr ""
+msgstr "Cobertura de oración"
 
 #: page-adopt.php:138
 #: page-pray.php:140
 #: page-uupgs.php:22
 #: shortcodes/uupg-list-shortcode.php:16
 msgid "Loading results..."
-msgstr ""
+msgstr "Cargando resultados..."
 
 #: page-adopt.php:139
 #: page-pray.php:141
 #: page-uupgs.php:23
 #: shortcodes/uupg-list-shortcode.php:17
 msgid "Load More"
-msgstr ""
+msgstr "Cargar más"
 
 #: page-adopt.php:140
 #: page-pray.php:142
 #: page-uupgs.php:24
 #: shortcodes/uupg-list-shortcode.php:18
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: page-adopt.php:141
 #: page-pray.php:143
 #: shortcodes/uupg-list-shortcode.php:19
 msgid "Search names, country/continent, religions..."
-msgstr ""
+msgstr "Buscar nombres, país/continente, religiones..."
 
 #: page-adopt.php:142
 #: page-pray.php:144
 #: shortcodes/uupg-list-shortcode.php:20
 msgid "See All"
-msgstr ""
+msgstr "Ver todo"
 
 #: page-adopt.php:155
 msgid "I was a stranger and you invited me in"
-msgstr ""
+msgstr "Yo era un extraño y tú me invitaste a entrar."
 
 #: page-adopt.php:156
 #: page-adopt.php:158
 #: page-pray.php:158
 #: page-pray.php:160
 msgid "Jesus"
-msgstr ""
+msgstr "Jesús"
 
 #. Template Name of the theme
 msgid "Contact Page"
-msgstr ""
+msgstr "Página de contacto"
 
 #: page-contact.php:26
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: page-contact.php:27
 msgid "Enter your name"
-msgstr ""
+msgstr "Introduzca su nombre"
 
 #: page-contact.php:30
 #: template-adoption-form.php:95
 msgid "Email"
-msgstr ""
+msgstr "Correo Electrónico"
 
 #: page-contact.php:31
 msgid "Enter your email"
-msgstr ""
+msgstr "Introduce tu correo electrónico"
 
 #: page-contact.php:34
 msgid "Message"
-msgstr ""
+msgstr "Mensaje:"
 
 #: page-contact.php:35
 msgid "Enter your message"
-msgstr ""
+msgstr "Introduzca su mensaje"
 
 #: page-contact.php:45
 #: page-contact.php:118
@@ -462,317 +509,366 @@ msgstr ""
 #: template-adoption-form.php:224
 #: template-adoption-form.php:232
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: page-contact.php:82
 msgid "Sending..."
-msgstr ""
+msgstr "Enviando..."
 
 #: page-contact.php:105
 msgid "Thank you for your message. We will get back to you soon!"
-msgstr ""
+msgstr "Gracias por tu mensaje. ¡Te responderemos pronto!"
 
 #: page-contact.php:113
 #: page-contact.php:122
 msgid "There was an error sending your message. Please try again."
-msgstr ""
+msgstr "Se ha producido un error al enviar tu mensaje. Inténtalo de nuevo."
 
 #: page-pray.php:19
 msgid "Prayer for an unengaged people group"
-msgstr ""
+msgstr "Oración por un grupo étnico no alcanzado"
 
 #: page-pray.php:20
 msgid "Help prepare the way for gospel engagement through prayer."
 msgstr ""
+"Ayuda a preparar el camino para el compromiso con el evangelio a través de "
+"la oración."
 
 #: page-pray.php:25
 msgid "Prayer Goal"
-msgstr ""
+msgstr "Objetivo de oración"
 
 #: page-pray.php:26
 msgid "24-Hour Prayer Coverage"
-msgstr ""
+msgstr "Cobertura de oración las 24 horas"
 
 #: page-pray.php:27
 msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples."
 msgstr ""
+"Movilizar a más de 144 personas para que recen 10 minutos al día por los "
+"2085 pueblos."
 
 #: page-pray.php:33
 msgid "People groups with committed 24-hour prayer coverage."
-msgstr ""
+msgstr "Grupos de personas comprometidos con la oración las 24 horas del día."
 
 #: page-pray.php:47
 msgid "Where do I start?"
-msgstr ""
+msgstr "¿Por dónde empiezo?"
 
 #: page-pray.php:53
 msgid "Choose an unengaged people group you will commit to pray for daily."
 msgstr ""
+"Elige un grupo étnico no alcanzado por el evangelio por el que te "
+"comprometerás a orar diariamente."
 
 #: page-pray.php:59
 msgid "Sign up"
-msgstr ""
+msgstr "Regístrate"
 
 #: page-pray.php:60
 msgid "Sign up to receive daily prayer points and updates for this people group."
 msgstr ""
+"Regístrese para recibir diariamente puntos de oración y actualizaciones "
+"sobre este grupo étnico."
 
 #: page-pray.php:67
 msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
 msgstr ""
+"Reza 10 minutos al día y ayuda a proporcionar cobertura de oración las 24 "
+"horas del día."
 
 #: page-pray.php:81
 msgid "Scripture-centered prayer themes"
-msgstr ""
+msgstr "Temas de oración centrados en las Escrituras"
 
 #: page-pray.php:82
 msgid "Spirit-led reflection and guidance"
-msgstr ""
+msgstr "Reflexión y orientación guiadas por el Espíritu"
 
 #: page-pray.php:83
 msgid "Real prayer needs from the field"
-msgstr ""
+msgstr "Necesidades reales de oración desde el terreno"
 
 #: page-pray.php:84
 msgid "Photos, stories and testimonies"
-msgstr ""
+msgstr "Fotos, historias y testimonios"
 
 #: page-pray.php:85
 msgid "Key insights about the people group"
-msgstr ""
+msgstr "Información clave sobre el grupo étnico"
 
 #: page-pray.php:98
 msgid "Why prayer matters"
-msgstr ""
+msgstr "Por qué es importante la oración"
 
 #: page-pray.php:104
 msgid "They have no one praying for them"
-msgstr ""
+msgstr "No tienen a nadie que rece por ellos."
 
 #: page-pray.php:105
 msgid "Many unengaged people groups have no churches, no missionaries, and often no believers, meaning little to no consistent prayer is being offered on their behalf."
 msgstr ""
+"Muchos grupos étnicos no evangelizados no tienen iglesias, ni misioneros y, "
+"a menudo, tampoco creyentes, lo que significa que se ora muy poco o nada por "
+"ellos."
 
 #: page-pray.php:113
 msgid "Prayer prepares the way for the gospel"
-msgstr ""
+msgstr "La oración prepara el camino para el evangelio."
 
 #: page-pray.php:114
 msgid "Prayer softens hearts, opens doors, and invites the work of the Holy Spirit long before workers arrive or the gospel is proclaimed."
 msgstr ""
+"La oración ablanda los corazones, abre puertas e invita a la obra del "
+"Espíritu Santo mucho antes de que lleguen los obreros o se proclame el "
+"evangelio."
 
 #: page-pray.php:121
 msgid "Prayer unites the global church"
-msgstr ""
+msgstr "La oración une a la iglesia mundial"
 
 #: page-pray.php:122
 msgid "When we pray, we join believers around the world in God's mission, standing together for peoples still waiting to hear the name of Jesus."
 msgstr ""
+"Cuando oramos, nos unimos a los creyentes de todo el mundo en la misión de "
+"Dios, permaneciendo juntos por los pueblos que aún esperan escuchar el "
+"nombre de Jesús."
 
 #: page-pray.php:137
 #: shortcodes/uupg-list-shortcode.php:6
 msgid "Select"
-msgstr ""
+msgstr "Seleccionar"
 
 #: page-pray.php:157
 msgid "Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]"
 msgstr ""
+"Oren fervientemente al Señor de la mies... para que envíe obreros a la [sin "
+"comprometer]."
 
 #. Template Name of the theme
 msgid "Simple Page"
-msgstr ""
+msgstr "Página simple"
 
 #. Template Name of the theme
 msgid "UUPGS"
-msgstr ""
+msgstr "UUPGS"
 
 #: page-uupgs.php:18
 msgid "Find a UUPG"
-msgstr ""
+msgstr "Encuentre un UUPG"
 
 #: page-uupgs.php:25
 msgid "Search names, locations, religions..."
-msgstr ""
+msgstr "Buscar nombres, ubicaciones, religiones..."
 
 #: page-uupgs.php:26
 msgid "Adopted"
-msgstr ""
+msgstr "Aprobado"
 
 #: page-uupgs.php:27
 msgid "Not Adopted"
-msgstr ""
+msgstr "No adoptado"
 
 #: page-uupgs.php:29
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: page-uupgs.php:30
 msgid "Sort"
-msgstr ""
+msgstr "Ordenar"
 
 #: page-uupgs.php:31
 msgid "Per Page"
-msgstr ""
+msgstr "Por página"
 
 #. Template Name of the theme
 msgid "Doxa Page"
-msgstr ""
+msgstr "Página de Doxa"
 
 #: template-adoption-form.php:17
 #: template-uupg-detail.php:22
 msgid "People Group Not Found"
-msgstr ""
+msgstr "Grupo de personas no encontrado"
 
 #: template-adoption-form.php:18
 #: template-uupg-detail.php:23
 msgid "The people group you are looking for could not be found. Please try again."
-msgstr ""
+msgstr "No se ha encontrado el grupo de personas que busca. Inténtelo de nuevo."
 
 #: template-adoption-form.php:20
 #: template-adoption-form.php:24
 #: template-uupg-detail.php:25
 #: template-uupg-detail.php:29
 msgid "Back"
-msgstr ""
+msgstr "Volver"
 
 #: template-adoption-form.php:43
 msgid "Adoption Form"
-msgstr ""
+msgstr "Formulario de adopción"
 
 #: template-adoption-form.php:44
 msgid "Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church's adoption, connect with your Prayer Champion, and begin sending prayer updates and resources"
 msgstr ""
+"Gracias por dar un paso hacia la adopción de un grupo étnico no alcanzado. "
+"Por favor, complete el siguiente formulario para que podamos confirmar la "
+"adopción de su iglesia, ponernos en contacto con su Campeón de Oración y "
+"comenzar a enviarle actualizaciones y recursos para la oración."
 
 #: template-adoption-form.php:66
 msgid "What is your commitment? Pray. Give. Send."
-msgstr ""
+msgstr "¿Cuál es tu compromiso? Reza. Da. Envía."
 
 #: template-adoption-form.php:67
 msgid "When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:"
 msgstr ""
+"Cuando adoptas a un grupo étnico, asumes un papel de liderazgo en su nombre, "
+"permaneciendo en la brecha hasta que el evangelio eche raíces. Esto implica "
+"un compromiso para:"
 
 #: template-adoption-form.php:71
 msgid "Mobilize toward the goal of at least 144 prayer partners to cover the people group in continuous, daily prayer (10 minutes each, 24 hours a day)."
 msgstr ""
+"Movilízate con el objetivo de conseguir al menos 144 compañeros de oración "
+"para cubrir al grupo étnico con oraciones continuas y diarias (10 minutos "
+"cada uno, las 24 horas del día)."
 
 #: template-adoption-form.php:74
 msgid "Give"
-msgstr ""
+msgstr "Dar"
 
 #: template-adoption-form.php:75
 msgid "Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers."
 msgstr ""
+"Colabora económicamente cada mes con la Fundación Doxa para ayudar a "
+"mantener la movilización de oración, las operaciones de campaña y el envío "
+"de trabajadores del evangelio."
 
 #: template-adoption-form.php:78
 msgid "Send"
-msgstr ""
+msgstr "Enviar"
 
 #: template-adoption-form.php:79
 msgid "Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly."
 msgstr ""
+"Ayudar activamente a descubrir y apoyar a los posibles participantes, "
+"animando a aquellos a quienes Dios pueda estar llamando a cruzar culturas y "
+"servir directamente a este grupo étnico."
 
 #: template-adoption-form.php:84
 msgid "Prayer Champion Details"
-msgstr ""
+msgstr "Detalles del campeón de la oración"
 
 #: template-adoption-form.php:85
 msgid "The Prayer Champion is the person who will organize the 144 intercessors and receive updates."
 msgstr ""
+"El Campeón de Oración es la persona que organizará a los 144 intercesores y "
+"recibirá las actualizaciones."
 
 #: template-adoption-form.php:87
 #: template-adoption-form.php:88
 msgid "First Name"
-msgstr ""
+msgstr "Nombre"
 
 #: template-adoption-form.php:91
 #: template-adoption-form.php:92
 msgid "Last Name"
-msgstr ""
+msgstr "Apellido"
 
 #: template-adoption-form.php:96
 msgid "Enter Email"
-msgstr ""
+msgstr "Introduzca su correo electrónico"
 
 #: template-adoption-form.php:99
 msgid "Phone"
-msgstr ""
+msgstr "Teléfono"
 
 #: template-adoption-form.php:100
 msgid "Enter Phone"
-msgstr ""
+msgstr "Introducir número de teléfono"
 
 #: template-adoption-form.php:103
 msgid "Role"
-msgstr ""
+msgstr "Función"
 
 #: template-adoption-form.php:104
 msgid "Example: Pastor, Missions Pastor, Elder, Volunteer Leader etc."
-msgstr ""
+msgstr "Ejemplo: Pastor, Pastor de Misiones, Anciano, Líder Voluntario, etc."
 
 #: template-adoption-form.php:108
 msgid "Partnering Church"
-msgstr ""
+msgstr "Iglesia asociada"
 
 #: template-adoption-form.php:110
 msgid "Church/Group Name"
-msgstr ""
+msgstr "Nombre de la iglesia/grupo"
 
 #: template-adoption-form.php:111
 msgid "Enter Church/Group Name"
-msgstr ""
+msgstr "Introduzca el nombre de la iglesia/grupo"
 
 #: template-adoption-form.php:114
 msgid "I am happy for this church name to appear publicly on this site."
 msgstr ""
+"Me alegra que el nombre de esta iglesia aparezca públicamente en este sitio "
+"web."
 
 #: template-adoption-form.php:118
 msgid "Location of Church/Group"
-msgstr ""
+msgstr "Ubicación de la iglesia/grupo"
 
 #: template-adoption-form.php:120
 msgid "Select Country"
-msgstr ""
+msgstr "Seleccionar país"
 
 #: template-adoption-form.php:128
 msgid "I/my church/group commits to adopting this People Group for prayer, partnership and support."
 msgstr ""
+"Yo/mi iglesia/grupo se compromete a adoptar a este grupo étnico para orar "
+"por él, colaborar con él y apoyarlo."
 
 #: template-adoption-form.php:132
 msgid "I give permission for DOXA to connect me with others adopting this people group."
 msgstr ""
+"Doy permiso a DOXA para que me ponga en contacto con otras personas que "
+"están adoptando a este grupo étnico."
 
 #: template-adoption-form.php:175
 msgid "Please confirm your adoption commitment."
-msgstr ""
+msgstr "Por favor, confirme su compromiso de adopción."
 
 #: template-adoption-form.php:182
 msgid "Submitting..."
-msgstr ""
+msgstr "Enviando..."
 
 #: template-adoption-form.php:211
 msgid "Thank you for your adoption commitment! We will be in touch soon."
 msgstr ""
+"¡Gracias por tu compromiso de adopción! Nos pondremos en contacto contigo "
+"pronto."
 
 #: template-adoption-form.php:219
 #: template-adoption-form.php:228
 msgid "There was an error submitting your adoption. Please try again."
 msgstr ""
+"Se ha producido un error al enviar tu solicitud de adopción. Inténtalo de "
+"nuevo."
 
 #. Template Name of the theme
 msgid "UUPG Detail"
-msgstr ""
+msgstr "Detalle UUPG"
 
 #: template-uupg-detail.php:54
 msgid "Engaged"
-msgstr ""
+msgstr "Comprometido"
 
 #: template-uupg-detail.php:56
 msgid "Not Engaged"
-msgstr ""
+msgstr "No comprometido"
 
 #: template-uupg-detail.php:67
 msgid "Engagement Status"
-msgstr ""
+msgstr "Estado del compromiso"
 
 #: template-uupg-detail.php:72
 #: template-uupg-detail.php:80
@@ -786,7 +882,7 @@ msgstr ""
 #: template-uupg-detail.php:213
 #: template-uupg-detail.php:221
 msgid "Done"
-msgstr ""
+msgstr "Hecho"
 
 #: template-uupg-detail.php:74
 #: template-uupg-detail.php:82
@@ -800,102 +896,102 @@ msgstr ""
 #: template-uupg-detail.php:215
 #: template-uupg-detail.php:223
 msgid "Not Done"
-msgstr ""
+msgstr "No hecho"
 
 #: template-uupg-detail.php:76
 #: template-uupg-detail.php:115
 msgid "Prayer Status"
-msgstr ""
+msgstr "Estado de la oración"
 
 #: template-uupg-detail.php:84
 #: template-uupg-detail.php:127
 msgid "Adoption Status"
-msgstr ""
+msgstr "Estado de la adopción"
 
 #: template-uupg-detail.php:92
 msgid "Cross-cultural workers present"
-msgstr ""
+msgstr "Trabajadores interculturales presentes"
 
 #: template-uupg-detail.php:100
 msgid "Work in local language &amp; culture"
-msgstr ""
+msgstr "Trabajar en el idioma y la cultura locales"
 
 #: template-uupg-detail.php:108
 msgid "Disciple &amp; church multiplication"
-msgstr ""
+msgstr "Discípulo y multiplicación de iglesias"
 
 #: template-uupg-detail.php:117
 msgid "People committed to praying"
-msgstr ""
+msgstr "Personas comprometidas con la oración"
 
 #: template-uupg-detail.php:122
 msgid "24-hour Prayer Coverage"
-msgstr ""
+msgstr "Cobertura de oración las 24 horas"
 
 #: template-uupg-detail.php:124
 msgid "Sign up to pray"
-msgstr ""
+msgstr "Inscríbete para orar"
 
 #: template-uupg-detail.php:129
 msgid "churches / individuals have adopted this people group"
-msgstr ""
+msgstr "iglesias / personas han adoptado a este grupo étnico"
 
 #: template-uupg-detail.php:145
 msgid "Adopt people group"
-msgstr ""
+msgstr "Adoptar un grupo de personas"
 
 #: template-uupg-detail.php:165
 msgid "Overview"
-msgstr ""
+msgstr "Resumen"
 
 #: template-uupg-detail.php:166
 msgid "Country"
-msgstr ""
+msgstr "País"
 
 #: template-uupg-detail.php:169
 msgid "Alternate Names"
-msgstr ""
+msgstr "Nombres alternativos"
 
 #: template-uupg-detail.php:171
 msgid "Population"
-msgstr ""
+msgstr "Aplicación"
 
 #: template-uupg-detail.php:172
 msgid "Primary Language"
-msgstr ""
+msgstr "Idioma principal"
 
 #: template-uupg-detail.php:173
 msgid "Primary Religion"
-msgstr ""
+msgstr "Religión primaria"
 
 #: template-uupg-detail.php:174
 msgid "Religious Practices"
-msgstr ""
+msgstr "Prácticas religiosas"
 
 #: template-uupg-detail.php:178
 msgid "Progress"
-msgstr ""
+msgstr "Progreso"
 
 #: template-uupg-detail.php:185
 msgid "Bible Translation"
-msgstr ""
+msgstr "Traducción de la Biblia"
 
 #: template-uupg-detail.php:193
 msgid "Bible Stories"
-msgstr ""
+msgstr "Historias bíblicas"
 
 #: template-uupg-detail.php:201
 msgid "Jesus Film"
-msgstr ""
+msgstr "Película sobre Jesús"
 
 #: template-uupg-detail.php:209
 msgid "Radio Broadcasts"
-msgstr ""
+msgstr "Emisiones de radio"
 
 #: template-uupg-detail.php:217
 msgid "Gospel Recordings"
-msgstr ""
+msgstr "Grabaciones del Evangelio"
 
 #: template-uupg-detail.php:225
 msgid "Audio Scripture"
-msgstr ""
+msgstr "Escritura en audio"
