@@ -129,7 +129,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             <input type="checkbox" id="confirm-adoption" name="confirm_adoption">
                         </div>
                         <div class="ms-auto form-control color-primary-darker font-weight-medium">
-                            <label for="permission-to-contact"><?php echo __('I give permission for Doxa to connect me with others adopting this people group.', 'doxa-website'); ?></label>
+                            <label for="permission-to-contact"><?php echo __('I give permission for DOXA to connect me with others adopting this people group.', 'doxa-website'); ?></label>
                             <input type="checkbox" id="permission-to-contact" name="permission_to_contact">
                         </div>
                         <div class="cf-turnstile" data-sitekey="<?php echo esc_attr( $cf_site_key ); ?>" data-theme="light" data-callback="onTurnstileSuccess"></div>

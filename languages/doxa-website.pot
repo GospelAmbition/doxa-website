@@ -1,4 +1,4 @@
-﻿# Copyright (C) 2026 Gospel Ambition Team
+# Copyright (C) 2026 Gospel Ambition Team
 # This file is distributed under the .
 msgid ""
 msgstr ""
@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-09T10:16:35+00:00\n"
+"POT-Creation-Date: 2026-02-10T15:03:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: doxa-website\n"
@@ -44,8 +44,8 @@ msgstr ""
 
 #. Template Name of the theme
 #: 404.php:22
-#: front-page.php:83
-#: front-page.php:206
+#: front-page.php:46
+#: front-page.php:169
 #: page-pray.php:66
 #: template-adoption-form.php:70
 msgid "Pray"
@@ -53,7 +53,7 @@ msgstr ""
 
 #. Template Name of the theme
 #: 404.php:23
-#: front-page.php:91
+#: front-page.php:54
 #: page-adopt.php:135
 msgid "Adopt"
 msgstr ""
@@ -89,6 +89,7 @@ msgid "The DOXA Vision: Click image to watch the video"
 msgstr ""
 
 #: front-page.php:34
+msgctxt "number of unengaged people groups"
 msgid "%s unengaged people groups"
 msgstr ""
 
@@ -97,297 +98,132 @@ msgid "Our hope is to see each one of them covered in 24-hour prayer, and your c
 msgstr ""
 
 #: front-page.php:41
-#: front-page.php:42
-msgid "Gulf Bedouin"
-msgstr ""
-
-#: front-page.php:45
-#: front-page.php:46
-msgid "Bobo Madare"
-msgstr ""
-
-#: front-page.php:49
-#: front-page.php:50
-msgid "Bosniak"
-msgstr ""
-
-#: front-page.php:53
-#: front-page.php:54
-msgid "Chhipa"
-msgstr ""
-
-#: front-page.php:57
-#: front-page.php:58
-msgid "Rtahu Amdo"
-msgstr ""
-
-#: front-page.php:61
-#: front-page.php:62
-msgid "Eastern Maninka"
-msgstr ""
-
-#: front-page.php:65
-#: front-page.php:66
-msgid "Algerian"
-msgstr ""
-
-#: front-page.php:69
-#: front-page.php:70
-msgid "Hadrami Arab"
-msgstr ""
-
-#: front-page.php:73
-#: front-page.php:74
-msgid "Awlad Hassan"
-msgstr ""
-
-#: front-page.php:78
 msgid "A simple path to faithful obedience"
 msgstr ""
 
-#: front-page.php:84
+#: front-page.php:47
 msgid "Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples."
 msgstr ""
 
-#: front-page.php:86
+#: front-page.php:49
 msgid "Join"
 msgstr ""
 
-#: front-page.php:92
+#: front-page.php:55
 msgid "Churches and networks take ownership - praying, giving and preparing the way for gospel workers."
 msgstr ""
 
-#: front-page.php:94
-#: front-page.php:102
+#: front-page.php:57
+#: front-page.php:65
 msgid "Commit"
 msgstr ""
 
-#: front-page.php:99
+#: front-page.php:62
 msgid "Engage"
 msgstr ""
 
-#: front-page.php:100
+#: front-page.php:63
 msgid "God raises up men and women to go, serve, and proclaim Christ among the nations."
 msgstr ""
 
-#: front-page.php:109
-#: front-page.php:113
+#: front-page.php:72
+#: front-page.php:76
 msgid "Who are the unengaged?"
 msgstr ""
 
-#: front-page.php:118
+#: front-page.php:81
 msgid "Unreached"
 msgstr ""
 
-#: front-page.php:119
-#: front-page.php:128
-#: front-page.php:137
+#: front-page.php:82
+#: front-page.php:91
+#: front-page.php:100
+msgctxt "number of billions"
 msgid "%s Billion"
 msgstr ""
 
-#: front-page.php:120
-#: front-page.php:129
-#: front-page.php:138
-#: front-page.php:147
+#: front-page.php:83
+#: front-page.php:92
+#: front-page.php:101
+#: front-page.php:110
+msgctxt "number of people groups"
 msgid "%s People Groups"
 msgstr ""
 
-#: front-page.php:127
+#: front-page.php:90
 msgid "Under-Engaged"
 msgstr ""
 
-#: front-page.php:136
+#: front-page.php:99
 msgid "Frontier People"
 msgstr ""
 
-#: front-page.php:145
+#: front-page.php:108
 msgid "Unengaged"
 msgstr ""
 
-#: front-page.php:146
+#: front-page.php:109
+msgctxt "number of millions"
 msgid "%s Million"
 msgstr ""
 
-#: front-page.php:153
+#: front-page.php:116
 msgid "Learn More"
 msgstr ""
 
-#: front-page.php:162
-#: front-page.php:169
+#: front-page.php:125
+#: front-page.php:132
 msgid "Vision 2033"
 msgstr ""
 
-#: front-page.php:175
+#: front-page.php:138
 msgid "In partnership with the global church, our vision is to..."
 msgstr ""
 
-#: front-page.php:177
+#: front-page.php:140
 msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples."
 msgstr ""
 
-#: front-page.php:178
+#: front-page.php:141
 msgid "No unengaged people groups by 2033."
 msgstr ""
 
-#: front-page.php:179
+#: front-page.php:142
 msgid "Mobilize 20,000+ DOXA partnership missionaries"
 msgstr ""
 
-#: front-page.php:180
+#: front-page.php:143
 msgid "Fruitful engagement among frontier and the under-engaged."
 msgstr ""
 
-#: front-page.php:181
+#: front-page.php:144
 msgid "Church-planting movements among every unreached people on earth."
 msgstr ""
 
-#: front-page.php:184
+#: front-page.php:147
 msgid "More"
 msgstr ""
 
-#: front-page.php:198
-#: front-page.php:201
-#: front-page.php:222
+#: front-page.php:161
+#: front-page.php:164
+#: front-page.php:185
 msgid "Engagement starts with prayer"
 msgstr ""
 
-#: front-page.php:205
+#: front-page.php:168
 msgid "Every movement of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way."
 msgstr ""
 
-#: front-page.php:216
+#: front-page.php:179
 msgid "What does \"DOXA\" mean?"
 msgstr ""
 
-#: front-page.php:217
+#: front-page.php:180
 msgid "DOXA is the Greek word for \"GLORY\"."
 msgstr ""
 
-#: front-page.php:218
+#: front-page.php:181
 msgid "We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory."
-msgstr ""
-
-#: functions.php:509
-msgid "Africa"
-msgstr ""
-
-#: functions.php:513
-msgid "Asia"
-msgstr ""
-
-#: functions.php:517
-msgid "Europe"
-msgstr ""
-
-#: functions.php:521
-msgid "Latin America & Caribbean"
-msgstr ""
-
-#: functions.php:525
-#: functions.php:586
-msgid "Middle East"
-msgstr ""
-
-#: functions.php:529
-#: functions.php:590
-msgid "N/A"
-msgstr ""
-
-#: functions.php:533
-msgid "North America & Non-Spanish Caribbean"
-msgstr ""
-
-#: functions.php:537
-#: functions.php:610
-msgid "Oceania"
-msgstr ""
-
-#: functions.php:546
-msgid "Andean"
-msgstr ""
-
-#: functions.php:550
-msgid "Brazil"
-msgstr ""
-
-#: functions.php:554
-msgid "Central Africa"
-msgstr ""
-
-#: functions.php:558
-msgid "Central America"
-msgstr ""
-
-#: functions.php:562
-msgid "Central Asia"
-msgstr ""
-
-#: functions.php:566
-msgid "Central Europe"
-msgstr ""
-
-#: functions.php:570
-msgid "East Africa"
-msgstr ""
-
-#: functions.php:574
-msgid "East Europe"
-msgstr ""
-
-#: functions.php:578
-msgid "Islands of East Africa"
-msgstr ""
-
-#: functions.php:582
-msgid "Mexico & Latin America"
-msgstr ""
-
-#: functions.php:594
-msgid "Non-Spanish Caribbean"
-msgstr ""
-
-#: functions.php:598
-msgid "North Asia"
-msgstr ""
-
-#: functions.php:602
-msgid "North East Asia"
-msgstr ""
-
-#: functions.php:606
-msgid "North Europe"
-msgstr ""
-
-#: functions.php:614
-msgid "South Asia"
-msgstr ""
-
-#: functions.php:618
-msgid "South Cone"
-msgstr ""
-
-#: functions.php:622
-msgid "South East Asia"
-msgstr ""
-
-#: functions.php:626
-msgid "South Europe"
-msgstr ""
-
-#: functions.php:630
-msgid "Southern Africa"
-msgstr ""
-
-#: functions.php:634
-msgid "The Balkans"
-msgstr ""
-
-#: functions.php:638
-msgid "West Africa"
-msgstr ""
-
-#: functions.php:642
-msgid "West Europe"
 msgstr ""
 
 #: header.php:35
@@ -684,7 +520,7 @@ msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
 msgstr ""
 
 #: page-pray.php:81
-msgid "Scripture centered prayer themes"
+msgid "Scripture-centered prayer themes"
 msgstr ""
 
 #: page-pray.php:82
@@ -777,7 +613,7 @@ msgid "Per Page"
 msgstr ""
 
 #. Template Name of the theme
-msgid "DOXA Page"
+msgid "Doxa Page"
 msgstr ""
 
 #: template-adoption-form.php:17
@@ -900,7 +736,7 @@ msgid "I/my church/group commits to adopting this People Group for prayer, partn
 msgstr ""
 
 #: template-adoption-form.php:132
-msgid "I give permission for Doxa to connect me with others adopting this people group."
+msgid "I give permission for DOXA to connect me with others adopting this people group."
 msgstr ""
 
 #: template-adoption-form.php:175
@@ -1060,49 +896,4 @@ msgstr ""
 
 #: template-uupg-detail.php:225
 msgid "Audio Scripture"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Brand Dark"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Brand"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Brand Light"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Brand Lighter"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Primary"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Secondary"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Secondary Light"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Doxa White"
-msgstr ""
-
-#: theme.json
-msgctxt "Color name"
-msgid "Doxa Black"
 msgstr ""

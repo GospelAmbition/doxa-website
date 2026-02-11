@@ -31,7 +31,7 @@ get_header( 'top' ); ?>
             <section class="stack stack--md | surface-brand-light">
                 <div class="container stack stack--4xl">
                     <div class="stack stack--2xl">
-                        <h2 class="highlight" data-highlight-index="1"><?php echo sprintf( __( '%s unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
+                        <h2 class="highlight" data-highlight-index="1"><?php echo sprintf( _x( '%s unengaged people groups', 'number of unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
                         <p class="subtext">
                             <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
                         </p>
@@ -79,8 +79,8 @@ get_header( 'top' ); ?>
                             <div class="info-card surface-secondary-light">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3 class="color-brand-lighter"><?php echo __('Unreached', 'doxa-website'); ?></h3>
-                                    <span><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.9' ); ?></span>
-                                    <span class="color-brand-lighter"><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '6,602' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '3.9' ); ?></span>
+                                    <span class="color-brand-lighter"><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '6,602' ); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -88,8 +88,8 @@ get_header( 'top' ); ?>
                             <div class="info-card surface-brand-lightest">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Under-Engaged', 'doxa-website'); ?></h3>
-                                    <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.3' ); ?></span>
-                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '5,119' ); ?></span>
+                                    <span class="color-secondary-light"><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '3.3' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '5,119' ); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -97,8 +97,8 @@ get_header( 'top' ); ?>
                             <div class="info-card surface-brand-light">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Frontier People', 'doxa-website'); ?></h3>
-                                    <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '2' ); ?></span>
-                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '4,788' ); ?></span>
+                                    <span class="color-secondary-light"><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '2' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '4,788' ); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +106,8 @@ get_header( 'top' ); ?>
                             <div class="info-card surface-brand-dark">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Unengaged', 'doxa-website'); ?></h3>
-                                    <span><?php echo sprintf( __( '%s Million', 'doxa-website'), '202' ); ?></span>
-                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '2,085' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s Million', 'number of millions', 'doxa-website'), '202' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '2,085' ); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@ get_header( 'top' ); ?>
                         </div>
                         <div>
                             <div class="stack stack--3xl | align-center">
-                                <p class="text-center max-width-md font-size-lg"><?php echo __('Every momevent of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way.', 'doxa-website'); ?></p>
+                                <p class="text-center max-width-md font-size-lg"><?php echo __('Every movement of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way.', 'doxa-website'); ?></p>
                                 <a href="/pray" class="button | compact"><?php echo __('Pray', 'doxa-website'); ?></a>
                             </div>
                         </div>
@@ -178,7 +178,7 @@ get_header( 'top' ); ?>
                         <div class="stack stack--md | text-center text-secondary">
                             <h2><?php echo __('What does "DOXA" mean?', 'doxa-website'); ?></h2>
                             <p class="subtext"><?php echo __('DOXA is the Greek word for "GLORY".', 'doxa-website'); ?></p>
-                            <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA remindns us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
+                            <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
                         </div>
                     </div>
                     <div class="switcher-item center grow-none">

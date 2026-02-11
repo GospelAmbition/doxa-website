@@ -77,7 +77,7 @@ get_header( 'top' ); ?>
                             <div class="stack stack--2xl">
                                 <h2 class="highlight" data-highlight-index="1"><?php echo __('Adoption Guide & Resources', 'doxa-website'); ?></h2>
                                 <ul class="stack stack--sm" data-list-color="primary">
-                                    <li><?php echo __('Step-by-step guidance for churches adopting a peopele group', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Step-by-step guidance for churches adopting a people group', 'doxa-website'); ?></li>
                                     <li><?php echo __('Tools to mobilize prayer and participation across your congregation', 'doxa-website'); ?></li>
                                     <li><?php echo __('Printable and digital resources to promote awareness and engagement', 'doxa-website'); ?></li>
                                     <li><?php echo __('Helpful tips for sustaining long-term commitment', 'doxa-website'); ?></li>
@@ -109,7 +109,7 @@ get_header( 'top' ); ?>
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4 class="font-heading font-size-2xl"><?php echo __('Prayer opens the door for engagement', 'doxa-website'); ?></h4>
-                                <p><?php echo __('Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spritual barriers, and supports workers who go. Every gospel movement begins with prayer.', 'doxa-website'); ?></p>
+                                <p><?php echo __('Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spiritual barriers, and supports workers who go. Every gospel movement begins with prayer.', 'doxa-website'); ?></p>
                             </div>
                         </div><div class="switcher | gap-md" data-width="xl">
                             <div class="switcher-item center grow-none">
@@ -117,7 +117,7 @@ get_header( 'top' ); ?>
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4 class="font-heading font-size-2xl"><?php echo __('Churches become active partners in God\'s mission', 'doxa-website'); ?></h4>
-                                <p><?php echo __('Adoptoin invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
+                                <p><?php echo __('Adoption invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
                             </div>
                         </div>
                     </div>
