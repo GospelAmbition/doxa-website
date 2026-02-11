@@ -1,0 +1,9 @@
+.pll-parent-menu-item {
+    a {
+        display: flex;
+        align-items: center;
+
+        & > img {
+            border-radius: 0;
+        }
+    }}
