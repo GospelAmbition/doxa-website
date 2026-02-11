@@ -1,0 +1,985 @@
+# Copyright (C) 2026 Gospel Ambition Team
+# This file is distributed under the .
+msgid ""
+msgstr ""
+"Project-Id-Version: DOXA Life 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
+"POT-Creation-Date: 2026-02-10T15:03:19+00:00\n"
+"PO-Revision-Date: 2026-02-11 11:39+0000\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Language-Team: Russian <https://translate.disciple.tools/projects/doxa/doxa-"
+"life/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.15.2\n"
+"X-Domain: doxa-website\n"
+
+#. Theme Name of the theme
+msgid "DOXA Life"
+msgstr "DOXA Life"
+
+#. Description of the theme
+msgid "A clean, elegant theme for DOXA Life - Engaging every people group by 2033"
+msgstr ""
+"Чистая, элегантная тема для DOXA Life — привлечение всех народов к 2033 году"
+
+#. Author of the theme
+msgid "Gospel Ambition Team"
+msgstr "Команда «Евангельские амбиции»"
+
+#: 404.php:15
+msgid "Page Not Found"
+msgstr "Страница не найдена"
+
+#: 404.php:16
+msgid "It looks like nothing was found at this location. Perhaps one of the links below can help."
+msgstr ""
+"Похоже, что в этом месте ничего не было найдено. Возможно, одна из ссылок "
+"ниже может помочь."
+
+#: 404.php:19
+msgid "Popular Pages:"
+msgstr "Популярные страницы:"
+
+#: 404.php:21
+msgid "Home"
+msgstr "Главная"
+
+#. Template Name of the theme
+#: 404.php:22
+#: front-page.php:46
+#: front-page.php:169
+#: page-pray.php:66
+#: template-adoption-form.php:70
+msgid "Pray"
+msgstr "Молиться"
+
+#. Template Name of the theme
+#: 404.php:23
+#: front-page.php:54
+#: page-adopt.php:135
+msgid "Adopt"
+msgstr "Принять"
+
+#: 404.php:24
+msgid "Research"
+msgstr "Исследования"
+
+#: 404.php:25
+msgid "About"
+msgstr "О нас"
+
+#: 404.php:26
+msgid "Contact"
+msgstr "Контакты"
+
+#: footer.php:34
+#: page-contact.php:20
+msgid "Contact Us"
+msgstr "Свяжитесь с нами"
+
+#: front-page.php:16
+msgid "Our gift to Jesus"
+msgstr "Наш подарок Иисусу"
+
+#: front-page.php:17
+#: front-page.php:26
+msgid "Engage every people by 2033"
+msgstr "Вовлечь всех людей к 2033 году"
+
+#: front-page.php:29
+msgid "The DOXA Vision: Click image to watch the video"
+msgstr "Видение DOXA: Нажмите на изображение, чтобы посмотреть видео"
+
+#: front-page.php:34
+msgctxt "number of unengaged people groups"
+msgid "%s unengaged people groups"
+msgstr "%s невовлеченные группы населения"
+
+#: front-page.php:36
+msgid "Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it."
+msgstr ""
+"Мы надеемся, что каждый из них будет охвачен круглосуточной молитвой, и ваша "
+"церковь может принять в этом участие."
+
+#: front-page.php:41
+msgid "A simple path to faithful obedience"
+msgstr "Простой путь к верному послушанию"
+
+#: front-page.php:47
+msgid "Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples."
+msgstr ""
+"Получайте ежедневные молитвенные темы и присоединяйтесь к верующим по всему "
+"миру в молитве за незанятые народы."
+
+#: front-page.php:49
+msgid "Join"
+msgstr "Присоединяйтесь"
+
+#: front-page.php:55
+msgid "Churches and networks take ownership - praying, giving and preparing the way for gospel workers."
+msgstr ""
+"Церкви и сети берут на себя ответственность – молятся, жертвуют и готовят "
+"путь для евангельских работников."
+
+#: front-page.php:57
+#: front-page.php:65
+msgid "Commit"
+msgstr "Подтвердить"
+
+#: front-page.php:62
+msgid "Engage"
+msgstr "Вовлекать"
+
+#: front-page.php:63
+msgid "God raises up men and women to go, serve, and proclaim Christ among the nations."
+msgstr ""
+"Бог призывает мужчин и женщин идти, служить и провозглашать Христа среди "
+"народов."
+
+#: front-page.php:72
+#: front-page.php:76
+msgid "Who are the unengaged?"
+msgstr "Кто такие незанятые?"
+
+#: front-page.php:81
+msgid "Unreached"
+msgstr "Недостигнутый"
+
+#: front-page.php:82
+#: front-page.php:91
+#: front-page.php:100
+msgctxt "number of billions"
+msgid "%s Billion"
+msgstr "%s Миллиард"
+
+#: front-page.php:83
+#: front-page.php:92
+#: front-page.php:101
+#: front-page.php:110
+msgctxt "number of people groups"
+msgid "%s People Groups"
+msgstr "%s Этнические группы"
+
+#: front-page.php:90
+msgid "Under-Engaged"
+msgstr "Недостаточно вовлеченный"
+
+#: front-page.php:99
+msgid "Frontier People"
+msgstr "Люди на границе"
+
+#: front-page.php:108
+msgid "Unengaged"
+msgstr "Незадействованный"
+
+#: front-page.php:109
+msgctxt "number of millions"
+msgid "%s Million"
+msgstr "%s Миллион"
+
+#: front-page.php:116
+msgid "Learn More"
+msgstr "Узнать больше"
+
+#: front-page.php:125
+#: front-page.php:132
+msgid "Vision 2033"
+msgstr "Видение 2033"
+
+#: front-page.php:138
+msgid "In partnership with the global church, our vision is to..."
+msgstr "В партнерстве с мировой церковью наша цель состоит в том, чтобы..."
+
+#: front-page.php:140
+msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples."
+msgstr ""
+"Ежедневная 24-часовая молитвенная поддержка для всех 2085 незадействованных "
+"народов."
+
+#: front-page.php:141
+msgid "No unengaged people groups by 2033."
+msgstr "К 2033 году не останется незадействованных народов."
+
+#: front-page.php:142
+msgid "Mobilize 20,000+ DOXA partnership missionaries"
+msgstr "Мобилизовать более 20 000 миссионеров-партнеров DOXA"
+
+#: front-page.php:143
+msgid "Fruitful engagement among frontier and the under-engaged."
+msgstr ""
+"Плодотворное взаимодействие между передовыми и недостаточно вовлеченными."
+
+#: front-page.php:144
+msgid "Church-planting movements among every unreached people on earth."
+msgstr "Движения по созданию церквей среди всех недостигнутых народов на земле."
+
+#: front-page.php:147
+msgid "More"
+msgstr "Больше"
+
+#: front-page.php:161
+#: front-page.php:164
+#: front-page.php:185
+msgid "Engagement starts with prayer"
+msgstr "Вовлечение начинается с молитвы"
+
+#: front-page.php:168
+msgid "Every movement of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way."
+msgstr ""
+"Каждое движение Евангелия начинается с молитвы. Покрывайте ежедневной "
+"молитвой незанятые народности и помогайте подготовить путь."
+
+#: front-page.php:179
+msgid "What does \"DOXA\" mean?"
+msgstr "Что означает «DOXA»?"
+
+#: front-page.php:180
+msgid "DOXA is the Greek word for \"GLORY\"."
+msgstr "DOXA — это греческое слово, означающее «СЛАВА»."
+
+#: front-page.php:181
+msgid "We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory."
+msgstr ""
+"Мы выбрали это название, потому что Иисус достоин славы от каждого племени, "
+"языка, народа и нации. DOXA напоминает нам, что мы сотрудничаем со всей "
+"Церковью, чтобы нести Евангелие всему миру, пока люди из всех наций не будут "
+"поклоняться Иисусу и только Он не получит всю славу."
+
+#: header.php:35
+msgid "World assemblies of God Fellowship"
+msgstr "Всемирные собрания Божьего братства"
+
+#: index.php:24
+msgid "Let's TOGETHER give Jesus a gift:"
+msgstr "Давайте ВМЕСТЕ подарим Иисусу подарок:"
+
+#: index.php:25
+msgid "Every unengaged people on earth engaged by 2033"
+msgstr "Все незамужние люди на земле будут женаты к 2033 году"
+
+#: page-adopt.php:19
+#: page-adopt.php:99
+#: page-adopt.php:108
+#: page-adopt.php:116
+#: page-pray.php:101
+#: page-pray.php:110
+#: page-pray.php:118
+msgid "Adopt an unengaged people group"
+msgstr "Примите на попечение незадействованную народность"
+
+#: page-adopt.php:20
+msgid "A church-led commitment to pray, give, and send so that gospel access begins."
+msgstr ""
+"Обязательство церкви молиться, жертвовать и посылать миссионеров, чтобы "
+"Евангелие стало доступным."
+
+#: page-adopt.php:25
+msgid "Adoption Goal"
+msgstr "Цель усыновления"
+
+#: page-adopt.php:26
+msgid "Every unengaged people group adopted by a church committed to prayer, giving, and sending."
+msgstr ""
+"Каждая незанятая народность, принятая церковью, посвятившей себя молитве, "
+"пожертвованиям и миссионерской деятельности."
+
+#: page-adopt.php:29
+#: page-pray.php:30
+msgid "Current Status"
+msgstr "Текущий статус"
+
+#: page-adopt.php:32
+msgid "people groups adopted"
+msgstr "принятые группы людей"
+
+#: page-adopt.php:46
+msgid "How Adoption Works"
+msgstr "Как работает усыновление"
+
+#: page-adopt.php:51
+#: page-pray.php:52
+msgid "Choose"
+msgstr "Выбрать"
+
+#: page-adopt.php:52
+msgid "Prayerfully select an unengaged people group to adopt."
+msgstr "С молитвой выберите незанятую народность, которую вы хотите принять."
+
+#: page-adopt.php:58
+msgid "Mobilize"
+msgstr "Мобилизовать"
+
+#: page-adopt.php:59
+msgid "Raise up 144+ daily intercessors to pray 10 minutes a day."
+msgstr ""
+"Соберите 144+ ежедневных молитвенников, которые будут молиться по 10 минут в "
+"день."
+
+#: page-adopt.php:65
+msgid "Partner"
+msgstr "Партнер"
+
+#: page-adopt.php:66
+msgid "Partner through prayer, giving, and sending so that gospel access begins."
+msgstr ""
+"Сотрудничайте через молитву, пожертвования и отправку миссионеров, чтобы "
+"начался доступ к Евангелию."
+
+#: page-adopt.php:70
+#: page-pray.php:71
+msgid "Get Started"
+msgstr "Начать"
+
+#: page-adopt.php:78
+msgid "Adoption Guide & Resources"
+msgstr "Руководство по усыновлению и ресурсы"
+
+#: page-adopt.php:80
+msgid "Step-by-step guidance for churches adopting a people group"
+msgstr "Пошаговое руководство для церквей, принимающих народность"
+
+#: page-adopt.php:81
+msgid "Tools to mobilize prayer and participation across your congregation"
+msgstr "Инструменты для мобилизации молитвы и участия всей вашей общины"
+
+#: page-adopt.php:82
+msgid "Printable and digital resources to promote awareness and engagement"
+msgstr ""
+"Печатные и цифровые ресурсы для повышения осведомленности и вовлеченности"
+
+#: page-adopt.php:83
+msgid "Helpful tips for sustaining long-term commitment"
+msgstr "Полезные советы для поддержания долгосрочной приверженности"
+
+#: page-adopt.php:88
+#: page-pray.php:79
+#: page-pray.php:90
+msgid "Your daily prayer guide"
+msgstr "Ваш ежедневный молитвенник"
+
+#: page-adopt.php:96
+msgid "Why adoption matters"
+msgstr "Почему усыновление имеет значение"
+
+#: page-adopt.php:102
+msgid "They have no gospel access"
+msgstr "У них нет доступа к Евангелию"
+
+#: page-adopt.php:103
+msgid "Unengaged people groups have no missionaries, no churches, and often no known believers. Adoption helps ensure they are finally seen, prayed for, and intentionally pursued with the gospel."
+msgstr ""
+"Невовлеченные народы не имеют миссионеров, церквей и зачастую даже известных "
+"верующих. Усыновление помогает обеспечить, чтобы они наконец были замечены, "
+"чтобы за них молились и чтобы к ним целенаправленно несли Евангелие."
+
+#: page-adopt.php:111
+msgid "Prayer opens the door for engagement"
+msgstr "Молитва открывает дверь для взаимодействия"
+
+#: page-adopt.php:112
+msgid "Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spiritual barriers, and supports workers who go. Every gospel movement begins with prayer."
+msgstr ""
+"Усыновление мобилизует более 144 ежедневных ходатайствующих, создавая 24-"
+"часовую молитву, которая готовит почву, разрушает духовные барьеры и "
+"поддерживает работников, которые отправляются в путь. Каждое евангельское "
+"движение начинается с молитвы."
+
+#: page-adopt.php:119
+msgid "Churches become active partners in God's mission"
+msgstr "Церкви становятся активными партнерами в миссии Бога"
+
+#: page-adopt.php:120
+msgid "Adoption invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus."
+msgstr ""
+"Усыновление приглашает местную церковь к значимому участию – молитве, "
+"пожертвованиям и отправке миссионеров – чтобы народность перешла от "
+"незаинтересованности к заинтересованности и в конечном итоге стала общиной, "
+"поклоняющейся Иисусу."
+
+#: page-adopt.php:129
+#: page-pray.php:131
+msgid "Choose a people group"
+msgstr "Выберите народность"
+
+#: page-adopt.php:130
+#: page-pray.php:132
+msgid "Select one of these six highlighted engaged people groups - or search for more below."
+msgstr ""
+"Выберите одну из шести выделенных групп людей, вовлеченных в эту "
+"деятельность, или найдите другие ниже."
+
+#: page-adopt.php:136
+#: page-pray.php:138
+#: page-uupgs.php:21
+#: shortcodes/uupg-list-shortcode.php:14
+msgid "Full Profile"
+msgstr "Полный профиль"
+
+#: page-adopt.php:137
+#: page-pray.php:139
+#: shortcodes/uupg-list-shortcode.php:15
+msgid "Prayer Coverage"
+msgstr "Молитвенное покрытие"
+
+#: page-adopt.php:138
+#: page-pray.php:140
+#: page-uupgs.php:22
+#: shortcodes/uupg-list-shortcode.php:16
+msgid "Loading results..."
+msgstr "Загрузка результатов..."
+
+#: page-adopt.php:139
+#: page-pray.php:141
+#: page-uupgs.php:23
+#: shortcodes/uupg-list-shortcode.php:17
+msgid "Load More"
+msgstr "Загрузить еще"
+
+#: page-adopt.php:140
+#: page-pray.php:142
+#: page-uupgs.php:24
+#: shortcodes/uupg-list-shortcode.php:18
+msgid "Total"
+msgstr "Всего"
+
+#: page-adopt.php:141
+#: page-pray.php:143
+#: shortcodes/uupg-list-shortcode.php:19
+msgid "Search names, country/continent, religions..."
+msgstr "Поиск по именам, странам/континентам, религиям..."
+
+#: page-adopt.php:142
+#: page-pray.php:144
+#: shortcodes/uupg-list-shortcode.php:20
+msgid "See All"
+msgstr "Посмотреть все"
+
+#: page-adopt.php:155
+msgid "I was a stranger and you invited me in"
+msgstr "Я был чужим, и вы пригласили меня войти"
+
+#: page-adopt.php:156
+#: page-adopt.php:158
+#: page-pray.php:158
+#: page-pray.php:160
+msgid "Jesus"
+msgstr "Иисус"
+
+#. Template Name of the theme
+msgid "Contact Page"
+msgstr "Страница контактов"
+
+#: page-contact.php:26
+msgid "Name"
+msgstr "Имя"
+
+#: page-contact.php:27
+msgid "Enter your name"
+msgstr "Введите свое имя"
+
+#: page-contact.php:30
+#: template-adoption-form.php:95
+msgid "Email"
+msgstr "Электронная почта"
+
+#: page-contact.php:31
+msgid "Enter your email"
+msgstr "Введите свой адрес электронной почты"
+
+#: page-contact.php:34
+msgid "Message"
+msgstr "Сообщение"
+
+#: page-contact.php:35
+msgid "Enter your message"
+msgstr "Введите ваше сообщение"
+
+#: page-contact.php:45
+#: page-contact.php:118
+#: page-contact.php:126
+#: template-adoption-form.php:137
+#: template-adoption-form.php:224
+#: template-adoption-form.php:232
+msgid "Submit"
+msgstr "Отправить"
+
+#: page-contact.php:82
+msgid "Sending..."
+msgstr "Отправляется..."
+
+#: page-contact.php:105
+msgid "Thank you for your message. We will get back to you soon!"
+msgstr "Спасибо за ваше сообщение. Мы свяжемся с вами в ближайшее время!"
+
+#: page-contact.php:113
+#: page-contact.php:122
+msgid "There was an error sending your message. Please try again."
+msgstr "Произошла ошибка при отправке вашего сообщения. Повторите попытку."
+
+#: page-pray.php:19
+msgid "Prayer for an unengaged people group"
+msgstr "Молитва за незанятую народность"
+
+#: page-pray.php:20
+msgid "Help prepare the way for gospel engagement through prayer."
+msgstr "Помогите подготовить почву для проповеди Евангелия через молитву."
+
+#: page-pray.php:25
+msgid "Prayer Goal"
+msgstr "Цель молитвы"
+
+#: page-pray.php:26
+msgid "24-Hour Prayer Coverage"
+msgstr "24-часовая молитвенная поддержка"
+
+#: page-pray.php:27
+msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples."
+msgstr ""
+"Мобилизовать более 144 человек, которые будут молиться по 10 минут в день за "
+"все 2085 народов."
+
+#: page-pray.php:33
+msgid "People groups with committed 24-hour prayer coverage."
+msgstr "Группы людей, которые посвятили себя круглосуточной молитве."
+
+#: page-pray.php:47
+msgid "Where do I start?"
+msgstr "С чего начать?"
+
+#: page-pray.php:53
+msgid "Choose an unengaged people group you will commit to pray for daily."
+msgstr ""
+"Выберите группу людей, с которыми вы не связаны, и обязуйтесь молиться за "
+"них ежедневно."
+
+#: page-pray.php:59
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: page-pray.php:60
+msgid "Sign up to receive daily prayer points and updates for this people group."
+msgstr ""
+"Подпишитесь, чтобы ежедневно получать молитвенные темы и новости об этом "
+"народе."
+
+#: page-pray.php:67
+msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
+msgstr ""
+"Молитесь по 10 минут в день и помогите обеспечить круглосуточную молитвенную "
+"поддержку."
+
+#: page-pray.php:81
+msgid "Scripture-centered prayer themes"
+msgstr "Темы молитв, основанные на Священном Писании"
+
+#: page-pray.php:82
+msgid "Spirit-led reflection and guidance"
+msgstr "Размышления и руководство под вдохновением Духа"
+
+#: page-pray.php:83
+msgid "Real prayer needs from the field"
+msgstr "Реальные молитвенные нужды с поля"
+
+#: page-pray.php:84
+msgid "Photos, stories and testimonies"
+msgstr "Фотографии, истории и свидетельства"
+
+#: page-pray.php:85
+msgid "Key insights about the people group"
+msgstr "Ключевые сведения о группе людей"
+
+#: page-pray.php:98
+msgid "Why prayer matters"
+msgstr "Почему молитва важна"
+
+#: page-pray.php:104
+msgid "They have no one praying for them"
+msgstr "У них нет никого, кто молился бы за них"
+
+#: page-pray.php:105
+msgid "Many unengaged people groups have no churches, no missionaries, and often no believers, meaning little to no consistent prayer is being offered on their behalf."
+msgstr ""
+"Многие незанятые народности не имеют церквей, миссионеров и зачастую "
+"верующих, а это означает, что за них практически не молятся."
+
+#: page-pray.php:113
+msgid "Prayer prepares the way for the gospel"
+msgstr "Молитва готовит путь для Евангелия"
+
+#: page-pray.php:114
+msgid "Prayer softens hearts, opens doors, and invites the work of the Holy Spirit long before workers arrive or the gospel is proclaimed."
+msgstr ""
+"Молитва смягчает сердца, открывает двери и приглашает Святого Духа задолго "
+"до того, как прибудут работники или будет провозглашено Евангелие."
+
+#: page-pray.php:121
+msgid "Prayer unites the global church"
+msgstr "Молитва объединяет всемирную церковь"
+
+#: page-pray.php:122
+msgid "When we pray, we join believers around the world in God's mission, standing together for peoples still waiting to hear the name of Jesus."
+msgstr ""
+"Когда мы молимся, мы присоединяемся к верующим по всему миру в миссии Бога, "
+"стоя вместе за народы, которые все еще ждут, чтобы услышать имя Иисуса."
+
+#: page-pray.php:137
+#: shortcodes/uupg-list-shortcode.php:6
+msgid "Select"
+msgstr "Выбрать"
+
+#: page-pray.php:157
+msgid "Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]"
+msgstr ""
+"Усердно молитесь Господу жатвы... чтобы Он послал работников на [незанятые] "
+"поля."
+
+#. Template Name of the theme
+msgid "Simple Page"
+msgstr "Простая страница"
+
+#. Template Name of the theme
+msgid "UUPGS"
+msgstr "UUPGS"
+
+#: page-uupgs.php:18
+msgid "Find a UUPG"
+msgstr "Найти UUPG"
+
+#: page-uupgs.php:25
+msgid "Search names, locations, religions..."
+msgstr "Поиск по именам, местоположениям, религиям..."
+
+#: page-uupgs.php:26
+msgid "Adopted"
+msgstr "Принято"
+
+#: page-uupgs.php:27
+msgid "Not Adopted"
+msgstr "Не принято"
+
+#: page-uupgs.php:29
+msgid "Search"
+msgstr "Поиск"
+
+#: page-uupgs.php:30
+msgid "Sort"
+msgstr "Сортировать"
+
+#: page-uupgs.php:31
+msgid "Per Page"
+msgstr "За страницу"
+
+#. Template Name of the theme
+msgid "Doxa Page"
+msgstr "Страница Doxa"
+
+#: template-adoption-form.php:17
+#: template-uupg-detail.php:22
+msgid "People Group Not Found"
+msgstr "Группа людей не найдена"
+
+#: template-adoption-form.php:18
+#: template-uupg-detail.php:23
+msgid "The people group you are looking for could not be found. Please try again."
+msgstr "Не удалось найти группу людей, которую вы ищете. Повторите попытку."
+
+#: template-adoption-form.php:20
+#: template-adoption-form.php:24
+#: template-uupg-detail.php:25
+#: template-uupg-detail.php:29
+msgid "Back"
+msgstr "Назад"
+
+#: template-adoption-form.php:43
+msgid "Adoption Form"
+msgstr "Форма усыновления"
+
+#: template-adoption-form.php:44
+msgid "Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church's adoption, connect with your Prayer Champion, and begin sending prayer updates and resources"
+msgstr ""
+"Спасибо, что сделали шаг к принятию незадействованной народности. "
+"Пожалуйста, заполните форму ниже, чтобы мы могли подтвердить принятие вашей "
+"церковью, связаться с вашим молитвенным покровителем и начать отправлять "
+"молитвенные новости и ресурсы."
+
+#: template-adoption-form.php:66
+msgid "What is your commitment? Pray. Give. Send."
+msgstr "Каково ваше обязательство? Молитесь. Давайте. Посылайте."
+
+#: template-adoption-form.php:67
+msgid "When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:"
+msgstr ""
+"Когда вы принимаете народность, вы берете на себя роль лидера от ее имени — "
+"выступая в защиту, пока Евангелие не укоренится. Это предполагает "
+"обязательства:"
+
+#: template-adoption-form.php:71
+msgid "Mobilize toward the goal of at least 144 prayer partners to cover the people group in continuous, daily prayer (10 minutes each, 24 hours a day)."
+msgstr ""
+"Мобилизуйтесь для достижения цели: собрать как минимум 144 молитвенных "
+"партнера, которые будут ежедневно, непрерывно молиться за эту народность (по "
+"10 минут каждый, 24 часа в сутки)."
+
+#: template-adoption-form.php:74
+msgid "Give"
+msgstr "Дать"
+
+#: template-adoption-form.php:75
+msgid "Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers."
+msgstr ""
+"Ежемесячно оказывайте финансовую поддержку фонду Doxa Foundation, чтобы "
+"помочь в поддержании молитвенной мобилизации, проведении кампаний и отправке "
+"евангелизаторов."
+
+#: template-adoption-form.php:78
+msgid "Send"
+msgstr "Отправить"
+
+#: template-adoption-form.php:79
+msgid "Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly."
+msgstr ""
+"Активно помогайте находить и поддерживать потенциальных участников, поощряя "
+"тех, кого Бог, возможно, призывает пересечь культурные границы и служить "
+"этой народности напрямую."
+
+#: template-adoption-form.php:84
+msgid "Prayer Champion Details"
+msgstr "Подробная информация о чемпионе молитвы"
+
+#: template-adoption-form.php:85
+msgid "The Prayer Champion is the person who will organize the 144 intercessors and receive updates."
+msgstr ""
+"Чемпион молитвы – это человек, который будет организовывать 144 "
+"ходатайствующих и получать обновления."
+
+#: template-adoption-form.php:87
+#: template-adoption-form.php:88
+msgid "First Name"
+msgstr "Имя"
+
+#: template-adoption-form.php:91
+#: template-adoption-form.php:92
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: template-adoption-form.php:96
+msgid "Enter Email"
+msgstr "Введите адрес электронной почты"
+
+#: template-adoption-form.php:99
+msgid "Phone"
+msgstr "Телефон"
+
+#: template-adoption-form.php:100
+msgid "Enter Phone"
+msgstr "Введите номер телефона"
+
+#: template-adoption-form.php:103
+msgid "Role"
+msgstr "Роль"
+
+#: template-adoption-form.php:104
+msgid "Example: Pastor, Missions Pastor, Elder, Volunteer Leader etc."
+msgstr ""
+"Пример: пастор, пастор миссий, старейшина, руководитель волонтеров и т. д."
+
+#: template-adoption-form.php:108
+msgid "Partnering Church"
+msgstr "Партнерская церковь"
+
+#: template-adoption-form.php:110
+msgid "Church/Group Name"
+msgstr "Название церкви/группы"
+
+#: template-adoption-form.php:111
+msgid "Enter Church/Group Name"
+msgstr "Введите название церкви/группы"
+
+#: template-adoption-form.php:114
+msgid "I am happy for this church name to appear publicly on this site."
+msgstr "Я рад, что название этой церкви появилось на этом сайте."
+
+#: template-adoption-form.php:118
+msgid "Location of Church/Group"
+msgstr "Местонахождение церкви/группы"
+
+#: template-adoption-form.php:120
+msgid "Select Country"
+msgstr "Выберите страну"
+
+#: template-adoption-form.php:128
+msgid "I/my church/group commits to adopting this People Group for prayer, partnership and support."
+msgstr ""
+"Я/моя церковь/группа обязуется принять эту народность для молитвы, "
+"партнерства и поддержки."
+
+#: template-adoption-form.php:132
+msgid "I give permission for DOXA to connect me with others adopting this people group."
+msgstr ""
+"Я даю разрешение DOXA связать меня с другими людьми, которые принимают эту "
+"этническую группу."
+
+#: template-adoption-form.php:175
+msgid "Please confirm your adoption commitment."
+msgstr "Пожалуйста, подтвердите свое решение об усыновлении."
+
+#: template-adoption-form.php:182
+msgid "Submitting..."
+msgstr "Отправляется..."
+
+#: template-adoption-form.php:211
+msgid "Thank you for your adoption commitment! We will be in touch soon."
+msgstr "Спасибо за ваше решение об усыновлении! Мы скоро свяжемся с вами."
+
+#: template-adoption-form.php:219
+#: template-adoption-form.php:228
+msgid "There was an error submitting your adoption. Please try again."
+msgstr ""
+"При отправке вашей заявки на усыновление произошла ошибка. Повторите попытку."
+
+#. Template Name of the theme
+msgid "UUPG Detail"
+msgstr "Подробная информация об UUPG"
+
+#: template-uupg-detail.php:54
+msgid "Engaged"
+msgstr "Занятый"
+
+#: template-uupg-detail.php:56
+msgid "Not Engaged"
+msgstr "Не задействован"
+
+#: template-uupg-detail.php:67
+msgid "Engagement Status"
+msgstr "Статус взаимодействия"
+
+#: template-uupg-detail.php:72
+#: template-uupg-detail.php:80
+#: template-uupg-detail.php:88
+#: template-uupg-detail.php:96
+#: template-uupg-detail.php:104
+#: template-uupg-detail.php:181
+#: template-uupg-detail.php:189
+#: template-uupg-detail.php:197
+#: template-uupg-detail.php:205
+#: template-uupg-detail.php:213
+#: template-uupg-detail.php:221
+msgid "Done"
+msgstr "Готово"
+
+#: template-uupg-detail.php:74
+#: template-uupg-detail.php:82
+#: template-uupg-detail.php:90
+#: template-uupg-detail.php:98
+#: template-uupg-detail.php:106
+#: template-uupg-detail.php:183
+#: template-uupg-detail.php:191
+#: template-uupg-detail.php:199
+#: template-uupg-detail.php:207
+#: template-uupg-detail.php:215
+#: template-uupg-detail.php:223
+msgid "Not Done"
+msgstr "Не выполнено"
+
+#: template-uupg-detail.php:76
+#: template-uupg-detail.php:115
+msgid "Prayer Status"
+msgstr "Статус молитвы"
+
+#: template-uupg-detail.php:84
+#: template-uupg-detail.php:127
+msgid "Adoption Status"
+msgstr "Статус усыновления"
+
+#: template-uupg-detail.php:92
+msgid "Cross-cultural workers present"
+msgstr "Межкультурные работники присутствуют"
+
+#: template-uupg-detail.php:100
+msgid "Work in local language &amp; culture"
+msgstr "Работа на местном языке и в местной культуре"
+
+#: template-uupg-detail.php:108
+msgid "Disciple &amp; church multiplication"
+msgstr "Ученики и умножение церквей"
+
+#: template-uupg-detail.php:117
+msgid "People committed to praying"
+msgstr "Люди, посвятившие себя молитве"
+
+#: template-uupg-detail.php:122
+msgid "24-hour Prayer Coverage"
+msgstr "24-часовая молитвенная поддержка"
+
+#: template-uupg-detail.php:124
+msgid "Sign up to pray"
+msgstr "Запишитесь на молитву"
+
+#: template-uupg-detail.php:129
+msgid "churches / individuals have adopted this people group"
+msgstr "церкви / частные лица приняли эту этническую группу"
+
+#: template-uupg-detail.php:145
+msgid "Adopt people group"
+msgstr "Принять группу людей"
+
+#: template-uupg-detail.php:165
+msgid "Overview"
+msgstr "Обзор"
+
+#: template-uupg-detail.php:166
+msgid "Country"
+msgstr "Страна"
+
+#: template-uupg-detail.php:169
+msgid "Alternate Names"
+msgstr "Альтернативные названия"
+
+#: template-uupg-detail.php:171
+msgid "Population"
+msgstr "Население"
+
+#: template-uupg-detail.php:172
+msgid "Primary Language"
+msgstr "Основной язык"
+
+#: template-uupg-detail.php:173
+msgid "Primary Religion"
+msgstr "Основная религия"
+
+#: template-uupg-detail.php:174
+msgid "Religious Practices"
+msgstr "Религиозные обряды"
+
+#: template-uupg-detail.php:178
+msgid "Progress"
+msgstr "Прогресс"
+
+#: template-uupg-detail.php:185
+msgid "Bible Translation"
+msgstr "Перевод Библии"
+
+#: template-uupg-detail.php:193
+msgid "Bible Stories"
+msgstr "Библейские истории"
+
+#: template-uupg-detail.php:201
+msgid "Jesus Film"
+msgstr "Фильм «Иисус»"
+
+#: template-uupg-detail.php:209
+msgid "Radio Broadcasts"
+msgstr "Радиопередачи"
+
+#: template-uupg-detail.php:217
+msgid "Gospel Recordings"
+msgstr "Записи Евангелия"
+
+#: template-uupg-detail.php:225
+msgid "Audio Scripture"
+msgstr "Аудио-Священное Писание"
