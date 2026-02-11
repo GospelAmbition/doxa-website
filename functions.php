@@ -1486,3 +1486,8 @@ function doxa_get_countries() {
  */
 require_once get_template_directory() . '/functions/contact-rest-api.php';
 require_once get_template_directory() . '/functions/adopt-rest-api.php';
+
+function doxa_load_theme_textdomain() {
+    load_theme_textdomain('doxa-website', get_template_directory() . '/languages');
+}
+add_action('after_setup_theme', 'doxa_load_theme_textdomain');
