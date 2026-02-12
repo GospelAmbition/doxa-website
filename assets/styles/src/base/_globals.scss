@@ -2,10 +2,9 @@
 // Imports semantic tokens (which export CSS custom properties)
 // Sets up base typography and body styles
 
-@use '../tokens';
-
 html {
   font-size: var(--font-size-base);
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -94,17 +93,17 @@ table {
   border-collapse: collapse;
 }
 
-ul:not([role="list"]):not(.role-list) {
+ul:not([role="list"]):not(.role-list):not(.sub-menu) {
   list-style: none;
   margin-inline-start: 0;
   padding-inline-start: 1.8em;
   line-height: var(--line-height-normal);
 }
-ul:not([role="list"]):not(.role-list) li {
+ul:not([role="list"]):not(.role-list):not(.sub-menu) li {
   position: relative;
 }
 
-ul:not([role="list"]):not(.role-list) li::before {
+ul:not([role="list"]):not(.role-list):not(.sub-menu) li::before {
   content: "";
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='%2392b195' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='7' stroke='%2392b195' stroke-width='1.5'/%3E%3C/svg%3E");
@@ -196,3 +195,4 @@ td {
   color: var(--color-surface-white);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+

@@ -1,0 +1,28 @@
+.pll-parent-menu-item {
+    a {
+        display: flex;
+        align-items: center;
+    }
+    & > a {
+        display: flex;
+        align-items: center;
+
+        & > img {
+            border-radius: 0;
+        }
+
+        & > span {
+            display: none;
+        }
+    }
+}
+
+#secondary-menu {
+    .pll-parent-menu-item {
+        a {
+            span {
+                display: block;
+            }
+        }
+    }
+}
