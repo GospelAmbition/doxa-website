@@ -290,4 +290,17 @@
             })
         }
     });
+    document.querySelectorAll('.pll-parent-menu-item > a').forEach(link => {
+        link.addEventListener('click', event => {
+            const parent = link.parentElement;
+            if (!parent) return;
+
+            // Prevent following the "#pll_switcher" link
+            if (link.getAttribute('href') === '#pll_switcher') {
+                event.preventDefault();
+            }
+
+            parent.classList.toggle('is-open');
+        });
+    });
 })();

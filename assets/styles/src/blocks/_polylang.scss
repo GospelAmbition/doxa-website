@@ -14,4 +14,15 @@
         & > span {
             display: none;
         }
-    }}
+    }
+}
+
+#secondary-menu {
+    .pll-parent-menu-item {
+        a {
+            span {
+                display: block;
+            }
+        }
+    }
+}
