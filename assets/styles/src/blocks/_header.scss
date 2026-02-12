@@ -120,13 +120,13 @@
     position: relative;
 }
 .hamburger-menu-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     background: var(--color-brand-light);
     opacity: 0.5;
-    height: 100vh;
 }
 .hamburger-menu-overlay[data-state="closed"] {
     opacity: 0;
@@ -230,6 +230,10 @@
 
 .hamburger-menu[data-state="open"] {
     transform: translateY(100%);
+}
+
+html:has(.hamburger-menu[data-state="open"]) {
+    overflow-y:hidden;
 }
 
 @media (max-width: 992px) {
