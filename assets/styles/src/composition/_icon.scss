@@ -7,10 +7,21 @@
 }
 
 .with-icon {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: baseline;
 }
 
 .with-icon .icon {
     margin-inline-end: 1rem;
+}
+
+.with-icon .icon.right {
+    margin-inline-start: 1rem;
+}
+
+.icon.width-md {
+    width: 1em;
+    width: 1.4cap;
+    height: 1em;
+    height: 1.4cap;
 }
