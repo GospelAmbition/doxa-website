@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-10T15:03:19+00:00\n"
+"POT-Creation-Date: 2026-02-13T09:59:29+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: doxa-website\n"
@@ -94,7 +94,7 @@ msgid "%s unengaged people groups"
 msgstr ""
 
 #: front-page.php:36
-msgid "Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it."
+msgid "Our hope is to see each of them covered in 24-hour prayer, and your church can be part of it."
 msgstr ""
 
 #: front-page.php:41
@@ -110,7 +110,7 @@ msgid "Join"
 msgstr ""
 
 #: front-page.php:55
-msgid "Churches and networks take ownership - praying, giving and preparing the way for gospel workers."
+msgid "Churches and networks take ownership – praying, giving, and preparing the way for gospel workers."
 msgstr ""
 
 #: front-page.php:57
@@ -177,27 +177,27 @@ msgid "Vision 2033"
 msgstr ""
 
 #: front-page.php:138
-msgid "In partnership with the global church, our vision is to..."
+msgid "In partnership with the global church, our vision is for..."
 msgstr ""
 
 #: front-page.php:140
-msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples."
+msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples"
 msgstr ""
 
 #: front-page.php:141
-msgid "No unengaged people groups by 2033."
+msgid "No unengaged people groups by 2033"
 msgstr ""
 
 #: front-page.php:142
-msgid "Mobilize 20,000+ DOXA partnership missionaries"
+msgid "Mobilization of 20,000+ DOXA partnership missionaries"
 msgstr ""
 
 #: front-page.php:143
-msgid "Fruitful engagement among frontier and the under-engaged."
+msgid "Fruitful engagement among frontier peoples and the under-engaged"
 msgstr ""
 
 #: front-page.php:144
-msgid "Church-planting movements among every unreached people on earth."
+msgid "Church planting movements among every unreached people on earth"
 msgstr ""
 
 #: front-page.php:147
@@ -223,7 +223,7 @@ msgid "DOXA is the Greek word for \"GLORY\"."
 msgstr ""
 
 #: front-page.php:181
-msgid "We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory."
+msgid "We chose this name because Jesus is worthy of glory from every tribe, tongue, people, and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world – until people from every nation are worshipping Jesus and He alone receives all the glory."
 msgstr ""
 
 #: header.php:35
@@ -249,7 +249,7 @@ msgid "Adopt an unengaged people group"
 msgstr ""
 
 #: page-adopt.php:20
-msgid "A church-led commitment to pray, give, and send so that gospel access begins."
+msgid "A church-led commitment to pray, give, and send so that gospel access begins"
 msgstr ""
 
 #: page-adopt.php:25
@@ -354,7 +354,7 @@ msgid "Churches become active partners in God's mission"
 msgstr ""
 
 #: page-adopt.php:120
-msgid "Adoption invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus."
+msgid "Adoption invites the local church into meaningful participation - praying, giving, and sending – so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus."
 msgstr ""
 
 #: page-adopt.php:129
@@ -364,7 +364,7 @@ msgstr ""
 
 #: page-adopt.php:130
 #: page-pray.php:132
-msgid "Select one of these six highlighted engaged people groups - or search for more below."
+msgid "Select a highlighted unengaged people group, or search for a specific group or location below."
 msgstr ""
 
 #: page-adopt.php:136
@@ -414,7 +414,7 @@ msgid "See All"
 msgstr ""
 
 #: page-adopt.php:155
-msgid "I was a stranger and you invited me in"
+msgid "I was a stranger and you invited me in."
 msgstr ""
 
 #: page-adopt.php:156
@@ -480,7 +480,7 @@ msgid "Prayer for an unengaged people group"
 msgstr ""
 
 #: page-pray.php:20
-msgid "Help prepare the way for gospel engagement through prayer."
+msgid "Help prepare the way for gospel engagement through prayer"
 msgstr ""
 
 #: page-pray.php:25
@@ -573,7 +573,7 @@ msgid "Select"
 msgstr ""
 
 #: page-pray.php:157
-msgid "Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]"
+msgid "Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]."
 msgstr ""
 
 #. Template Name of the theme

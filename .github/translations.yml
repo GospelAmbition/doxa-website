@@ -37,7 +37,7 @@ jobs:
       #######################
       - name: Generate new pot file
         run: >
-          wp i18n make-pot . support/languages/default.pot  --skip-audit --exclude="theme.json"
+          wp i18n make-pot . languages/doxa-website.pot  --skip-audit --exclude="theme.json,style.css"
       ######################
 
       - name: Check diff output
