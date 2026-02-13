@@ -17,7 +17,7 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--2xl">
                     <div class="stack stack-md">
                         <h1 class="h2 highlight" data-highlight-index="1"><?php echo __('Adopt an unengaged people group', 'doxa-website'); ?></h1>
-                        <p class="subtext"><?php echo __('A church-led commitment to pray, give, and send so that gospel access begins.', 'doxa-website'); ?></p>
+                        <p class="subtext"><?php echo __('A church-led commitment to pray, give, and send so that gospel access begins', 'doxa-website'); ?></p>
                     </div>
                     <div class="three-part-switcher">
                         <div class="card-two-tone | text-center grow-1">
@@ -27,7 +27,7 @@ get_header( 'top' ); ?>
                             </div>
                             <div>
                                 <h2 class="h3"><?php echo __('Current Status', 'doxa-website'); ?></h2>
-                                <span class="font-size-4xl font-weight-bold font-button"><span id="adopted-current-status">0</span> / 2085</span>
+                                <span class="font-size-4xl font-weight-bold font-button"><span id="adopted-current-status">0</span> / 2,085</span>
                                 <div class="stack stack--3xs">
                                     <p class="subtext font-size-md"><?php echo __('people groups adopted', 'doxa-website'); ?></p>
                                     <div class="progress-bar" data-size="md">
@@ -117,7 +117,7 @@ get_header( 'top' ); ?>
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4 class="font-heading font-size-2xl"><?php echo __('Churches become active partners in God\'s mission', 'doxa-website'); ?></h4>
-                                <p><?php echo __('Adoption invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
+                                <p><?php echo __('Adoption invites the local church into meaningful participation - praying, giving, and sending – so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--3xl">
                     <div class="stack stack--md">
                         <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
-                        <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
+                        <p class="subtext"><?php echo __('Select a highlighted unengaged people group, or search for a specific group or location below.', 'doxa-website'); ?></p>
                     </div>
                     <uupgs-list
                         selectUrl="/adopt"
@@ -152,8 +152,8 @@ get_header( 'top' ); ?>
             <section>
                 <div class="container stack stack--5xl">
                     <figure class="text-center font-size-5xl font-heading">
-                        <blockquote><?php echo __('I was a stranger and you invited me in', 'doxa-website'); ?></blockquote>
-                        <figcaption>-<?php echo __('Jesus', 'doxa-website'); ?></figcaption>
+                        <blockquote><?php echo __('I was a stranger and you invited me in.', 'doxa-website'); ?></blockquote>
+                        <figcaption>- <?php echo __('Jesus', 'doxa-website'); ?></figcaption>
                     </figure>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-bottom-banner.jpg" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
                 </div>

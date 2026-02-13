@@ -33,7 +33,7 @@ get_header( 'top' ); ?>
                     <div class="stack stack--2xl">
                         <h2 class="highlight" data-highlight-index="1"><?php echo sprintf( _x( '%s unengaged people groups', 'number of unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
                         <p class="subtext">
-                            <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
+                            <?php echo __('Our hope is to see each of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
                         </p>
                     </div>
                     <div class="reel" id="reel-people-groups" data-reel-mode="auto-scroll"></div>
@@ -52,7 +52,7 @@ get_header( 'top' ); ?>
                                 <div class="step-card__number">2</div>
                                 <div class="step-card__content">
                                     <h2 class="step-card__title"><?php echo __('Adopt', 'doxa-website'); ?></h2>
-                                    <p><?php echo __('Churches and networks take ownership - praying, giving and preparing the way for gospel workers.', 'doxa-website'); ?></p>
+                                    <p><?php echo __('Churches and networks take ownership – praying, giving, and preparing the way for gospel workers.', 'doxa-website'); ?></p>
                                 </div>
                                 <a href="/adopt" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
                             </div>
@@ -135,13 +135,13 @@ get_header( 'top' ); ?>
                             </div>
                             <div class="switcher-item align-center justify-center">
                                 <div class="stack stack--xl">
-                                    <h3 class="subtext"><?php echo __('In partnership with the global church, our vision is to...', 'doxa-website'); ?></h3>
+                                    <h3 class="subtext"><?php echo __('In partnership with the global church, our vision is for...', 'doxa-website'); ?></h3>
                                     <ul class="stack stack--md" data-list-color="primary">
-                                        <li><?php echo __('Daily 24-hour prayer coverage for all 2,085 unengaged peoples.', 'doxa-website'); ?></li>
-                                        <li><?php echo __('No unengaged people groups by 2033.', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Mobilize 20,000+ DOXA partnership missionaries', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Fruitful engagement among frontier and the under-engaged.', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Church-planting movements among every unreached people on earth.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Daily 24-hour prayer coverage for all 2,085 unengaged peoples', 'doxa-website'); ?></li>
+                                        <li><?php echo __('No unengaged people groups by 2033', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Mobilization of 20,000+ DOXA partnership missionaries', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Fruitful engagement among frontier peoples and the under-engaged', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Church planting movements among every unreached people on earth', 'doxa-website'); ?></li>
                                     </ul>
                                     <a href="/about/vision" class="with-icon | color-primary-darker ms-auto">
                                         <?php echo __('More', 'doxa-website'); ?>
@@ -178,7 +178,7 @@ get_header( 'top' ); ?>
                         <div class="stack stack--md | text-center text-secondary">
                             <h2><?php echo __('What does "DOXA" mean?', 'doxa-website'); ?></h2>
                             <p class="subtext"><?php echo __('DOXA is the Greek word for "GLORY".', 'doxa-website'); ?></p>
-                            <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
+                            <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people, and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world – until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
                         </div>
                     </div>
                     <div class="switcher-item center grow-none">
