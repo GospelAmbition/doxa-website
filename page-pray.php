@@ -17,7 +17,7 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--2xl">
                     <div class="stack stack-md">
                         <h1 class="h2 highlight" data-highlight-index="1"><?php echo __('Prayer for an unengaged people group', 'doxa-website'); ?></h1>
-                        <p class="subtext"><?php echo __('Help prepare the way for gospel engagement through prayer.', 'doxa-website'); ?></p>
+                        <p class="subtext"><?php echo __('Help prepare the way for gospel engagement through prayer', 'doxa-website'); ?></p>
                     </div>
                     <div class="three-part-switcher">
                         <div class="card-two-tone | text-center grow-1">
