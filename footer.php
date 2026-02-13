@@ -14,7 +14,7 @@
         <div class="footer__center">
             <div class="footer__description">
                 <h3><?php bloginfo('name'); ?></h3>
-                <p>Global Partnership for the Unreached</p>
+                <p><?php echo __('Global Partnership for the Unreached', 'doxa-website'); ?></p>
             </div>
             <nav class="main-navigation">
                 <?php
@@ -35,6 +35,6 @@
         </div>
     </div>
     <div class="center | footer__copyright">
-        <p>&copy; <?php echo esc_html(date('Y')); ?> <?php bloginfo('name'); ?>. All rights reserved.</p>
+        <p>&copy; <?php echo esc_html(date('Y')); ?> <?php bloginfo('name'); ?>. <?php echo __('All rights reserved.', 'doxa-website'); ?></p>
     </div>
 </footer>
