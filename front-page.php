@@ -36,7 +36,7 @@ get_header( 'top' ); ?>
                             <?php echo __('Our hope is to see each of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
                         </p>
                     </div>
-                    <div class="reel" id="reel-people-groups" data-reel-mode="auto-scroll"></div>
+                    <div class="reel" id="reel-people-groups" data-reel-mode="auto-scroll" data-research-url="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"></div>
                     <div class="stack stack--2xl">
                         <h2 class="highlight" data-highlight-last><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
                         <div class="switcher | gap-md">

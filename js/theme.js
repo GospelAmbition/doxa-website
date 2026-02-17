@@ -178,7 +178,7 @@
             filteredPeopleGroups.forEach(group => {
                 const item = document.createElement('a');
                 item.classList.add('stack', 'stack--sm', 'reel__item', 'light-link');
-                item.href = '/research/' + group.slug;
+                item.href = reel.dataset.researchUrl + group.slug;
                 item.target = '_blank';
                 item.innerHTML = `
                     <div><img class="square rounded-md size-md" src="${group.picture_url}" alt="${group.display_name}"></div>
