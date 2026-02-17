@@ -9,6 +9,13 @@ $slug = get_query_var( 'uupg_slug' );
 
 $uupg = get_uupg_by_slug( $slug );
 
+$lang_code = doxa_get_language_code();
+if ( $lang_code !== 'en' ) {
+    $pray_url = 'https://pray.doxa.life/' . $lang_code . '/' . $slug;
+} else {
+    $pray_url = 'https://pray.doxa.life/' . $slug;
+}
+
 ?>
 
 
@@ -121,7 +128,7 @@ $uupg = get_uupg_by_slug( $slug );
                                 </div>
                                 <p class="font-size-lg font-weight-medium"><?php echo __('24-hour Prayer Coverage', 'doxa-website'); ?></p>
                             </div>
-                            <a class="button fit-content mx-auto stack-spacing-4xl clamp-padding" href="https://pray.doxa.life/<?php echo $uupg['slug']; ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a>
+                            <a class="button fit-content mx-auto stack-spacing-4xl clamp-padding" href="<?php echo esc_url( $pray_url ); ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a>
                         </div>
                         <div class="stack stack--xl | card | text-center lh-0" data-variant="primary">
                             <h2><?php echo __('Adoption Status', 'doxa-website'); ?></h2>
