@@ -165,8 +165,10 @@
 
             let hasDeafPeopleGroup = false;
             let filteredPeopleGroups = peopleGroups.filter((group) => {
-                if (hasDeafPeopleGroup) return false;
                 if (group.display_name.toLowerCase().includes('deaf')) {
+                    if (hasDeafPeopleGroup) {
+                        return false;
+                    }
                     hasDeafPeopleGroup = true;
                 }
                 return true
