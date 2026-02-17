@@ -545,7 +545,9 @@ function doxa_bypass_polylang_canonical_for_uupg( $redirect_url, $language ) {
 add_filter( 'pll_check_canonical_url', 'doxa_bypass_polylang_canonical_for_uupg', 10, 2 );
 
 function get_uupg_by_slug( $slug ) {
-    $api_url = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
+    $lang_code = doxa_get_language_code();
+    $api_url = 'https://pray.doxa.life/api/people-groups/detail/' . urlencode($slug) . '?lang=' . $lang_code;
+    //$api_url = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
     //$api_url = 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
 
     $response = wp_remote_get($api_url);

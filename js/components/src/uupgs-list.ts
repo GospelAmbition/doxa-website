@@ -13,6 +13,8 @@ export class UupgsList extends LitElement {
     researchUrl: string = '';
     @property({ type: String })
     initialSearchTerm: string = '';
+    @property({ type: String })
+    languageCode: string = '';
 
     @property({ type: Number })
     perPage: number = 24;
@@ -215,7 +217,9 @@ export class UupgsList extends LitElement {
     }
 
     getUUPGs() {
-        const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
+        const uupgAPIUrl = this.isDevelopment()
+            ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list'
+            : 'https://pray.doxa.life/api/people-groups/list?lang=' + this.languageCode;
 
         this.loading = true
         return fetch(uupgAPIUrl)
@@ -266,6 +270,7 @@ export class UupgsList extends LitElement {
     }
 
     isDevelopment() {
+        return false;
         const url = new URL(window.location.href);
         return url.hostname !== 'doxa.life';
     }

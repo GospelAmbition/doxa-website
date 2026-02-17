@@ -132,6 +132,7 @@ get_header( 'top' ); ?>
                         <p class="subtext"><?php echo __('Select a highlighted unengaged people group, or search for a specific group or location below.', 'doxa-website'); ?></p>
                     </div>
                     <uupgs-list
+                        languageCode="<?php echo doxa_get_language_code(); ?>"
                         selectUrl="https://pray.doxa.life"
                         researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                         t="<?php echo esc_attr( json_encode( [

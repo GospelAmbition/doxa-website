@@ -48,7 +48,7 @@ $uupg = get_uupg_by_slug( $slug );
                 <div class="stack stack--2xl">
                     <div class="card switcher" padding-small>
                         <div class="center | grow-none">
-                            <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>" alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>">
+                            <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['image_url'] ); ?>" alt="<?php echo isset( $uupg['imb_display_name'] ) ? esc_attr( $uupg['imb_display_name'] ) : esc_attr( $uupg['imb_people_name'] ); ?>">
                             <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['key'] === 'engaged' ? 'true' : 'false'; ?>">
                                 <?php if ( $uupg['imb_engagement_status']['key'] === 'engaged' ) : ?>
                                     <span><?php echo __('Engaged', 'doxa-website'); ?></span>
@@ -76,7 +76,7 @@ $uupg = get_uupg_by_slug( $slug );
                                     <p><?php echo __('Prayer Status', 'doxa-website'); ?></p>
                                 </div>
                                 <div class="status-item">
-                                    <?php if ( isset( $uupg['adopted_by_churches'] ) && count( $uupg['adopted_by_churches'] ) > 0 ) : ?>
+                                    <?php if ( isset( $uupg['adopted_by_churches'] ) && $uupg['adopted_by_churches'] > 0 ) : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                     <?php else : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
@@ -125,11 +125,11 @@ $uupg = get_uupg_by_slug( $slug );
                         </div>
                         <div class="stack stack--xl | card | text-center lh-0" data-variant="primary">
                             <h2><?php echo __('Adoption Status', 'doxa-website'); ?></h2>
-                            <p class="font-size-4xl font-weight-medium"><?php echo $uupg['adopted_by_churches'] ? count( $uupg['adopted_by_churches'] ) : 0; ?></p>
+                            <p class="font-size-4xl font-weight-medium"><?php echo $uupg['adopted_by_churches'] ? $uupg['adopted_by_churches'] : 0; ?></p>
                             <p class="font-size-lg margin-bottom-md"><?php echo __('churches / individuals have adopted this people group', 'doxa-website'); ?></p>
-                            <?php if ( count( $uupg['adopted_by_churches'] ) > 0 ) : ?>
+                            <?php if ( isset( $uupg['adopted_by_churches_list'] ) && count( $uupg['adopted_by_churches_list'] ) > 0 ) : ?>
                                 <ul>
-                                    <?php foreach ( $uupg['adopted_by_churches'] as $church ) : ?>
+                                    <?php foreach ( $uupg['adopted_by_churches_list'] as $church ) : ?>
 
                                         <?php if ( isset( $church['confirm_public_display'] ) && $church['confirm_public_display'] === 'Yes' ) : ?>
 
