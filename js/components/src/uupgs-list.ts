@@ -250,7 +250,9 @@ export class UupgsList extends LitElement {
     }
 
     getHighlightedUUPGs() {
-        const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted';
+        const uupgAPIUrl = this.isDevelopment()
+            ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted'
+            : 'https://pray.doxa.life/api/people-groups/highlighted?lang=' + this.languageCode;
 
         const url = new URL(uupgAPIUrl);
 
