@@ -3,6 +3,8 @@
  * The template for displaying 404 pages (not found)
  */
 
+$lang = function_exists( 'pll_current_language' ) ? pll_current_language() : substr( get_locale(), 0, 2 );
+
 get_header( 'top' ); ?>
 
 <div class="page">

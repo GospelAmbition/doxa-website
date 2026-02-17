@@ -130,7 +130,8 @@ get_header( 'top' ); ?>
                         <p class="subtext"><?php echo __('Select a highlighted unengaged people group, or search for a specific group or location below.', 'doxa-website'); ?></p>
                     </div>
                     <uupgs-list
-                        selectUrl="/adopt"
+                        selectUrl="<?php echo esc_url( doxa_translation_url( 'adopt' ) ); ?>"
+                        researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Adopt', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),

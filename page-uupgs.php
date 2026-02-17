@@ -17,6 +17,7 @@ get_header( 'top' ); ?>
         <div class="container page-content uupgs-page stack stack--3xl">
             <h1 class="text-center highlight" data-highlight-last><?php echo __('Find a UUPG', 'doxa-website'); ?></h1>
             <uupgs-list
+                researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                 t="<?php echo esc_attr( json_encode( [
                     'full_profile' => __('Full Profile', 'doxa-website'),
                     'loading' => __('Loading results...', 'doxa-website'),

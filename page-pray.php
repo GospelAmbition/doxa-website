@@ -133,6 +133,7 @@ get_header( 'top' ); ?>
                     </div>
                     <uupgs-list
                         selectUrl="https://pray.doxa.life"
+                        researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Select', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),
