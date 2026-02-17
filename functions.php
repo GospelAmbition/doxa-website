@@ -1482,7 +1482,7 @@ function doxa_get_countries() {
 }
 
 /**
- * Load theme functions
+ * Load api functions
  */
 require_once get_template_directory() . '/functions/contact-rest-api.php';
 require_once get_template_directory() . '/functions/adopt-rest-api.php';
@@ -1491,3 +1491,44 @@ function doxa_load_theme_textdomain() {
     load_theme_textdomain('doxa-website', get_template_directory() . '/languages');
 }
 add_action('after_setup_theme', 'doxa_load_theme_textdomain');
+
+
+function doxa_translation_url( $slug, $lang_code = null ) {
+    $post_id = doxa_get_page_id_by_slug( $slug );
+    $list = doxa_language_relationships( $post_id );
+
+    if ( empty( $lang_code ) ) {
+        $lang_code = function_exists( 'pll_current_language' ) ? pll_current_language() : substr( get_locale(), 0, 2 );
+    }
+
+    $trans_id = $list[$lang_code] ?? $post_id;
+
+    $trans_object = get_post( $trans_id, OBJECT );
+    if ( $lang_code === 'en' ) {
+        return site_url( '/' )  . $trans_object->post_name . '/';
+    }
+
+    return site_url( '/' ) . $lang_code . '/' . $trans_object->post_name . '/';
+}
+function doxa_get_page_id_by_slug( $slug ) {
+    $post = get_page_by_path( $slug, OBJECT, 'page' );
+    if ( empty( $post ) ) {
+        return null;
+    }
+    return $post->ID;
+}
+
+function doxa_language_relationships( $post_id ) {
+    global $wpdb, $table_prefix;
+
+    $like_text = '%' . $wpdb->esc_like( 'i:' . $post_id . ';' ) . '%';
+    $list = $wpdb->get_var( $wpdb->prepare(
+        "
+			SELECT description
+			FROM {$table_prefix}term_taxonomy tr
+            WHERE tr.description LIKE %s AND tr.taxonomy = 'post_translations';
+		",
+        $like_text
+    ) );
+    return maybe_unserialize( $list );
+}

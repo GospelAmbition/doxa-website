@@ -46,7 +46,7 @@ get_header( 'top' ); ?>
                                     <h2 class="step-card__title"><?php echo __('Pray', 'doxa-website'); ?></h2>
                                     <p><?php echo __('Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples.', 'doxa-website'); ?></p>
                                 </div>
-                                <a href="/pray" class="button | compact"><?php echo __('Join', 'doxa-website'); ?></a>
+                                <a href="<?php echo esc_url( doxa_translation_url( 'pray' ) ); ?>" class="button | compact"><?php echo __('Join', 'doxa-website'); ?></a>
                             </div>
                             <div class="step-card">
                                 <div class="step-card__number">2</div>
@@ -54,7 +54,7 @@ get_header( 'top' ); ?>
                                     <h2 class="step-card__title"><?php echo __('Adopt', 'doxa-website'); ?></h2>
                                     <p><?php echo __('Churches and networks take ownership – praying, giving, and preparing the way for gospel workers.', 'doxa-website'); ?></p>
                                 </div>
-                                <a href="/adopt" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
+                                <a href="<?php echo esc_url( doxa_translation_url( 'adopt' ) ); ?>" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
                             </div>
                             <div class="step-card">
                                 <div class="step-card__number">3</div>
@@ -112,7 +112,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                     </div>
-                    <a href="/about/definitions" class="with-icon | color-primary-darker mx-auto">
+                    <a href="<?php echo esc_url( doxa_translation_url( 'about/definitions' ) ); ?>" class="with-icon | color-primary-darker mx-auto">
                         <?php echo __('Learn More', 'doxa-website'); ?>
                         <svg class="icon | rotate-90">
                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
@@ -143,7 +143,7 @@ get_header( 'top' ); ?>
                                         <li><?php echo __('Fruitful engagement among frontier peoples and the under-engaged', 'doxa-website'); ?></li>
                                         <li><?php echo __('Church planting movements among every unreached people on earth', 'doxa-website'); ?></li>
                                     </ul>
-                                    <a href="/about/vision" class="with-icon | color-primary-darker ms-auto">
+                                    <a href="<?php echo esc_url( doxa_translation_url( 'about/vision' ) ); ?>" class="with-icon | color-primary-darker ms-auto">
                                         <?php echo __('More', 'doxa-website'); ?>
                                         <svg class="icon | rotate-90">
                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
@@ -166,7 +166,7 @@ get_header( 'top' ); ?>
                         <div>
                             <div class="stack stack--3xl | align-center">
                                 <p class="text-center max-width-md font-size-lg"><?php echo __('Every movement of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way.', 'doxa-website'); ?></p>
-                                <a href="/pray" class="button | compact"><?php echo __('Pray', 'doxa-website'); ?></a>
+                                <a href="<?php echo esc_url( doxa_translation_url( 'pray' ) ); ?>" class="button | compact"><?php echo __('Pray', 'doxa-website'); ?></a>
                             </div>
                         </div>
                     </div>
