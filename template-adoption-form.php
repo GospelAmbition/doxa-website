@@ -47,8 +47,8 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                         <img
                             class="uupg__image"
                             data-size="small"
-                            src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>"
-                            alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>"
+                            src="<?php echo esc_attr( $uupg['image_url'] ); ?>"
+                            alt="<?php echo isset( $uupg['imb_display_name'] ) ? esc_attr( $uupg['imb_display_name'] ) : esc_attr( $uupg['imb_people_name'] ); ?>"
                         >
                     </div>
                     <div class="repel align-center">
