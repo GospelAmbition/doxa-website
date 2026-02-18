@@ -53,7 +53,7 @@ get_header( 'top' ); ?>
                                     <div>
                                         <ul class="stack" role="list">
                                         <li>
-                                            <a class="<?php echo $current_link == $parent_slug ? 'current-link' : ''; ?>" href="<?php echo esc_url(get_permalink($menu_parent_id)); ?>">
+                                            <a class="<?php echo $current_link === $parent_slug ? 'current-link' : ''; ?>" href="<?php echo esc_url(get_permalink($menu_parent_id)); ?>">
                                                 <?php echo esc_html($parent_page->post_title); ?>
                                             </a>
                                         </li>

@@ -17,7 +17,7 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--2xl">
                     <div class="stack stack-md">
                         <h1 class="h2 highlight" data-highlight-index="1"><?php echo __('Adopt an unengaged people group', 'doxa-website'); ?></h1>
-                        <p class="subtext"><?php echo __('A church-led commitment to pray, give, and send so that gospel access begins.', 'doxa-website'); ?></p>
+                        <p class="subtext"><?php echo __('A church-led commitment to pray, give, and send so that gospel access begins', 'doxa-website'); ?></p>
                     </div>
                     <div class="three-part-switcher">
                         <div class="card-two-tone | text-center grow-1">
@@ -77,7 +77,7 @@ get_header( 'top' ); ?>
                             <div class="stack stack--2xl">
                                 <h2 class="highlight" data-highlight-index="1"><?php echo __('Adoption Guide & Resources', 'doxa-website'); ?></h2>
                                 <ul class="stack stack--sm" data-list-color="primary">
-                                    <li><?php echo __('Step-by-step guidance for churches adopting a peopele group', 'doxa-website'); ?></li>
+                                    <li><?php echo __('Step-by-step guidance for churches adopting a people group', 'doxa-website'); ?></li>
                                     <li><?php echo __('Tools to mobilize prayer and participation across your congregation', 'doxa-website'); ?></li>
                                     <li><?php echo __('Printable and digital resources to promote awareness and engagement', 'doxa-website'); ?></li>
                                     <li><?php echo __('Helpful tips for sustaining long-term commitment', 'doxa-website'); ?></li>
@@ -109,7 +109,7 @@ get_header( 'top' ); ?>
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4 class="font-heading font-size-2xl"><?php echo __('Prayer opens the door for engagement', 'doxa-website'); ?></h4>
-                                <p><?php echo __('Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spritual barriers, and supports workers who go. Every gospel movement begins with prayer.', 'doxa-website'); ?></p>
+                                <p><?php echo __('Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spiritual barriers, and supports workers who go. Every gospel movement begins with prayer.', 'doxa-website'); ?></p>
                             </div>
                         </div><div class="switcher | gap-md" data-width="xl">
                             <div class="switcher-item center grow-none">
@@ -117,7 +117,7 @@ get_header( 'top' ); ?>
                             </div>
                             <div class="stack stack--lg | text-card | surface-brand-lightest justify-center">
                                 <h4 class="font-heading font-size-2xl"><?php echo __('Churches become active partners in God\'s mission', 'doxa-website'); ?></h4>
-                                <p><?php echo __('Adoptoin invites the local church into meaningful participation - praying, giving and sending - so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
+                                <p><?php echo __('Adoption invites the local church into meaningful participation - praying, giving, and sending – so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus.', 'doxa-website'); ?></p>
                             </div>
                         </div>
                     </div>
@@ -127,10 +127,12 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--3xl">
                     <div class="stack stack--md">
                         <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
-                        <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
+                        <p class="subtext"><?php echo __('Select a highlighted unengaged people group, or search for a specific group or location below.', 'doxa-website'); ?></p>
                     </div>
                     <uupgs-list
-                        selectUrl="/adopt"
+                        languageCode="<?php echo doxa_get_language_code(); ?>"
+                        selectUrl="<?php echo esc_url( doxa_translation_url( 'adopt' ) ); ?>"
+                        researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Adopt', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),
@@ -152,8 +154,8 @@ get_header( 'top' ); ?>
             <section>
                 <div class="container stack stack--5xl">
                     <figure class="text-center font-size-5xl font-heading">
-                        <blockquote><?php echo __('I was a stranger and you invited me in', 'doxa-website'); ?></blockquote>
-                        <figcaption>-<?php echo __('Jesus', 'doxa-website'); ?></figcaption>
+                        <blockquote><?php echo __('I was a stranger and you invited me in.', 'doxa-website'); ?></blockquote>
+                        <figcaption>- <?php echo __('Jesus', 'doxa-website'); ?></figcaption>
                     </figure>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/adopt-bottom-banner.jpg" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
                 </div>

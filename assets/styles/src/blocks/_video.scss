@@ -11,6 +11,10 @@
         fill: var(--color-brand-secondary-light);
         transform: translateY(30%);
         transition: fill 0.3s ease, transform 0.3s ease;
+
+        [dir="rtl"] & {
+            transform: translateY(30%) scaleX(-1);
+        }
     }
 
     &:hover {

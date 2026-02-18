@@ -17,7 +17,7 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--2xl">
                     <div class="stack stack-md">
                         <h1 class="h2 highlight" data-highlight-index="1"><?php echo __('Prayer for an unengaged people group', 'doxa-website'); ?></h1>
-                        <p class="subtext"><?php echo __('Help prepare the way for gospel engagement through prayer.', 'doxa-website'); ?></p>
+                        <p class="subtext"><?php echo __('Help prepare the way for gospel engagement through prayer', 'doxa-website'); ?></p>
                     </div>
                     <div class="three-part-switcher">
                         <div class="card-two-tone | text-center grow-1">
@@ -129,10 +129,12 @@ get_header( 'top' ); ?>
                 <div class="container stack stack--3xl">
                     <div class="stack stack--md">
                         <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
-                        <p class="subtext"><?php echo __('Select one of these six highlighted engaged people groups - or search for more below.', 'doxa-website'); ?></p>
+                        <p class="subtext"><?php echo __('Select a highlighted unengaged people group, or search for a specific group or location below.', 'doxa-website'); ?></p>
                     </div>
                     <uupgs-list
-                        selectUrl="https://pray.doxa.life"
+                        languageCode="<?php echo doxa_get_language_code(); ?>"
+                        selectUrl="https://pray.doxa.life/"
+                        researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Select', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),
@@ -154,8 +156,8 @@ get_header( 'top' ); ?>
             <section>
                 <div class="container stack stack--5xl">
                     <figure class="text-center font-size-5xl font-heading">
-                        <blockquote><?php echo __('Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]', 'doxa-website'); ?></blockquote>
-                        <figcaption>-<?php echo __('Jesus', 'doxa-website'); ?></figcaption>
+                        <blockquote><?php echo __('Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged].', 'doxa-website'); ?></blockquote>
+                        <figcaption>- <?php echo __('Jesus', 'doxa-website'); ?></figcaption>
                     </figure>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/assets/images/pray-03-bottom-unsplash.jpg" alt="<?php echo __('Jesus', 'doxa-website'); ?>"></div>
                 </div>

@@ -47,8 +47,8 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                         <img
                             class="uupg__image"
                             data-size="small"
-                            src="<?php echo esc_attr( $uupg['imb_picture_url'] ); ?>"
-                            alt="<?php echo esc_attr( $uupg['imb_display_name'] ); ?>"
+                            src="<?php echo esc_attr( $uupg['image_url'] ); ?>"
+                            alt="<?php echo isset( $uupg['imb_display_name'] ) ? esc_attr( $uupg['imb_display_name'] ) : esc_attr( $uupg['imb_people_name'] ); ?>"
                         >
                     </div>
                     <div class="repel align-center">
@@ -129,7 +129,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             <input type="checkbox" id="confirm-adoption" name="confirm_adoption">
                         </div>
                         <div class="ms-auto form-control color-primary-darker font-weight-medium">
-                            <label for="permission-to-contact"><?php echo __('I give permission for Doxa to connect me with others adopting this people group.', 'doxa-website'); ?></label>
+                            <label for="permission-to-contact"><?php echo __('I give permission for DOXA to connect me with others adopting this people group.', 'doxa-website'); ?></label>
                             <input type="checkbox" id="permission-to-contact" name="permission_to_contact">
                         </div>
                         <div class="cf-turnstile" data-sitekey="<?php echo esc_attr( $cf_site_key ); ?>" data-theme="light" data-callback="onTurnstileSuccess"></div>

@@ -31,49 +31,12 @@ get_header( 'top' ); ?>
             <section class="stack stack--md | surface-brand-light">
                 <div class="container stack stack--4xl">
                     <div class="stack stack--2xl">
-                        <h2 class="highlight" data-highlight-index="1"><?php echo sprintf( __( '%s unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
+                        <h2 class="highlight" data-highlight-index="1"><?php echo sprintf( _x( '%s unengaged people groups', 'number of unengaged people groups', 'doxa-website'), '2,085' ); ?></h2>
                         <p class="subtext">
-                            <?php echo __('Our hope is to see each one of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
+                            <?php echo __('Our hope is to see each of them covered in 24-hour prayer, and your church can be part of it.', 'doxa-website'); ?>
                         </p>
                     </div>
-                    <div class="reel" data-reel-mode="auto-scroll">
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-bedouin-gulf.jpg" alt="<?php echo __('Gulf Bedouin', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Gulf Bedouin', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-bobo-madare.jpg" alt="<?php echo __('Bobo Madare', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Bobo Madare', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-bosniak.jpg" alt="<?php echo __('Bosniak', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Bosniak', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-chhipa.jpg" alt="<?php echo __('Chhipa', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Chhipa', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-rtaho-amdo.jpg" alt="<?php echo __('Rtahu Amdo', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Rtahu Amdo', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-maninka-eastern.jpg" alt="<?php echo __('Eastern Maninka', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Eastern Maninka', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-algerian.jpg" alt="<?php echo __('Algerian', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Algerian', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-hadrami.jpg" alt="<?php echo __('Hadrami Arab', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Hadrami Arab', 'doxa-website'); ?></p>
-                        </div>
-                        <div class="stack stack--sm | reel__item">
-                            <div><img class="square rounded-md" src="<?php echo get_template_directory_uri(); ?>/assets/images/jp-awlad-hassan.jpg" alt="<?php echo __('Awlad Hassan', 'doxa-website'); ?>"></div>
-                            <p class="text-center uppercase"><?php echo __('Awlad Hassan', 'doxa-website'); ?></p>
-                        </div>
-                    </div>
+                    <div class="reel" id="reel-people-groups" data-reel-mode="auto-scroll" data-research-url="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"></div>
                     <div class="stack stack--2xl">
                         <h2 class="highlight" data-highlight-last><?php echo __('A simple path to faithful obedience', 'doxa-website'); ?></h2>
                         <div class="switcher | gap-md">
@@ -83,15 +46,15 @@ get_header( 'top' ); ?>
                                     <h2 class="step-card__title"><?php echo __('Pray', 'doxa-website'); ?></h2>
                                     <p><?php echo __('Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples.', 'doxa-website'); ?></p>
                                 </div>
-                                <a href="/pray" class="button | compact"><?php echo __('Join', 'doxa-website'); ?></a>
+                                <a href="<?php echo esc_url( doxa_translation_url( 'pray' ) ); ?>" class="button | compact"><?php echo __('Join', 'doxa-website'); ?></a>
                             </div>
                             <div class="step-card">
                                 <div class="step-card__number">2</div>
                                 <div class="step-card__content">
                                     <h2 class="step-card__title"><?php echo __('Adopt', 'doxa-website'); ?></h2>
-                                    <p><?php echo __('Churches and networks take ownership - praying, giving and preparing the way for gospel workers.', 'doxa-website'); ?></p>
+                                    <p><?php echo __('Churches and networks take ownership – praying, giving, and preparing the way for gospel workers.', 'doxa-website'); ?></p>
                                 </div>
-                                <a href="/adopt" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
+                                <a href="<?php echo esc_url( doxa_translation_url( 'adopt' ) ); ?>" class="button | compact"><?php echo __('Commit', 'doxa-website'); ?></a>
                             </div>
                             <div class="step-card">
                                 <div class="step-card__number">3</div>
@@ -108,48 +71,48 @@ get_header( 'top' ); ?>
             <section class="bg-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-02-WhoAreTheUnreached-new.jpg');">
                 <h2 class="text-center banner-title invisible-placeholder"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
             </section>
-            <section class="">
+            <section class="overflow-hidden progress-section">
                 <div class="container stack stack--xl">
-                    <h2 class="color-primary text-center"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
-                    <div class="switcher | gap-md" data-width="lg">
+                    <h2 class="color-white text-center progress-section__title"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
+                    <div class="switcher | concentric-circles | gap-md" data-width="lg">
                         <div class="switcher-item">
-                            <div class="info-card surface-secondary-light">
+                            <div class="info-card color-brand-dark justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3 class="color-brand-lighter"><?php echo __('Unreached', 'doxa-website'); ?></h3>
-                                    <span><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.9' ); ?></span>
-                                    <span class="color-brand-lighter"><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '6,602' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '3.9' ); ?></span>
+                                    <span class="color-brand-lighter"><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '6,602' ); ?></span>
                                 </div>
                             </div>
                         </div>
                         <div class="switcher-item">
-                            <div class="info-card surface-brand-lightest">
+                            <div class="info-card color-secondary-very-light justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Under-Engaged', 'doxa-website'); ?></h3>
-                                    <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '3.3' ); ?></span>
-                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '5,119' ); ?></span>
+                                    <span class="color-secondary-light"><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '3.3' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '5,119' ); ?></span>
                                 </div>
                             </div>
                         </div>
                         <div class="switcher-item">
-                            <div class="info-card surface-brand-light">
+                            <div class="info-card color-secondary-very-light justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Frontier People', 'doxa-website'); ?></h3>
-                                    <span class="color-secondary-light"><?php echo sprintf( __( '%s Billion', 'doxa-website'), '2' ); ?></span>
-                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '4,788' ); ?></span>
+                                    <span class="color-secondary-light"><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '2' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '4,788' ); ?></span>
                                 </div>
                             </div>
                         </div>
                         <div class="switcher-item">
-                            <div class="info-card surface-brand-dark">
+                            <div class="info-card surface-brand-dark justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Unengaged', 'doxa-website'); ?></h3>
-                                    <span><?php echo sprintf( __( '%s Million', 'doxa-website'), '202' ); ?></span>
-                                    <span><?php echo sprintf( __( '%s People Groups', 'doxa-website'), '2,085' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s Million', 'number of millions', 'doxa-website'), '202' ); ?></span>
+                                    <span><?php echo sprintf( _x( '%s People Groups', 'number of people groups', 'doxa-website'), '2,085' ); ?></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a href="/about/definitions" class="with-icon | color-primary-darker mx-auto">
+                    <a href="<?php echo esc_url( doxa_translation_url( 'about/definitions' ) ); ?>" class="with-icon | light-link mx-auto">
                         <?php echo __('Learn More', 'doxa-website'); ?>
                         <svg class="icon | rotate-90">
                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
@@ -172,15 +135,15 @@ get_header( 'top' ); ?>
                             </div>
                             <div class="switcher-item align-center justify-center">
                                 <div class="stack stack--xl">
-                                    <h3 class="subtext"><?php echo __('In partnership with the global church, our vision is to...', 'doxa-website'); ?></h3>
+                                    <h3 class="subtext"><?php echo __('In partnership with the global church, our vision is for...', 'doxa-website'); ?></h3>
                                     <ul class="stack stack--md" data-list-color="primary">
-                                        <li><?php echo __('Daily 24-hour prayer coverage for all 2,085 unengaged peoples.', 'doxa-website'); ?></li>
-                                        <li><?php echo __('No unengaged people groups by 2033.', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Mobilize 20,000+ DOXA partnership missionaries', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Fruitful engagement among frontier and the under-engaged.', 'doxa-website'); ?></li>
-                                        <li><?php echo __('Church-planting movements among every unreached people on earth.', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Daily 24-hour prayer coverage for all 2,085 unengaged peoples', 'doxa-website'); ?></li>
+                                        <li><?php echo __('No unengaged people groups by 2033', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Mobilization of 20,000+ DOXA partnership missionaries', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Fruitful engagement among frontier peoples and the under-engaged', 'doxa-website'); ?></li>
+                                        <li><?php echo __('Church planting movements among every unreached people on earth', 'doxa-website'); ?></li>
                                     </ul>
-                                    <a href="/about/vision" class="with-icon | color-primary-darker ms-auto">
+                                    <a href="<?php echo esc_url( doxa_translation_url( 'about/vision' ) ); ?>" class="with-icon | color-primary-darker ms-auto">
                                         <?php echo __('More', 'doxa-website'); ?>
                                         <svg class="icon | rotate-90">
                                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
@@ -191,7 +154,6 @@ get_header( 'top' ); ?>
                         </div>
                     </div>
                 </div>
-
             </section>
             <section class="surface-brand-light">
                 <div class="container stack stack--3xl">
@@ -202,8 +164,8 @@ get_header( 'top' ); ?>
                         </div>
                         <div>
                             <div class="stack stack--3xl | align-center">
-                                <p class="text-center max-width-md font-size-lg"><?php echo __('Every momevent of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way.', 'doxa-website'); ?></p>
-                                <a href="/pray" class="button | compact"><?php echo __('Pray', 'doxa-website'); ?></a>
+                                <p class="text-center max-width-md font-size-lg"><?php echo __('Every movement of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way.', 'doxa-website'); ?></p>
+                                <a href="<?php echo esc_url( doxa_translation_url( 'pray' ) ); ?>" class="button | compact"><?php echo __('Pray', 'doxa-website'); ?></a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +177,7 @@ get_header( 'top' ); ?>
                         <div class="stack stack--md | text-center text-secondary">
                             <h2><?php echo __('What does "DOXA" mean?', 'doxa-website'); ?></h2>
                             <p class="subtext"><?php echo __('DOXA is the Greek word for "GLORY".', 'doxa-website'); ?></p>
-                            <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people and nation. DOXA remindns us that we partner with the whole Church to take the whole gospel to the whole world - until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
+                            <p><?php echo __('We chose this name because Jesus is worthy of glory from every tribe, tongue, people, and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world – until people from every nation are worshipping Jesus and He alone receives all the glory.', 'doxa-website'); ?></p>
                         </div>
                     </div>
                     <div class="switcher-item center grow-none">

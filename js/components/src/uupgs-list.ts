@@ -10,7 +10,11 @@ export class UupgsList extends LitElement {
     @property({ type: String })
     selectUrl: string = '';
     @property({ type: String })
+    researchUrl: string = '';
+    @property({ type: String })
     initialSearchTerm: string = '';
+    @property({ type: String })
+    languageCode: string = '';
 
     @property({ type: Number })
     perPage: number = 24;
@@ -50,6 +54,7 @@ export class UupgsList extends LitElement {
         super();
         this.uupgs = [];
         this.highlightedUUPGs = [];
+        this.researchUrl = '/research'
     }
 
     render() {
@@ -78,7 +83,7 @@ export class UupgsList extends LitElement {
                         ${
                             !this.hideSeeAllLink &&
                             !this.dontShowListOnLoad && this.hasMore() ? html`
-                                <a class="light-link" href="/research/search/${this.searchTerm}">${this.t.see_all}</a>
+                                <a class="light-link" href="${this.researchUrl + 'search/' + this.searchTerm}">${this.t.see_all}</a>
                             ` : ''
                         }
                     </div>
@@ -97,8 +102,8 @@ export class UupgsList extends LitElement {
                                             <p class="font-size-xl font-button">${uupg.people_praying ?? 0}/144</p>
                                         </div>
                                         <div class="switcher | text-center" data-width="md">
-                                            <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl + '/' + uupg.slug}">${this.t.select}</a>
-                                            <a class="highlighted-uupg__more-button button compact outline" href="${'/research/' + uupg.slug}">${this.t.full_profile}</a>
+                                            <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl + uupg.slug}">${this.t.select}</a>
+                                            <a class="highlighted-uupg__more-button button compact outline" href="${this.researchUrl + uupg.slug}">${this.t.full_profile}</a>
                                         </div>
                                     </div>
                                 `
@@ -125,7 +130,7 @@ export class UupgsList extends LitElement {
                                 ${uupg.location_description ? html`
                                     <p class="uupg__content">${uupg.location_description}</p>
                                 ` : ''}
-                                <a class="uupg__more-button button compact" href="${'/research/' + uupg.slug}">${this.t.full_profile}</a>
+                                <a class="uupg__more-button button compact" href="${this.researchUrl + uupg.slug}">${this.t.full_profile}</a>
                             </div>
                         `})}
                         ${!this.dontShowListOnLoad && this.loading ? html`<div class="loading">${this.t.loading}</div>` : ''}
@@ -212,7 +217,9 @@ export class UupgsList extends LitElement {
     }
 
     getUUPGs() {
-        const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list';
+        const uupgAPIUrl = this.isDevelopment()
+            ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/list'
+            : 'https://pray.doxa.life/api/people-groups/list?lang=' + this.languageCode;
 
         this.loading = true
         return fetch(uupgAPIUrl)
@@ -243,7 +250,9 @@ export class UupgsList extends LitElement {
     }
 
     getHighlightedUUPGs() {
-        const uupgAPIUrl = this.isDevelopment() ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted' : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted';
+        const uupgAPIUrl = this.isDevelopment()
+            ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/highlighted'
+            : 'https://pray.doxa.life/api/people-groups/highlighted?lang=' + this.languageCode;
 
         const url = new URL(uupgAPIUrl);
 
@@ -263,6 +272,7 @@ export class UupgsList extends LitElement {
     }
 
     isDevelopment() {
+        return false;
         const url = new URL(window.location.href);
         return url.hostname !== 'doxa.life';
     }
