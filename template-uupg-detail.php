@@ -149,7 +149,7 @@ if ( $lang_code !== 'en' ) {
 
                             <?php endif; ?>
 
-                            <a class="button fit-content mx-auto mt-auto clamp-padding" href="<?php echo home_url('adopt/' . $uupg['slug']); ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
+                            <a class="button fit-content mx-auto mt-auto clamp-padding" href="<?php echo doxa_translation_url('adopt' ) . $uupg['slug']; ?>"><?php echo __('Adopt people group', 'doxa-website'); ?></a>
                         </div>
                     </div>
 
