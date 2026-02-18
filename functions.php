@@ -84,7 +84,7 @@ function gospel_ambition_scripts() {
         'images_url' => trailingslashit( get_template_directory_uri() ) . 'assets/images',
         'icons_url' => trailingslashit( get_template_directory_uri() ) . 'assets/icons',
         'translations' => [
-            'click_twice' => 'Click again to interact with map'
+            'click_twice' => __( 'Click again to interact with map', 'doxa-website' ),
         ],
     ));
 
