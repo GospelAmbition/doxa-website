@@ -329,6 +329,10 @@
     .engaged-stamp {
         position: static;
         transform: rotate(8deg) translate(0%, 10%);
+
+        [dir="rtl"] & {
+            transform: rotate(-8deg) translate(0%, 10%);
+        }
     }
 }
 
