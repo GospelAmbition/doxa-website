@@ -148,7 +148,46 @@
                 }
             }, 20);
         }
-        (async () => {
+        function getLanguage() {
+            return 'en';
+        }
+        async function getPeopleGroupsForReel() {
+            const reel = document.getElementById('reel-people-groups');
+            if (!reel) return;
+
+            const numberOfPeopleGroups = 20;
+            const language = getLanguage();
+            const response = await fetch('https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/list?lang=' + language);
+            const data = await response.json();
+
+            const peopleGroups = data.posts.filter(group => group.has_photo === '1')
+            peopleGroups.sort(() => Math.random() - 0.5)
+
+            let hasDeafPeopleGroup = false;
+            let filteredPeopleGroups = peopleGroups.filter((group) => {
+                if (group.display_name.toLowerCase().includes('deaf')) {
+                    if (hasDeafPeopleGroup) {
+                        return false;
+                    }
+                    hasDeafPeopleGroup = true;
+                }
+                return true
+            });
+            filteredPeopleGroups = filteredPeopleGroups.slice(0, numberOfPeopleGroups);
+
+            filteredPeopleGroups.forEach(group => {
+                const item = document.createElement('a');
+                item.classList.add('stack', 'stack--sm', 'reel__item', 'light-link');
+                item.href = reel.dataset.researchUrl + group.slug;
+                item.target = '_blank';
+                item.innerHTML = `
+                    <div><img class="square rounded-md size-md" src="${group.picture_url}" alt="${group.display_name}"></div>
+                    <p class="text-center uppercase width-md">${group.display_name}</p>
+                `;
+                reel.appendChild(item);
+            });
+        }
+        async function initSlideshows() {
             // Using a for..of loop in case you want more slideshows on page.
             for (const reel of [...document.querySelectorAll(".reel[data-reel-mode='auto-scroll']")]) {
                 const images = reel.querySelectorAll('img');
@@ -166,7 +205,11 @@
 
                 initSlideshow(reel);
             }
-        })();
+        };
+        getPeopleGroupsForReel()
+            .then(() => {
+                initSlideshows();
+            });
 
         // Video modal toggle
         const videoModalButton = document.querySelector('.video-modal-button');
@@ -247,6 +290,36 @@
                 }
                 clicks += 1
             })
+        }
+    });
+    document.querySelectorAll('.pll-parent-menu-item > a').forEach(link => {
+        link.addEventListener('click', event => {
+            const parent = link.parentElement;
+            if (!parent) return;
+
+            // Prevent following the "#pll_switcher" link
+            if (link.getAttribute('href') === '#pll_switcher') {
+                event.preventDefault();
+            }
+
+            parent.classList.toggle('is-open');
+        });
+    });
+    document.querySelectorAll('.menu-item-type-custom > a').forEach(item => {
+        if (item.getAttribute('href').startsWith('#')) {
+            return
+        }
+        const url = new URL(item.getAttribute('href'));
+        if (url.hostname !== window.location.hostname) {
+            // add target="_blank" to the item and an icon for the external link
+            item.target = '_blank';
+            item.classList.add('with-icon');
+            item.innerHTML = `
+                ${item.innerHTML}
+                <svg class="icon right width-md" fill="currentColor" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36.026,20.058l-21.092,0c-1.65,0 -2.989,1.339 -2.989,2.989l0,25.964c0,1.65 1.339,2.989 2.989,2.989l26.024,0c1.65,0 2.989,-1.339 2.989,-2.989l0,-20.953l3.999,0l0,21.948c0,3.308 -2.686,5.994 -5.995,5.995l-28.01,0c-3.309,0 -5.995,-2.687 -5.995,-5.995l0,-27.954c0,-3.309 2.686,-5.995 5.995,-5.995l22.085,0l0,4.001Z"></path> <path d="M55.925,25.32l-4.005,0l0,-10.481l-27.894,27.893l-2.832,-2.832l27.895,-27.895l-10.484,0l0,-4.005l17.318,0l0.002,0.001l0,17.319Z"></path>
+                </svg>
+            `;
         }
     });
 })();

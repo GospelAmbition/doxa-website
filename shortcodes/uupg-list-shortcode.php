@@ -26,7 +26,9 @@ function uupg_list_shortcode( $atts ) {
     ?>
 
     <uupgs-list
+        languageCode="<?php echo doxa_get_language_code(); ?>"
         selectUrl="<?php echo esc_attr( $atts['select_url'] ); ?>"
+        researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
         perPage="<?php echo esc_attr( $atts['per_page'] ); ?>"
         morePerPage="<?php echo esc_attr( $atts['more_per_page'] ); ?>"
         initialSearchTerm="<?php echo esc_attr( $atts['initial_search_term'] ); ?>"

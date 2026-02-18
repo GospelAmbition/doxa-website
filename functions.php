@@ -406,27 +406,98 @@ function output_page_custom_css() {
 add_action('wp_head', 'output_page_custom_css');
 
 function custom_uupgs_rewrite_rules() {
-    add_rewrite_rule(
-        '^research/search/([^/]+)/?$',
-        'index.php?pagename=research&uupg_search=$matches[1]',
-        'top'
-    );
-    add_rewrite_rule(
-        '^research/([^/]+)/?$',
-        'index.php?pagename=research&uupg_slug=$matches[1]',
-        'top'
-    );
+    $post_id = doxa_get_page_id_by_slug( 'research' );
+    $translation_ids = doxa_language_relationships( $post_id );
+    foreach ( $translation_ids as $lang_code => $translation_id ) {
+        $post = get_post( $translation_id, OBJECT );
+        if ( $lang_code === 'en' ) {
+            add_rewrite_rule(
+                '^' . $post->post_name . '/search/([^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_search=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+            add_rewrite_rule(
+                '^' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        } else {
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/search/([^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_search=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        }
+    }
 }
 add_action('init', 'custom_uupgs_rewrite_rules');
 
 function custom_adoption_form_rewrite_rules() {
-    add_rewrite_rule(
-        '^adopt/([^/]+)/?$',
-        'index.php?pagename=adopt&uupg_slug=$matches[1]',
-        'top'
-    );
+    $post_id = doxa_get_page_id_by_slug( 'adopt' );
+    $translation_ids = doxa_language_relationships( $post_id );
+    foreach ( $translation_ids as $lang_code => $translation_id ) {
+        $post = get_post( $translation_id, OBJECT );
+        if ( $lang_code === 'en' ) {
+            add_rewrite_rule(
+                '^' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        } else {
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        }
+    }
 }
 add_action('init', 'custom_adoption_form_rewrite_rules');
+
+
+
+/**
+ * Flush permalinks when the Research page or any of its translations are created or updated.
+ */
+function doxa_flush_research_permalinks( $post_id, $post, $update ) {
+    // Ignore autosaves and revisions.
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+        return;
+    }
+
+    if ( wp_is_post_revision( $post_id ) ) {
+        return;
+    }
+
+    // Only care about pages.
+    if ( get_post_type( $post_id ) !== 'page' ) {
+        return;
+    }
+
+    // Get the main Research page ID (in default language).
+    $research_page_id = doxa_get_page_id_by_slug( 'research' );
+    if ( empty( $research_page_id ) ) {
+        return;
+    }
+
+    // Find the translation group for the saved page.
+    $relationships = doxa_language_relationships( $post_id );
+    if ( ! is_array( $relationships ) ) {
+        return;
+    }
+
+    // If the Research page is part of this translation group, flush rewrites.
+    $related_ids = array_map( 'intval', array_values( $relationships ) );
+    if ( in_array( (int) $research_page_id, $related_ids, true ) ) {
+        flush_rewrite_rules( false );
+    }
+}
+add_action('save_post', 'doxa_flush_research_permalinks', 10, 3);
 
 // Register the query variable
 function custom_uupgs_query_vars($vars) {
@@ -439,7 +510,7 @@ add_filter('query_vars', 'custom_uupgs_query_vars');
 function custom_uupgs_template($template) {
     $uupg_slug = get_query_var('uupg_slug');
 
-    if ($uupg_slug && is_page('research')) {
+    if ($uupg_slug && doxa_is_page('research')) {
         $custom_template = locate_template('template-uupg-detail.php');
         if ($custom_template) {
             return $custom_template;
@@ -453,7 +524,7 @@ add_filter('template_include', 'custom_uupgs_template');
 function custom_adoption_form_template($template) {
     $uupg_slug = get_query_var('uupg_slug');
 
-    if ($uupg_slug && is_page('adopt')) {
+    if ($uupg_slug && doxa_is_page('adopt')) {
         $custom_template = locate_template('template-adoption-form.php');
         if ($custom_template) {
             return $custom_template;
@@ -464,8 +535,40 @@ function custom_adoption_form_template($template) {
 }
 add_filter('template_include', 'custom_adoption_form_template');
 
+/**
+ * Prevent Polylang from redirecting custom UUPG routes to a different canonical URL.
+ *
+ * For example, keep `/es/{translated-research-slug}/{uupg_slug}` instead of redirecting
+ * to the default language, so our custom templates continue to work.
+ */
+function doxa_bypass_polylang_canonical_for_uupg( $redirect_url, $language ) {
+    // Only care about page requests.
+    if ( ! is_page() ) {
+        return $redirect_url;
+    }
+
+    $uupg_slug   = get_query_var( 'uupg_slug' );
+    $uupg_search = get_query_var( 'uupg_search' );
+
+    // Only affect our special UUPG routes (detail or search), not the plain page.
+    if ( empty( $uupg_slug ) && empty( $uupg_search ) ) {
+        return $redirect_url;
+    }
+
+    // Our rewrites always resolve to the base pages `research` or `adopt`.
+    if ( doxa_is_page( 'research' ) || doxa_is_page( 'adopt' ) ) {
+        // Returning false tells Polylang not to redirect this request.
+        return false;
+    }
+
+    return $redirect_url;
+}
+add_filter( 'pll_check_canonical_url', 'doxa_bypass_polylang_canonical_for_uupg', 10, 2 );
+
 function get_uupg_by_slug( $slug ) {
-    $api_url = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
+    $lang_code = doxa_get_language_code();
+    $api_url = 'https://pray.doxa.life/api/people-groups/detail/' . urlencode($slug) . '?lang=' . $lang_code;
+    //$api_url = 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
     //$api_url = 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/detail/' . urlencode($slug);
 
     $response = wp_remote_get($api_url);
@@ -502,146 +605,15 @@ function get_uupg_by_post_id( $post_id ) {
     return $data;
 }
 
-function doxa_get_wagf_regions() {
-    return [
-        [
-            'value' => 'africa',
-            'label' => __( 'Africa', 'doxa-website' )
-        ],
-        [
-            'value' => 'asia',
-            'label' => __( 'Asia', 'doxa-website' )
-        ],
-        [
-            'value' => 'europe',
-            'label' => __( 'Europe', 'doxa-website' )
-        ],
-        [
-            'value' => 'latin_america_&_caribbean',
-            'label' => __( 'Latin America & Caribbean', 'doxa-website' )
-        ],
-        [
-            'value' => 'middle_east',
-            'label' => __( 'Middle East', 'doxa-website' )
-        ],
-        [
-            'value' => 'na',
-            'label' => __( 'N/A', 'doxa-website' )
-        ],
-        [
-            'value' => 'north_america_&_non-spanish_caribbean',
-            'label' => __( 'North America & Non-Spanish Caribbean', 'doxa-website' )
-        ],
-        [
-            'value' => 'oceania',
-            'label' => __( 'Oceania', 'doxa-website' )
-        ]
-    ];
-}
+function doxa_is_page( $slug ) {
+    $post_id = doxa_get_page_id_by_slug( $slug );
+    $lang_code = doxa_get_language_code();
+    $translation_ids = doxa_language_relationships( $post_id );
 
-function doxa_get_wagf_blocks() {
-    return [
-        [
-            'value' =>  'andean',
-            'label' =>  __( 'Andean', 'doxa-website' )
-        ],
-        [
-            'value' =>  'brazil',
-            'label' =>  __( 'Brazil', 'doxa-website' )
-        ],
-        [
-            'value' =>  'central_africa',
-            'label' =>  __( 'Central Africa', 'doxa-website' )
-        ],
-        [
-            'value' =>  'central_america',
-            'label' =>  __( 'Central America', 'doxa-website' )
-        ],
-        [
-            'value' =>  'central_asia',
-            'label' =>  __( 'Central Asia', 'doxa-website' )
-        ],
-        [
-            'value' =>  'central_europe',
-            'label' =>  __( 'Central Europe', 'doxa-website' )
-        ],
-        [
-            'value' =>  'east_africa',
-            'label' =>  __( 'East Africa', 'doxa-website' )
-        ],
-        [
-            'value' =>  'east_europe',
-            'label' =>  __( 'East Europe', 'doxa-website' )
-        ],
-        [
-            'value' =>  'islands_of_east_africa',
-            'label' =>  __( 'Islands of East Africa', 'doxa-website' )
-        ],
-        [
-            'value' =>  'mexico_&_latin_america',
-            'label' =>  __( 'Mexico & Latin America', 'doxa-website' )
-        ],
-        [
-            'value' =>  'middle_east',
-            'label' =>  __( 'Middle East', 'doxa-website' )
-        ],
-        [
-            'value' =>  'na',
-            'label' =>  __( 'N/A', 'doxa-website' )
-        ],
-        [
-            'value' =>  'non-spanish_caribbean',
-            'label' =>  __( 'Non-Spanish Caribbean', 'doxa-website' )
-        ],
-        [
-            'value' =>  'north_asia',
-            'label' =>  __( 'North Asia', 'doxa-website' )
-        ],
-        [
-            'value' =>  'north_east_asia',
-            'label' =>  __( 'North East Asia', 'doxa-website' )
-        ],
-        [
-            'value' =>  'north_europe',
-            'label' =>  __( 'North Europe', 'doxa-website' )
-        ],
-        [
-            'value' =>  'oceania',
-            'label' =>  __( 'Oceania', 'doxa-website' )
-        ],
-        [
-            'value' =>  'south_asia',
-            'label' =>  __( 'South Asia', 'doxa-website' )
-        ],
-        [
-            'value' =>  'south_cone',
-            'label' =>  __( 'South Cone', 'doxa-website' )
-        ],
-        [
-            'value' =>  'south_east_asia',
-            'label' =>  __( 'South East Asia', 'doxa-website' )
-        ],
-        [
-            'value' =>  'south_europe',
-            'label' =>  __( 'South Europe', 'doxa-website' )
-        ],
-        [
-            'value' =>  'southern_africa',
-            'label' =>  __( 'Southern Africa', 'doxa-website' )
-        ],
-        [
-            'value' =>  'the_balkans',
-            'label' =>  __( 'The Balkans', 'doxa-website' )
-        ],
-        [
-            'value' =>  'west_africa',
-            'label' =>  __( 'West Africa', 'doxa-website' )
-        ],
-        [
-            'value' =>  'west_europe',
-            'label' =>  __( 'West Europe', 'doxa-website' )
-        ]
-    ];
+    $translation_id = $translation_ids[$lang_code] ?? $post_id;
+    $translation_post = get_post( $translation_id, OBJECT );
+
+    return is_page( $translation_post->post_name );
 }
 
 function doxa_get_countries() {
@@ -1624,7 +1596,57 @@ function doxa_get_countries() {
 }
 
 /**
- * Load theme functions
+ * Load api functions
  */
 require_once get_template_directory() . '/functions/contact-rest-api.php';
 require_once get_template_directory() . '/functions/adopt-rest-api.php';
+
+function doxa_load_theme_textdomain() {
+    load_theme_textdomain('doxa-website', get_template_directory() . '/languages');
+}
+add_action('after_setup_theme', 'doxa_load_theme_textdomain');
+
+
+function doxa_translation_url( $slug, $lang_code = null ) {
+    $post_id = doxa_get_page_id_by_slug( $slug );
+    $list = doxa_language_relationships( $post_id );
+
+    if ( empty( $lang_code ) ) {
+        $lang_code = doxa_get_language_code();
+    }
+
+    $trans_id = $list[$lang_code] ?? $post_id;
+
+    $trans_object = get_post( $trans_id, OBJECT );
+    if ( $lang_code === 'en' ) {
+        return site_url( '/' )  . $trans_object->post_name . '/';
+    }
+
+    return site_url( '/' ) . $lang_code . '/' . $trans_object->post_name . '/';
+}
+function doxa_get_page_id_by_slug( $slug ) {
+    $post = get_page_by_path( $slug, OBJECT, 'page' );
+    if ( empty( $post ) ) {
+        return null;
+    }
+    return $post->ID;
+}
+
+function doxa_language_relationships( $post_id ) {
+    global $wpdb, $table_prefix;
+
+    $like_text = '%' . $wpdb->esc_like( 'i:' . $post_id . ';' ) . '%';
+    $list = $wpdb->get_var( $wpdb->prepare(
+        "
+			SELECT description
+			FROM {$table_prefix}term_taxonomy tr
+            WHERE tr.description LIKE %s AND tr.taxonomy = 'post_translations';
+		",
+        $like_text
+    ) );
+    return maybe_unserialize( $list );
+}
+
+function doxa_get_language_code() {
+    return function_exists( 'pll_current_language' ) ? pll_current_language() : substr( get_locale(), 0, 2 );
+}

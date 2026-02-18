@@ -103,6 +103,7 @@
 .main-navigation ul {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: var(--spacing-3xl);
     margin: 0;
     padding: 0;
@@ -119,13 +120,13 @@
     position: relative;
 }
 .hamburger-menu-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     background: var(--color-brand-light);
     opacity: 0.5;
-    height: 100vh;
 }
 .hamburger-menu-overlay[data-state="closed"] {
     opacity: 0;
@@ -199,12 +200,13 @@
 .main-navigation .menu-item-has-children > a::after {
     content: '▼';
     font-size: var(--font-size-xs);
-    margin-left: var(--spacing-lg);
+    margin-left: var(--spacing-sm);
     transition: transform 0.3s ease;
+    transform-origin: center;
 }
 
 .main-navigation .menu-item-has-children:hover > a::after {
-    transform: rotate(180deg);
+    transform: scaleY(-1);
 }
 
 .hamburger-menu {
@@ -228,6 +230,10 @@
 
 .hamburger-menu[data-state="open"] {
     transform: translateY(100%);
+}
+
+html:has(.hamburger-menu[data-state="open"]) {
+    overflow-y:hidden;
 }
 
 @media (max-width: 992px) {

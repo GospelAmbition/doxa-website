@@ -43,14 +43,14 @@ async function getPeopleGroupsStatistics() {
 
     const prayerCurrentStatus = document.getElementById('prayer-current-status');
     const prayerCurrentStatusPercentage = document.getElementById('prayer-current-status-percentage');
-    if (prayerCurrentStatus && prayerCurrentStatusPercentage) {
+    if (prayerCurrentStatus && prayerCurrentStatusPercentage && window.doxaData.statistics && window.doxaData.statistics.total_with_committed_prayer) {
         prayerCurrentStatus.textContent = window.doxaData.statistics.total_with_committed_prayer.toString();
         prayerCurrentStatusPercentage.style.width = (window.doxaData.statistics.total_with_committed_prayer / 2085 * 100).toString() + '%';
     }
 
     const adoptedCurrentStatus = document.getElementById('adopted-current-status');
     const adoptedCurrentStatusPercentage = document.getElementById('adopted-current-status-percentage');
-    if (adoptedCurrentStatus && adoptedCurrentStatusPercentage) {
+    if (adoptedCurrentStatus && adoptedCurrentStatusPercentage && window.doxaData.statistics && window.doxaData.statistics.total_adopted) {
         adoptedCurrentStatus.textContent = window.doxaData.statistics.total_adopted.toString();
         adoptedCurrentStatusPercentage.style.width = (window.doxaData.statistics.total_adopted / 2085 * 100).toString() + '%';
     }

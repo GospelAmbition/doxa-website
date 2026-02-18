@@ -1,0 +1,54 @@
+/* Parent container */
+#secondary-menu {
+    .pll-parent-menu-item {
+      position: relative;
+    }
+
+    /* Make top-level link look/feel like a toggle */
+    .pll-parent-menu-item > a {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .pll-parent-menu-item > a::after {
+        content: '▼';
+        font-size: var(--font-size-xs);
+        margin-left: var(--spacing-sm);
+        transition: transform 0.3s ease;
+        transform-origin: center;
+    }
+
+    .pll-parent-menu-item.is-open > a::after {
+        transform: scaleY(-1);
+    }
+
+    /* Submenu: hidden by default, no max-height hacks */
+    .pll-parent-menu-item > .sub-menu {
+        list-style: none;
+        margin: 0;
+        padding: var(--spacing-md) var(--spacing-md);
+
+        display: none;
+        opacity: 0;
+        transform: translateY(-4px);
+        pointer-events: none;
+        transition:
+            opacity 150ms ease-out,
+            transform 150ms ease-out;
+    }
+
+    /* Visible state when parent has .is-open (intrinsic height is used) */
+    .pll-parent-menu-item.is-open > .sub-menu {
+      display: block;          /* lets it take its natural height */
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* Submenu item layout */
+    .pll-parent-menu-item > .sub-menu > li > a {
+      display: flex;
+      align-items: center;
+      padding: 0.25rem 0;
+    }
+}
