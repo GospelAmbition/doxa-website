@@ -23,7 +23,7 @@ async function getPeopleGroupsStatistics() {
     const apiUrl =
         location.href.includes('doxa.test')
         ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/data/statistics'
-        : 'http://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/data/statistics';
+        : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/data/statistics';
         //: 'https://pray.doxa.life/api/people-groups/statistics';
 
     const response = await fetch(apiUrl, {
