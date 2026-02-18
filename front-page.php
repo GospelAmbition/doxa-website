@@ -71,12 +71,12 @@ get_header( 'top' ); ?>
             <section class="bg-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/home-02-WhoAreTheUnreached-new.jpg');">
                 <h2 class="text-center banner-title invisible-placeholder"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
             </section>
-            <section class="">
+            <section class="overflow-hidden progress-section">
                 <div class="container stack stack--xl">
-                    <h2 class="color-primary text-center"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
-                    <div class="switcher | gap-md" data-width="lg">
+                    <h2 class="color-white text-center progress-section__title"><?php echo __('Who are the unengaged?', 'doxa-website'); ?></h2>
+                    <div class="switcher | concentric-circles | gap-md" data-width="lg">
                         <div class="switcher-item">
-                            <div class="info-card surface-secondary-light">
+                            <div class="info-card color-brand-dark justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3 class="color-brand-lighter"><?php echo __('Unreached', 'doxa-website'); ?></h3>
                                     <span><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '3.9' ); ?></span>
@@ -85,7 +85,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                         <div class="switcher-item">
-                            <div class="info-card surface-brand-lightest">
+                            <div class="info-card color-secondary-very-light justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Under-Engaged', 'doxa-website'); ?></h3>
                                     <span class="color-secondary-light"><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '3.3' ); ?></span>
@@ -94,7 +94,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                         <div class="switcher-item">
-                            <div class="info-card surface-brand-light">
+                            <div class="info-card color-secondary-very-light justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Frontier People', 'doxa-website'); ?></h3>
                                     <span class="color-secondary-light"><?php echo sprintf( _x( '%s Billion', 'number of billions', 'doxa-website'), '2' ); ?></span>
@@ -103,7 +103,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                         <div class="switcher-item">
-                            <div class="info-card surface-brand-dark">
+                            <div class="info-card surface-brand-dark justify-center">
                                 <div class="stack stack--lg | info-card__content">
                                     <h3><?php echo __('Unengaged', 'doxa-website'); ?></h3>
                                     <span><?php echo sprintf( _x( '%s Million', 'number of millions', 'doxa-website'), '202' ); ?></span>
@@ -112,7 +112,7 @@ get_header( 'top' ); ?>
                             </div>
                         </div>
                     </div>
-                    <a href="<?php echo esc_url( doxa_translation_url( 'about/definitions' ) ); ?>" class="with-icon | color-primary-darker mx-auto">
+                    <a href="<?php echo esc_url( doxa_translation_url( 'about/definitions' ) ); ?>" class="with-icon | light-link mx-auto">
                         <?php echo __('Learn More', 'doxa-website'); ?>
                         <svg class="icon | rotate-90">
                             <use href="<?php echo get_template_directory_uri(); ?>/assets/icons/arrow-chevron.svg#chevron-up"></use>
@@ -154,7 +154,6 @@ get_header( 'top' ); ?>
                         </div>
                     </div>
                 </div>
-
             </section>
             <section class="surface-brand-light">
                 <div class="container stack stack--3xl">
