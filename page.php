@@ -45,7 +45,7 @@ get_header( 'top' ); ?>
                                     $parent_page = get_post($menu_parent_id);
 
                                     global $wp;
-                                    $current_link = $wp->request;
+                                    $current_link = str_replace( doxa_get_language_code() . '/', '', $wp->request );
                                     $parent_slug = $parent_page->post_name;
                                     ?>
 
