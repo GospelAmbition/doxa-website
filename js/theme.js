@@ -132,19 +132,21 @@
             // Fade in
             reel.classList.add("in");
 
+            const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
+            const scrollDirection = isRtl ? -1 : 1;
             // Auto scroll slideshow
             setInterval(() => {
                 const firstImage = [...reel.children].reduce((prev, current) => (Number(prev.style.order) < Number(current.style.order)) ? prev : current);
 
                 // Move the first image back in queue when it's out of view
                 if (firstImage.offsetWidth < reel.scrollLeft) {
-                    reel.scrollLeft = reel.scrollLeft - firstImage.offsetWidth;
+                    reel.scrollLeft = reel.scrollLeft - firstImage.offsetWidth * scrollDirection;
                     firstImage.style.order = reel.children.length;
                     for (const image of [...reel.children]) {
                         if (image != firstImage) image.style.order = image.style.order-1;
                     }
                 } else {
-                    reel.scrollLeft += 1;
+                    reel.scrollLeft += 1 * scrollDirection;
                 }
             }, 20);
         }
