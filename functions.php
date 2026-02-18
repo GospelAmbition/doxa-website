@@ -410,16 +410,29 @@ function custom_uupgs_rewrite_rules() {
     $translation_ids = doxa_language_relationships( $post_id );
     foreach ( $translation_ids as $lang_code => $translation_id ) {
         $post = get_post( $translation_id, OBJECT );
-        add_rewrite_rule(
-            '^' . $lang_code . '/' . $post->post_name . '/search/([^/]+)/?$',
-            'index.php?page_id=' . $translation_id . '&uupg_search=$matches[1]&lang=' . $lang_code,
-            'top'
-        );
-        add_rewrite_rule(
-            '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/?$',
-            'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&lang=' . $lang_code,
-            'top'
-        );
+        if ( $lang_code === 'en' ) {
+            add_rewrite_rule(
+                '^' . $post->post_name . '/search/([^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_search=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+            add_rewrite_rule(
+                '^' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        } else {
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/search/([^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_search=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        }
     }
 }
 add_action('init', 'custom_uupgs_rewrite_rules');
@@ -429,11 +442,19 @@ function custom_adoption_form_rewrite_rules() {
     $translation_ids = doxa_language_relationships( $post_id );
     foreach ( $translation_ids as $lang_code => $translation_id ) {
         $post = get_post( $translation_id, OBJECT );
-        add_rewrite_rule(
-            '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/?$',
-            'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&lang=' . $lang_code,
-            'top'
-        );
+        if ( $lang_code === 'en' ) {
+            add_rewrite_rule(
+                '^' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        } else {
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+        }
     }
 }
 add_action('init', 'custom_adoption_form_rewrite_rules');
