@@ -309,6 +309,12 @@
     -webkit-mask-image: url('/wp-content/themes/doxa-website/assets/images/crop.png');
     -webkit-mask-size: 500px 350px;
     mix-blend-mode: multiply;
+
+    [dir="rtl"] & {
+        right: auto;
+        left: 0;
+        transform: rotate(-8deg) translate(-10%, -10%);
+    }
 }
 
 .engaged-stamp[data-engaged="false"] {
