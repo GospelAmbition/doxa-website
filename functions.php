@@ -10,6 +10,12 @@ if (!defined('ABSPATH')) {
 
 require_once get_template_directory() . '/shortcodes/uupg-list-shortcode.php';
 
+add_filter( 'oembed_response_data', function ( $data ) {
+    unset( $data['author_name'] );
+    unset( $data['author_url'] );
+    return $data;
+} );
+
 function coming_soon_redirect() {
     $url = $_SERVER['REQUEST_URI'];
     if ( !is_admin() && !str_contains($url, 'admin') && !is_page( 'coming-soon' ) && !is_user_logged_in() ) {
