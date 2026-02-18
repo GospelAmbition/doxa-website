@@ -23,7 +23,7 @@
             transform: translateY(30%) scale(1.1);
 
             [dir="rtl"] & {
-                transform: translateY(30%) scaleX(-1.1);
+                transform: translateY(30%) scale(-1.1);
             }
         }
     }
