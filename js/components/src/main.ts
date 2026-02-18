@@ -20,32 +20,31 @@ declare global {
 
 async function getPeopleGroupsStatistics() {
 
-    const apiUrl = location.href.includes('doxa.test')
-        ? 'http://uupg.doxa.test/wp-json/dt-public/disciple-tools-people-groups-api/v1/data/statistics'
-        : 'https://uupg.doxa.life/wp-json/dt-public/disciple-tools-people-groups-api/v1/data/statistics';
+    const apiUrl = 'https://pray.doxa.life/api/people-groups/statistics';
 
     const response = await fetch(apiUrl, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*',
         },
     });
     const data = await response.json();
 
     window.doxaData = window.doxaData || {};
     window.doxaData.statistics = {
-        total_with_prayer: Number(data.total_with_prayer),
-        total_with_full_prayer: Number(data.total_with_full_prayer),
-        total_with_committed_prayer: Number(data.total_with_committed_prayer),
-        total_with_fully_committed_prayer: Number(data.total_with_fully_committed_prayer),
-        total_adopted: Number(data.total_adopted),
+        total_with_prayer: Number(data.total_with_prayer || 0),
+        total_with_full_prayer: Number(data.total_with_full_prayer || 0),
+        total_with_committed_prayer: Number(data.total_with_committed_prayer || 0),
+        total_with_fully_committed_prayer: Number(data.total_with_fully_committed_prayer || 0),
+        total_adopted: Number(data.total_adopted || 0),
     }
 
     const prayerCurrentStatus = document.getElementById('prayer-current-status');
     const prayerCurrentStatusPercentage = document.getElementById('prayer-current-status-percentage');
-    if (prayerCurrentStatus && prayerCurrentStatusPercentage && window.doxaData.statistics && window.doxaData.statistics.total_with_committed_prayer) {
-        prayerCurrentStatus.textContent = window.doxaData.statistics.total_with_committed_prayer.toString();
-        prayerCurrentStatusPercentage.style.width = (window.doxaData.statistics.total_with_committed_prayer / 2085 * 100).toString() + '%';
+    if (prayerCurrentStatus && prayerCurrentStatusPercentage && window.doxaData.statistics && window.doxaData.statistics.total_with_full_prayer) {
+        prayerCurrentStatus.textContent = window.doxaData.statistics.total_with_full_prayer.toString();
+        prayerCurrentStatusPercentage.style.width = (window.doxaData.statistics.total_with_full_prayer / 2085 * 100).toString() + '%';
     }
 
     const adoptedCurrentStatus = document.getElementById('adopted-current-status');
