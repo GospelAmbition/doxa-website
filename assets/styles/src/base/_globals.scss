@@ -113,6 +113,9 @@ ul:not([role="list"]):not(.role-list):not(.sub-menu) li::before {
   top: 0.3em;
   line-height: 0.9;
   margin-inline-start: -1.3em;
+  [dir="rtl"] & {
+    margin-inline-start: -2em;
+  }
 }
 
 a {

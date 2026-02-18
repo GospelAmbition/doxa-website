@@ -5,6 +5,9 @@
     height: 1cap;
     fill: currentColor;
 }
+[dir="rtl"] .icon {
+    transform: scaleX(-1);
+}
 
 .with-icon {
     display: inline-flex !important;
