@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-13T10:47:25+00:00\n"
-"PO-Revision-Date: 2026-02-13 10:59+0000\n"
+"PO-Revision-Date: 2026-02-19 14:40+0000\n"
 "Last-Translator: Weblate Admin <translator@disciple.tools>\n"
 "Language-Team: Spanish <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/es_ES/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.2\n"
+"X-Generator: Weblate 5.16\n"
 "X-Domain: doxa-website\n"
 
 #. Theme Name of the theme
@@ -56,7 +56,7 @@ msgstr "Inicio"
 #: 404.php:22 front-page.php:46 front-page.php:169 page-pray.php:66
 #: template-adoption-form.php:70
 msgid "Pray"
-msgstr "Reza"
+msgstr "Oración"
 
 #. Template Name of the theme
 #: 404.php:23 front-page.php:54 page-adopt.php:135
@@ -102,7 +102,7 @@ msgstr "La visión de DOXA: Haga clic en la imagen para ver el vídeo"
 #: front-page.php:34
 msgctxt "number of unengaged people groups"
 msgid "%s unengaged people groups"
-msgstr "%s grupos étnicos no comprometidos"
+msgstr "%s grupos étnicos no alcanzados"
 
 #: front-page.php:36
 msgid ""
@@ -154,7 +154,7 @@ msgstr ""
 
 #: front-page.php:72 front-page.php:76
 msgid "Who are the unengaged?"
-msgstr "¿Quiénes son los no comprometidos?"
+msgstr "¿Quiénes son los no alcanzados?"
 
 #: front-page.php:81
 msgid "Unreached"
@@ -216,7 +216,7 @@ msgstr "Movilización de más de 20 000 misioneros asociados a DOXA"
 #: front-page.php:143
 msgid "Fruitful engagement among frontier peoples and the under-engaged"
 msgstr ""
-"Fructífero compromiso entre los pueblos fronterizos y los menos comprometidos"
+"Fructífero compromiso entre los pueblos fronterizos y los menos alcanzados"
 
 #: front-page.php:144
 msgid "Church planting movements among every unreached people on earth"
@@ -567,7 +567,7 @@ msgstr ""
 #: page-pray.php:67
 msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
 msgstr ""
-"Reza 10 minutos al día y ayuda a proporcionar cobertura de oración las 24 "
+"Oración 10 minutos al día y ayuda a proporcionar cobertura de oración las 24 "
 "horas del día."
 
 #: page-pray.php:81
@@ -693,8 +693,7 @@ msgstr "Grupo de personas no encontrado"
 #: template-adoption-form.php:18 template-uupg-detail.php:23
 msgid ""
 "The people group you are looking for could not be found. Please try again."
-msgstr ""
-"No se ha encontrado el grupo de personas que busca. Inténtelo de nuevo."
+msgstr "No se ha encontrado el grupo de personas que busca. Inténtelo de nuevo."
 
 #: template-adoption-form.php:20 template-adoption-form.php:24
 #: template-uupg-detail.php:25 template-uupg-detail.php:29
@@ -719,7 +718,7 @@ msgstr ""
 
 #: template-adoption-form.php:66
 msgid "What is your commitment? Pray. Give. Send."
-msgstr "¿Cuál es tu compromiso? Reza. Da. Envía."
+msgstr "¿Cuál es tu compromiso? Oración. Da. Envía."
 
 #: template-adoption-form.php:67
 msgid ""
