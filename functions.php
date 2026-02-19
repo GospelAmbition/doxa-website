@@ -427,6 +427,16 @@ function custom_uupgs_rewrite_rules() {
                 'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&lang=' . $lang_code,
                 'top'
             );
+            add_rewrite_rule(
+                '^' . $post->post_name . '/search/([^/]+)/(?<uupg_subpage>[^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_search=$matches[1]&uupg_subpage=$matches[2]&lang=' . $lang_code,
+                'top'
+            );
+            add_rewrite_rule(
+                '^' . $post->post_name . '/([^/]+)/(?<uupg_subpage>[^/]+)/?$',
+                'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&uupg_subpage=$matches[2]&lang=' . $lang_code,
+                'top'
+            );
         } else {
             add_rewrite_rule(
                 '^' . $lang_code . '/' . $post->post_name . '/search/([^/]+)/?$',
@@ -436,6 +446,16 @@ function custom_uupgs_rewrite_rules() {
             add_rewrite_rule(
                 '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/?$',
                 'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&lang=' . $lang_code,
+                'top'
+            );
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/search/([^/]+)/(?<uupg_subpage>[^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_search=$matches[1]&uupg_subpage=$matches[2]&lang=' . $lang_code,
+                'top'
+            );
+            add_rewrite_rule(
+                '^' . $lang_code . '/' . $post->post_name . '/([^/]+)/(?<uupg_subpage>[^/]+)/?$',
+                'index.php?page_id=' . $translation_id . '&uupg_slug=$matches[1]&uupg_subpage=$matches[2]&lang=' . $lang_code,
                 'top'
             );
         }
@@ -450,7 +470,7 @@ function custom_adoption_form_rewrite_rules() {
         $post = get_post( $translation_id, OBJECT );
         if ( $lang_code === 'en' ) {
             add_rewrite_rule(
-                '^' . $post->post_name . '/([^/]+)/?$',
+                '^' . $post->post_name . '/([^/]+)/()/?$',
                 'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&lang=' . $lang_code,
                 'top'
             );
@@ -509,12 +529,22 @@ add_action('save_post', 'doxa_flush_research_permalinks', 10, 3);
 function custom_uupgs_query_vars($vars) {
     $vars[] = 'uupg_slug';
     $vars[] = 'uupg_search';
+    $vars[] = 'uupg_subpage';
     return $vars;
 }
 add_filter('query_vars', 'custom_uupgs_query_vars');
 
 function custom_uupgs_template($template) {
     $uupg_slug = get_query_var('uupg_slug');
+    $uupg_subpage = get_query_var('uupg_subpage');
+
+    // if the url is {slug}/resources, return the template-uupg-resources.php template
+    if ($uupg_slug && doxa_is_page('research') && $uupg_subpage === 'resources' ) {
+        $custom_template = locate_template('template-uupg-resources.php');
+        if ($custom_template) {
+            return $custom_template;
+        }
+    }
 
     if ($uupg_slug && doxa_is_page('research')) {
         $custom_template = locate_template('template-uupg-detail.php');
