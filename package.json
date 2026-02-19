@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite build --watch --mode development",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-pot": "wp i18n make-pot . languages/doxa-website.pot  --skip-audit --exclude=\"theme.json,style.css\""
   },
   "devDependencies": {
     "sass": "^1.69.0",

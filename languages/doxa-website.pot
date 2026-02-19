@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-18T17:27:28+00:00\n"
+"POT-Creation-Date: 2026-02-19T14:47:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: doxa-website\n"
@@ -650,7 +650,7 @@ msgid "Adoption Form"
 msgstr ""
 
 #: template-adoption-form.php:44
-msgid "Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church's adoption, connect with your Prayer Champion, and begin sending prayer updates and resources"
+msgid "Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church's adoption, connect with your Champion, and begin sending prayer updates and resources"
 msgstr ""
 
 #: template-adoption-form.php:66
@@ -682,11 +682,11 @@ msgid "Actively help surface and support potential goers, encouraging those God 
 msgstr ""
 
 #: template-adoption-form.php:84
-msgid "Prayer Champion Details"
+msgid "Champion Details"
 msgstr ""
 
 #: template-adoption-form.php:85
-msgid "The Prayer Champion is the person who will organize the 144 intercessors and receive updates."
+msgid "The Champion is the person who will organize the 144 intercessors and receive updates."
 msgstr ""
 
 #: template-adoption-form.php:87

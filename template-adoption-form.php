@@ -41,7 +41,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
         <div class="container page-content uupg-detail-page">
             <div class="stack stack--lg">
                 <h1 class="highlight" data-highlight-index="1"><?php echo __('Adoption Form', 'doxa-website'); ?></h1>
-                <p class="subtext"><?php echo __('Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church\'s adoption, connect with your Prayer Champion, and begin sending prayer updates and resources', 'doxa-website'); ?></p>
+                <p class="subtext"><?php echo __('Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church\'s adoption, connect with your Champion, and begin sending prayer updates and resources', 'doxa-website'); ?></p>
                 <div class="switcher | adoption-card shadow">
                     <div class="grow-none">
                         <img
@@ -81,8 +81,8 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             </ul>
                         </section>
                         <div class="stack">
-                            <h3 class="h5"><?php echo __('Prayer Champion Details', 'doxa-website'); ?></h3>
-                            <i class="color-primary font-size-sm"><?php echo __('The Prayer Champion is the person who will organize the 144 intercessors and receive updates.', 'doxa-website'); ?></i>
+                            <h3 class="h5"><?php echo __('Champion Details', 'doxa-website'); ?></h3>
+                            <i class="color-primary font-size-sm"><?php echo __('The Champion is the person who will organize the 144 intercessors and receive updates.', 'doxa-website'); ?></i>
                             <div class="">
                                 <label for="first-name"><?php echo __('First Name', 'doxa-website'); ?></label>
                                 <input type="text" id="first-name" name="first_name" required placeholder="<?php echo __('First Name', 'doxa-website'); ?>">
