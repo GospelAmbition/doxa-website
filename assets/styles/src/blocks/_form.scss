@@ -10,6 +10,9 @@ input[type="search"] {
     padding: var(--spacing-xs) var(--spacing-lg);
     border-radius: 100px;
 }
+input::placeholder {
+    color: var(--color-brand-secondary);
+}
 
 textarea,
 select,
