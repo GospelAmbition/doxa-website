@@ -126,7 +126,7 @@ if ( $lang_code !== 'en' ) {
                                 <div class="progress-bar" data-size="md">
                                     <div class="progress-bar__slider" style="width: <?php echo esc_attr( $uupg['people_praying'] / 144 * 100 ); ?>%"></div>
                                 </div>
-                                <p class="font-size-lg font-weight-medium"><?php echo __('24-hour Prayer Coverage', 'doxa-website'); ?></p>
+                                <p class="font-size-lg font-weight-medium"><?php echo __('24-Hour Prayer Coverage', 'doxa-website'); ?></p>
                             </div>
                             <a class="button fit-content mx-auto stack-spacing-4xl clamp-padding" href="<?php echo esc_url( $pray_url ); ?>"><?php echo __('Sign up to pray', 'doxa-website'); ?></a>
                         </div>

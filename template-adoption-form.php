@@ -41,7 +41,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
         <div class="container page-content uupg-detail-page">
             <div class="stack stack--lg">
                 <h1 class="highlight" data-highlight-index="1"><?php echo __('Adoption Form', 'doxa-website'); ?></h1>
-                <p class="subtext"><?php echo __('Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church\'s adoption, connect with your Champion, and begin sending prayer updates and resources', 'doxa-website'); ?></p>
+                <p class="subtext"><?php echo __('Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church\'s adoption, connect with your Champion, and begin sending prayer updates and resources.', 'doxa-website'); ?></p>
                 <div class="switcher | adoption-card shadow">
                     <div class="grow-none">
                         <img
@@ -93,11 +93,11 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             </div>
                             <div class="">
                                 <label for="contact-email"><?php echo __('Email', 'doxa-website'); ?></label>
-                                <input type="email" id="contact-email" name="contact_email" required placeholder="<?php echo __('Enter Email', 'doxa-website'); ?>">
+                                <input type="email" id="contact-email" name="contact_email" required placeholder="<?php echo __('Enter your Email', 'doxa-website'); ?>">
                             </div>
                             <div class="">
                                 <label for="phone"><?php echo __('Phone', 'doxa-website'); ?></label>
-                                <input type="tel" id="phone" name="phone" required placeholder="<?php echo __('Enter Phone', 'doxa-website'); ?>">
+                                <input type="tel" id="phone" name="phone" required placeholder="<?php echo __('Enter your Phone', 'doxa-website'); ?>">
                             </div>
                             <div class="">
                                 <label for="role"><?php echo __('Role', 'doxa-website'); ?></label>

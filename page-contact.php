@@ -79,7 +79,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
 
             // Disable button and show loading
             submitBtn.disabled = true;
-            submitBtn.textContent = '<?php echo esc_js(__('Sending...', 'doxa-website')); ?>';
+            submitBtn.textContent = '<?php echo esc_js(__('Submitting...', 'doxa-website')); ?>';
 
             const formData = {
                 name: form.querySelector('#name').value,
