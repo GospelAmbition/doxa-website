@@ -234,8 +234,10 @@ msgid "Mobilization of 20,000+ DOXA partnership missionaries"
 msgstr "تعبئة أكثر من 20,000 مبشر من شركاء دوكسا"
 
 #: front-page.php:143
+#, fuzzy
 msgid "Fruitful engagement among frontier peoples and the under-engaged"
-msgstr "التفاعل المثمر بين الشعوب الحدودية والشعوب غير المنخرطة"
+msgstr ""
+"المشاركة المثمرة بين سكان المناطق الحدودية والسكان التي تعاني من نقص المشاركة"
 
 #: front-page.php:144
 msgid "Church planting movements among every unreached people on earth"
