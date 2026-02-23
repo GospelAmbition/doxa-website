@@ -265,8 +265,9 @@ msgstr ""
 "الصلاة اليومية وساعد في تمهيد الطريق."
 
 #: front-page.php:178
+#, fuzzy
 msgid "What does \"DOXA\" mean?"
-msgstr "ماذا تعني كلمة \"DOXA\"؟"
+msgstr "ماذا تعني كلمة \"دوكسا\"؟"
 
 #: front-page.php:179
 msgid "DOXA is the Greek word for \"GLORY\"."
