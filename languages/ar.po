@@ -217,10 +217,11 @@ msgid "In partnership with the global church, our vision is for..."
 msgstr "بالتعاون مع الكنيسة العالمية، تتمثل رؤيتنا في..."
 
 #: front-page.php:140
+#, fuzzy
 msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples"
 msgstr ""
-"تغطية صلاة يومية على مدار 24 ساعة لجميع الشعوب غير الملتزمة البالغ عددها "
-"2085 شعبًا"
+"التغطية لصّلاة اليومية على مدار 24 ساعة لجميع السكان الغير ملتزمة البالغ عددها "
+"2085 ساكن"
 
 #: front-page.php:141
 msgid "No unengaged people groups by 2033"
