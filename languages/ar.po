@@ -196,6 +196,7 @@ msgid "Unengaged"
 msgstr "غير ملتزم"
 
 #: front-page.php:109
+#, fuzzy
 msgctxt "number of millions"
 msgid "%s Million"
 msgstr "%s مليون"
