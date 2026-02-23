@@ -34,6 +34,7 @@ msgid "Gospel Ambition Team"
 msgstr "الفريق الطموح للإنجيل"
 
 #: 404.php:17
+#, fuzzy
 msgid "Page Not Found"
 msgstr "الصفحة غير موجودة"
 
