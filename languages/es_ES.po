@@ -5,7 +5,11 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2026-02-19 15:01+0000\n"
+=======
+"PO-Revision-Date: 2026-02-19 16:04+0000\n"
+>>>>>>> weblate/master
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Spanish <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/es_ES/>\n"
@@ -721,9 +725,15 @@ msgid ""
 "connect with your Champion, and begin sending prayer updates and resources."
 msgstr ""
 "Gracias por dar un paso hacia la adopción de un grupo étnico no alcanzado. "
+<<<<<<< HEAD
 "Por favor, complete el siguiente formulario para que podamos confirmar la "
 "adopción de su iglesia, ponernos en contacto con su Campeón y comenzar a "
 "enviarle actualizaciones de oración y recursos."
+=======
+"Complete el siguiente formulario para que podamos confirmar la adopción de "
+"su iglesia, ponernos en contacto con su Campeón y comenzar a enviarle "
+"actualizaciones de oración y recursos."
+>>>>>>> weblate/master
 
 #: template-adoption-form.php:66
 msgid "What is your commitment? Pray. Give. Send."
@@ -796,8 +806,11 @@ msgid "Last Name"
 msgstr "Apellido"
 
 #: template-adoption-form.php:96
+<<<<<<< HEAD
 #, fuzzy
 #| msgid "Enter your email"
+=======
+>>>>>>> weblate/master
 msgid "Enter your Email"
 msgstr "Introduce tu correo electrónico"
 
@@ -806,10 +819,15 @@ msgid "Phone"
 msgstr "Teléfono"
 
 #: template-adoption-form.php:100
+<<<<<<< HEAD
 #, fuzzy
 #| msgid "Enter your name"
 msgid "Enter your Phone"
 msgstr "Introduzca su nombre"
+=======
+msgid "Enter your Phone"
+msgstr "Introduzca su teléfono"
+>>>>>>> weblate/master
 
 #: template-adoption-form.php:103
 msgid "Role"

@@ -5,8 +5,13 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2026-02-19 15:01+0000\n"
 "Last-Translator: Weblate Admin <translator@disciple.tools>\n"
+=======
+"PO-Revision-Date: 2026-02-23 11:27+0000\n"
+"Last-Translator: nesrine <translator@disciple.tools>\n"
+>>>>>>> weblate/master
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
 "Language: ar\n"
@@ -26,11 +31,16 @@ msgstr "حياة دوكسا"
 msgid ""
 "A clean, elegant theme for DOXA Life - Engaging every people group by 2033"
 msgstr ""
+<<<<<<< HEAD
 "موضوع نظيف وأنيق لـ DOXA Life - إشراك كل مجموعة من الناس بحلول عام 2033"
+=======
+"تصميم أنيق وبسيط لشركة دوكسا لايف - الوصول إلى جميع فئات المجتمع بحلول عام "
+"2033"
+>>>>>>> weblate/master
 
 #. Author of the theme
 msgid "Gospel Ambition Team"
-msgstr "فريق طموح الإنجيل"
+msgstr "فريق طموح للإنجيل"
 
 #: 404.php:17
 msgid "Page Not Found"
@@ -50,7 +60,7 @@ msgstr "الصفحات الأكثر شعبية:"
 
 #: 404.php:23
 msgid "Home"
-msgstr "الرئيسية"
+msgstr "الصفحة الرئيسية"
 
 #. Template Name of the theme
 #: 404.php:24 front-page.php:46 front-page.php:168 page-pray.php:66
@@ -142,7 +152,7 @@ msgstr "الالتزام"
 
 #: front-page.php:62
 msgid "Engage"
-msgstr "الانخراط"
+msgstr "مخطوب"
 
 #: front-page.php:63
 msgid ""
@@ -692,8 +702,13 @@ msgid ""
 "connect with your Champion, and begin sending prayer updates and resources."
 msgstr ""
 "شكراً لاتخاذك خطوة نحو تبني مجموعة غير منخرطة. يرجى ملء النموذج أدناه حتى "
+<<<<<<< HEAD
 "نتمكن من تأكيد تبني كنيستك، والتواصل مع بطلتك، والبدء في إرسال تحديثات "
 "الصلاة والموارد."
+=======
+"نتمكن من تأكيد تبني كنيستك، والتواصل مع بطلتك، والبدء في إرسال تحديثات الصلاة "
+"والموارد."
+>>>>>>> weblate/master
 
 #: template-adoption-form.php:66
 msgid "What is your commitment? Pray. Give. Send."
@@ -761,8 +776,11 @@ msgid "Last Name"
 msgstr "الاسم الاخير"
 
 #: template-adoption-form.php:96
+<<<<<<< HEAD
 #, fuzzy
 #| msgid "Enter your email"
+=======
+>>>>>>> weblate/master
 msgid "Enter your Email"
 msgstr "أدخل بريدك الإلكتروني"
 
@@ -771,10 +789,15 @@ msgid "Phone"
 msgstr "رقم الهاتف"
 
 #: template-adoption-form.php:100
+<<<<<<< HEAD
 #, fuzzy
 #| msgid "Enter your name"
 msgid "Enter your Phone"
 msgstr "أدخل اسمك"
+=======
+msgid "Enter your Phone"
+msgstr "أدخل رقم هاتفك"
+>>>>>>> weblate/master
 
 #: template-adoption-form.php:103
 msgid "Role"
