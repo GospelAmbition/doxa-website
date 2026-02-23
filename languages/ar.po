@@ -39,6 +39,7 @@ msgid "Page Not Found"
 msgstr "الصفحة غير موجودة"
 
 #: 404.php:18
+#, fuzzy
 msgid ""
 "It looks like nothing was found at this location. Perhaps one of the links "
 "below can help."
