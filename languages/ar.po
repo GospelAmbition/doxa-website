@@ -142,8 +142,9 @@ msgstr ""
 "مجال نشر الإنجيل."
 
 #: front-page.php:57 front-page.php:65
+#, fuzzy
 msgid "Commit"
-msgstr "الالتزام"
+msgstr "الإلتزام"
 
 #: front-page.php:62
 msgid "Engage"
