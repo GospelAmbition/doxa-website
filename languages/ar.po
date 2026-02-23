@@ -133,12 +133,13 @@ msgid "Join"
 msgstr "الإنضمام"
 
 #: front-page.php:55
+#, fuzzy
 msgid ""
 "Churches and networks take ownership – praying, giving, and preparing the "
 "way for gospel workers."
 msgstr ""
-"تتولى الكنائس والشبكات زمام الأمور – بالصلاة والعطاء وإعداد الطريق للعاملين "
-"في خدمة الإنجيل."
+"تتولى الكنائس والشبكات زمام الأمور – بالصلاة والعطاء وتمهيد الطريق للعاملين في "
+"مجال نشر الإنجيل."
 
 #: front-page.php:57 front-page.php:65
 msgid "Commit"
