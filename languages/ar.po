@@ -128,8 +128,9 @@ msgstr ""
 "أجل الشعوب الغير الملتزمة."
 
 #: front-page.php:49
+#, fuzzy
 msgid "Join"
-msgstr "انضمام"
+msgstr "الإنضمام"
 
 #: front-page.php:55
 msgid ""
