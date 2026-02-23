@@ -114,8 +114,9 @@ msgstr ""
 "تكون جزءًا من ذلك."
 
 #: front-page.php:41
+#, fuzzy
 msgid "A simple path to faithful obedience"
-msgstr "طريق بسيط إلى الطاعة المخلصة"
+msgstr "طريق بسيط إلى الطاعة الأمينة"
 
 #: front-page.php:47
 msgid ""
