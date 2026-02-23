@@ -191,8 +191,9 @@ msgid "Frontier People"
 msgstr "سكان الحدود"
 
 #: front-page.php:108
+#, fuzzy
 msgid "Unengaged"
-msgstr "غير مشارك"
+msgstr "غير ملتزم"
 
 #: front-page.php:109
 msgctxt "number of millions"
