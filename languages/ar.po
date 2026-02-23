@@ -147,8 +147,9 @@ msgid "Commit"
 msgstr "الإلتزام"
 
 #: front-page.php:62
+#, fuzzy
 msgid "Engage"
-msgstr "الانخراط"
+msgstr "الإنخراط"
 
 #: front-page.php:63
 msgid ""
