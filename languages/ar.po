@@ -256,12 +256,13 @@ msgid "Engagement starts with prayer"
 msgstr "الالتزام يبدأ بالصلاة"
 
 #: front-page.php:167
+#, fuzzy
 msgid ""
 "Every movement of the gospel begins with intercession. Cover an unengaged "
 "people group in daily prayer and help prepare the way."
 msgstr ""
-"كل حركة إنجيلية تبدأ بالشفاعة. اشملوا مجموعة من الناس غير الملتزمة بالصلاة "
-"اليومية وساعدوا في تمهيد الطريق."
+"كل حركة إنجيلية تبدأ بالشفاعة. إحرص على تغطية فئة من الناس الغير ملتزمة في "
+"الصلاة اليومية وساعد في تمهيد الطريق."
 
 #: front-page.php:178
 msgid "What does \"DOXA\" mean?"
