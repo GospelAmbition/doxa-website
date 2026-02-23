@@ -229,8 +229,9 @@ msgid "No unengaged people groups by 2033"
 msgstr "لا وجود لمجموعات سكانية غير ملتزمة بحلول عام 2033"
 
 #: front-page.php:142
+#, fuzzy
 msgid "Mobilization of 20,000+ DOXA partnership missionaries"
-msgstr "تعبئة أكثر من 20,000 مبشر من شركاء DOXA"
+msgstr "تعبئة أكثر من 20,000 مبشر من شركاء دوكسا"
 
 #: front-page.php:143
 msgid "Fruitful engagement among frontier peoples and the under-engaged"
