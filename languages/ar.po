@@ -159,8 +159,9 @@ msgid ""
 msgstr "الله يقيم رجالاً ونساءً ليذهبوا ويخدموا ويبشروا بالمسيح بين الأمم."
 
 #: front-page.php:72 front-page.php:76
+#, fuzzy
 msgid "Who are the unengaged?"
-msgstr "من هم غير الملتزمون؟"
+msgstr "من هم غير الملتزمين؟"
 
 #: front-page.php:81
 msgid "Unreached"
