@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
 "PO-Revision-Date: 2026-02-23 10:05+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Last-Translator: nesrine <translator@disciple.tools>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
 "Language: ar\n"
@@ -36,6 +36,7 @@ msgid "Page Not Found"
 msgstr "الصفحة غير موجودة"
 
 #: 404.php:18
+#, fuzzy
 msgid ""
 "It looks like nothing was found at this location. Perhaps one of the links "
 "below can help."
