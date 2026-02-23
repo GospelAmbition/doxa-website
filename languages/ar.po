@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
 "PO-Revision-Date: 2026-02-23 10:05+0000\n"
-"Last-Translator: nesrine <translator@disciple.tools>\n"
+"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
 "Language: ar\n"
@@ -36,7 +36,6 @@ msgid "Page Not Found"
 msgstr "الصفحة غير موجودة"
 
 #: 404.php:18
-#, fuzzy
 msgid ""
 "It looks like nothing was found at this location. Perhaps one of the links "
 "below can help."
@@ -105,7 +104,6 @@ msgid "%s unengaged people groups"
 msgstr "%s المجموعات غير المشاركة"
 
 #: front-page.php:36
-#, fuzzy
 msgid ""
 "Our hope is to see each of them covered in 24-hour prayer, and your church "
 "can be part of it."
@@ -114,18 +112,16 @@ msgstr ""
 "تكون جزءًا من ذلك."
 
 #: front-page.php:41
-#, fuzzy
 msgid "A simple path to faithful obedience"
-msgstr "طريق بسيط إلى الطاعة الأمينة"
+msgstr "طريق بسيط إلى الطاعة المخلصة"
 
 #: front-page.php:47
-#, fuzzy
 msgid ""
 "Receive daily prayer points and join believers worldwide in prayer for the "
 "unengaged peoples."
 msgstr ""
-"إحصل على نقاط الصلاة اليومية وإنضم إلى المؤمنين في جميع أنحاء العالم لصلاة من "
-"أجل الشعوب الغير الملتزمة."
+"احصل على نقاط الصلاة اليومية وانضم إلى المؤمنين في جميع أنحاء العالم في الصلاة "
+"من أجل الشعوب غير الملتزمة."
 
 #: front-page.php:49
 #, fuzzy
@@ -133,18 +129,16 @@ msgid "Join"
 msgstr "الإنضمام"
 
 #: front-page.php:55
-#, fuzzy
 msgid ""
 "Churches and networks take ownership – praying, giving, and preparing the "
 "way for gospel workers."
 msgstr ""
-"تتولى الكنائس والشبكات زمام الأمور – بالصلاة والعطاء وتمهيد الطريق للعاملين في "
-"مجال نشر الإنجيل."
+"تتولى الكنائس والشبكات زمام الأمور – بالصلاة والعطاء وإعداد الطريق للعاملين في "
+"خدمة الإنجيل."
 
 #: front-page.php:57 front-page.php:65
-#, fuzzy
 msgid "Commit"
-msgstr "الإلتزام"
+msgstr "الالتزام"
 
 #: front-page.php:62
 #, fuzzy
@@ -152,51 +146,42 @@ msgid "Engage"
 msgstr "الإنخراط"
 
 #: front-page.php:63
-#, fuzzy
 msgid ""
 "God raises up men and women to go, serve, and proclaim Christ among the "
 "nations."
-msgstr "الله يقيم رجالاً ونساءً ليذهبوا ويخدموا ويبشروا بالمسيح بين الأمم."
+msgstr "يرفع الله رجالاً ونساءً ليذهبوا ويخدموا ويعلنوا المسيح بين الأمم."
 
 #: front-page.php:72 front-page.php:76
-#, fuzzy
 msgid "Who are the unengaged?"
-msgstr "من هم غير الملتزمين؟"
+msgstr "من هم غير الملتزمون؟"
 
 #: front-page.php:81
-#, fuzzy
 msgid "Unreached"
-msgstr "لم يتم الوصول إليها"
+msgstr "غير موصول"
 
 #: front-page.php:82 front-page.php:91 front-page.php:100
-#, fuzzy
 msgctxt "number of billions"
 msgid "%s Billion"
 msgstr "%s مليار"
 
 #: front-page.php:83 front-page.php:92 front-page.php:101 front-page.php:110
-#, fuzzy
 msgctxt "number of people groups"
 msgid "%s People Groups"
 msgstr "%s المجموعات السكانية"
 
 #: front-page.php:90
-#, fuzzy
 msgid "Under-Engaged"
 msgstr "غير ملتزم"
 
 #: front-page.php:99
-#, fuzzy
 msgid "Frontier People"
-msgstr "سكان الحدود"
+msgstr "شعب الحدود"
 
 #: front-page.php:108
-#, fuzzy
 msgid "Unengaged"
-msgstr "غير ملتزم"
+msgstr "غير مشارك"
 
 #: front-page.php:109
-#, fuzzy
 msgctxt "number of millions"
 msgid "%s Million"
 msgstr "%s مليون"
@@ -207,43 +192,35 @@ msgid "Learn More"
 msgstr "تعلم المزيد"
 
 #: front-page.php:125 front-page.php:132
-#, fuzzy
 msgid "Vision 2033"
 msgstr "رؤية 2033"
 
 #: front-page.php:138
-#, fuzzy
 msgid "In partnership with the global church, our vision is for..."
 msgstr "بالتعاون مع الكنيسة العالمية، تتمثل رؤيتنا في..."
 
 #: front-page.php:140
-#, fuzzy
 msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples"
 msgstr ""
-"التغطية لصّلاة اليومية على مدار 24 ساعة لجميع السكان الغير ملتزمة البالغ عددها "
-"2085 ساكن"
+"تغطية صلاة يومية على مدار 24 ساعة لجميع الشعوب غير الملتزمة البالغ عددها 2085 "
+"شعبًا"
 
 #: front-page.php:141
-#, fuzzy
 msgid "No unengaged people groups by 2033"
-msgstr "لا وجود لمجموعات سكانية غير ملتزمة بحلول عام 2033"
+msgstr "لا توجد مجموعات سكانية غير ملتزمة بحلول عام 2033"
 
 #: front-page.php:142
-#, fuzzy
 msgid "Mobilization of 20,000+ DOXA partnership missionaries"
-msgstr "تعبئة أكثر من 20,000 مبشر من شركاء دوكسا"
+msgstr "تعبئة أكثر من 20,000 مبشر من شركاء DOXA"
 
 #: front-page.php:143
-#, fuzzy
 msgid "Fruitful engagement among frontier peoples and the under-engaged"
-msgstr ""
-"المشاركة المثمرة بين سكان المناطق الحدودية والسكان التي تعاني من نقص المشاركة"
+msgstr "التفاعل المثمر بين الشعوب الحدودية والشعوب غير المنخرطة"
 
 #: front-page.php:144
-#, fuzzy
 msgid "Church planting movements among every unreached people on earth"
 msgstr ""
-"حركات تأسيس الكنائس بين جميع الشعوب التي لم تصلها رسالة الإنجيل على وجه الأرض"
+"حركات تأسيس الكنائس بين كل الشعوب التي لم يتم الوصول إليها على وجه الأرض"
 
 #: front-page.php:147
 #, fuzzy
@@ -251,28 +228,24 @@ msgid "More"
 msgstr "المزيد"
 
 #: front-page.php:160 front-page.php:163 front-page.php:184
-#, fuzzy
 msgid "Engagement starts with prayer"
 msgstr "الالتزام يبدأ بالصلاة"
 
 #: front-page.php:167
-#, fuzzy
 msgid ""
 "Every movement of the gospel begins with intercession. Cover an unengaged "
 "people group in daily prayer and help prepare the way."
 msgstr ""
-"كل حركة إنجيلية تبدأ بالشفاعة. إحرص على تغطية فئة من الناس الغير ملتزمة في "
-"الصلاة اليومية وساعد في تمهيد الطريق."
+"كل حركة إنجيلية تبدأ بالشفاعة. اشملوا مجموعة من الناس غير الملتزمة بالصلاة "
+"اليومية وساعدوا في تمهيد الطريق."
 
 #: front-page.php:178
-#, fuzzy
 msgid "What does \"DOXA\" mean?"
-msgstr "ماذا تعني كلمة \"دوكسا\"؟"
+msgstr "ماذا تعني كلمة \"DOXA\"؟"
 
 #: front-page.php:179
-#, fuzzy
 msgid "DOXA is the Greek word for \"GLORY\"."
-msgstr "دوكسا هي الكلمة اليونانية التي تعني \"المجد\"."
+msgstr "DOXA هي الكلمة اليونانية التي تعني \"المجد\"."
 
 #: front-page.php:180
 msgid ""
