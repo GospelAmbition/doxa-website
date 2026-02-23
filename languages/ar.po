@@ -181,6 +181,7 @@ msgid "%s People Groups"
 msgstr "%s المجموعات السكانية"
 
 #: front-page.php:90
+#, fuzzy
 msgid "Under-Engaged"
 msgstr "غير ملتزم"
 
