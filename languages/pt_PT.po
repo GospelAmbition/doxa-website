@@ -5,13 +5,8 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-<<<<<<< HEAD
-"PO-Revision-Date: 2026-02-19 15:01+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
-=======
 "PO-Revision-Date: 2026-02-19 16:05+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
->>>>>>> weblate/master
 "Language-Team: Portuguese (Portugal) <https://translate.disciple.tools/"
 "projects/doxa/doxa-life/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -800,11 +795,6 @@ msgid "Last Name"
 msgstr "Apelido"
 
 #: template-adoption-form.php:96
-<<<<<<< HEAD
-#, fuzzy
-#| msgid "Enter your email"
-=======
->>>>>>> weblate/master
 msgid "Enter your Email"
 msgstr "Insira o seu e-mail"
 
@@ -813,15 +803,8 @@ msgid "Phone"
 msgstr "Telefone"
 
 #: template-adoption-form.php:100
-<<<<<<< HEAD
-#, fuzzy
-#| msgid "Enter your name"
-msgid "Enter your Phone"
-msgstr "Digite o seu nome"
-=======
 msgid "Enter your Phone"
 msgstr "Digite o seu número de telefone"
->>>>>>> weblate/master
 
 #: template-adoption-form.php:103
 msgid "Role"
