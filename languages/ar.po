@@ -202,6 +202,7 @@ msgid "%s Million"
 msgstr "%s مليون"
 
 #: front-page.php:116
+#, fuzzy
 msgid "Learn More"
 msgstr "تعلم المزيد"
 
