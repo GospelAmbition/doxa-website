@@ -152,10 +152,11 @@ msgid "Engage"
 msgstr "الإنخراط"
 
 #: front-page.php:63
+#, fuzzy
 msgid ""
 "God raises up men and women to go, serve, and proclaim Christ among the "
 "nations."
-msgstr "يرفع الله رجالاً ونساءً ليذهبوا ويخدموا ويعلنوا المسيح بين الأمم."
+msgstr "الله يقيم رجالاً ونساءً ليذهبوا ويخدموا ويبشروا بالمسيح بين الأمم."
 
 #: front-page.php:72 front-page.php:76
 msgid "Who are the unengaged?"
