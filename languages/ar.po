@@ -212,6 +212,7 @@ msgid "Vision 2033"
 msgstr "رؤية 2033"
 
 #: front-page.php:138
+#, fuzzy
 msgid "In partnership with the global church, our vision is for..."
 msgstr "بالتعاون مع الكنيسة العالمية، تتمثل رؤيتنا في..."
 
