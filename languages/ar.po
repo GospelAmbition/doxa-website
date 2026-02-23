@@ -105,6 +105,7 @@ msgid "%s unengaged people groups"
 msgstr "%s المجموعات غير المشاركة"
 
 #: front-page.php:36
+#, fuzzy
 msgid ""
 "Our hope is to see each of them covered in 24-hour prayer, and your church "
 "can be part of it."
