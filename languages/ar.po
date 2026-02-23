@@ -24,9 +24,12 @@ msgid "DOXA Life"
 msgstr "حياة دوكسا"
 
 #. Description of the theme
+#, fuzzy
 msgid ""
 "A clean, elegant theme for DOXA Life - Engaging every people group by 2033"
-msgstr "موضوع نظيف وأنيق لـ DOXA Life - إشراك كل مجموعة من الناس بحلول عام 2033"
+msgstr ""
+"تصميم أنيق وبسيط لشركة دوكسا لايف - الوصول إلى جميع فئات المجتمع بحلول عام "
+"2033"
 
 #. Author of the theme
 msgid "Gospel Ambition Team"
