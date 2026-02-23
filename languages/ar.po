@@ -29,8 +29,9 @@ msgid ""
 msgstr "موضوع نظيف وأنيق لـ DOXA Life - إشراك كل مجموعة من الناس بحلول عام 2033"
 
 #. Author of the theme
+#, fuzzy
 msgid "Gospel Ambition Team"
-msgstr "فريق طموح الإنجيل"
+msgstr "الفريق الطموح للإنجيل"
 
 #: 404.php:17
 msgid "Page Not Found"
