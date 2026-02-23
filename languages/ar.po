@@ -224,8 +224,9 @@ msgstr ""
 "2085 ساكن"
 
 #: front-page.php:141
+#, fuzzy
 msgid "No unengaged people groups by 2033"
-msgstr "لا توجد مجموعات سكانية غير ملتزمة بحلول عام 2033"
+msgstr "لا وجود لمجموعات سكانية غير ملتزمة بحلول عام 2033"
 
 #: front-page.php:142
 msgid "Mobilization of 20,000+ DOXA partnership missionaries"
