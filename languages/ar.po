@@ -270,8 +270,9 @@ msgid "What does \"DOXA\" mean?"
 msgstr "ماذا تعني كلمة \"دوكسا\"؟"
 
 #: front-page.php:179
+#, fuzzy
 msgid "DOXA is the Greek word for \"GLORY\"."
-msgstr "DOXA هي الكلمة اليونانية التي تعني \"المجد\"."
+msgstr "دوكسا هي الكلمة اليونانية التي تعني \"المجد\"."
 
 #: front-page.php:180
 msgid ""
