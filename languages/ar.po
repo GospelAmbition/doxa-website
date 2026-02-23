@@ -169,6 +169,7 @@ msgid "Unreached"
 msgstr "لم يتم الوصول إليها"
 
 #: front-page.php:82 front-page.php:91 front-page.php:100
+#, fuzzy
 msgctxt "number of billions"
 msgid "%s Billion"
 msgstr "%s مليار"
