@@ -240,9 +240,10 @@ msgstr ""
 "المشاركة المثمرة بين سكان المناطق الحدودية والسكان التي تعاني من نقص المشاركة"
 
 #: front-page.php:144
+#, fuzzy
 msgid "Church planting movements among every unreached people on earth"
 msgstr ""
-"حركات تأسيس الكنائس بين كل الشعوب التي لم يتم الوصول إليها على وجه الأرض"
+"حركات تأسيس الكنائس بين جميع الشعوب التي لم تصلها رسالة الإنجيل على وجه الأرض"
 
 #: front-page.php:147
 msgid "More"
