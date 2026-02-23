@@ -186,8 +186,9 @@ msgid "Under-Engaged"
 msgstr "غير ملتزم"
 
 #: front-page.php:99
+#, fuzzy
 msgid "Frontier People"
-msgstr "شعب الحدود"
+msgstr "سكان الحدود"
 
 #: front-page.php:108
 msgid "Unengaged"
