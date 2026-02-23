@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-"PO-Revision-Date: 2026-02-23 11:19+0000\n"
+"PO-Revision-Date: 2026-02-23 11:27+0000\n"
 "Last-Translator: nesrine <translator@disciple.tools>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
@@ -51,7 +51,7 @@ msgstr "الصفحات الأكثر شعبية:"
 
 #: 404.php:23
 msgid "Home"
-msgstr "الرئيسية"
+msgstr "الصفحة الرئيسية"
 
 #. Template Name of the theme
 #: 404.php:24 front-page.php:46 front-page.php:168 page-pray.php:66
