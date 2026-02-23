@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-"PO-Revision-Date: 2026-02-23 10:05+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2026-02-23 11:19+0000\n"
+"Last-Translator: nesrine <translator@disciple.tools>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
 "Language: ar\n"
@@ -19,6 +19,7 @@ msgstr ""
 "X-Domain: doxa-website\n"
 
 #. Theme Name of the theme
+#, fuzzy
 msgid "DOXA Life"
 msgstr "حياة دوكسا"
 
