@@ -175,6 +175,7 @@ msgid "%s Billion"
 msgstr "%s مليار"
 
 #: front-page.php:83 front-page.php:92 front-page.php:101 front-page.php:110
+#, fuzzy
 msgctxt "number of people groups"
 msgid "%s People Groups"
 msgstr "%s المجموعات السكانية"
