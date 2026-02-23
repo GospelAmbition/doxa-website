@@ -164,8 +164,9 @@ msgid "Who are the unengaged?"
 msgstr "من هم غير الملتزمين؟"
 
 #: front-page.php:81
+#, fuzzy
 msgid "Unreached"
-msgstr "غير موصول"
+msgstr "لم يتم الوصول إليها"
 
 #: front-page.php:82 front-page.php:91 front-page.php:100
 msgctxt "number of billions"
