@@ -251,6 +251,7 @@ msgid "More"
 msgstr "المزيد"
 
 #: front-page.php:160 front-page.php:163 front-page.php:184
+#, fuzzy
 msgid "Engagement starts with prayer"
 msgstr "الالتزام يبدأ بالصلاة"
 
