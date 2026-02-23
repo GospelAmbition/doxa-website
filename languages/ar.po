@@ -119,12 +119,13 @@ msgid "A simple path to faithful obedience"
 msgstr "طريق بسيط إلى الطاعة الأمينة"
 
 #: front-page.php:47
+#, fuzzy
 msgid ""
 "Receive daily prayer points and join believers worldwide in prayer for the "
 "unengaged peoples."
 msgstr ""
-"احصل على نقاط الصلاة اليومية وانضم إلى المؤمنين في جميع أنحاء العالم في "
-"الصلاة من أجل الشعوب غير الملتزمة."
+"إحصل على نقاط الصلاة اليومية وإنضم إلى المؤمنين في جميع أنحاء العالم لصلاة من "
+"أجل الشعوب الغير الملتزمة."
 
 #: front-page.php:49
 msgid "Join"
