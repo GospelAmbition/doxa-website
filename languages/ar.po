@@ -6,7 +6,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
 "PO-Revision-Date: 2026-02-23 10:05+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"Last-Translator: nesrine <translator@disciple.tools>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
 "Language: ar\n"
@@ -23,6 +23,7 @@ msgid "DOXA Life"
 msgstr "حياة دوكسا"
 
 #. Description of the theme
+#, fuzzy
 msgid ""
 "A clean, elegant theme for DOXA Life - Engaging every people group by 2033"
 msgstr "موضوع نظيف وأنيق لـ DOXA Life - إشراك كل مجموعة من الناس بحلول عام 2033"
