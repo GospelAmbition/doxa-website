@@ -207,6 +207,7 @@ msgid "Learn More"
 msgstr "تعلم المزيد"
 
 #: front-page.php:125 front-page.php:132
+#, fuzzy
 msgid "Vision 2033"
 msgstr "رؤية 2033"
 
