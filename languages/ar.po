@@ -32,8 +32,9 @@ msgstr ""
 "2033"
 
 #. Author of the theme
+#, fuzzy
 msgid "Gospel Ambition Team"
-msgstr "فريق طموح الإنجيل"
+msgstr "فريق طموح للإنجيل"
 
 #: 404.php:17
 msgid "Page Not Found"
