@@ -1689,3 +1689,16 @@ function doxa_language_relationships( $post_id ) {
 function doxa_get_language_code() {
     return function_exists( 'pll_current_language' ) ? pll_current_language() : substr( get_locale(), 0, 2 );
 }
+
+add_filter( 'pll_the_language_link', 'doxa_remove_langs_link', 10, 3 );
+function doxa_remove_langs_link( $url, $slug, $locale ) {
+    $languages_to_remove = get_option( 'doxa_languages_to_remove' );
+    if ( !$languages_to_remove ) {
+        return $url;
+    }
+    $languages_to_remove = explode( ',', $languages_to_remove );
+    if ( in_array( $locale, $languages_to_remove ) ) {
+        return null;
+    }
+    return $url;
+}
