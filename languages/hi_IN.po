@@ -1,0 +1,971 @@
+# Copyright (C) 2026 Gospel Ambition Team
+# This file is distributed under the .
+msgid ""
+msgstr ""
+"Project-Id-Version: DOXA Life 1.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
+"POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
+"PO-Revision-Date: 2026-02-24 13:05+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Hindi <https://translate.disciple.tools/projects/doxa/doxa-"
+"life/hi_IN/>\n"
+"Language: hi_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16\n"
+"X-Domain: doxa-website\n"
+
+#. Theme Name of the theme
+msgid "DOXA Life"
+msgstr "डॉक्सा लाइफ़"
+
+#. Description of the theme
+msgid "A clean, elegant theme for DOXA Life - Engaging every people group by 2033"
+msgstr ""
+"DOXA Life के लिए एक स्वच्छ, सुरुचिपूर्ण थीम - 2033 तक प्रत्येक जनसमूह को संलग्न करना"
+
+#. Author of the theme
+msgid "Gospel Ambition Team"
+msgstr "सुसमाचार महत्त्वाकांक्षा टीम"
+
+#: 404.php:17
+msgid "Page Not Found"
+msgstr "पृष्ठ नहीं मिला"
+
+#: 404.php:18
+msgid "It looks like nothing was found at this location. Perhaps one of the links below can help."
+msgstr ""
+"ऐसा लगता है कि इस स्थान पर कुछ भी नहीं मिला। शायद नीचे दिए गए लिंक में से कोई मदद कर "
+"सकता है।"
+
+#: 404.php:21
+msgid "Popular Pages:"
+msgstr "लोकप्रिय पृष्ठ:"
+
+#: 404.php:23
+msgid "Home"
+msgstr "होम"
+
+#. Template Name of the theme
+#: 404.php:24
+#: front-page.php:46
+#: front-page.php:168
+#: page-pray.php:66
+#: template-adoption-form.php:70
+msgid "Pray"
+msgstr "प्रार्थना करें"
+
+#. Template Name of the theme
+#: 404.php:25
+#: front-page.php:54
+#: page-adopt.php:137
+msgid "Adopt"
+msgstr "अपनाएँ"
+
+#: 404.php:26
+msgid "Research"
+msgstr "अनुसंधान"
+
+#: 404.php:27
+msgid "About"
+msgstr "बारे में"
+
+#: 404.php:28
+msgid "Contact"
+msgstr "संपर्क करे"
+
+#: footer.php:17
+msgid "Global Partnership for the Unreached"
+msgstr "अनपहुँचे लोगों के लिए वैश्विक साझेदारी"
+
+#: footer.php:34
+#: page-contact.php:20
+msgid "Contact Us"
+msgstr "हमसे संपर्क करें"
+
+#: footer.php:38
+msgid "All rights reserved."
+msgstr "सर्वाधिकार सुरक्षित।"
+
+#: front-page.php:16
+msgid "Our gift to Jesus"
+msgstr "यीशु को हमारा उपहार"
+
+#: front-page.php:17
+#: front-page.php:26
+msgid "Engage every people by 2033"
+msgstr "2033 तक सभी लोगों को शामिल करें"
+
+#: front-page.php:29
+msgid "The DOXA Vision: Click image to watch the video"
+msgstr "द डॉक्सा विज़न: वीडियो देखने के लिए छवि पर क्लिक करें"
+
+#: front-page.php:34
+msgctxt "number of unengaged people groups"
+msgid "%s unengaged people groups"
+msgstr "%s अनपहुँचे जनसमूह"
+
+#: front-page.php:36
+msgid "Our hope is to see each of them covered in 24-hour prayer, and your church can be part of it."
+msgstr ""
+"हमारी आशा है कि हम उनमें से प्रत्येक को 24 घंटे की प्रार्थना में ढका हुआ देखें, और आपका चर्च "
+"इसका हिस्सा बन सकता है।"
+
+#: front-page.php:41
+msgid "A simple path to faithful obedience"
+msgstr "वफादार आज्ञाकारिता का एक सरल मार्ग"
+
+#: front-page.php:47
+msgid "Receive daily prayer points and join believers worldwide in prayer for the unengaged peoples."
+msgstr ""
+"दैनिक प्रार्थना बिंदु प्राप्त करें और दुनिया भर के विश्वासियों के साथ उन लोगों के लिए "
+"प्रार्थना में शामिल हों जो अभी तक संलग्न नहीं हुए हैं।"
+
+#: front-page.php:49
+msgid "Join"
+msgstr "जुड़ें"
+
+#: front-page.php:55
+msgid "Churches and networks take ownership – praying, giving, and preparing the way for gospel workers."
+msgstr ""
+"चर्च और नेटवर्क स्वामित्व लेते हैं – प्रार्थना करके, दान देकर, और सुसमाचार कार्यकर्ताओं के लिए "
+"मार्ग तैयार करके।"
+
+#: front-page.php:57
+#: front-page.php:65
+msgid "Commit"
+msgstr "प्रतिबद्धता"
+
+#: front-page.php:62
+msgid "Engage"
+msgstr "संलग्न हों"
+
+#: front-page.php:63
+msgid "God raises up men and women to go, serve, and proclaim Christ among the nations."
+msgstr ""
+"ईश्वर राष्ट्रों में जाने, सेवा करने और मसीह की घोषणा करने के लिए पुरुषों और महिलाओं को "
+"उठाता है।"
+
+#: front-page.php:72
+#: front-page.php:76
+msgid "Who are the unengaged?"
+msgstr "अनियोजित लोग कौन हैं?"
+
+#: front-page.php:81
+msgid "Unreached"
+msgstr "अनपहुँचा"
+
+#: front-page.php:82
+#: front-page.php:91
+#: front-page.php:100
+msgctxt "number of billions"
+msgid "%s Billion"
+msgstr "%s अर्ब"
+
+#: front-page.php:83
+#: front-page.php:92
+#: front-page.php:101
+#: front-page.php:110
+msgctxt "number of people groups"
+msgid "%s People Groups"
+msgstr "%s लोगों के समूह"
+
+#: front-page.php:90
+msgid "Under-Engaged"
+msgstr "कम संलग्न"
+
+#: front-page.php:99
+msgid "Frontier People"
+msgstr "सीमांत लोग"
+
+#: front-page.php:108
+msgid "Unengaged"
+msgstr "अनलग्न"
+
+#: front-page.php:109
+msgctxt "number of millions"
+msgid "%s Million"
+msgstr "%s मिलियन"
+
+#: front-page.php:116
+msgid "Learn More"
+msgstr "और अधिक जानें"
+
+#: front-page.php:125
+#: front-page.php:132
+msgid "Vision 2033"
+msgstr "दृष्टि 2033"
+
+#: front-page.php:138
+msgid "In partnership with the global church, our vision is for..."
+msgstr "वैश्विक चर्च के साथ साझेदारी में, हमारा दृष्टिकोण है..।"
+
+#: front-page.php:140
+msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples"
+msgstr "सभी 2,085 असंलग्न लोगों के लिए प्रतिदिन 24 घंटे प्रार्थना कवरेज"
+
+#: front-page.php:141
+msgid "No unengaged people groups by 2033"
+msgstr "2033 तक कोई भी संलग्न न किया गया जनसमूह नहीं रहेगा।"
+
+#: front-page.php:142
+msgid "Mobilization of 20,000+ DOXA partnership missionaries"
+msgstr "20,000+ DOXA साझेदारी मिशनरियों का संगठित होना"
+
+#: front-page.php:143
+msgid "Fruitful engagement among frontier peoples and the under-engaged"
+msgstr "अग्रणी जनसमूहों और कम-संलग्न लोगों के बीच सार्थक संलग्नता"
+
+#: front-page.php:144
+msgid "Church planting movements among every unreached people on earth"
+msgstr "पृथ्वी पर हर अपहुँचे हुए लोगों के बीच चर्च स्थापना आंदोलन"
+
+#: front-page.php:147
+msgid "More"
+msgstr "और ज्यादा"
+
+#: front-page.php:160
+#: front-page.php:163
+#: front-page.php:184
+msgid "Engagement starts with prayer"
+msgstr "संलग्नता प्रार्थना से शुरू होती है।"
+
+#: front-page.php:167
+msgid "Every movement of the gospel begins with intercession. Cover an unengaged people group in daily prayer and help prepare the way."
+msgstr ""
+"सुसमाचार की हर गतिविधि मध्यस्थता से शुरू होती है। एक निष्क्रिय जनसमूह को दैनिक प्रार्थना "
+"में ढकें और मार्ग तैयार करने में मदद करें।"
+
+#: front-page.php:178
+msgid "What does \"DOXA\" mean?"
+msgstr "\"DOXA\" का क्या मतलब है?"
+
+#: front-page.php:179
+msgid "DOXA is the Greek word for \"GLORY\"."
+msgstr "DOXA ग्रीक शब्द है जिसका अर्थ \"महिमा\" है।"
+
+#: front-page.php:180
+msgid "We chose this name because Jesus is worthy of glory from every tribe, tongue, people, and nation. DOXA reminds us that we partner with the whole Church to take the whole gospel to the whole world – until people from every nation are worshipping Jesus and He alone receives all the glory."
+msgstr ""
+"हमने यह नाम इसलिए चुना क्योंकि यीशु हर कबीले, हर भाषा, हर जनसमूह और हर राष्ट्र से "
+"महिमा के योग्य हैं। DOXA हमें याद दिलाता है कि हम संपूर्ण सुसमाचार को संपूर्ण विश्व तक "
+"पहुँचाने के लिए संपूर्ण चर्च के साथ साझेदार हैं – जब तक हर राष्ट्र के लोग यीशु की आराधना नहीं "
+"करते और केवल वही सारी महिमा प्राप्त नहीं करता।"
+
+#: functions.php:87
+msgid "Click again to interact with map"
+msgstr "नक्शे के साथ इंटरैक्ट करने के लिए फिर से क्लिक करें।"
+
+#: header.php:35
+msgid "World assemblies of God Fellowship"
+msgstr "वर्ल्ड असेंबलीज़ ऑफ़ गॉड फेलोशिप"
+
+#: index.php:24
+msgid "Let's TOGETHER give Jesus a gift:"
+msgstr "आओ हम सब मिलकर यीशु को एक उपहार दें:"
+
+#: index.php:25
+msgid "Every unengaged people on earth engaged by 2033"
+msgstr "2033 तक पृथ्वी पर हर अविवाहित व्यक्ति का विवाह हो जाएगा।"
+
+#: page-adopt.php:19
+#: page-adopt.php:99
+#: page-adopt.php:108
+#: page-adopt.php:116
+#: page-pray.php:101
+#: page-pray.php:110
+#: page-pray.php:118
+msgid "Adopt an unengaged people group"
+msgstr "एक असंलग्न जनसमूह को गोद लें"
+
+#: page-adopt.php:20
+msgid "A church-led commitment to pray, give, and send so that gospel access begins"
+msgstr ""
+"सुसमाचार की पहुँच शुरू हो सके, इसके लिए चर्च के नेतृत्व में प्रार्थना करने, दान देने और भेजने की "
+"प्रतिबद्धता।"
+
+#: page-adopt.php:25
+msgid "Adoption Goal"
+msgstr "दत्तक लक्ष्य"
+
+#: page-adopt.php:26
+msgid "Every unengaged people group adopted by a church committed to prayer, giving, and sending."
+msgstr ""
+"प्रत्येक असंलग्न जनसमूह जिसे प्रार्थना, दान और भेजने के प्रति प्रतिबद्ध एक चर्च ने अपनाया है।"
+
+#: page-adopt.php:29
+#: page-pray.php:30
+msgid "Current Status"
+msgstr "वर्तमान स्थिति"
+
+#: page-adopt.php:32
+msgid "people groups adopted"
+msgstr "लोगों के समूहों ने अपनाया"
+
+#: page-adopt.php:46
+msgid "How Adoption Works"
+msgstr "दत्तक ग्रहण कैसे होता है"
+
+#: page-adopt.php:51
+#: page-pray.php:52
+msgid "Choose"
+msgstr "चुनें"
+
+#: page-adopt.php:52
+msgid "Prayerfully select an unengaged people group to adopt."
+msgstr "प्रार्थनापूर्वक एक अविवाहित जनसमूह को गोद लेने के लिए चुनें।"
+
+#: page-adopt.php:58
+msgid "Mobilize"
+msgstr "लगातार सक्रिय रहो"
+
+#: page-adopt.php:59
+msgid "Raise up 144+ daily intercessors to pray 10 minutes a day."
+msgstr "प्रतिदिन 144+ मध्यस्थों को उठाएं जो दिन में 10 मिनट प्रार्थना करें।"
+
+#: page-adopt.php:65
+msgid "Partner"
+msgstr "साझेदार"
+
+#: page-adopt.php:66
+msgid "Partner through prayer, giving, and sending so that gospel access begins."
+msgstr ""
+"प्रार्थना, दान और भेजने के माध्यम से साझेदार बनें, ताकि सुसमाचार तक पहुँच शुरू हो सके।"
+
+#: page-adopt.php:70
+#: page-pray.php:71
+msgid "Get Started"
+msgstr "आरंभ करें"
+
+#: page-adopt.php:78
+msgid "Adoption Guide & Resources"
+msgstr "दत्तक ग्रहण मार्गदर्शिका और संसाधन"
+
+#: page-adopt.php:80
+msgid "Step-by-step guidance for churches adopting a people group"
+msgstr "किसी जनसमूह को अपनाने वाले चर्चों के लिए चरण-दर-चरण मार्गदर्शन"
+
+#: page-adopt.php:81
+msgid "Tools to mobilize prayer and participation across your congregation"
+msgstr "आपकी संपूर्ण मंडली में प्रार्थना और सहभागिता को सक्रिय करने के उपकरण"
+
+#: page-adopt.php:82
+msgid "Printable and digital resources to promote awareness and engagement"
+msgstr ""
+"जागरूकता और सहभागिता को बढ़ावा देने के लिए मुद्रण योग्य और डिजिटल संसाधन"
+
+#: page-adopt.php:83
+msgid "Helpful tips for sustaining long-term commitment"
+msgstr "दीर्घकालिक प्रतिबद्धता बनाए रखने के लिए सहायक सुझाव"
+
+#: page-adopt.php:88
+#: page-pray.php:79
+#: page-pray.php:90
+msgid "Your daily prayer guide"
+msgstr "आपकी दैनिक प्रार्थना मार्गदर्शिका"
+
+#: page-adopt.php:96
+msgid "Why adoption matters"
+msgstr "दत्तक ग्रहण क्यों मायने रखता है"
+
+#: page-adopt.php:102
+msgid "They have no gospel access"
+msgstr "उनके पास सुसमाचार तक कोई पहुँच नहीं है।"
+
+#: page-adopt.php:103
+msgid "Unengaged people groups have no missionaries, no churches, and often no known believers. Adoption helps ensure they are finally seen, prayed for, and intentionally pursued with the gospel."
+msgstr ""
+"अनपहुँचे जनसमूहों के पास न तो मिशनरी होते हैं, न चर्च होते हैं, और अक्सर कोई ज्ञात विश्वासी "
+"भी नहीं होते। दत्तक ग्रहण यह सुनिश्चित करने में मदद करता है कि उन्हें अंततः देखा जाए, उनके "
+"लिए प्रार्थना की जाए, और सुसमाचार के साथ जानबूझकर उनका अनुसरण किया जाए।"
+
+#: page-adopt.php:111
+msgid "Prayer opens the door for engagement"
+msgstr "प्रार्थना संवाद का द्वार खोलती है।"
+
+#: page-adopt.php:112
+msgid "Adoption mobilizes 144+ daily intercessors, creating 24 hours of prayer that prepares the soil, breaks spiritual barriers, and supports workers who go. Every gospel movement begins with prayer."
+msgstr ""
+"दत्तक ग्रहण 144+ दैनिक मध्यस्थों को सक्रिय करता है, जो 24 घंटे की प्रार्थना तैयार करते हैं, "
+"मिट्टी को तैयार करते हैं, आध्यात्मिक बाधाओं को तोड़ते हैं, और जाने वाले कार्यकर्ताओं का समर्थन "
+"करते हैं। प्रत्येक सुसमाचार आंदोलन प्रार्थना से शुरू होता है।"
+
+#: page-adopt.php:119
+msgid "Churches become active partners in God's mission"
+msgstr "चर्च परमेश्वर के मिशन में सक्रिय भागीदार बनते हैं।"
+
+#: page-adopt.php:120
+msgid "Adoption invites the local church into meaningful participation - praying, giving, and sending – so that a people group moves from unengaged to engaged, and ultimately becomes a worshipping community for Jesus."
+msgstr ""
+"दत्तक ग्रहण स्थानीय चर्च को सार्थक भागीदारी के लिए आमंत्रित करता है – प्रार्थना, दान और "
+"भेजने के माध्यम से – ताकि एक जनसमूह निष्क्रिय से सक्रिय हो जाए, और अंततः यीशु के लिए एक "
+"आराधनात्मक समुदाय बन जाए।"
+
+#: page-adopt.php:129
+#: page-pray.php:131
+msgid "Choose a people group"
+msgstr "एक जनसमूह चुनें"
+
+#: page-adopt.php:130
+#: page-pray.php:132
+msgid "Select a highlighted unengaged people group, or search for a specific group or location below."
+msgstr ""
+"उजागर किए गए, अभी तक शामिल न किए गए लोगों के समूह का चयन करें, या नीचे किसी विशिष्ट "
+"समूह या स्थान के लिए खोजें।"
+
+#: page-adopt.php:138
+#: page-pray.php:140
+#: page-uupgs.php:23
+#: shortcodes/uupg-list-shortcode.php:14
+msgid "Full Profile"
+msgstr "पूर्ण प्रोफ़ाइल"
+
+#: page-adopt.php:139
+#: page-pray.php:141
+#: shortcodes/uupg-list-shortcode.php:15
+msgid "Prayer Coverage"
+msgstr "प्रार्थना कवरेज"
+
+#: page-adopt.php:140
+#: page-pray.php:142
+#: page-uupgs.php:24
+#: shortcodes/uupg-list-shortcode.php:16
+msgid "Loading results..."
+msgstr "परिणाम लोड हो रहे हैं..।"
+
+#: page-adopt.php:141
+#: page-pray.php:143
+#: page-uupgs.php:25
+#: shortcodes/uupg-list-shortcode.php:17
+msgid "Load More"
+msgstr "और लोड करें"
+
+#: page-adopt.php:142
+#: page-pray.php:144
+#: page-uupgs.php:26
+#: shortcodes/uupg-list-shortcode.php:18
+msgid "Total"
+msgstr "संपूर्ण"
+
+#: page-adopt.php:143
+#: page-pray.php:145
+#: shortcodes/uupg-list-shortcode.php:19
+msgid "Search names, country/continent, religions..."
+msgstr "नाम, देश/महाद्वीप, धर्म खोजें..।"
+
+#: page-adopt.php:144
+#: page-pray.php:146
+#: shortcodes/uupg-list-shortcode.php:20
+msgid "See All"
+msgstr "सभी देखें"
+
+#: page-adopt.php:157
+msgid "I was a stranger and you invited me in."
+msgstr "मैं एक अजनबी था और तुमने मुझे अंदर बुलाया।"
+
+#: page-adopt.php:158
+#: page-adopt.php:160
+#: page-pray.php:160
+#: page-pray.php:162
+msgid "Jesus"
+msgstr "यीशु"
+
+#. Template Name of the theme
+msgid "Contact Page"
+msgstr "संपर्क पृष्ठ"
+
+#: page-contact.php:26
+msgid "Name"
+msgstr "नाम"
+
+#: page-contact.php:27
+msgid "Enter your name"
+msgstr "अपना नाम दर्ज करें"
+
+#: page-contact.php:30
+#: template-adoption-form.php:95
+msgid "Email"
+msgstr "ईमेल"
+
+#: page-contact.php:31
+msgid "Enter your email"
+msgstr "अपना ईमेल दर्ज करें"
+
+#: page-contact.php:34
+msgid "Message"
+msgstr "संदेश"
+
+#: page-contact.php:35
+msgid "Enter your message"
+msgstr "अपना संदेश दर्ज करें"
+
+#: page-contact.php:45
+#: page-contact.php:118
+#: page-contact.php:126
+#: template-adoption-form.php:137
+#: template-adoption-form.php:224
+#: template-adoption-form.php:232
+msgid "Submit"
+msgstr "जमा करें"
+
+#: page-contact.php:82
+#: template-adoption-form.php:182
+msgid "Submitting..."
+msgstr "सबमिट हो रहा है..।"
+
+#: page-contact.php:105
+msgid "Thank you for your message. We will get back to you soon!"
+msgstr "आपके संदेश के लिए धन्यवाद। हम जल्द ही आपसे संपर्क करेंगे!"
+
+#: page-contact.php:113
+#: page-contact.php:122
+msgid "There was an error sending your message. Please try again."
+msgstr "आपका संदेश भेजने में कोई त्रुटि हुई। कृपया बाद में पुनः प्रयास करें।"
+
+#: page-pray.php:19
+msgid "Prayer for an unengaged people group"
+msgstr "अनविवाहित लोगों के समूह के लिए प्रार्थना"
+
+#: page-pray.php:20
+msgid "Help prepare the way for gospel engagement through prayer"
+msgstr ""
+"प्रार्थना के माध्यम से सुसमाचार संलग्नता के लिए मार्ग तैयार करने में मदद करें।"
+
+#: page-pray.php:25
+msgid "Prayer Goal"
+msgstr "प्रार्थना का लक्ष्य"
+
+#: page-pray.php:26
+#: template-uupg-detail.php:129
+msgid "24-Hour Prayer Coverage"
+msgstr "24-घंटे की प्रार्थना कवरेज"
+
+#: page-pray.php:27
+msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples."
+msgstr ""
+"सभी 2,085 लोगों के लिए प्रतिदिन 10 मिनट प्रार्थना करने हेतु 144+ लोगों को सक्रिय करें।"
+
+#: page-pray.php:33
+msgid "People groups with committed 24-hour prayer coverage."
+msgstr "लोगों के समूह जो 24 घंटे निरंतर प्रार्थना कवरेज के लिए प्रतिबद्ध हैं।"
+
+#: page-pray.php:47
+msgid "Where do I start?"
+msgstr "मैं कहाँ से शुरू करूँ?"
+
+#: page-pray.php:53
+msgid "Choose an unengaged people group you will commit to pray for daily."
+msgstr ""
+"एक ऐसा जनसमूह चुनें जिसके लिए आप प्रतिदिन प्रार्थना करने के लिए प्रतिबद्ध होंगे।"
+
+#: page-pray.php:59
+msgid "Sign up"
+msgstr "साइन अप करें"
+
+#: page-pray.php:60
+msgid "Sign up to receive daily prayer points and updates for this people group."
+msgstr ""
+"इस जनसमूह के लिए दैनिक प्रार्थना बिंदु और अपडेट प्राप्त करने के लिए साइन अप करें।"
+
+#: page-pray.php:67
+msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
+msgstr ""
+"प्रतिदिन 10 मिनट प्रार्थना करें और 24 घंटे प्रार्थना कवरेज प्रदान करने में मदद करें।"
+
+#: page-pray.php:81
+msgid "Scripture-centered prayer themes"
+msgstr "शास्त्र-केंद्रित प्रार्थना के विषय"
+
+#: page-pray.php:82
+msgid "Spirit-led reflection and guidance"
+msgstr "आत्मा-प्रेरित चिंतन और मार्गदर्शन"
+
+#: page-pray.php:83
+msgid "Real prayer needs from the field"
+msgstr "मैदान से वास्तविक प्रार्थना की आवश्यकताएँ"
+
+#: page-pray.php:84
+msgid "Photos, stories and testimonies"
+msgstr "तस्वीरें, कहानियाँ और गवाहियाँ"
+
+#: page-pray.php:85
+msgid "Key insights about the people group"
+msgstr "लोगों के समूह के बारे में मुख्य अंतर्दृष्टि"
+
+#: page-pray.php:98
+msgid "Why prayer matters"
+msgstr "प्रार्थना क्यों मायने रखती है"
+
+#: page-pray.php:104
+msgid "They have no one praying for them"
+msgstr "उनके लिए प्रार्थना करने वाला कोई नहीं है।"
+
+#: page-pray.php:105
+msgid "Many unengaged people groups have no churches, no missionaries, and often no believers, meaning little to no consistent prayer is being offered on their behalf."
+msgstr ""
+"कई असंलग्न जनसमूहों के पास न तो चर्च हैं, न मिशनरी, और अक्सर न ही कोई विश्वासी, जिसका "
+"अर्थ है कि उनके लिए बहुत कम या बिल्कुल भी नियमित प्रार्थना नहीं की जा रही है।"
+
+#: page-pray.php:113
+msgid "Prayer prepares the way for the gospel"
+msgstr "प्रार्थना सुसमाचार के लिए मार्ग तैयार करती है।"
+
+#: page-pray.php:114
+msgid "Prayer softens hearts, opens doors, and invites the work of the Holy Spirit long before workers arrive or the gospel is proclaimed."
+msgstr ""
+"प्रार्थना हृदयों को कोमल बनाती है, द्वार खोलती है, और कार्यकर्ताओं के आने या सुसमाचार के "
+"प्रचारित होने से बहुत पहले ही पवित्र आत्मा के कार्य को आमंत्रित करती है।"
+
+#: page-pray.php:121
+msgid "Prayer unites the global church"
+msgstr "प्रार्थना वैश्विक चर्च को एकजुट करती है।"
+
+#: page-pray.php:122
+msgid "When we pray, we join believers around the world in God's mission, standing together for peoples still waiting to hear the name of Jesus."
+msgstr ""
+"जब हम प्रार्थना करते हैं, तो हम दुनिया भर के विश्वासियों के साथ परमेश्वर के मिशन में शामिल "
+"होते हैं, और उन लोगों के लिए एक साथ खड़े होते हैं जो अभी भी यीशु का नाम सुनने का इंतज़ार कर "
+"रहे हैं।"
+
+#: page-pray.php:139
+#: shortcodes/uupg-list-shortcode.php:6
+msgid "Select"
+msgstr "चयन/छंटनी"
+
+#: page-pray.php:159
+msgid "Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged]."
+msgstr ""
+"फसल के स्वामी से मन लगाकर प्रार्थना करें …कि वह [अनियोजित] के लिए मजदूर भेजे।"
+
+#. Template Name of the theme
+msgid "Simple Page"
+msgstr "सरल पृष्ठ"
+
+#. Template Name of the theme
+msgid "UUPGS"
+msgstr "यूयूपीजीएस"
+
+#: page-uupgs.php:18
+msgid "Find a UUPG"
+msgstr "UUPG खोजें"
+
+#: page-uupgs.php:27
+msgid "Search names, locations, religions..."
+msgstr "नाम, स्थान, धर्म खोजें..।"
+
+#: page-uupgs.php:28
+msgid "Adopted"
+msgstr "दत्तक लिया गया"
+
+#: page-uupgs.php:29
+msgid "Not Adopted"
+msgstr "दत्तक नहीं लिया गया"
+
+#: page-uupgs.php:31
+msgid "Search"
+msgstr "खोजें"
+
+#: page-uupgs.php:32
+msgid "Sort"
+msgstr "छांटना"
+
+#: page-uupgs.php:33
+msgid "Per Page"
+msgstr "प्रति पृष्ठ"
+
+#. Template Name of the theme
+msgid "Doxa Page"
+msgstr "डॉक्सा पेज"
+
+#: template-adoption-form.php:17
+#: template-uupg-detail.php:29
+msgid "People Group Not Found"
+msgstr "लोग समूह नहीं मिला"
+
+#: template-adoption-form.php:18
+#: template-uupg-detail.php:30
+msgid "The people group you are looking for could not be found. Please try again."
+msgstr "आपके द्वारा खोजा गया लोगों का समूह नहीं मिला। कृपया फिर से प्रयास करें।"
+
+#: template-adoption-form.php:20
+#: template-adoption-form.php:24
+#: template-uupg-detail.php:32
+#: template-uupg-detail.php:36
+msgid "Back"
+msgstr "पीछे"
+
+#: template-adoption-form.php:43
+msgid "Adoption Form"
+msgstr "दत्तक ग्रहण फॉर्म"
+
+#: template-adoption-form.php:44
+msgid "Thank you for taking a step toward adopting an unengaged people group. Please complete the form below so we can confirm your church's adoption, connect with your Champion, and begin sending prayer updates and resources."
+msgstr ""
+"एक अप्रवृत्त जनसमूह को गोद लेने की दिशा में कदम उठाने के लिए धन्यवाद। कृपया नीचे दिया गया "
+"फॉर्म भरें ताकि हम आपके चर्च के गोद लेने की पुष्टि कर सकें, आपके चैंपियन से जुड़ सकें, और "
+"प्रार्थना अपडेट्स और संसाधन भेजना शुरू कर सकें।"
+
+#: template-adoption-form.php:66
+msgid "What is your commitment? Pray. Give. Send."
+msgstr "आपकी प्रतिबद्धता क्या है? प्रार्थना करें। दें। भेजें।"
+
+#: template-adoption-form.php:67
+msgid "When you adopt a people group, you step into a leadership role on their behalf—standing in the gap until the gospel takes root. This involves a commitment to:"
+msgstr ""
+"जब आप किसी जनसमूह को अपनाते हैं, तो आप उनकी ओर से नेतृत्व की भूमिका निभाते हैं—जब तक "
+"सुसमाचार जड़ें जमा नहीं लेता तब तक आप उस अंतराल में खड़े रहते हैं। इसमें निम्नलिखित "
+"प्रतिबद्धताएँ शामिल हैं:"
+
+#: template-adoption-form.php:71
+msgid "Mobilize toward the goal of at least 144 prayer partners to cover the people group in continuous, daily prayer (10 minutes each, 24 hours a day)."
+msgstr ""
+"लोगों के समूह को निरंतर, दैनिक प्रार्थना (प्रत्येक 10 मिनट, दिन में 24 घंटे) के माध्यम से "
+"आच्छादित करने के लिए कम से कम 144 प्रार्थना साझेदारों को जुटाएँ।"
+
+#: template-adoption-form.php:74
+msgid "Give"
+msgstr "दान करें"
+
+#: template-adoption-form.php:75
+msgid "Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers."
+msgstr ""
+"प्रार्थना अभियान को बनाए रखने, अभियान संचालन और सुसमाचार कार्यकर्ताओं को भेजने में "
+"सहायता के लिए Doxa फाउंडेशन के साथ मासिक आधार पर वित्तीय साझेदारी करें।"
+
+#: template-adoption-form.php:78
+msgid "Send"
+msgstr "भेजें"
+
+#: template-adoption-form.php:79
+msgid "Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly."
+msgstr ""
+"संभावित जाने वालों की पहचान करने और उन्हें समर्थन देने में सक्रिय रूप से मदद करें, और उन लोगों "
+"को प्रोत्साहित करें जिन्हें ईश्वर शायद विभिन्न संस्कृतियों को पार करके इस जनसमूह की सीधे सेवा "
+"करने के लिए बुला रहे हैं।"
+
+#: template-adoption-form.php:84
+msgid "Champion Details"
+msgstr "विजेता विवरण"
+
+#: template-adoption-form.php:85
+msgid "The Champion is the person who will organize the 144 intercessors and receive updates."
+msgstr ""
+"चैंपियन वह व्यक्ति है जो 144 मध्यस्थों का आयोजन करेगा और अपडेट प्राप्त करेगा।"
+
+#: template-adoption-form.php:87
+#: template-adoption-form.php:88
+msgid "First Name"
+msgstr "पहला नाम"
+
+#: template-adoption-form.php:91
+#: template-adoption-form.php:92
+msgid "Last Name"
+msgstr "अंतिम नाम"
+
+#: template-adoption-form.php:96
+msgid "Enter your Email"
+msgstr "अपना ईमेल दर्ज करें"
+
+#: template-adoption-form.php:99
+msgid "Phone"
+msgstr "फ़ोन"
+
+#: template-adoption-form.php:100
+msgid "Enter your Phone"
+msgstr "अपना फ़ोन दर्ज करें"
+
+#: template-adoption-form.php:103
+msgid "Role"
+msgstr "भूमिका"
+
+#: template-adoption-form.php:104
+msgid "Example: Pastor, Missions Pastor, Elder, Volunteer Leader etc."
+msgstr "उदाहरण: पादरी, मिशन पादरी, एल्डर, स्वयंसेवक नेता आदि।"
+
+#: template-adoption-form.php:108
+msgid "Partnering Church"
+msgstr "सहभागी चर्च"
+
+#: template-adoption-form.php:110
+msgid "Church/Group Name"
+msgstr "चर्च/समूह का नाम"
+
+#: template-adoption-form.php:111
+msgid "Enter Church/Group Name"
+msgstr "चर्च/समूह का नाम दर्ज करें"
+
+#: template-adoption-form.php:114
+msgid "I am happy for this church name to appear publicly on this site."
+msgstr "मैं इस चर्च का नाम इस साइट पर सार्वजनिक रूप से दिखने के लिए खुश हूँ।"
+
+#: template-adoption-form.php:118
+msgid "Location of Church/Group"
+msgstr "चर्च/समूह का स्थान"
+
+#: template-adoption-form.php:120
+msgid "Select Country"
+msgstr "देश चुनें"
+
+#: template-adoption-form.php:128
+msgid "I/my church/group commits to adopting this People Group for prayer, partnership and support."
+msgstr ""
+"मैं/मेरा चर्च/समूह इस जनसमूह को प्रार्थना, साझेदारी और समर्थन के लिए अपनाने का वचन देता हूँ।"
+
+#: template-adoption-form.php:132
+msgid "I give permission for DOXA to connect me with others adopting this people group."
+msgstr ""
+"मैं DOXA को इस जनसमूह को गोद लेने वाले अन्य लोगों से मेरा संपर्क कराने की अनुमति देता हूँ।"
+
+#: template-adoption-form.php:175
+msgid "Please confirm your adoption commitment."
+msgstr "कृपया अपने दत्तक ग्रहण की प्रतिबद्धता की पुष्टि करें।"
+
+#: template-adoption-form.php:211
+msgid "Thank you for your adoption commitment! We will be in touch soon."
+msgstr ""
+"आपकी गोद लेने की प्रतिबद्धता के लिए धन्यवाद! हम जल्द ही आपसे संपर्क करेंगे।"
+
+#: template-adoption-form.php:219
+#: template-adoption-form.php:228
+msgid "There was an error submitting your adoption. Please try again."
+msgstr "आपका दत्तक ग्रहण सबमिट करने में त्रुटि हुई। कृपया फिर से प्रयास करें।"
+
+#. Template Name of the theme
+msgid "UUPG Detail"
+msgstr "यूयूपीजी विवरण"
+
+#: template-uupg-detail.php:61
+msgid "Engaged"
+msgstr "सगाई हुई"
+
+#: template-uupg-detail.php:63
+msgid "Not Engaged"
+msgstr "सगाई नहीं हुई"
+
+#: template-uupg-detail.php:74
+msgid "Engagement Status"
+msgstr "सगाई की स्थिति"
+
+#: template-uupg-detail.php:79
+#: template-uupg-detail.php:87
+#: template-uupg-detail.php:95
+#: template-uupg-detail.php:103
+#: template-uupg-detail.php:111
+#: template-uupg-detail.php:188
+#: template-uupg-detail.php:196
+#: template-uupg-detail.php:204
+#: template-uupg-detail.php:212
+#: template-uupg-detail.php:220
+#: template-uupg-detail.php:228
+msgid "Done"
+msgstr "संपन्न"
+
+#: template-uupg-detail.php:81
+#: template-uupg-detail.php:89
+#: template-uupg-detail.php:97
+#: template-uupg-detail.php:105
+#: template-uupg-detail.php:113
+#: template-uupg-detail.php:190
+#: template-uupg-detail.php:198
+#: template-uupg-detail.php:206
+#: template-uupg-detail.php:214
+#: template-uupg-detail.php:222
+#: template-uupg-detail.php:230
+msgid "Not Done"
+msgstr "पूरा नहीं हुआ"
+
+#: template-uupg-detail.php:83
+#: template-uupg-detail.php:122
+msgid "Prayer Status"
+msgstr "प्रार्थना की स्थिति"
+
+#: template-uupg-detail.php:91
+#: template-uupg-detail.php:134
+msgid "Adoption Status"
+msgstr "दत्तक ग्रहण की स्थिति"
+
+#: template-uupg-detail.php:99
+msgid "Cross-cultural workers present"
+msgstr "अंतर-सांस्कृतिक कार्यकर्ता उपस्थित"
+
+#: template-uupg-detail.php:107
+msgid "Work in local language &amp; culture"
+msgstr "स्थानीय भाषा और संस्कृति में कार्य"
+
+#: template-uupg-detail.php:115
+msgid "Disciple &amp; church multiplication"
+msgstr "शिष्य और चर्च की वृद्धि"
+
+#: template-uupg-detail.php:124
+msgid "People committed to praying"
+msgstr "प्रार्थना के लिए प्रतिबद्ध लोग"
+
+#: template-uupg-detail.php:131
+msgid "Sign up to pray"
+msgstr "प्रार्थना के लिए साइन अप करें"
+
+#: template-uupg-detail.php:136
+msgid "churches / individuals have adopted this people group"
+msgstr "चर्चों/व्यक्तियों ने इस जनसमूह को गोद लिया है।"
+
+#: template-uupg-detail.php:152
+msgid "Adopt people group"
+msgstr "लोगों के समूह को गोद लें"
+
+#: template-uupg-detail.php:172
+msgid "Overview"
+msgstr "अवलोकन"
+
+#: template-uupg-detail.php:173
+msgid "Country"
+msgstr "देश"
+
+#: template-uupg-detail.php:176
+msgid "Alternate Names"
+msgstr "वैकल्पिक नाम"
+
+#: template-uupg-detail.php:178
+msgid "Population"
+msgstr "जनसँख्या"
+
+#: template-uupg-detail.php:179
+msgid "Primary Language"
+msgstr "प्राथमिक भाषा"
+
+#: template-uupg-detail.php:180
+msgid "Primary Religion"
+msgstr "मुख्य धर्म"
+
+#: template-uupg-detail.php:181
+msgid "Religious Practices"
+msgstr "धार्मिक आचरण"
+
+#: template-uupg-detail.php:185
+msgid "Progress"
+msgstr "प्रगति"
+
+#: template-uupg-detail.php:192
+msgid "Bible Translation"
+msgstr "बाइबिल अनुवाद"
+
+#: template-uupg-detail.php:200
+msgid "Bible Stories"
+msgstr "बाइबिल की कहानियाँ"
+
+#: template-uupg-detail.php:208
+msgid "Jesus Film"
+msgstr "यीशु फिल्म"
+
+#: template-uupg-detail.php:216
+msgid "Radio Broadcasts"
+msgstr "रेडियो प्रसारण"
+
+#: template-uupg-detail.php:224
+msgid "Gospel Recordings"
+msgstr "सुसमाचार अभिलेखन"
+
+#: template-uupg-detail.php:232
+msgid "Audio Scripture"
+msgstr "ध्वनि शास्त्र"
