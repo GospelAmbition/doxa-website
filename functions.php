@@ -1645,20 +1645,23 @@ add_action('after_setup_theme', 'doxa_load_theme_textdomain');
 
 function doxa_translation_url( $slug, $lang_code = null ) {
     $post_id = doxa_get_page_id_by_slug( $slug );
-    $list = doxa_language_relationships( $post_id );
 
     if ( empty( $lang_code ) ) {
         $lang_code = doxa_get_language_code();
     }
 
+    $translation_page = get_translation_page( $post_id, $lang_code );
+
+    return get_permalink( $translation_page->ID );
+}
+function get_translation_page( $post_id, $lang_code = null ) {
+    $list = doxa_language_relationships( $post_id );
+
     $trans_id = $list[$lang_code] ?? $post_id;
 
-    $trans_object = get_post( $trans_id, OBJECT );
-    if ( $lang_code === 'en' ) {
-        return site_url( '/' )  . $trans_object->post_name . '/';
-    }
+    $post = get_post( $trans_id, OBJECT );
 
-    return site_url( '/' ) . $lang_code . '/' . $trans_object->post_name . '/';
+    return $post;
 }
 function doxa_get_page_id_by_slug( $slug ) {
     $post = get_page_by_path( $slug, OBJECT, 'page' );
