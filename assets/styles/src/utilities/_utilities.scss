@@ -419,11 +419,11 @@
       background-color: var(--color-surface-brand-dark);
       z-index: -1;
       border-radius: 100%;
-      transform: translate(-10%, -15%);
+      transform: translate(-8%, -8%);
       bottom: 0;
 
       [dir="rtl"] & {
-        transform: translate(10%, -15%);
+        transform: translate(12%, -12%);
       }
     }
   }
