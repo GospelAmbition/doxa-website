@@ -133,7 +133,7 @@ get_header( 'top' ); ?>
                     </div>
                     <uupgs-list
                         languageCode="<?php echo doxa_get_language_code(); ?>"
-                        selectUrl="https://pray.doxa.life/"
+                        selectUrl="https://pray.doxa.life/<?php echo doxa_get_language_code(); ?>/"
                         researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Select', 'doxa-website'),
