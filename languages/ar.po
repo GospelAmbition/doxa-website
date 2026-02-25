@@ -5,7 +5,11 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2026-02-24 15:05+0000\n"
+=======
+"PO-Revision-Date: 2026-02-25 11:51+0000\n"
+>>>>>>> weblate/master
 "Last-Translator: N <translator@disciple.tools>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
@@ -62,7 +66,11 @@ msgstr "صلي"
 #. Template Name of the theme
 #: 404.php:25 front-page.php:54 page-adopt.php:137
 msgid "Adopt"
+<<<<<<< HEAD
 msgstr "يتبنى"
+=======
+msgstr "تبنّى"
+>>>>>>> weblate/master
 
 #: 404.php:26
 msgid "Research"
@@ -143,7 +151,11 @@ msgstr "الإلتزام"
 
 #: front-page.php:62
 msgid "Engage"
+<<<<<<< HEAD
 msgstr "يلتزم"
+=======
+msgstr "إلتزم"
+>>>>>>> weblate/master
 
 #: front-page.php:63
 msgid ""
@@ -291,7 +303,11 @@ msgid ""
 "Every unengaged people group adopted by a church committed to prayer, "
 "giving, and sending."
 msgstr ""
+<<<<<<< HEAD
 "كل مجموعة من الناس غير ملتزمة تتبناها كنيسة ملتزمة بالصلاة, العطاء والإرسال."
+=======
+"كل مجموعة من الناس الغير ملتزمة تتبناها كنيسة ملتزمة بالصلاة, العطاء والإرسال."
+>>>>>>> weblate/master
 
 #: page-adopt.php:29 page-pray.php:30
 msgid "Current Status"
@@ -315,7 +331,11 @@ msgstr "إختر بمحبة مجموعة من الناس الغير ملتزمة
 
 #: page-adopt.php:58
 msgid "Mobilize"
+<<<<<<< HEAD
 msgstr "التعبئة"
+=======
+msgstr "حرّك"
+>>>>>>> weblate/master
 
 #: page-adopt.php:59
 msgid "Raise up 144+ daily intercessors to pray 10 minutes a day."
@@ -323,7 +343,7 @@ msgstr "قم بتكوين أكثر من 144 شخص للصلاة يوميا لم�
 
 #: page-adopt.php:65
 msgid "Partner"
-msgstr "شريك"
+msgstr "شارك"
 
 #: page-adopt.php:66
 msgid ""
@@ -348,7 +368,7 @@ msgstr "الأدوات لتعبئة الصلاة والمشاركة في جمي�
 
 #: page-adopt.php:82
 msgid "Printable and digital resources to promote awareness and engagement"
-msgstr "موارد قابلة للطباعة ورقمية لتعزيز الوعي والمشاركة"
+msgstr "موارد قابلة للطباعة والرقمنة لتعزيز الوعي والمشاركة"
 
 #: page-adopt.php:83
 msgid "Helpful tips for sustaining long-term commitment"
@@ -540,7 +560,7 @@ msgstr ""
 
 #: page-pray.php:59
 msgid "Sign up"
-msgstr "التسجيل"
+msgstr "سجّل"
 
 #: page-pray.php:60
 msgid ""
