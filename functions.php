@@ -470,7 +470,7 @@ function custom_adoption_form_rewrite_rules() {
         $post = get_post( $translation_id, OBJECT );
         if ( $lang_code === 'en' ) {
             add_rewrite_rule(
-                '^' . $post->post_name . '/([^/]+)/()/?$',
+                '^' . $post->post_name . '/([^/]+)/?$',
                 'index.php?page_id=' . $post->ID . '&uupg_slug=$matches[1]&lang=' . $lang_code,
                 'top'
             );
