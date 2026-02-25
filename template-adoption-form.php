@@ -100,7 +100,16 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             </div>
                             <div class="">
                                 <label for="phone"><?php echo __('Phone', 'doxa-website'); ?></label>
-                                <input type="tel" id="phone" name="phone" required placeholder="<?php echo __('Enter your Phone', 'doxa-website'); ?>">
+                                <phone-input
+                                    class="w-100"
+                                    value=''
+                                    t='<?php echo json_encode([
+                                        'phone_error' => __('Please enter a valid phone number', 'doxa-website'),
+                                        'phone_error_too_short' => __('Phone number is too short', 'doxa-website'),
+                                        'phone_error_too_long' => __('Phone number is too long', 'doxa-website'),
+                                    ]); ?>'
+                                    required
+                                ></phone-input>
                             </div>
                             <div class="">
                                 <label for="role"><?php echo __('Role', 'doxa-website'); ?></label>

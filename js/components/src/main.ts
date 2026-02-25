@@ -1,3 +1,5 @@
+import 'intl-tel-input/build/css/intlTelInput.css'
+import './phone-input';
 import './uupgs-list';
 
 declare global {
