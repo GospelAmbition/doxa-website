@@ -23,7 +23,7 @@ get_header( 'top' ); ?>
                         <div class="card-two-tone | text-center grow-1">
                             <div class="stack stack--lg">
                                 <h2 class="h3"><?php echo __('Adoption Goal', 'doxa-website'); ?></h2>
-                                <p class="subtext font-size-md"><?php echo __('Every unengaged people group adopted by a church committed to prayer, giving, and sending.', 'doxa-website'); ?></p>
+                                <p class="subtext font-size-md"><?php echo __('Every unengaged people group adopted by a church committed to prayer, giving, and sending', 'doxa-website'); ?></p>
                             </div>
                             <div>
                                 <h2 class="h3"><?php echo __('Current Status', 'doxa-website'); ?></h2>
