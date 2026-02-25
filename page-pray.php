@@ -24,7 +24,7 @@ get_header( 'top' ); ?>
                             <div class="stack stack--lg">
                                 <h2 class="h3"><?php echo __('Prayer Goal', 'doxa-website'); ?></h2>
                                 <p class="subtext font-size-md"><?php echo __('24-Hour Prayer Coverage', 'doxa-website'); ?></p>
-                                <p class="subtext font-size-md"><?php echo __('Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples.', 'doxa-website'); ?></p>
+                                <p class="subtext font-size-md"><?php echo __('Mobilize 144+ people praying 10 minutes a day for all 2,085 people groups.', 'doxa-website'); ?></p>
                             </div>
                             <div>
                                 <h2 class="h3"><?php echo __('Current Status', 'doxa-website'); ?></h2>

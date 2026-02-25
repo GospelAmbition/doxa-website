@@ -73,6 +73,9 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                                 <li>
                                     <strong><?php echo __('Give', 'doxa-website'); ?> – </strong>
                                     <?php echo __('Partner financially on a monthly basis with the Doxa Foundation to help sustain prayer mobilization, campaign operations, and the sending of gospel workers.', 'doxa-website'); ?>
+                                    <br>
+                                    <br>
+                                    <?php echo __('We recommend that churches give a monthly pledge based on their congregational size.  i.e. $100 a month for a congregation around 100.  $500 a month for a congregation around 500. $1000 a month for a congregation around 1000, etc.', 'doxa-website'); ?>
                                 </li>
                                 <li>
                                     <strong><?php echo __('Send', 'doxa-website'); ?> – </strong>
@@ -107,12 +110,12 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                         <div class="stack">
                             <h3 class="h5"><?php echo __('Partnering Church', 'doxa-website'); ?></h3>
                             <div class="">
-                                <label for="church-name"><?php echo __('Church/Group Name', 'doxa-website'); ?></label>
                                 <input type="text" id="church-name" name="church_name" required placeholder="<?php echo __('Enter Church/Group Name', 'doxa-website'); ?>">
+                                <label for="church-name"><?php echo __('Church/Group Name', 'doxa-website'); ?></label>
                             </div>
-                            <div class="ms-auto form-control color-primary-darker font-weight-medium">
-                                <label for="confirm-public-display"><?php echo __('I am happy for this church name to appear publicly on this site.', 'doxa-website'); ?></label>
+                            <div class="form-control color-primary-darker font-weight-medium">
                                 <input type="checkbox" id="confirm-public-display" name="confirm_public_display">
+                                <label for="confirm-public-display"><?php echo __('I am happy for this church name to appear publicly on this site.', 'doxa-website'); ?></label>
                             </div>
                             <div>
                                 <label for="country"><?php echo __('Location of Church/Group', 'doxa-website'); ?></label>
@@ -124,13 +127,13 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                                 </select>
                             </div>
                         </div>
-                        <div class="ms-auto form-control color-primary-darker font-weight-medium">
-                            <label for="confirm-adoption"><?php echo __('I/my church/group commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
+                        <div class="form-control color-primary-darker font-weight-medium">
                             <input type="checkbox" id="confirm-adoption" name="confirm_adoption">
+                            <label for="confirm-adoption"><?php echo __('I/my church/group commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
                         </div>
-                        <div class="ms-auto form-control color-primary-darker font-weight-medium">
-                            <label for="permission-to-contact"><?php echo __('I give permission for DOXA to connect me with others adopting this people group.', 'doxa-website'); ?></label>
+                        <div class="form-control color-primary-darker font-weight-medium">
                             <input type="checkbox" id="permission-to-contact" name="permission_to_contact">
+                            <label for="permission-to-contact"><?php echo __('I give permission for DOXA to connect me with others adopting this people group.', 'doxa-website'); ?></label>
                         </div>
                         <div class="cf-turnstile" data-sitekey="<?php echo esc_attr( $cf_site_key ); ?>" data-theme="light" data-callback="onTurnstileSuccess"></div>
                         <div id="adoption-message" class="contact-message" style="display: none;"></div>

@@ -40,9 +40,9 @@ select option {
 .form-control {
     line-height: var(--line-height-none);
     display: grid;
-    grid-template-columns: auto 1em;
+    grid-template-columns: 1em auto;
     align-items: center;
-    gap: var(--spacing-xs);
+    gap: var(--spacing-md);
 
     & label {
         font-size: 1em;
