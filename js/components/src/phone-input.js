@@ -44,6 +44,12 @@ export class PhoneInput extends LitElement {
     this.number = this.value;
   }
 
+  updated(changedProperties) {
+    if (changedProperties.has('initialCountry') && this.initialCountry !== '') {
+      this.iti.setCountry(this.initialCountry);
+    }
+  }
+
   _handleInput() {
     this.number = this.iti.getNumber();
     this.dispatchEvent(new CustomEvent('phone-input', { detail: { number: this.number } }));

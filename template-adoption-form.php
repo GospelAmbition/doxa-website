@@ -101,8 +101,6 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             <div class="">
                                 <label for="phone"><?php echo __('Phone', 'doxa-website'); ?></label>
                                 <phone-input
-                                    class="w-100"
-                                    value=''
                                     t='<?php echo json_encode([
                                         'phone_error' => __('Please enter a valid phone number', 'doxa-website'),
                                         'phone_error_too_short' => __('Phone number is too short', 'doxa-website'),
@@ -155,6 +153,20 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
 
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
     <script>
+
+        const phoneInput = document.querySelector('phone-input');
+        fetch('https://geo.prayer.global/json')
+            .then(response => response.json())
+            .then(data => {
+                if (!data.country || !data.country.iso_code || data.country.iso_code === '') {
+                    return;
+                }
+                phoneInput.initialCountry = data.country.iso_code.toLowerCase();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
         let turnstileToken = '';
 
         function onTurnstileSuccess(token) {
