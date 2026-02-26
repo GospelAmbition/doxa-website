@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-"PO-Revision-Date: 2026-02-26 11:37+0000\n"
+"PO-Revision-Date: 2026-02-26 13:05+0000\n"
 "Last-Translator: mina ramzi <translator@disciple.tools>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
@@ -62,7 +62,7 @@ msgstr "صلي"
 #. Template Name of the theme
 #: 404.php:25 front-page.php:54 page-adopt.php:137
 msgid "Adopt"
-msgstr "تبني"
+msgstr "إنتماء"
 
 #: 404.php:26
 msgid "Research"
@@ -425,16 +425,16 @@ msgstr ""
 #: page-adopt.php:138 page-pray.php:140 page-uupgs.php:23
 #: shortcodes/uupg-list-shortcode.php:14
 msgid "Full Profile"
-msgstr "الملف الشخصي الكامل"
+msgstr "الملف الكامل"
 
 #: page-adopt.php:139 page-pray.php:141 shortcodes/uupg-list-shortcode.php:15
 msgid "Prayer Coverage"
-msgstr "تغطية الصلاة"
+msgstr "تغطية صلاة منتظمة"
 
 #: page-adopt.php:140 page-pray.php:142 page-uupgs.php:24
 #: shortcodes/uupg-list-shortcode.php:16
 msgid "Loading results..."
-msgstr "جار تحميل النتائج..."
+msgstr "جاري تحميل النتائج..."
 
 #: page-adopt.php:141 page-pray.php:143 page-uupgs.php:25
 #: shortcodes/uupg-list-shortcode.php:17
@@ -456,7 +456,7 @@ msgstr "عرض الكل"
 
 #: page-adopt.php:157
 msgid "I was a stranger and you invited me in."
-msgstr "كنت غريبا فدعوتني للدخول."
+msgstr "كنت غريبًا و دعوتني للدخول."
 
 #: page-adopt.php:158 page-adopt.php:160 page-pray.php:160 page-pray.php:162
 msgid "Jesus"
@@ -464,7 +464,7 @@ msgstr "يسوع"
 
 #. Template Name of the theme
 msgid "Contact Page"
-msgstr "صفحة الإتصال"
+msgstr "صفحة التواصل"
 
 #: page-contact.php:26
 msgid "Name"
@@ -488,17 +488,17 @@ msgstr "الرسالة"
 
 #: page-contact.php:35
 msgid "Enter your message"
-msgstr "أدخل رسالتك"
+msgstr "اكتب رسالتك"
 
 #: page-contact.php:45 page-contact.php:118 page-contact.php:126
 #: template-adoption-form.php:137 template-adoption-form.php:224
 #: template-adoption-form.php:232
 msgid "Submit"
-msgstr "يقدّم"
+msgstr "إرسال"
 
 #: page-contact.php:82 template-adoption-form.php:182
 msgid "Submitting..."
-msgstr "تقديم..."
+msgstr "جاري الارسال..."
 
 #: page-contact.php:105
 msgid "Thank you for your message. We will get back to you soon!"
@@ -510,11 +510,11 @@ msgstr "حدث خطأ أثناء إرسال رسالتك. يرجى المحاو�
 
 #: page-pray.php:19
 msgid "Prayer for an unengaged people group"
-msgstr "الصلاة من أجل الناس الغير ملتزمة"
+msgstr "صلاة من أجل مجموعة بشرية غير موصول لها"
 
 #: page-pray.php:20
 msgid "Help prepare the way for gospel engagement through prayer"
-msgstr "ساعد في تمهيد الطريق للإنخراط في الإنجيل من خلال الصلاة"
+msgstr "ساعد في اعداد الطريق للإنخراط في الإنجيل من خلال الصلاة"
 
 #: page-pray.php:25
 msgid "Prayer Goal"
@@ -522,17 +522,17 @@ msgstr "هدف الصلاة"
 
 #: page-pray.php:26 template-uupg-detail.php:129
 msgid "24-Hour Prayer Coverage"
-msgstr "تغطية الصلاة على مدار 24 ساعة"
+msgstr "تغطية صلاة مستمرة على مدار 24 ساعة"
 
 #: page-pray.php:27
 msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples."
 msgstr ""
 "حشد أكثر من 144 شخص للصلاة لمدة 10 دقائق يوميا من أجل جميع الشعوب البالغ "
-"عددهم 2085."
+"عددهم 2085 مجموعة."
 
 #: page-pray.php:33
 msgid "People groups with committed 24-hour prayer coverage."
-msgstr "مجموعة الناس الملتزمة بتغطية الصلاة على مدار 24 ساعة."
+msgstr "مجموعات من الناس الملتزمة بتغطية صلاة على مدار 24 ساعة."
 
 #: page-pray.php:47
 msgid "Where do I start?"
@@ -540,13 +540,11 @@ msgstr "من أين أبدأ؟"
 
 #: page-pray.php:53
 msgid "Choose an unengaged people group you will commit to pray for daily."
-msgstr ""
-"إختر مجموعة من الناس الغير ملتزمة بالدين وإعقد العزم على الصلاة من أجلهم "
-"يوميا."
+msgstr "اختار مجموعة بشرية غير مُوصول لها والتزم بالصلاة اليومية لأجلها."
 
 #: page-pray.php:59
 msgid "Sign up"
-msgstr "سجّل"
+msgstr "سجّل الان"
 
 #: page-pray.php:60
 msgid ""
@@ -556,27 +554,27 @@ msgstr ""
 
 #: page-pray.php:67
 msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
-msgstr "صلي لمدة 10 دقائق يوميا وساعد في توفير تغطية لصلاة على مدار 24 ساعة."
+msgstr "صلي لمدة 10 دقائق يوميا وساعد في توفير تغطية صلاة على مدار 24 ساعة."
 
 #: page-pray.php:81
 msgid "Scripture-centered prayer themes"
-msgstr "مواضيع الصلاة المتعلقة بالكتاب المقدس"
+msgstr "مواضيع صلاة متمحورة حول الكتاب المقدس"
 
 #: page-pray.php:82
 msgid "Spirit-led reflection and guidance"
-msgstr "التأمل والتوجيه المستوحى من الروح"
+msgstr "تأمل وقيادة روحية بالروح القدس"
 
 #: page-pray.php:83
 msgid "Real prayer needs from the field"
-msgstr "إحتياجات الصلاة الحقيقية من الميدان"
+msgstr "إحتياجات الصلاة الحقيقية من حقل الارسالية"
 
 #: page-pray.php:84
 msgid "Photos, stories and testimonies"
-msgstr "صور, قصص وشهادات"
+msgstr "صور, قصص واختبارات"
 
 #: page-pray.php:85
 msgid "Key insights about the people group"
-msgstr "أهم المعلومات حول المجموعة السكانية"
+msgstr "أهم النقاط عن المجموعة البشرية"
 
 #: page-pray.php:98
 msgid "Why prayer matters"
@@ -592,21 +590,21 @@ msgid ""
 "believers, meaning little to no consistent prayer is being offered on their "
 "behalf."
 msgstr ""
-"العديد من المجموعات السكانية الغير ملتزمة لا توجد بها كنائس ولا مبشرين، وغالبا "
-"ما لا يوجد بها مؤمنون، مما يعني أنه لا يتم تقديم سوى القليل من الصلاة المنتظمة "
-"نيابة عنهم أو لا يتم تقديمها على الإطلاق."
+"العديد من المجموعات السكانية الغير موصول لها لا توجد بها كنائس ولا مرسلين، "
+"وغالبا ما لا يوجد بها مؤمنون، مما يعني أنه لا يتم تقديم سوى القليل من الصلاة "
+"المنتظمة نيابة عنهم أو لا يتم تقديمها على الإطلاق."
 
 #: page-pray.php:113
 msgid "Prayer prepares the way for the gospel"
-msgstr "الصلاة تمهد الطريق للإنجيل"
+msgstr "الصلاة تمهد و تعد الطريق للإنجيل"
 
 #: page-pray.php:114
 msgid ""
 "Prayer softens hearts, opens doors, and invites the work of the Holy Spirit "
 "long before workers arrive or the gospel is proclaimed."
 msgstr ""
-"الصلاة تلين القلوب، تفتح الأبواب، وتدعو إلى عمل الروح القدس قبل وقت طويل من "
-"وصول العمال أو إعلان الإنجيل."
+"الصلاة تلين القلوب، تفتح الأبواب، وتدعو عمل الروح القدس قبل وقت طويل من وصول "
+"الفعلة أو إعلان الإنجيل."
 
 #: page-pray.php:121
 msgid "Prayer unites the global church"
@@ -622,13 +620,14 @@ msgstr ""
 
 #: page-pray.php:139 shortcodes/uupg-list-shortcode.php:6
 msgid "Select"
-msgstr "تحديد"
+msgstr "اختار"
 
 #: page-pray.php:159
 msgid ""
 "Pray earnestly to the Lord of the harvest ...that He would send laborers to "
 "the [Unengaged]."
-msgstr "صلوا بصدق إلى رب الحصاد ...أن يرسل خدام إلى [الناس الغير ملتزمة ]."
+msgstr ""
+"صلوا بجدية إلى رب الحصاد ...أن يرسل خدام إلى [الناس موصول لها بالانجيل ]."
 
 #. Template Name of the theme
 msgid "Simple Page"
@@ -636,7 +635,7 @@ msgstr "صفحة بسيطة"
 
 #. Template Name of the theme
 msgid "UUPGS"
-msgstr "UUPGS"
+msgstr "مجموعات بشرية غير موصول لها UUPGS"
 
 #: page-uupgs.php:18
 msgid "Find a UUPG"
@@ -648,19 +647,19 @@ msgstr "إبحث عن الأسماء, المواقع والأديان..."
 
 #: page-uupgs.php:28
 msgid "Adopted"
-msgstr "منتمي"
+msgstr "تم التبني"
 
 #: page-uupgs.php:29
 msgid "Not Adopted"
-msgstr "لم يتم إنتمائها"
+msgstr "غير متبنّى"
 
 #: page-uupgs.php:31
 msgid "Search"
-msgstr "يبحث"
+msgstr "ابحث"
 
 #: page-uupgs.php:32
 msgid "Sort"
-msgstr "النوع"
+msgstr "فرز"
 
 #: page-uupgs.php:33
 msgid "Per Page"
@@ -668,11 +667,11 @@ msgstr "لكل صفحة"
 
 #. Template Name of the theme
 msgid "Doxa Page"
-msgstr "صفحة دوكسا"
+msgstr "صفحة دوكسا Doxa"
 
 #: template-adoption-form.php:17 template-uupg-detail.php:29
 msgid "People Group Not Found"
-msgstr "لم يتم العثور على مجموعة الأشخاص"
+msgstr "مجموعة بشرية لم يتم العثور عليها"
 
 #: template-adoption-form.php:18 template-uupg-detail.php:30
 msgid ""
@@ -682,11 +681,11 @@ msgstr "لم يتم العثور على المجموعة التي تبحث عن�
 #: template-adoption-form.php:20 template-adoption-form.php:24
 #: template-uupg-detail.php:32 template-uupg-detail.php:36
 msgid "Back"
-msgstr "إلى الخلف"
+msgstr "عودة للخلف"
 
 #: template-adoption-form.php:43
 msgid "Adoption Form"
-msgstr "نموذج الإنتماء"
+msgstr "نموذج التبني"
 
 #: template-adoption-form.php:44
 msgid ""
@@ -694,9 +693,9 @@ msgid ""
 "Please complete the form below so we can confirm your church's adoption, "
 "connect with your Champion, and begin sending prayer updates and resources."
 msgstr ""
-"نشكرك لإتخاذك خطوة نحو الإنتماء إلى مجموعة سكانية غير ملتزمة. يرجى ملء النموذج "
-"أدناه حتى نتمكن من تأكيد الإنتماء لكنيستك، والتواصل مع منسقكم، والبدء في "
-"إرسال تحديثات الصلاة والموارد."
+"نشكرك لإتخاذك خطوة نحو تبني مجموعة بشرية غير موصول لها. يرجى ملء النموذج "
+"أدناه حتى نتمكن من تأكيد التبني لكنيستك،تواصل مع منسّقك وابدأ بإرسال تحديثات "
+"الصلاة والموارد."
 
 #: template-adoption-form.php:66
 msgid "What is your commitment? Pray. Give. Send."
@@ -708,16 +707,16 @@ msgid ""
 "behalf—standing in the gap until the gospel takes root. This involves a "
 "commitment to:"
 msgstr ""
-"عندما تنتمي لمجموعة من الناس، فإنك تتولى دور القيادة نيابة عنهم — وتقف في "
-"الفجوة حتى تترسخ بشارة الإنجيل. وهذا ينطوي على الإتزام بما يلي:"
+"عندما تتبني مجموعة بشرية فانت تتولي مسؤولية قيادية روحية عنها، وتقف شفيعًا "
+"وخادمًا لها إلى أن يُغرس الإنجيل في حياتها. ويتطلّب ذلك الالتزام بـ:"
 
 #: template-adoption-form.php:71
 msgid ""
 "Mobilize toward the goal of at least 144 prayer partners to cover the people "
 "group in continuous, daily prayer (10 minutes each, 24 hours a day)."
 msgstr ""
-"تعبئة الجهود لتحقيق هدف الوصول إلى 144 شخص في الصلاة على الأقل لتغطية المجموعة "
-"السكانية بالصلاة اليومية والمستمرة (10 دقائق لكل شخص، 24 ساعة في اليوم)."
+"حشد الجهود نحو تحقيق هدف لا يقل عن 144 شريك صلاة لتغطية المجموعة البشرية بصلاة "
+"يومية متواصلة (10 دقائق لكل شخص، على مدار 24 ساعة يوميًا."
 
 #: template-adoption-form.php:74
 msgid "Give"
