@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
+"POT-Creation-Date: 2026-02-26T14:49:30+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: doxa-website\n"
@@ -269,7 +269,7 @@ msgid "Adoption Goal"
 msgstr ""
 
 #: page-adopt.php:26
-msgid "Every unengaged people group adopted by a church committed to prayer, giving, and sending."
+msgid "Every unengaged people group adopted by a church committed to prayer, giving, and sending"
 msgstr ""
 
 #: page-adopt.php:29
@@ -449,7 +449,7 @@ msgid "Enter your name"
 msgstr ""
 
 #: page-contact.php:30
-#: template-adoption-form.php:95
+#: template-adoption-form.php:98
 msgid "Email"
 msgstr ""
 
@@ -468,14 +468,14 @@ msgstr ""
 #: page-contact.php:45
 #: page-contact.php:118
 #: page-contact.php:126
-#: template-adoption-form.php:137
-#: template-adoption-form.php:224
-#: template-adoption-form.php:232
+#: template-adoption-form.php:147
+#: template-adoption-form.php:248
+#: template-adoption-form.php:256
 msgid "Submit"
 msgstr ""
 
 #: page-contact.php:82
-#: template-adoption-form.php:182
+#: template-adoption-form.php:206
 msgid "Submitting..."
 msgstr ""
 
@@ -506,11 +506,11 @@ msgid "24-Hour Prayer Coverage"
 msgstr ""
 
 #: page-pray.php:27
-msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples."
+msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 people groups"
 msgstr ""
 
 #: page-pray.php:33
-msgid "People groups with committed 24-hour prayer coverage."
+msgid "People groups with committed 24-hour prayer coverage"
 msgstr ""
 
 #: page-pray.php:47
@@ -632,11 +632,13 @@ msgstr ""
 
 #: template-adoption-form.php:17
 #: template-uupg-detail.php:29
+#: template-uupg-resources.php:29
 msgid "People Group Not Found"
 msgstr ""
 
 #: template-adoption-form.php:18
 #: template-uupg-detail.php:30
+#: template-uupg-resources.php:30
 msgid "The people group you are looking for could not be found. Please try again."
 msgstr ""
 
@@ -644,6 +646,8 @@ msgstr ""
 #: template-adoption-form.php:24
 #: template-uupg-detail.php:32
 #: template-uupg-detail.php:36
+#: template-uupg-resources.php:32
+#: template-uupg-resources.php:36
 msgid "Back"
 msgstr ""
 
@@ -676,93 +680,105 @@ msgid "Partner financially on a monthly basis with the Doxa Foundation to help s
 msgstr ""
 
 #: template-adoption-form.php:78
+msgid "We recommend that churches give a monthly pledge based on their congregational size.  i.e. $100 a month for a congregation around 100.  $500 a month for a congregation around 500. $1000 a month for a congregation around 1000, etc."
+msgstr ""
+
+#: template-adoption-form.php:81
 msgid "Send"
 msgstr ""
 
-#: template-adoption-form.php:79
+#: template-adoption-form.php:82
 msgid "Actively help surface and support potential goers, encouraging those God may be calling to cross cultures and serve this people group directly."
 msgstr ""
 
-#: template-adoption-form.php:84
+#: template-adoption-form.php:87
 msgid "Champion Details"
 msgstr ""
 
-#: template-adoption-form.php:85
+#: template-adoption-form.php:88
 msgid "The Champion is the person who will organize the 144 intercessors and receive updates."
 msgstr ""
 
-#: template-adoption-form.php:87
-#: template-adoption-form.php:88
+#: template-adoption-form.php:90
+#: template-adoption-form.php:91
 msgid "First Name"
 msgstr ""
 
-#: template-adoption-form.php:91
-#: template-adoption-form.php:92
+#: template-adoption-form.php:94
+#: template-adoption-form.php:95
 msgid "Last Name"
 msgstr ""
 
-#: template-adoption-form.php:96
+#: template-adoption-form.php:99
 msgid "Enter your Email"
 msgstr ""
 
-#: template-adoption-form.php:99
+#: template-adoption-form.php:102
 msgid "Phone"
 msgstr ""
 
-#: template-adoption-form.php:100
-msgid "Enter your Phone"
+#: template-adoption-form.php:105
+msgid "Please enter a valid phone number"
 msgstr ""
 
-#: template-adoption-form.php:103
+#: template-adoption-form.php:106
+msgid "Phone number is too short"
+msgstr ""
+
+#: template-adoption-form.php:107
+msgid "Phone number is too long"
+msgstr ""
+
+#: template-adoption-form.php:113
 msgid "Role"
 msgstr ""
 
-#: template-adoption-form.php:104
+#: template-adoption-form.php:114
 msgid "Example: Pastor, Missions Pastor, Elder, Volunteer Leader etc."
 msgstr ""
 
-#: template-adoption-form.php:108
+#: template-adoption-form.php:118
 msgid "Partnering Church"
 msgstr ""
 
-#: template-adoption-form.php:110
-msgid "Church/Group Name"
-msgstr ""
-
-#: template-adoption-form.php:111
+#: template-adoption-form.php:120
 msgid "Enter Church/Group Name"
 msgstr ""
 
-#: template-adoption-form.php:114
+#: template-adoption-form.php:121
+msgid "Church/Group Name"
+msgstr ""
+
+#: template-adoption-form.php:125
 msgid "I am happy for this church name to appear publicly on this site."
 msgstr ""
 
-#: template-adoption-form.php:118
+#: template-adoption-form.php:128
 msgid "Location of Church/Group"
 msgstr ""
 
-#: template-adoption-form.php:120
+#: template-adoption-form.php:130
 msgid "Select Country"
 msgstr ""
 
-#: template-adoption-form.php:128
+#: template-adoption-form.php:139
 msgid "I/my church/group commits to adopting this People Group for prayer, partnership and support."
 msgstr ""
 
-#: template-adoption-form.php:132
+#: template-adoption-form.php:143
 msgid "I give permission for DOXA to connect me with others adopting this people group."
 msgstr ""
 
-#: template-adoption-form.php:175
+#: template-adoption-form.php:199
 msgid "Please confirm your adoption commitment."
 msgstr ""
 
-#: template-adoption-form.php:211
+#: template-adoption-form.php:235
 msgid "Thank you for your adoption commitment! We will be in touch soon."
 msgstr ""
 
-#: template-adoption-form.php:219
-#: template-adoption-form.php:228
+#: template-adoption-form.php:243
+#: template-adoption-form.php:252
 msgid "There was an error submitting your adoption. Please try again."
 msgstr ""
 
@@ -902,4 +918,8 @@ msgstr ""
 
 #: template-uupg-detail.php:232
 msgid "Audio Scripture"
+msgstr ""
+
+#: template-uupg-resources.php:54
+msgid "Resources"
 msgstr ""
