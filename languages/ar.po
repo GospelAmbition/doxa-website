@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-"PO-Revision-Date: 2026-02-25 11:51+0000\n"
-"Last-Translator: N <translator@disciple.tools>\n"
+"PO-Revision-Date: 2026-02-26 11:37+0000\n"
+"Last-Translator: mina ramzi <translator@disciple.tools>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
 "Language: ar\n"
@@ -62,7 +62,7 @@ msgstr "صلي"
 #. Template Name of the theme
 #: 404.php:25 front-page.php:54 page-adopt.php:137
 msgid "Adopt"
-msgstr "تبنّى"
+msgstr "تبني"
 
 #: 404.php:26
 msgid "Research"
@@ -70,19 +70,19 @@ msgstr "البحث"
 
 #: 404.php:27
 msgid "About"
-msgstr "عن"
+msgstr "من نحن"
 
 #: 404.php:28
 msgid "Contact"
-msgstr "إتصال"
+msgstr "تواصل معنا"
 
 #: footer.php:17
 msgid "Global Partnership for the Unreached"
-msgstr "الشراكة العالمية من أجل الغير متمتعين بالخدمات"
+msgstr "شراكة العالمية للوصول إلى الشعوب غير المُوصَل إليها"
 
 #: footer.php:34 page-contact.php:20
 msgid "Contact Us"
-msgstr "إتصل بنا"
+msgstr "اتصل بنا"
 
 #: footer.php:38
 msgid "All rights reserved."
@@ -94,7 +94,7 @@ msgstr "هديتنا ليسوع"
 
 #: front-page.php:17 front-page.php:26
 msgid "Engage every people by 2033"
-msgstr "إلتزام جميع الناس بحلول عام 2033"
+msgstr "اخراط واطلاق عمل ارسالي بين كل المجموعات البشرية بحلول عام 2033"
 
 #: front-page.php:29
 msgid "The DOXA Vision: Click image to watch the video"
@@ -103,19 +103,19 @@ msgstr "رؤية دوكسا: إضغط على الصورة لمشاهدة الف�
 #: front-page.php:34
 msgctxt "number of unengaged people groups"
 msgid "%s unengaged people groups"
-msgstr "%s المجموعات الغير ملتزمة"
+msgstr "%s المجموعات البشرية التي بها عمل ارسالي ضعيف"
 
 #: front-page.php:36
 msgid ""
 "Our hope is to see each of them covered in 24-hour prayer, and your church "
 "can be part of it."
 msgstr ""
-"نأمل أن نرى كل واحد منهم محاطا بالصلاة على مدار 24 ساعة، ويمكن لكنيستك أن "
-"تكون جزءا من ذلك."
+"املنا و رجاؤنا أن نرى كل واحد منهم محاطا بالصلاة على مدار 24 ساعة، ويمكن "
+"لكنيستك أن تكون جزءا من ذلك."
 
 #: front-page.php:41
 msgid "A simple path to faithful obedience"
-msgstr "الطريق البسيط إلى الطاعة الأمينة"
+msgstr "طريق بسيط الي الطاعة الأمينة"
 
 #: front-page.php:47
 msgid ""
@@ -123,41 +123,41 @@ msgid ""
 "unengaged peoples."
 msgstr ""
 "إحصل على نقاط الصلاة اليومية وإنضم إلى المؤمنين في جميع أنحاء العالم في الصلاة "
-"من أجل الشعوب الغير ملتزمة."
+"من أجل الشعوب التي لم يصل لها الانجيل."
 
 #: front-page.php:49
 msgid "Join"
-msgstr "إنضم"
+msgstr "إنضم الان"
 
 #: front-page.php:55
 msgid ""
 "Churches and networks take ownership – praying, giving, and preparing the "
 "way for gospel workers."
 msgstr ""
-"تتولى الكنائس والشبكات زمام الأمور – بالصلاة, العطاء وتمهيد الطريق للعاملين في "
-"مجال نشر الإنجيل."
+"تتولّى الكنائس والشراكات الكنسية قيادة المبادرة، عبر الالتزام بالصلاة، والدعم "
+"المادي، وتهيئة البيئة المناسبة لعمل خدام الإنجيل."
 
 #: front-page.php:57 front-page.php:65
 msgid "Commit"
-msgstr "الإلتزام"
+msgstr "إعلن التزامك"
 
 #: front-page.php:62
 msgid "Engage"
-msgstr "إلتزم"
+msgstr "انخرط و شارك بفاعلية"
 
 #: front-page.php:63
 msgid ""
 "God raises up men and women to go, serve, and proclaim Christ among the "
 "nations."
-msgstr "الله يقيم رجالا ونساء ليذهبوا ويخدموا ويعلنوا المسيح بين الأمم."
+msgstr "الله يقيم وينهض رجالا ونساء ليذهبوا ويخدموا ويعلنوا المسيح بين الأمم."
 
 #: front-page.php:72 front-page.php:76
 msgid "Who are the unengaged?"
-msgstr "من هم الغير ملتزمين؟"
+msgstr "من هم الشعوب التي لم يبدا بينهم عمل ارسالي ؟"
 
 #: front-page.php:81
 msgid "Unreached"
-msgstr "لم يتم الوصول إليها"
+msgstr "غير موصول لهم"
 
 #: front-page.php:82 front-page.php:91 front-page.php:100
 msgctxt "number of billions"
@@ -167,19 +167,19 @@ msgstr "%s مليار"
 #: front-page.php:83 front-page.php:92 front-page.php:101 front-page.php:110
 msgctxt "number of people groups"
 msgid "%s People Groups"
-msgstr "%s المجموعات السكانية"
+msgstr "%s المجموعات البشرية"
 
 #: front-page.php:90
 msgid "Under-Engaged"
-msgstr "غير-ملتزم"
+msgstr "حضور للعمل المرسلي ضعيف"
 
 #: front-page.php:99
 msgid "Frontier People"
-msgstr "سكان الحدود"
+msgstr "شعوب علي حدود العمل المرسلي"
 
 #: front-page.php:108
 msgid "Unengaged"
-msgstr "غير ملتزم"
+msgstr "شعوب بدون عمل مرسلي"
 
 #: front-page.php:109
 msgctxt "number of millions"
@@ -201,25 +201,27 @@ msgstr "بالتعاون مع الكنيسة العالمية، تتمثل رؤ�
 #: front-page.php:140
 msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples"
 msgstr ""
-"التغطية لصّلاة اليومية على مدار 24 ساعة لجميع السكان الغير ملتزمة والبالغ "
-"عددهم 2085 ساكن"
+"صلاة متواصلة 24 ساعة يوميًا لأجل جميع المجموعات البشرية عددهم 2,085 مجموعة لم "
+"يبدأ بينها عمل إرسالي الي الان"
 
 #: front-page.php:141
 msgid "No unengaged people groups by 2033"
-msgstr "لا وجود لمجموعات سكانية غير ملتزمة بحلول عام 2033"
+msgstr ""
+"هدفنا أن لا توجد أي مجموعة بشرية غير مُنخرط فيها علم إرسالي بحلول عام 2033"
 
 #: front-page.php:142
 msgid "Mobilization of 20,000+ DOXA partnership missionaries"
-msgstr "تعبئة أكثر من 20,000 مبشر من شركاء دوكسا"
+msgstr "اطلاق وتمكين وحشد أكثر من 20,000 مرسل من شركاء دوكسا DOXA"
 
 #: front-page.php:143
 msgid "Fruitful engagement among frontier peoples and the under-engaged"
-msgstr "التفاعل المثمر بين شعوب المناطق الحدودية والشعوب الغير ملتزمة"
+msgstr ""
+"انخراط مثمر وفعال بين شعوب المناطق الحدودية والشعوب التي لا يوجد بها عمل "
+"مرسلي كافي"
 
 #: front-page.php:144
 msgid "Church planting movements among every unreached people on earth"
-msgstr ""
-"حركات تأسيس الكنائس بين جميع الشعوب التي لم تصلها رسالة الإنجيل على وجه الأرض"
+msgstr "حركات تأسيس الكنائس بين جميع الشعوب الغير موصول إليها في كل الأرض"
 
 #: front-page.php:147
 msgid "More"
@@ -227,19 +229,19 @@ msgstr "المزيد"
 
 #: front-page.php:160 front-page.php:163 front-page.php:184
 msgid "Engagement starts with prayer"
-msgstr "الإلتزام يبدأ بالصلاة"
+msgstr "الإلتزام والانخراط يبدأ بالصلاة"
 
 #: front-page.php:167
 msgid ""
 "Every movement of the gospel begins with intercession. Cover an unengaged "
 "people group in daily prayer and help prepare the way."
 msgstr ""
-"كل حركة إنجيلية تبدأ بالدعاء. إحمي الناس الغير ملتزمة بالصلاة اليومية وساعد "
-"في تمهيد الطريق."
+"كل نهضة وحركة إنجيلية تبدأ بالشفاعة. التزم بصلاة يومية الناس الغير موصول لها  "
+"وساعد في تمهيد الطريق."
 
 #: front-page.php:178
 msgid "What does \"DOXA\" mean?"
-msgstr "ماذا تعني كلمة \"دوكسا \"؟"
+msgstr "ماذا تعني كلمة \"دوكسا DOXA؟"
 
 #: front-page.php:179
 msgid "DOXA is the Greek word for \"GLORY\"."
@@ -253,8 +255,8 @@ msgid ""
 "nation are worshipping Jesus and He alone receives all the glory."
 msgstr ""
 "إخترنا هذا الإسم لأن يسوع يستحق المجد من كل قبيلة, لسان, شعب وأمة. تذكرنا "
-"دوكسا بأننا شركاء مع الكنيسة في نشر الإنجيل بأكمله إلى العالم بأسره – حتى "
-"يعبد الناس يسوع من كل أمة ويحصل وحده على كل المجد."
+"دوكسا بأننا شركاء مع الكنيسة في نشر الإنجيل بأكمله إلى العالم كله – حتى يسبح "
+"و يعبد الناس يسوع من كل أمة وياخذ وحده على كل المجد."
 
 #: functions.php:87
 msgid "Click again to interact with map"
@@ -262,7 +264,7 @@ msgstr "إضغط مرة أخرى للتفاعل مع الخريطة"
 
 #: header.php:35
 msgid "World assemblies of God Fellowship"
-msgstr "الجمعيات العالمية لجماعة الله"
+msgstr "الاتحاد العالمي للكنائس الرسولية"
 
 #: index.php:24
 msgid "Let's TOGETHER give Jesus a gift:"
@@ -270,28 +272,32 @@ msgstr "لنقدم معا هدية ليسوع:"
 
 #: index.php:25
 msgid "Every unengaged people on earth engaged by 2033"
-msgstr "كل الأشخاص الغير ملتزمين على وجه الأرض سيكونون ملتزمين بحلول عام 2033"
+msgstr ""
+"انخراط كل مجموعة بشرية غير منخرط فيها عمل إرسالي على الأرض بحلول عام 2033"
 
 #: page-adopt.php:19 page-adopt.php:99 page-adopt.php:108 page-adopt.php:116
 #: page-pray.php:101 page-pray.php:110 page-pray.php:118
 msgid "Adopt an unengaged people group"
-msgstr "تبنّي مجموعة من الناس الغير ملتزمة"
+msgstr "تبنَّي مجموعة بشرية لم يبدأ بينها عمل إرسالي حتي الان"
 
 #: page-adopt.php:20
 msgid ""
 "A church-led commitment to pray, give, and send so that gospel access begins"
-msgstr "الإتزام تقوده الكنيسة بالصلاة والعطاء والإرسال حتى تصل إلى الإنجيل"
+msgstr ""
+"تقود الكنيسة بالصلاة والعطاء والإرسال،حتي يصل الإنجيل إلى كل شعب لم تصله "
+"الرسالة بعد"
 
 #: page-adopt.php:25
 msgid "Adoption Goal"
-msgstr "هدف التبني"
+msgstr "هدف التبنّي"
 
 #: page-adopt.php:26
 msgid ""
 "Every unengaged people group adopted by a church committed to prayer, "
 "giving, and sending."
 msgstr ""
-"كل مجموعة من الناس الغير ملتزمة تتبناها كنيسة ملتزمة بالصلاة, العطاء والإرسال."
+"أن يُتم تبني كل مجموعة بشرية لا يوجد فيها عمل مرسلي بواسطة كنيسة ملتزمة بالصلاة "
+"والعطاء والإرسال."
 
 #: page-adopt.php:29 page-pray.php:30
 msgid "Current Status"
@@ -299,36 +305,36 @@ msgstr "الوضع الحالي"
 
 #: page-adopt.php:32
 msgid "people groups adopted"
-msgstr "المجموعات السكانية المتبنية"
+msgstr "المجموعات البشرية التي تم تبنيها"
 
 #: page-adopt.php:46
 msgid "How Adoption Works"
-msgstr "كيف تتم عملية التبني"
+msgstr "كيف تتم عملية التبني الارسالي"
 
 #: page-adopt.php:51 page-pray.php:52
 msgid "Choose"
-msgstr "إختر"
+msgstr "إختار"
 
 #: page-adopt.php:52
 msgid "Prayerfully select an unengaged people group to adopt."
-msgstr "إختر بمحبة مجموعة من الناس الغير ملتزمة لتبنيها."
+msgstr "اختار مجموعة بشرية لا يوجد بها عملي إرسالي لتتبنّاها بالصلاة."
 
 #: page-adopt.php:58
 msgid "Mobilize"
-msgstr "حرّك"
+msgstr "حفز المومنين"
 
 #: page-adopt.php:59
 msgid "Raise up 144+ daily intercessors to pray 10 minutes a day."
-msgstr "قم بتكوين أكثر من 144 شخص للصلاة يوميا لمدة 10 دقائق."
+msgstr "قم بتشجع أكثر من 144 شخص متشفع للصلاة يوميا لمدة 10 دقائق."
 
 #: page-adopt.php:65
 msgid "Partner"
-msgstr "شارك"
+msgstr "كن شريك"
 
 #: page-adopt.php:66
 msgid ""
 "Partner through prayer, giving, and sending so that gospel access begins."
-msgstr "شارك من خلال الصلاة, العطاء والإرسال حتى تصل إلى الإنجيل."
+msgstr "كن شريك من خلال الصلاة, العطاء والإرسال لكي يصل الانجيل للناس."
 
 #: page-adopt.php:70 page-pray.php:71
 msgid "Get Started"
@@ -336,19 +342,19 @@ msgstr "إبدأ الآن"
 
 #: page-adopt.php:78
 msgid "Adoption Guide & Resources"
-msgstr "دليل التبني والموارد"
+msgstr "دليل التبنّي & والموارد"
 
 #: page-adopt.php:80
 msgid "Step-by-step guidance for churches adopting a people group"
-msgstr "الإرشادات خطوة بخطوة للكنائس التي تتبنى مجموعة سكانية"
+msgstr "الإرشادات خطوة بخطوة للكنائس التي متبنية مجموعة بشرية"
 
 #: page-adopt.php:81
 msgid "Tools to mobilize prayer and participation across your congregation"
-msgstr "الأدوات لتعبئة الصلاة والمشاركة في جميع أنحاء رعيتك"
+msgstr "أدوات لحشد الصلاة والمشاركة وسط شعب كنيستك"
 
 #: page-adopt.php:82
 msgid "Printable and digital resources to promote awareness and engagement"
-msgstr "موارد قابلة للطباعة والرقمنة لتعزيز الوعي والمشاركة"
+msgstr "موارد رقمية و قابلة للطباعة لتعزيز الوعي والمشاركة"
 
 #: page-adopt.php:83
 msgid "Helpful tips for sustaining long-term commitment"
@@ -360,7 +366,7 @@ msgstr "دليلك اليومي للصلاة"
 
 #: page-adopt.php:96
 msgid "Why adoption matters"
-msgstr "لماذا يعدّ التبني أمرا مهما"
+msgstr "لماذا التبني أمر مهم"
 
 #: page-adopt.php:102
 msgid "They have no gospel access"
@@ -372,13 +378,13 @@ msgid ""
 "known believers. Adoption helps ensure they are finally seen, prayed for, "
 "and intentionally pursued with the gospel."
 msgstr ""
-"المجموعات الغير ملتزمة ليس لديها مبشرين ولا كنائس، وغالبا ما لا يوجد بينها "
-"مؤمنون معروفون. التبني يساعد على ضمان أن يتم رؤيتهم أخيرا، والصلاة من أجلهم، "
-"والسعي الحثيث إلى إيصال الإنجيل إليهم."
+"المشعوب التي ليس فيها عمل ارسالي ليس لديها مرسلين ولا كنائس، وغالبا ما لا يوجد "
+"بينها مؤمنون معروفون.التبني  يساعد التبنّي يفتح الطريق لرؤيتهم وخدمتهم، "
+"والصلاة من أجلهم، والسعي المقصود إلى توصيل الإنجيل إليهم."
 
 #: page-adopt.php:111
 msgid "Prayer opens the door for engagement"
-msgstr "الصلاة تفتح الباب أمام الإلتزام"
+msgstr "الصلاة تفتح الباب أمام المشاركة"
 
 #: page-adopt.php:112
 msgid ""
@@ -386,13 +392,13 @@ msgid ""
 "prepares the soil, breaks spiritual barriers, and supports workers who go. "
 "Every gospel movement begins with prayer."
 msgstr ""
-"تحفّز مبادرة التبني أكثر من 144 شخص للصلاة يوميا، مما يخلق 24 ساعة من الصلاة "
+"تشجع مبادرة التحفيز أكثر من 144 شخص للصلاة يوميا، مما يخلق 24 ساعة من الصلاة "
 "التي تهيئ التربة، وتكسر الحواجز الروحية، وتدعم الخدّام الذين يذهبون. كل حركة "
 "إنجيلية تبدأ بالصلاة."
 
 #: page-adopt.php:119
 msgid "Churches become active partners in God's mission"
-msgstr "تصبح الكنائس ذو شراكة فعالة في رسالة الله"
+msgstr "تصبح الكنائس ذو شراكة فعالة في ارسالية الله"
 
 #: page-adopt.php:120
 msgid ""
@@ -401,20 +407,20 @@ msgid ""
 "engaged, and ultimately becomes a worshipping community for Jesus."
 msgstr ""
 "يدعو التبني الكنيسة المحلية إلى المشاركة الفعّالة - بالصلاة, العطاء والإرسال - "
-"حتى يتحول الناس من حالة غير ملتزم إلى ملتزم ، وتصبح في النهاية الكل تعبد "
-"يسوع."
+"حتى يتحول الناس من حالة عدم الانخراط إلى الانخراط الإرسالي، ويصبح في النهاية "
+"الكل تعبد يسوع."
 
 #: page-adopt.php:129 page-pray.php:131
 msgid "Choose a people group"
-msgstr "إختر مجموعة من الناس"
+msgstr "إختار مجموعة بشرية"
 
 #: page-adopt.php:130 page-pray.php:132
 msgid ""
 "Select a highlighted unengaged people group, or search for a specific group "
 "or location below."
 msgstr ""
-"حدّد مجموعة من الأشخاص الغير ملتزمة والمميزة، أو إبحث عن مجموعة أو موقع معين "
-"أدناه."
+"اختار مجموعة بشرية غير موصول لها و معروفة، أو إبحث عن مجموعة أو موقع معينة  "
+"بالاسفل."
 
 #: page-adopt.php:138 page-pray.php:140 page-uupgs.php:23
 #: shortcodes/uupg-list-shortcode.php:14
@@ -638,15 +644,15 @@ msgstr "إبحث عن UUPG"
 
 #: page-uupgs.php:27
 msgid "Search names, locations, religions..."
-msgstr "إبحث عن الأسماءة, المواقع والأديان..."
+msgstr "إبحث عن الأسماء, المواقع والأديان..."
 
 #: page-uupgs.php:28
 msgid "Adopted"
-msgstr "متبنى"
+msgstr "منتمي"
 
 #: page-uupgs.php:29
 msgid "Not Adopted"
-msgstr "لم يتم تبنيها"
+msgstr "لم يتم إنتمائها"
 
 #: page-uupgs.php:31
 msgid "Search"
@@ -680,7 +686,7 @@ msgstr "إلى الخلف"
 
 #: template-adoption-form.php:43
 msgid "Adoption Form"
-msgstr "نموذج التبني"
+msgstr "نموذج الإنتماء"
 
 #: template-adoption-form.php:44
 msgid ""
@@ -688,9 +694,9 @@ msgid ""
 "Please complete the form below so we can confirm your church's adoption, "
 "connect with your Champion, and begin sending prayer updates and resources."
 msgstr ""
-"نشكرك لإتخاذك خطوة نحو تبني مجموعة سكانية غير ملتزمة. يرجى ملء النموذج أدناه "
-"حتى نتمكن من تأكيد تبني كنيستك، والتواصل مع منسقكم، والبدء في إرسال تحديثات "
-"الصلاة والموارد."
+"نشكرك لإتخاذك خطوة نحو الإنتماء إلى مجموعة سكانية غير ملتزمة. يرجى ملء النموذج "
+"أدناه حتى نتمكن من تأكيد الإنتماء لكنيستك، والتواصل مع منسقكم، والبدء في "
+"إرسال تحديثات الصلاة والموارد."
 
 #: template-adoption-form.php:66
 msgid "What is your commitment? Pray. Give. Send."
@@ -702,7 +708,7 @@ msgid ""
 "behalf—standing in the gap until the gospel takes root. This involves a "
 "commitment to:"
 msgstr ""
-"عندما تتبنى مجموعة من الناس، فإنك تتولى دور القيادة نيابة عنهم — وتقف في "
+"عندما تنتمي لمجموعة من الناس، فإنك تتولى دور القيادة نيابة عنهم — وتقف في "
 "الفجوة حتى تترسخ بشارة الإنجيل. وهذا ينطوي على الإتزام بما يلي:"
 
 #: template-adoption-form.php:71
@@ -805,26 +811,27 @@ msgid ""
 "I/my church/group commits to adopting this People Group for prayer, "
 "partnership and support."
 msgstr ""
-"أنا/كنيستي/مجموعتي نلتزم بتبني هذه المجموعة السكانية للصلاة, الشراكة والدعم."
+"أنا/كنيستي/مجموعتي نلتزم بإنتماء هذه المجموعة السكانية للصلاة, الشراكة والدعم."
 
 #: template-adoption-form.php:132
 msgid ""
 "I give permission for DOXA to connect me with others adopting this people "
 "group."
 msgstr ""
-"أمنح لشركة دوكسا الإذن بتواصلي مع الآخرين الذين يتبنون هذه المجموعة من الناس."
+"أمنح لشركة دوكسا الإذن بتواصلي مع الآخرين الذين ينتمون إلى هذه المجموعة من "
+"الناس."
 
 #: template-adoption-form.php:175
 msgid "Please confirm your adoption commitment."
-msgstr "يرجى تأكيد إلتزامك بالتبني."
+msgstr "يرجى تأكيد إلتزامك بالإنتماء."
 
 #: template-adoption-form.php:211
 msgid "Thank you for your adoption commitment! We will be in touch soon."
-msgstr "نشكركم على إلتزامكم بالتبني! سنتواصل معكم قريبا."
+msgstr "نشكركم على إلتزامكم بالإنتماء! سنتواصل معكم قريبا."
 
 #: template-adoption-form.php:219 template-adoption-form.php:228
 msgid "There was an error submitting your adoption. Please try again."
-msgstr "حدث خطأ أثناء إرسال طلب التبني. يرجى المحاولة مرة أخرى."
+msgstr "حدث خطأ أثناء إرسال طلب الإنتماء. يرجى المحاولة مرة أخرى."
 
 #. Template Name of the theme
 msgid "UUPG Detail"
@@ -866,7 +873,7 @@ msgstr "حالة الصلاة"
 
 #: template-uupg-detail.php:91 template-uupg-detail.php:134
 msgid "Adoption Status"
-msgstr "حالة التبني"
+msgstr "حالة الإنتماء"
 
 #: template-uupg-detail.php:99
 msgid "Cross-cultural workers present"
@@ -890,11 +897,11 @@ msgstr "سجّل للصلاة"
 
 #: template-uupg-detail.php:136
 msgid "churches / individuals have adopted this people group"
-msgstr "الكنائس/ أفراد المجموعة التي تم تبنيهم"
+msgstr "الكنائس/ أفراد المجموعة التي تم إنتمائهم"
 
 #: template-uupg-detail.php:152
 msgid "Adopt people group"
-msgstr "مجموعة الناس المتبنية"
+msgstr "مجموعة الناس المنتمية"
 
 #: template-uupg-detail.php:172
 msgid "Overview"

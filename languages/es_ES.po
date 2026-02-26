@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-"PO-Revision-Date: 2026-02-23 13:05+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"PO-Revision-Date: 2026-02-26 11:05+0000\n"
+"Last-Translator: Weblate Admin <translator@disciple.tools>\n"
 "Language-Team: Spanish <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/es_ES/>\n"
 "Language: es_ES\n"
@@ -77,7 +77,7 @@ msgstr "Contacto"
 
 #: footer.php:17
 msgid "Global Partnership for the Unreached"
-msgstr "Alianza Global para los No Alcanzados"
+msgstr "Alianza Global para los No Comprometidos"
 
 #: footer.php:34 page-contact.php:20
 msgid "Contact Us"
@@ -93,7 +93,7 @@ msgstr "Nuestro regalo para Jesús"
 
 #: front-page.php:17 front-page.php:26
 msgid "Engage every people by 2033"
-msgstr "Involucrar a todos los pueblos para 2033"
+msgstr "Involucrar a todos los pueblos para el 2.033"
 
 #: front-page.php:29
 msgid "The DOXA Vision: Click image to watch the video"
@@ -102,7 +102,7 @@ msgstr "La visión de DOXA: Haga clic en la imagen para ver el vídeo"
 #: front-page.php:34
 msgctxt "number of unengaged people groups"
 msgid "%s unengaged people groups"
-msgstr "%s grupos étnicos no alcanzados"
+msgstr "%s grupos étnicos no comprometidos"
 
 #: front-page.php:36
 msgid ""
@@ -121,8 +121,8 @@ msgid ""
 "Receive daily prayer points and join believers worldwide in prayer for the "
 "unengaged peoples."
 msgstr ""
-"Reciba puntos de oración diarios y únase a creyentes de todo el mundo en "
-"oración por los pueblos no alcanzados."
+"Reciba diariamente pedidos de oración y únase a creyentes de todo el mundo "
+"en favor de los pueblos no alcanzados."
 
 #: front-page.php:49
 msgid "Join"
@@ -154,7 +154,7 @@ msgstr ""
 
 #: front-page.php:72 front-page.php:76
 msgid "Who are the unengaged?"
-msgstr "¿Quiénes son los no alcanzados?"
+msgstr "¿Quiénes son los no comprometidos?"
 
 #: front-page.php:81
 msgid "Unreached"
@@ -176,7 +176,7 @@ msgstr "Poco comprometido"
 
 #: front-page.php:99
 msgid "Frontier People"
-msgstr "Gente de la frontera"
+msgstr "Gente fronteriza"
 
 #: front-page.php:108
 msgid "Unengaged"
@@ -185,7 +185,7 @@ msgstr "Sin compromiso"
 #: front-page.php:109
 msgctxt "number of millions"
 msgid "%s Million"
-msgstr "%s Millón"
+msgstr "%s Millones"
 
 #: front-page.php:116
 msgid "Learn More"
@@ -202,7 +202,7 @@ msgstr "En colaboración con la iglesia global, nuestra visión es..."
 #: front-page.php:140
 msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples"
 msgstr ""
-"Cobertura diaria de oración las 24 horas para los 2085 pueblos no "
+"Cobertura diaria de oración las 24 horas por los 2.085 pueblos no "
 "evangelizados"
 
 #: front-page.php:141
@@ -211,18 +211,18 @@ msgstr "No habrá grupos étnicos sin evangelizar para 2033"
 
 #: front-page.php:142
 msgid "Mobilization of 20,000+ DOXA partnership missionaries"
-msgstr "Movilización de más de 20 000 misioneros asociados a DOXA"
+msgstr "Movilización de más de 20.000 misioneros asociados a DOXA"
 
 #: front-page.php:143
 msgid "Fruitful engagement among frontier peoples and the under-engaged"
 msgstr ""
-"Fructífero compromiso entre los pueblos fronterizos y los menos alcanzados"
+"Compromiso fructífero entre los pueblos fronterizos y los menos alcanzados"
 
 #: front-page.php:144
 msgid "Church planting movements among every unreached people on earth"
 msgstr ""
-"Movimientos de plantación de iglesias entre todos los pueblos no alcanzados "
-"de la tierra"
+"Movimientos de plantación de iglesias entre todos los pueblos no "
+"comprometidos de la tierra"
 
 #: front-page.php:147
 msgid "More"
@@ -238,7 +238,7 @@ msgid ""
 "people group in daily prayer and help prepare the way."
 msgstr ""
 "Todo movimiento del evangelio comienza con la intercesión. Cubre a un grupo "
-"étnico no alcanzado con oración diaria y ayuda a preparar el camino."
+"étnico no alcanzado con oración diaria y ayude a preparar el camino."
 
 #: front-page.php:178
 msgid "What does \"DOXA\" mean?"
@@ -315,7 +315,7 @@ msgstr "Cómo funciona la adopción"
 
 #: page-adopt.php:51 page-pray.php:52
 msgid "Choose"
-msgstr "Elija"
+msgstr "Elige"
 
 #: page-adopt.php:52
 msgid "Prayerfully select an unengaged people group to adopt."
@@ -328,11 +328,11 @@ msgstr "Movilizar"
 #: page-adopt.php:59
 msgid "Raise up 144+ daily intercessors to pray 10 minutes a day."
 msgstr ""
-"Reúna a más de 144 intercesores diarios para que oren 10 minutos al día."
+"Reúne a más de 144 intercesores diarios para que oren 10 minutos al día."
 
 #: page-adopt.php:65
 msgid "Partner"
-msgstr "Socio"
+msgstr "Asociarse"
 
 #: page-adopt.php:66
 msgid ""
@@ -362,7 +362,7 @@ msgstr ""
 #: page-adopt.php:82
 msgid "Printable and digital resources to promote awareness and engagement"
 msgstr ""
-"Recursos impresos y digitales para promover la concienciación y la "
+"Recursos impresos y digitales para promover la concientización y la "
 "participación"
 
 #: page-adopt.php:83
@@ -389,7 +389,7 @@ msgid ""
 msgstr ""
 "Los grupos étnicos no evangelizados no tienen misioneros, ni iglesias y, a "
 "menudo, tampoco creyentes conocidos. La adopción ayuda a garantizar que "
-"finalmente sean vistos, que se ore por ellos y que se les alcance "
+"finalmente sean vistos, que se ore por ellos y que se los alcance "
 "intencionalmente con el evangelio."
 
 #: page-adopt.php:111
@@ -419,7 +419,7 @@ msgstr ""
 "La adopción invita a la iglesia local a participar de manera significativa —"
 "orando, dando y enviando— para que un grupo étnico pase de no estar "
 "comprometido a estarlo y, en última instancia, se convierta en una comunidad "
-"que adora a Jesús."
+"que adore a Jesús."
 
 #: page-adopt.php:129 page-pray.php:131
 msgid "Choose a people group"
@@ -526,7 +526,7 @@ msgstr "Oración por un grupo étnico no alcanzado"
 #: page-pray.php:20
 msgid "Help prepare the way for gospel engagement through prayer"
 msgstr ""
-"Ayuda a preparar el camino para el compromiso con el evangelio a través de "
+"Ayude a preparar el camino para el compromiso con el evangelio a través de "
 "la oración"
 
 #: page-pray.php:25
@@ -565,13 +565,13 @@ msgstr "Regístrate"
 msgid ""
 "Sign up to receive daily prayer points and updates for this people group."
 msgstr ""
-"Regístrese para recibir diariamente puntos de oración y actualizaciones "
+"Regístrate para recibir diariamente pedidos de oración y actualizaciones "
 "sobre este grupo étnico."
 
 #: page-pray.php:67
 msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
 msgstr ""
-"Oración 10 minutos al día y ayuda a proporcionar cobertura de oración las 24 "
+"Ora 10 minutos diarios y ayuda a proporcionar cobertura de oración las 24 "
 "horas del día."
 
 #: page-pray.php:81
@@ -584,7 +584,7 @@ msgstr "Reflexión y orientación guiadas por el Espíritu"
 
 #: page-pray.php:83
 msgid "Real prayer needs from the field"
-msgstr "Necesidades reales de oración desde el terreno"
+msgstr "Necesidades reales de oración desde el campo"
 
 #: page-pray.php:84
 msgid "Photos, stories and testimonies"
@@ -600,7 +600,7 @@ msgstr "Por qué es importante la oración"
 
 #: page-pray.php:104
 msgid "They have no one praying for them"
-msgstr "No tienen a nadie que rece por ellos"
+msgstr "No tienen a nadie que ore por ellos"
 
 #: page-pray.php:105
 msgid ""
@@ -660,7 +660,7 @@ msgstr "UUPGS"
 
 #: page-uupgs.php:18
 msgid "Find a UUPG"
-msgstr "Encuentre un UUPG"
+msgstr "Encuentre un PNANC"
 
 #: page-uupgs.php:27
 msgid "Search names, locations, religions..."
@@ -870,7 +870,7 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "UUPG Detail"
-msgstr "Detalle UUPG"
+msgstr "Detalle PNANC"
 
 #: template-uupg-detail.php:61
 msgid "Engaged"
