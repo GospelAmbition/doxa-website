@@ -4,9 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
-"POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-"PO-Revision-Date: 2026-02-26 13:05+0000\n"
-"Last-Translator: mina ramzi <translator@disciple.tools>\n"
+"POT-Creation-Date: 2026-02-26T14:49:30+00:00\n"
+"PO-Revision-Date: 2026-02-26 16:05+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ar/>\n"
 "Language: ar\n"
@@ -122,8 +122,8 @@ msgid ""
 "Receive daily prayer points and join believers worldwide in prayer for the "
 "unengaged peoples."
 msgstr ""
-"إحصل على نقاط الصلاة اليومية وإنضم إلى المؤمنين في جميع أنحاء العالم في الصلاة "
-"من أجل الشعوب التي لم يصل لها الانجيل."
+"إحصل على نقاط الصلاة اليومية وإنضم إلى المؤمنين في جميع أنحاء العالم في "
+"الصلاة من أجل الشعوب التي لم يصل لها الانجيل."
 
 #: front-page.php:49
 msgid "Join"
@@ -236,8 +236,8 @@ msgid ""
 "Every movement of the gospel begins with intercession. Cover an unengaged "
 "people group in daily prayer and help prepare the way."
 msgstr ""
-"كل نهضة وحركة إنجيلية تبدأ بالشفاعة. التزم بصلاة يومية الناس الغير موصول لها  "
-"وساعد في تمهيد الطريق."
+"كل نهضة وحركة إنجيلية تبدأ بالشفاعة. التزم بصلاة يومية الناس الغير موصول "
+"لها  وساعد في تمهيد الطريق."
 
 #: front-page.php:178
 msgid "What does \"DOXA\" mean?"
@@ -294,10 +294,8 @@ msgstr "هدف التبنّي"
 #: page-adopt.php:26
 msgid ""
 "Every unengaged people group adopted by a church committed to prayer, "
-"giving, and sending."
-msgstr ""
-"أن يُتم تبني كل مجموعة بشرية لا يوجد فيها عمل مرسلي بواسطة كنيسة ملتزمة بالصلاة "
-"والعطاء والإرسال."
+"giving, and sending"
+msgstr "كل مجموعة غير ملتزمة تتبناها كنيسة ملتزمة بالصلاة والعطاء والإرسال"
 
 #: page-adopt.php:29 page-pray.php:30
 msgid "Current Status"
@@ -378,8 +376,8 @@ msgid ""
 "known believers. Adoption helps ensure they are finally seen, prayed for, "
 "and intentionally pursued with the gospel."
 msgstr ""
-"المشعوب التي ليس فيها عمل ارسالي ليس لديها مرسلين ولا كنائس، وغالبا ما لا يوجد "
-"بينها مؤمنون معروفون.التبني  يساعد التبنّي يفتح الطريق لرؤيتهم وخدمتهم، "
+"المشعوب التي ليس فيها عمل ارسالي ليس لديها مرسلين ولا كنائس، وغالبا ما لا "
+"يوجد بينها مؤمنون معروفون.التبني  يساعد التبنّي يفتح الطريق لرؤيتهم وخدمتهم، "
 "والصلاة من أجلهم، والسعي المقصود إلى توصيل الإنجيل إليهم."
 
 #: page-adopt.php:111
@@ -406,9 +404,9 @@ msgid ""
 "giving, and sending – so that a people group moves from unengaged to "
 "engaged, and ultimately becomes a worshipping community for Jesus."
 msgstr ""
-"يدعو التبني الكنيسة المحلية إلى المشاركة الفعّالة - بالصلاة, العطاء والإرسال - "
-"حتى يتحول الناس من حالة عدم الانخراط إلى الانخراط الإرسالي، ويصبح في النهاية "
-"الكل تعبد يسوع."
+"يدعو التبني الكنيسة المحلية إلى المشاركة الفعّالة - بالصلاة, العطاء والإرسال "
+"- حتى يتحول الناس من حالة عدم الانخراط إلى الانخراط الإرسالي، ويصبح في "
+"النهاية الكل تعبد يسوع."
 
 #: page-adopt.php:129 page-pray.php:131
 msgid "Choose a people group"
@@ -474,7 +472,7 @@ msgstr "الإسم"
 msgid "Enter your name"
 msgstr "أدخل إسمك"
 
-#: page-contact.php:30 template-adoption-form.php:95
+#: page-contact.php:30 template-adoption-form.php:98
 msgid "Email"
 msgstr "البريد الإلكتروني"
 
@@ -491,12 +489,12 @@ msgid "Enter your message"
 msgstr "اكتب رسالتك"
 
 #: page-contact.php:45 page-contact.php:118 page-contact.php:126
-#: template-adoption-form.php:137 template-adoption-form.php:224
-#: template-adoption-form.php:232
+#: template-adoption-form.php:147 template-adoption-form.php:248
+#: template-adoption-form.php:256
 msgid "Submit"
 msgstr "إرسال"
 
-#: page-contact.php:82 template-adoption-form.php:182
+#: page-contact.php:82 template-adoption-form.php:206
 msgid "Submitting..."
 msgstr "جاري الارسال..."
 
@@ -525,14 +523,15 @@ msgid "24-Hour Prayer Coverage"
 msgstr "تغطية صلاة مستمرة على مدار 24 ساعة"
 
 #: page-pray.php:27
-msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples."
+msgid ""
+"Mobilize 144+ people praying 10 minutes a day for all 2,085 people groups"
 msgstr ""
-"حشد أكثر من 144 شخص للصلاة لمدة 10 دقائق يوميا من أجل جميع الشعوب البالغ "
-"عددهم 2085 مجموعة."
+"حشد أكثر من 144 شخصًا للصلاة لمدة 10 دقائق يوميًا من أجل جميع المجموعات العرقية "
+"البالغ عددها 2085 مجموعة."
 
 #: page-pray.php:33
-msgid "People groups with committed 24-hour prayer coverage."
-msgstr "مجموعات من الناس الملتزمة بتغطية صلاة على مدار 24 ساعة."
+msgid "People groups with committed 24-hour prayer coverage"
+msgstr "مجموعات من الناس ملتزمة بالصلاة على مدار 24 ساعة"
 
 #: page-pray.php:47
 msgid "Where do I start?"
@@ -550,7 +549,8 @@ msgstr "سجّل الان"
 msgid ""
 "Sign up to receive daily prayer points and updates for this people group."
 msgstr ""
-"سجل للحصول على نقاط الصلاة اليومية والمستجدات المتعلقة بهذه المجموعة من الناس."
+"سجل للحصول على نقاط الصلاة اليومية والمستجدات المتعلقة بهذه المجموعة من "
+"الناس."
 
 #: page-pray.php:67
 msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
@@ -670,16 +670,19 @@ msgid "Doxa Page"
 msgstr "صفحة دوكسا Doxa"
 
 #: template-adoption-form.php:17 template-uupg-detail.php:29
+#: template-uupg-resources.php:29
 msgid "People Group Not Found"
 msgstr "مجموعة بشرية لم يتم العثور عليها"
 
 #: template-adoption-form.php:18 template-uupg-detail.php:30
+#: template-uupg-resources.php:30
 msgid ""
 "The people group you are looking for could not be found. Please try again."
 msgstr "لم يتم العثور على المجموعة التي تبحث عنها. يرجى المحاولة مرة أخرى."
 
 #: template-adoption-form.php:20 template-adoption-form.php:24
 #: template-uupg-detail.php:32 template-uupg-detail.php:36
+#: template-uupg-resources.php:32 template-uupg-resources.php:36
 msgid "Back"
 msgstr "عودة للخلف"
 
@@ -715,8 +718,8 @@ msgid ""
 "Mobilize toward the goal of at least 144 prayer partners to cover the people "
 "group in continuous, daily prayer (10 minutes each, 24 hours a day)."
 msgstr ""
-"حشد الجهود نحو تحقيق هدف لا يقل عن 144 شريك صلاة لتغطية المجموعة البشرية بصلاة "
-"يومية متواصلة (10 دقائق لكل شخص، على مدار 24 ساعة يوميًا."
+"حشد الجهود نحو تحقيق هدف لا يقل عن 144 شريك صلاة لتغطية المجموعة البشرية "
+"بصلاة يومية متواصلة (10 دقائق لكل شخص، على مدار 24 ساعة يوميًا."
 
 #: template-adoption-form.php:74
 msgid "Give"
@@ -732,10 +735,18 @@ msgstr ""
 "وإرسال العاملين في مجال نشر الإنجيل."
 
 #: template-adoption-form.php:78
+msgid ""
+"We recommend that churches give a monthly pledge based on their "
+"congregational size.  i.e. $100 a month for a congregation around 100.  $500 "
+"a month for a congregation around 500. $1000 a month for a congregation "
+"around 1000, etc."
+msgstr ""
+
+#: template-adoption-form.php:81
 msgid "Send"
 msgstr "أرسل"
 
-#: template-adoption-form.php:79
+#: template-adoption-form.php:82
 msgid ""
 "Actively help surface and support potential goers, encouraging those God may "
 "be calling to cross cultures and serve this people group directly."
@@ -743,76 +754,85 @@ msgstr ""
 "ساعد بنشاط في إكتشاف ودعم الأشخاص المحتملين، وشجع أولئك الذين قد يدعوهم الله "
 "لعبور الثقافات وخدمة هذه المجموعة من الناس بشكل مباشر."
 
-#: template-adoption-form.php:84
+#: template-adoption-form.php:87
 msgid "Champion Details"
 msgstr "تفاصيل البطل"
 
-#: template-adoption-form.php:85
+#: template-adoption-form.php:88
 msgid ""
 "The Champion is the person who will organize the 144 intercessors and "
 "receive updates."
 msgstr "البطل هو الشخص الذي سينظّم الـ144 من الشفعاء ويتلقى آخر المستجدات."
 
-#: template-adoption-form.php:87 template-adoption-form.php:88
+#: template-adoption-form.php:90 template-adoption-form.php:91
 msgid "First Name"
 msgstr "الإسم الأول"
 
-#: template-adoption-form.php:91 template-adoption-form.php:92
+#: template-adoption-form.php:94 template-adoption-form.php:95
 msgid "Last Name"
 msgstr "الإسم الأخير"
 
-#: template-adoption-form.php:96
+#: template-adoption-form.php:99
 msgid "Enter your Email"
 msgstr "أدخل بريدك الإلكتروني"
 
-#: template-adoption-form.php:99
+#: template-adoption-form.php:102
 msgid "Phone"
 msgstr "رقم الهاتف"
 
-#: template-adoption-form.php:100
-msgid "Enter your Phone"
-msgstr "أدخل رقم هاتفك"
+#: template-adoption-form.php:105
+msgid "Please enter a valid phone number"
+msgstr ""
 
-#: template-adoption-form.php:103
+#: template-adoption-form.php:106
+msgid "Phone number is too short"
+msgstr ""
+
+#: template-adoption-form.php:107
+msgid "Phone number is too long"
+msgstr ""
+
+#: template-adoption-form.php:113
 msgid "Role"
 msgstr "الدور"
 
-#: template-adoption-form.php:104
+#: template-adoption-form.php:114
 msgid "Example: Pastor, Missions Pastor, Elder, Volunteer Leader etc."
 msgstr "مثال: راعي الكنيسة، راعي الإرساليات، شيخ الكنيسة، قائد المتطوعين، إلخ."
 
-#: template-adoption-form.php:108
+#: template-adoption-form.php:118
 msgid "Partnering Church"
 msgstr "الكنيسة الشريكة"
 
-#: template-adoption-form.php:110
-msgid "Church/Group Name"
-msgstr "الكنيسة/إسم المجموعة"
-
-#: template-adoption-form.php:111
+#: template-adoption-form.php:120
 msgid "Enter Church/Group Name"
 msgstr "أدخل إسم الكنيسة/المجموعة"
 
-#: template-adoption-form.php:114
+#: template-adoption-form.php:121
+msgid "Church/Group Name"
+msgstr "الكنيسة/إسم المجموعة"
+
+#: template-adoption-form.php:125
 msgid "I am happy for this church name to appear publicly on this site."
 msgstr "يسعدني أن يظهر إسم هذه الكنيسة علنا على هذا الموقع."
 
-#: template-adoption-form.php:118
+#: template-adoption-form.php:128
 msgid "Location of Church/Group"
 msgstr "موقع الكنيسة/المجموعة"
 
-#: template-adoption-form.php:120
+#: template-adoption-form.php:130
 msgid "Select Country"
 msgstr "إختر البلد"
 
-#: template-adoption-form.php:128
+#: template-adoption-form.php:139
 msgid ""
 "I/my church/group commits to adopting this People Group for prayer, "
 "partnership and support."
 msgstr ""
-"أنا/كنيستي/مجموعتي نلتزم بإنتماء هذه المجموعة السكانية للصلاة, الشراكة والدعم."
+"أنا/كنيستي/مجموعتي نلتزم بإنتماء هذه المجموعة السكانية للصلاة, الشراكة "
+"والدعم."
 
-#: template-adoption-form.php:132
+#: template-adoption-form.php:143
 msgid ""
 "I give permission for DOXA to connect me with others adopting this people "
 "group."
@@ -820,15 +840,15 @@ msgstr ""
 "أمنح لشركة دوكسا الإذن بتواصلي مع الآخرين الذين ينتمون إلى هذه المجموعة من "
 "الناس."
 
-#: template-adoption-form.php:175
+#: template-adoption-form.php:199
 msgid "Please confirm your adoption commitment."
 msgstr "يرجى تأكيد إلتزامك بالإنتماء."
 
-#: template-adoption-form.php:211
+#: template-adoption-form.php:235
 msgid "Thank you for your adoption commitment! We will be in touch soon."
 msgstr "نشكركم على إلتزامكم بالإنتماء! سنتواصل معكم قريبا."
 
-#: template-adoption-form.php:219 template-adoption-form.php:228
+#: template-adoption-form.php:243 template-adoption-form.php:252
 msgid "There was an error submitting your adoption. Please try again."
 msgstr "حدث خطأ أثناء إرسال طلب الإنتماء. يرجى المحاولة مرة أخرى."
 
@@ -957,6 +977,13 @@ msgstr "تسجيلات الإنجيل"
 #: template-uupg-detail.php:232
 msgid "Audio Scripture"
 msgstr "الكتاب المقدس الصوتي"
+
+#: template-uupg-resources.php:54
+msgid "Resources"
+msgstr "المصادر"
+
+#~ msgid "Enter your Phone"
+#~ msgstr "أدخل رقم هاتفك"
 
 #~ msgid "Sending..."
 #~ msgstr "إرسال..."

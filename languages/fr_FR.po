@@ -4,9 +4,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
-"POT-Creation-Date: 2026-02-19T15:00:48+00:00\n"
-"PO-Revision-Date: 2026-02-23 13:05+0000\n"
-"Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
+"POT-Creation-Date: 2026-02-26T14:49:30+00:00\n"
+"PO-Revision-Date: 2026-02-26 16:05+0000\n"
+"Last-Translator: Weblate Admin <translator@disciple.tools>\n"
 "Language-Team: French <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/fr_FR/>\n"
 "Language: fr_FR\n"
@@ -296,10 +296,10 @@ msgstr "Objectif d'adoption"
 #: page-adopt.php:26
 msgid ""
 "Every unengaged people group adopted by a church committed to prayer, "
-"giving, and sending."
+"giving, and sending"
 msgstr ""
-"Chaque groupe ethnique non évangélisé adopté par une église engagée dans la "
-"prière, le don et l'envoi."
+"Chaque groupe ethnique non engagé adopté par une église engagée dans la "
+"prière, le don et l'envoi"
 
 #: page-adopt.php:29 page-pray.php:30
 msgid "Current Status"
@@ -486,7 +486,7 @@ msgstr "Nom"
 msgid "Enter your name"
 msgstr "Entrez votre nom"
 
-#: page-contact.php:30 template-adoption-form.php:95
+#: page-contact.php:30 template-adoption-form.php:98
 msgid "Email"
 msgstr "Email"
 
@@ -503,12 +503,12 @@ msgid "Enter your message"
 msgstr "Entrez votre message"
 
 #: page-contact.php:45 page-contact.php:118 page-contact.php:126
-#: template-adoption-form.php:137 template-adoption-form.php:224
-#: template-adoption-form.php:232
+#: template-adoption-form.php:147 template-adoption-form.php:248
+#: template-adoption-form.php:256
 msgid "Submit"
 msgstr "Soumettre"
 
-#: page-contact.php:82 template-adoption-form.php:182
+#: page-contact.php:82 template-adoption-form.php:206
 msgid "Submitting..."
 msgstr "Envoi..."
 
@@ -541,15 +541,16 @@ msgid "24-Hour Prayer Coverage"
 msgstr "Prière 24 heures sur 24"
 
 #: page-pray.php:27
-msgid "Mobilize 144+ people praying 10 minutes a day for all 2,085 peoples."
+msgid ""
+"Mobilize 144+ people praying 10 minutes a day for all 2,085 people groups"
 msgstr ""
-"Mobilisez plus de 144 personnes qui prient 10 minutes par jour pour les 2 "
-"085 peuples."
+"Mobiliser plus de 144 personnes pour prier 10 minutes par jour pour les 2 "
+"085 groupes ethniques."
 
 #: page-pray.php:33
-msgid "People groups with committed 24-hour prayer coverage."
+msgid "People groups with committed 24-hour prayer coverage"
 msgstr ""
-"Groupes de personnes engagés dans une prière continue 24 heures sur 24."
+"Groupes de personnes engagés dans une couverture de prière 24 heures sur 24"
 
 #: page-pray.php:47
 msgid "Where do I start?"
@@ -694,10 +695,12 @@ msgid "Doxa Page"
 msgstr "Page Doxa"
 
 #: template-adoption-form.php:17 template-uupg-detail.php:29
+#: template-uupg-resources.php:29
 msgid "People Group Not Found"
 msgstr "Groupe de personnes introuvable"
 
 #: template-adoption-form.php:18 template-uupg-detail.php:30
+#: template-uupg-resources.php:30
 msgid ""
 "The people group you are looking for could not be found. Please try again."
 msgstr ""
@@ -706,6 +709,7 @@ msgstr ""
 
 #: template-adoption-form.php:20 template-adoption-form.php:24
 #: template-uupg-detail.php:32 template-uupg-detail.php:36
+#: template-uupg-resources.php:32 template-uupg-resources.php:36
 msgid "Back"
 msgstr "Retour"
 
@@ -762,10 +766,23 @@ msgstr ""
 "travailleurs évangéliques."
 
 #: template-adoption-form.php:78
+msgid ""
+"We recommend that churches give a monthly pledge based on their "
+"congregational size.  i.e. $100 a month for a congregation around 100.  $500 "
+"a month for a congregation around 500. $1000 a month for a congregation "
+"around 1000, etc."
+msgstr ""
+"Nous recommandons aux églises de s'engager à verser une contribution "
+"mensuelle en fonction de la taille de leur congrégation. Par exemple, 100 "
+"dollars par mois pour une congrégation d'environ 100 membres, 500 dollars "
+"par mois pour une congrégation d'environ 500 membres, 1 000 dollars par mois "
+"pour une congrégation d'environ 1 000 membres, etc."
+
+#: template-adoption-form.php:81
 msgid "Send"
 msgstr "Envoyer"
 
-#: template-adoption-form.php:79
+#: template-adoption-form.php:82
 msgid ""
 "Actively help surface and support potential goers, encouraging those God may "
 "be calling to cross cultures and serve this people group directly."
@@ -774,11 +791,11 @@ msgstr ""
 "encourageant ceux que Dieu appelle à traverser les cultures et à servir "
 "directement ce groupe ethnique."
 
-#: template-adoption-form.php:84
+#: template-adoption-form.php:87
 msgid "Champion Details"
 msgstr "Détails du champion"
 
-#: template-adoption-form.php:85
+#: template-adoption-form.php:88
 msgid ""
 "The Champion is the person who will organize the 144 intercessors and "
 "receive updates."
@@ -786,63 +803,71 @@ msgstr ""
 "Le champion est la personne qui organisera les 144 intercesseurs et recevra "
 "les mises à jour."
 
-#: template-adoption-form.php:87 template-adoption-form.php:88
+#: template-adoption-form.php:90 template-adoption-form.php:91
 msgid "First Name"
 msgstr "Prénom"
 
-#: template-adoption-form.php:91 template-adoption-form.php:92
+#: template-adoption-form.php:94 template-adoption-form.php:95
 msgid "Last Name"
 msgstr "Nom"
 
-#: template-adoption-form.php:96
+#: template-adoption-form.php:99
 msgid "Enter your Email"
 msgstr "Entrez votre adresse e-mail"
 
-#: template-adoption-form.php:99
+#: template-adoption-form.php:102
 msgid "Phone"
 msgstr "Téléphone"
 
-#: template-adoption-form.php:100
-msgid "Enter your Phone"
-msgstr "Entrez votre numéro de téléphone"
+#: template-adoption-form.php:105
+msgid "Please enter a valid phone number"
+msgstr "Veuillez saisir un numéro de téléphone valide."
 
-#: template-adoption-form.php:103
+#: template-adoption-form.php:106
+msgid "Phone number is too short"
+msgstr "Le numéro de téléphone est trop court."
+
+#: template-adoption-form.php:107
+msgid "Phone number is too long"
+msgstr "Le numéro de téléphone est trop long."
+
+#: template-adoption-form.php:113
 msgid "Role"
 msgstr "Rôle"
 
-#: template-adoption-form.php:104
+#: template-adoption-form.php:114
 msgid "Example: Pastor, Missions Pastor, Elder, Volunteer Leader etc."
 msgstr ""
 "Exemple : pasteur, pasteur chargé des missions, ancien, responsable "
 "bénévole, etc."
 
-#: template-adoption-form.php:108
+#: template-adoption-form.php:118
 msgid "Partnering Church"
 msgstr "Église partenaire"
 
-#: template-adoption-form.php:110
-msgid "Church/Group Name"
-msgstr "Nom de l'église/du groupe"
-
-#: template-adoption-form.php:111
+#: template-adoption-form.php:120
 msgid "Enter Church/Group Name"
 msgstr "Entrez le nom de l'église/du groupe"
 
-#: template-adoption-form.php:114
+#: template-adoption-form.php:121
+msgid "Church/Group Name"
+msgstr "Nom de l'église/du groupe"
+
+#: template-adoption-form.php:125
 msgid "I am happy for this church name to appear publicly on this site."
 msgstr ""
 "Je suis heureux que le nom de cette église apparaisse publiquement sur ce "
 "site."
 
-#: template-adoption-form.php:118
+#: template-adoption-form.php:128
 msgid "Location of Church/Group"
 msgstr "Emplacement de l'église/du groupe"
 
-#: template-adoption-form.php:120
+#: template-adoption-form.php:130
 msgid "Select Country"
 msgstr "Sélectionner le pays"
 
-#: template-adoption-form.php:128
+#: template-adoption-form.php:139
 msgid ""
 "I/my church/group commits to adopting this People Group for prayer, "
 "partnership and support."
@@ -850,7 +875,7 @@ msgstr ""
 "Moi/mon église/mon groupe s'engage à adopter ce groupe ethnique pour la "
 "prière, le partenariat et le soutien."
 
-#: template-adoption-form.php:132
+#: template-adoption-form.php:143
 msgid ""
 "I give permission for DOXA to connect me with others adopting this people "
 "group."
@@ -858,16 +883,16 @@ msgstr ""
 "J'autorise DOXA à me mettre en relation avec d'autres personnes qui adoptent "
 "ce groupe ethnique."
 
-#: template-adoption-form.php:175
+#: template-adoption-form.php:199
 msgid "Please confirm your adoption commitment."
 msgstr "Veuillez confirmer votre engagement d'adoption."
 
-#: template-adoption-form.php:211
+#: template-adoption-form.php:235
 msgid "Thank you for your adoption commitment! We will be in touch soon."
 msgstr ""
 "Merci pour votre engagement à adopter ! Nous vous contacterons prochainement."
 
-#: template-adoption-form.php:219 template-adoption-form.php:228
+#: template-adoption-form.php:243 template-adoption-form.php:252
 msgid "There was an error submitting your adoption. Please try again."
 msgstr ""
 "Une erreur s'est produite lors de l'envoi de votre demande d'adoption. "
@@ -998,6 +1023,13 @@ msgstr "Enregistrements évangéliques"
 #: template-uupg-detail.php:232
 msgid "Audio Scripture"
 msgstr "Écritures audio"
+
+#: template-uupg-resources.php:54
+msgid "Resources"
+msgstr "Ressources"
+
+#~ msgid "Enter your Phone"
+#~ msgstr "Entrez votre numéro de téléphone"
 
 #~ msgid "Sending..."
 #~ msgstr "Envoi..."
