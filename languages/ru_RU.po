@@ -5,8 +5,8 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-26T14:49:30+00:00\n"
-"PO-Revision-Date: 2026-02-26 16:05+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2026-03-03 14:55+0000\n"
+"Last-Translator: Weblate Admin <translator@disciple.tools>\n"
 "Language-Team: Russian <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/ru_RU/>\n"
 "Language: ru_RU\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 5.16.1\n"
 "X-Domain: doxa-website\n"
 
 #. Theme Name of the theme
@@ -122,7 +122,7 @@ msgid ""
 "unengaged peoples."
 msgstr ""
 "Получайте ежедневные молитвенные темы и присоединяйтесь к верующим по всему "
-"миру в молитве за незанятые народы."
+"миру в молитве за незадействованные народы."
 
 #: front-page.php:49
 msgid "Join"
@@ -154,7 +154,7 @@ msgstr ""
 
 #: front-page.php:72 front-page.php:76
 msgid "Who are the unengaged?"
-msgstr "Кто такие незанятые?"
+msgstr "Кто такие незадействованные народы?"
 
 #: front-page.php:81
 msgid "Unreached"
@@ -236,8 +236,8 @@ msgid ""
 "Every movement of the gospel begins with intercession. Cover an unengaged "
 "people group in daily prayer and help prepare the way."
 msgstr ""
-"Каждое движение Евангелия начинается с молитвы. Покрывайте ежедневной "
-"молитвой незанятые народности и помогайте подготовить путь."
+"Покрывайте ежедневной молитвой незадействованные народности и помогайте "
+"подготовить путь."
 
 #: front-page.php:178
 msgid "What does \"DOXA\" mean?"
@@ -289,15 +289,15 @@ msgstr ""
 
 #: page-adopt.php:25
 msgid "Adoption Goal"
-msgstr "Цель усыновления"
+msgstr "Цель принятия"
 
 #: page-adopt.php:26
 msgid ""
 "Every unengaged people group adopted by a church committed to prayer, "
 "giving, and sending"
 msgstr ""
-"Каждая незанятая народность, принятая церковью, посвятившей себя молитве, "
-"пожертвованиям и миссионерской деятельности."
+"Каждая незадействованная народность принята церковью, приверженной молитве, "
+"пожертвованиям и посылке миссионеров"
 
 #: page-adopt.php:29 page-pray.php:30
 msgid "Current Status"
@@ -309,7 +309,7 @@ msgstr "принятые группы людей"
 
 #: page-adopt.php:46
 msgid "How Adoption Works"
-msgstr "Как работает усыновление"
+msgstr "Как работает принятие"
 
 #: page-adopt.php:51 page-pray.php:52
 msgid "Choose"
@@ -317,7 +317,8 @@ msgstr "Выбрать"
 
 #: page-adopt.php:52
 msgid "Prayerfully select an unengaged people group to adopt."
-msgstr "С молитвой выберите незанятую народность, которую вы хотите принять."
+msgstr ""
+"С молитвой выберите незадействованную народность, которую вы хотите принять."
 
 #: page-adopt.php:58
 msgid "Mobilize"
@@ -346,7 +347,7 @@ msgstr "Начать"
 
 #: page-adopt.php:78
 msgid "Adoption Guide & Resources"
-msgstr "Руководство по усыновлению и ресурсы"
+msgstr "Руководство по принятию и ресурсы"
 
 #: page-adopt.php:80
 msgid "Step-by-step guidance for churches adopting a people group"
@@ -371,7 +372,7 @@ msgstr "Ваш ежедневный молитвенник"
 
 #: page-adopt.php:96
 msgid "Why adoption matters"
-msgstr "Почему усыновление имеет значение"
+msgstr "Почему принятие имеет значение"
 
 #: page-adopt.php:102
 msgid "They have no gospel access"
@@ -426,7 +427,7 @@ msgid ""
 "Select a highlighted unengaged people group, or search for a specific group "
 "or location below."
 msgstr ""
-"Выберите выделенную группу незанятых людей или найдите конкретную группу или "
+"Выберите незадействованную народность или найдите конкретную группу или "
 "местоположение ниже."
 
 #: page-adopt.php:138 page-pray.php:140 page-uupgs.php:23
@@ -519,7 +520,7 @@ msgstr ""
 
 #: page-pray.php:19
 msgid "Prayer for an unengaged people group"
-msgstr "Молитва за незанятую народность"
+msgstr "Молитва за незадействованную народность"
 
 #: page-pray.php:20
 msgid "Help prepare the way for gospel engagement through prayer"
@@ -537,12 +538,12 @@ msgstr "24-часовая молитвенная поддержка"
 msgid ""
 "Mobilize 144+ people praying 10 minutes a day for all 2,085 people groups"
 msgstr ""
-"Мобилизовать более 144 человек, которые будут молиться по 10 минут в день за "
-"все 2085 народностей."
+"Мобилизуйте 144+ человек для молитвы по 10 минут в день за все 2 085 "
+"народностей"
 
 #: page-pray.php:33
 msgid "People groups with committed 24-hour prayer coverage"
-msgstr "Группы людей, посвятившие себя круглосуточной молитве"
+msgstr "Народности, охваченные постоянной 24-часовой молитвенной поддержкой"
 
 #: page-pray.php:47
 msgid "Where do I start?"
@@ -605,8 +606,8 @@ msgid ""
 "believers, meaning little to no consistent prayer is being offered on their "
 "behalf."
 msgstr ""
-"Многие незанятые народности не имеют церквей, миссионеров и зачастую "
-"верующих, а это означает, что за них практически не молятся."
+"Многие незадействованные народности не имеют церквей, миссионеров и зачастую "
+"верующих."
 
 #: page-pray.php:113
 msgid "Prayer prepares the way for the gospel"
@@ -641,8 +642,8 @@ msgid ""
 "Pray earnestly to the Lord of the harvest ...that He would send laborers to "
 "the [Unengaged]."
 msgstr ""
-"Усердно молитесь Господу жатвы... чтобы Он послал работников на [незанятые] "
-"поля."
+"Усердно молитесь Господу жатвы... чтобы Он послал работников к "
+"[незадействованным народам]."
 
 #. Template Name of the theme
 msgid "Simple Page"
@@ -703,7 +704,7 @@ msgstr "Назад"
 
 #: template-adoption-form.php:43
 msgid "Adoption Form"
-msgstr "Форма усыновления"
+msgstr "Форма принятия"
 
 #: template-adoption-form.php:44
 msgid ""
@@ -879,7 +880,7 @@ msgstr "Спасибо за ваше решение об усыновлении!
 #: template-adoption-form.php:243 template-adoption-form.php:252
 msgid "There was an error submitting your adoption. Please try again."
 msgstr ""
-"При отправке вашей заявки на усыновление произошла ошибка. Повторите попытку."
+"При отправке вашей заявки на принятие произошла ошибка. Повторите попытку."
 
 #. Template Name of the theme
 msgid "UUPG Detail"
@@ -921,7 +922,7 @@ msgstr "Статус молитвы"
 
 #: template-uupg-detail.php:91 template-uupg-detail.php:134
 msgid "Adoption Status"
-msgstr "Статус усыновления"
+msgstr "Статус принятия"
 
 #: template-uupg-detail.php:99
 msgid "Cross-cultural workers present"
