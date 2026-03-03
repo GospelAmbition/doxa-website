@@ -4,10 +4,10 @@
   var prayBaseUrl = config.prayBaseUrl || 'https://pray.doxa.life';
   var researchUrl = config.researchUrl || '/research';
   var languageCode = config.languageCode || 'en';
-  var apiUrl = 'https://pray.doxa.life/api/people-groups?fields=slug,name,imb_lat,imb_lng,people_praying,imb_population,imb_language_family,image_url&lang=' + languageCode;
+  var apiUrl = 'https://pray.doxa.life/api/people-groups/list?fields=slug,name,imb_lat,imb_lng,people_praying,population,picture_url,country,imb_reg_of_language&lang=' + languageCode;
 
   var COLOR_NO_PRAYER = '#1a1a2e';
-  var COLOR_HAS_PRAYER = '#3b82f6';
+  var COLOR_HAS_PRAYER = '#4caf50';
 
   var container = document.getElementById('prayer-map');
   if (!container || !mapboxToken) return;
@@ -25,6 +25,15 @@
   });
 
   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+  map.scrollZoom.disable();
+
+  container.addEventListener('click', function () {
+    map.scrollZoom.enable();
+  });
+
+  container.addEventListener('mouseleave', function () {
+    map.scrollZoom.disable();
+  });
 
   // Build legend
   var legend = document.createElement('div');
@@ -83,13 +92,15 @@
 
   function openModal(props) {
     var fallbackImage = prayBaseUrl + '/images/default-people-group.jpg';
-    modalImage.src = props.image_url || fallbackImage;
+    modalImage.src = props.picture_url || fallbackImage;
     modalImage.alt = props.name;
     modalName.textContent = props.name;
     modalDetails.innerHTML =
-      '<span><strong>Language Family:</strong> ' + (props.imb_language_family || 'Unknown') + '</span>' +
-      '<span><strong>Population:</strong> ' + formatNumber(props.imb_population) + '</span>';
-    btnPray.href = prayBaseUrl + '/' + props.slug;
+      '<span><strong>Language:</strong> ' + (props.language || 'Unknown') + '</span>' +
+      '<span><strong>Country:</strong> ' + (props.country || 'Unknown') + '</span>' +
+      '<span><strong>Population:</strong> ' + formatNumber(props.population) + '</span>' +
+      '<span><strong>Prayer Coverage:</strong> ' + (props.people_praying || 0) + '/144</span>';
+    btnPray.href = prayBaseUrl + '/' + props.slug + '?source=doxalife';
     btnInfo.href = researchUrl.replace(/\/+$/, '') + '/' + props.slug;
     overlay.classList.add('is-visible');
   }
@@ -117,10 +128,11 @@
               slug: p.slug,
               name: p.name,
               people_praying: p.people_praying,
-              imb_population: p.imb_population,
-              imb_language_family: p.imb_language_family,
-              image_url: p.image_url,
-              hasPrayer: p.people_praying != null && p.people_praying > 0 ? 1 : 0,
+              population: p.population,
+              language: p.imb_reg_of_language ? p.imb_reg_of_language.label : null,
+              country: p.country ? p.country.label : null,
+              picture_url: p.picture_url,
+              hasPrayer: p.people_praying > 0 ? 1 : 0,
             },
           });
         }

@@ -162,7 +162,8 @@ get_header( 'top' ); ?>
                 </div>
             </section>
             <section>
-                <div class="container">
+                <div class="container stack stack--lg">
+                    <h2><?php echo __('Prayer Progress', 'doxa-website'); ?></h2>
                     <div id="prayer-map"></div>
                 </div>
             </section>
