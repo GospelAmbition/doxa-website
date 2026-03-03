@@ -4,6 +4,7 @@
   var prayBaseUrl = config.prayBaseUrl || 'https://pray.doxa.life';
   var researchUrl = config.researchUrl || '/research';
   var languageCode = config.languageCode || 'en';
+  var t = config.t || {};
   var apiUrl = 'https://pray.doxa.life/api/people-groups/list?fields=slug,name,imb_lat,imb_lng,people_praying,population,picture_url,country,imb_reg_of_language&lang=' + languageCode;
 
   var COLOR_NO_PRAYER = '#1a1a2e';
@@ -41,11 +42,11 @@
   legend.innerHTML =
     '<div class="prayer-map-legend__item">' +
       '<span class="prayer-map-legend__dot" style="background:' + COLOR_NO_PRAYER + '"></span>' +
-      '<span>No prayer coverage</span>' +
+      '<span>' + (t.no_prayer || 'No prayer coverage') + '</span>' +
     '</div>' +
     '<div class="prayer-map-legend__item">' +
       '<span class="prayer-map-legend__dot" style="background:' + COLOR_HAS_PRAYER + '"></span>' +
-      '<span>Has prayer coverage</span>' +
+      '<span>' + (t.has_prayer || 'Has prayer coverage') + '</span>' +
     '</div>';
   container.appendChild(legend);
 
@@ -54,14 +55,14 @@
   overlay.className = 'prayer-map-overlay';
   overlay.innerHTML =
     '<div class="prayer-map-modal" role="dialog">' +
-      '<button class="prayer-map-modal__close" aria-label="Close">&times;</button>' +
+      '<button class="prayer-map-modal__close" aria-label="' + (t.close || 'Close') + '">&times;</button>' +
       '<img class="prayer-map-modal__image" src="" alt="">' +
       '<div class="prayer-map-modal__body">' +
         '<h3 class="prayer-map-modal__name"></h3>' +
         '<div class="prayer-map-modal__details"></div>' +
         '<div class="prayer-map-modal__actions">' +
-          '<a class="prayer-map-modal__btn-pray" href="#" target="_blank">Pray for them</a>' +
-          '<a class="prayer-map-modal__btn-info" href="#" target="_blank">Info</a>' +
+          '<a class="prayer-map-modal__btn-pray" href="#" target="_blank">' + (t.pray_for_them || 'Pray for them') + '</a>' +
+          '<a class="prayer-map-modal__btn-info" href="#" target="_blank">' + (t.info || 'Info') + '</a>' +
         '</div>' +
       '</div>' +
     '</div>';
@@ -86,7 +87,7 @@
   });
 
   function formatNumber(n) {
-    if (n == null) return 'Unknown';
+    if (n == null) return t.unknown || 'Unknown';
     return Number(n).toLocaleString();
   }
 
@@ -96,10 +97,10 @@
     modalImage.alt = props.name;
     modalName.textContent = props.name;
     modalDetails.innerHTML =
-      '<span><strong>Language:</strong> ' + (props.language || 'Unknown') + '</span>' +
-      '<span><strong>Country:</strong> ' + (props.country || 'Unknown') + '</span>' +
-      '<span><strong>Population:</strong> ' + formatNumber(props.population) + '</span>' +
-      '<span><strong>Prayer Coverage:</strong> ' + (props.people_praying || 0) + '/144</span>';
+      '<span><strong>' + (t.language || 'Language') + ':</strong> ' + (props.language || t.unknown || 'Unknown') + '</span>' +
+      '<span><strong>' + (t.country || 'Country') + ':</strong> ' + (props.country || t.unknown || 'Unknown') + '</span>' +
+      '<span><strong>' + (t.population || 'Population') + ':</strong> ' + formatNumber(props.population) + '</span>' +
+      '<span><strong>' + (t.prayer_coverage || 'Prayer Coverage') + ':</strong> ' + (props.people_praying || 0) + '/144</span>';
     btnPray.href = prayBaseUrl + '/' + props.slug + '?source=doxalife';
     btnInfo.href = researchUrl.replace(/\/+$/, '') + '/' + props.slug;
     overlay.classList.add('is-visible');

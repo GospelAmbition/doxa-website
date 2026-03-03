@@ -111,6 +111,18 @@ function doxa_map_scripts() {
         'prayBaseUrl'  => 'https://pray.doxa.life' . ( $language_code !== 'en' ? '/' . $language_code : '' ),
         'researchUrl'  => doxa_translation_url( 'research' ),
         'languageCode' => $language_code,
+        't' => array(
+            'no_prayer'        => __( 'No prayer coverage', 'doxa-website' ),
+            'has_prayer'       => __( 'Has prayer coverage', 'doxa-website' ),
+            'pray_for_them'    => __( 'Pray for them', 'doxa-website' ),
+            'info'             => __( 'Info', 'doxa-website' ),
+            'language'         => __( 'Language', 'doxa-website' ),
+            'country'          => __( 'Country', 'doxa-website' ),
+            'population'       => __( 'Population', 'doxa-website' ),
+            'prayer_coverage'  => __( 'Prayer Coverage', 'doxa-website' ),
+            'unknown'          => __( 'Unknown', 'doxa-website' ),
+            'close'            => __( 'Close', 'doxa-website' ),
+        ),
     ) ) . ';', 'before' );
 }
 add_action( 'wp_enqueue_scripts', 'doxa_map_scripts' );
