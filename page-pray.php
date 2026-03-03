@@ -131,9 +131,17 @@ get_header( 'top' ); ?>
                         <h2 id="choose-people-group"><?php echo __('Choose a people group', 'doxa-website'); ?></h2>
                         <p class="subtext"><?php echo __('Select a highlighted unengaged people group, or search for a specific group or location below.', 'doxa-website'); ?></p>
                     </div>
+
+                    <?php
+
+                        $language_code = doxa_get_language_code();
+                        $select_url = $language_code !== 'en' ? 'https://pray.doxa.life/' . $language_code . '/' : 'https://pray.doxa.life/';
+
+                    ?>
+
                     <uupgs-list
-                        languageCode="<?php echo doxa_get_language_code(); ?>"
-                        selectUrl="https://pray.doxa.life/<?php echo doxa_get_language_code(); ?>/"
+                        languageCode="<?php echo $language_code; ?>"
+                        selectUrl="<?php echo $select_url; ?>"
                         researchUrl="<?php echo esc_url( doxa_translation_url( 'research' ) ); ?>"
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Select', 'doxa-website'),
