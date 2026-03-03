@@ -414,6 +414,7 @@ add_action('wp_head', 'output_page_custom_css');
 function custom_uupgs_rewrite_rules() {
     $post_id = doxa_get_page_id_by_slug( 'research' );
     $translation_ids = doxa_language_relationships( $post_id );
+    if ( empty( $translation_ids ) ) { return; }
     foreach ( $translation_ids as $lang_code => $translation_id ) {
         $post = get_post( $translation_id, OBJECT );
         if ( $lang_code === 'en' ) {
@@ -466,6 +467,7 @@ add_action('init', 'custom_uupgs_rewrite_rules');
 function custom_adoption_form_rewrite_rules() {
     $post_id = doxa_get_page_id_by_slug( 'adopt' );
     $translation_ids = doxa_language_relationships( $post_id );
+    if ( empty( $translation_ids ) ) { return; }
     foreach ( $translation_ids as $lang_code => $translation_id ) {
         $post = get_post( $translation_id, OBJECT );
         if ( $lang_code === 'en' ) {
