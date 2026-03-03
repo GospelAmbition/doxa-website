@@ -92,6 +92,30 @@ function gospel_ambition_scripts() {
 add_action('wp_enqueue_scripts', 'gospel_ambition_scripts');
 
 /**
+ * Enqueue Prayer Map scripts and styles on the Pray page
+ */
+function doxa_map_scripts() {
+    if ( ! is_page( 'pray' ) ) {
+        return;
+    }
+
+    wp_enqueue_script( 'mapbox-gl', 'https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js', array(), '2.15.0', true );
+    wp_enqueue_style( 'mapbox-gl', 'https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css', array(), '2.15.0' );
+
+    wp_enqueue_style( 'prayer-map', get_template_directory_uri() . '/css/prayer-map.css', array( 'mapbox-gl' ), filemtime( get_template_directory() . '/css/prayer-map.css' ) );
+    wp_enqueue_script( 'prayer-map', get_template_directory_uri() . '/js/prayer-map.js', array( 'mapbox-gl' ), filemtime( get_template_directory() . '/js/prayer-map.js' ), true );
+
+    $language_code = doxa_get_language_code();
+    wp_add_inline_script( 'prayer-map', 'window.prayerMapConfig = ' . wp_json_encode( array(
+        'mapboxToken'  => defined( 'MAPBOX_PUBLIC_TOKEN' ) ? MAPBOX_PUBLIC_TOKEN : '',
+        'prayBaseUrl'  => 'https://pray.doxa.life' . ( $language_code !== 'en' ? '/' . $language_code : '' ),
+        'researchUrl'  => doxa_translation_url( 'research' ),
+        'languageCode' => $language_code,
+    ) ) . ';', 'before' );
+}
+add_action( 'wp_enqueue_scripts', 'doxa_map_scripts' );
+
+/**
  * Register widget areas
  */
 function gospel_ambition_widgets_init() {

@@ -1,0 +1,188 @@
+#prayer-map {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 400px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+#prayer-map .mapboxgl-canvas {
+  outline: none;
+}
+
+/* Legend */
+.prayer-map-legend {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.8125rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.prayer-map-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prayer-map-legend__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Modal overlay */
+.prayer-map-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.prayer-map-overlay.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal card */
+.prayer-map-modal {
+  background: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(10px);
+  transition: transform 0.2s ease;
+}
+
+.prayer-map-overlay.is-visible .prayer-map-modal {
+  transform: translateY(0);
+}
+
+.prayer-map-modal__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.prayer-map-modal__body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.prayer-map-modal__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.prayer-map-modal__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.prayer-map-modal__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.prayer-map-modal__actions a {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.15s ease;
+}
+
+.prayer-map-modal__actions a:hover {
+  opacity: 0.85;
+}
+
+.prayer-map-modal__btn-pray {
+  background: #3b82f6;
+  color: #fff;
+}
+
+.prayer-map-modal__btn-info {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.prayer-map-modal__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.prayer-map-modal__close:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Mobile: bottom sheet style */
+@media (max-width: 640px) {
+  .prayer-map-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .prayer-map-modal {
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    max-height: 85vh;
+    transform: translateY(100%);
+  }
+
+  .prayer-map-overlay.is-visible .prayer-map-modal {
+    transform: translateY(0);
+  }
+
+  .prayer-map-modal__image {
+    height: 180px;
+  }
+}

@@ -1,0 +1,184 @@
+(function () {
+  var config = window.prayerMapConfig || {};
+  var mapboxToken = config.mapboxToken || '';
+  var prayBaseUrl = config.prayBaseUrl || 'https://pray.doxa.life';
+  var researchUrl = config.researchUrl || '/research';
+  var languageCode = config.languageCode || 'en';
+  var apiUrl = 'https://pray.doxa.life/api/people-groups?fields=slug,name,imb_lat,imb_lng,people_praying,imb_population,imb_language_family,image_url&lang=' + languageCode;
+
+  var COLOR_NO_PRAYER = '#1a1a2e';
+  var COLOR_HAS_PRAYER = '#3b82f6';
+
+  var container = document.getElementById('prayer-map');
+  if (!container || !mapboxToken) return;
+
+  mapboxgl.accessToken = mapboxToken;
+
+  var map = new mapboxgl.Map({
+    container: 'prayer-map',
+    style: 'mapbox://styles/mapbox/light-v11',
+    projection: 'mercator',
+    center: [20, 10],
+    zoom: 1.5,
+    minZoom: 1,
+    maxZoom: 12,
+  });
+
+  map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+
+  // Build legend
+  var legend = document.createElement('div');
+  legend.className = 'prayer-map-legend';
+  legend.innerHTML =
+    '<div class="prayer-map-legend__item">' +
+      '<span class="prayer-map-legend__dot" style="background:' + COLOR_NO_PRAYER + '"></span>' +
+      '<span>No prayer coverage</span>' +
+    '</div>' +
+    '<div class="prayer-map-legend__item">' +
+      '<span class="prayer-map-legend__dot" style="background:' + COLOR_HAS_PRAYER + '"></span>' +
+      '<span>Has prayer coverage</span>' +
+    '</div>';
+  container.appendChild(legend);
+
+  // Build modal overlay (hidden by default)
+  var overlay = document.createElement('div');
+  overlay.className = 'prayer-map-overlay';
+  overlay.innerHTML =
+    '<div class="prayer-map-modal" role="dialog">' +
+      '<button class="prayer-map-modal__close" aria-label="Close">&times;</button>' +
+      '<img class="prayer-map-modal__image" src="" alt="">' +
+      '<div class="prayer-map-modal__body">' +
+        '<h3 class="prayer-map-modal__name"></h3>' +
+        '<div class="prayer-map-modal__details"></div>' +
+        '<div class="prayer-map-modal__actions">' +
+          '<a class="prayer-map-modal__btn-pray" href="#" target="_blank">Pray for them</a>' +
+          '<a class="prayer-map-modal__btn-info" href="#" target="_blank">Info</a>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  document.body.appendChild(overlay);
+
+  var modalImage = overlay.querySelector('.prayer-map-modal__image');
+  var modalName = overlay.querySelector('.prayer-map-modal__name');
+  var modalDetails = overlay.querySelector('.prayer-map-modal__details');
+  var btnPray = overlay.querySelector('.prayer-map-modal__btn-pray');
+  var btnInfo = overlay.querySelector('.prayer-map-modal__btn-info');
+
+  function closeModal() {
+    overlay.classList.remove('is-visible');
+  }
+
+  overlay.querySelector('.prayer-map-modal__close').addEventListener('click', closeModal);
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeModal();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function formatNumber(n) {
+    if (n == null) return 'Unknown';
+    return Number(n).toLocaleString();
+  }
+
+  function openModal(props) {
+    var fallbackImage = prayBaseUrl + '/images/default-people-group.jpg';
+    modalImage.src = props.image_url || fallbackImage;
+    modalImage.alt = props.name;
+    modalName.textContent = props.name;
+    modalDetails.innerHTML =
+      '<span><strong>Language Family:</strong> ' + (props.imb_language_family || 'Unknown') + '</span>' +
+      '<span><strong>Population:</strong> ' + formatNumber(props.imb_population) + '</span>';
+    btnPray.href = prayBaseUrl + '/' + props.slug;
+    btnInfo.href = researchUrl.replace(/\/+$/, '') + '/' + props.slug;
+    overlay.classList.add('is-visible');
+  }
+
+  map.on('load', function () {
+    fetch(apiUrl)
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var posts = data.posts || [];
+
+        var features = [];
+        for (var i = 0; i < posts.length; i++) {
+          var p = posts[i];
+          var lat = parseFloat(p.imb_lat);
+          var lng = parseFloat(p.imb_lng);
+          if (isNaN(lat) || isNaN(lng)) continue;
+
+          features.push({
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [lng, lat],
+            },
+            properties: {
+              slug: p.slug,
+              name: p.name,
+              people_praying: p.people_praying,
+              imb_population: p.imb_population,
+              imb_language_family: p.imb_language_family,
+              image_url: p.image_url,
+              hasPrayer: p.people_praying != null && p.people_praying > 0 ? 1 : 0,
+            },
+          });
+        }
+
+        addSourceAndLayer({
+          type: 'FeatureCollection',
+          features: features,
+        });
+      })
+      .catch(function (err) {
+        console.error('Prayer map: failed to load people groups', err);
+      });
+  });
+
+  function addSourceAndLayer(geojson) {
+    if (map.getSource('people-groups')) return;
+
+    map.addSource('people-groups', {
+      type: 'geojson',
+      data: geojson,
+    });
+
+    map.addLayer({
+      id: 'people-groups-dots',
+      type: 'circle',
+      source: 'people-groups',
+      paint: {
+        'circle-radius': [
+          'interpolate', ['linear'], ['zoom'],
+          1, 3,
+          5, 5,
+          10, 8,
+        ],
+        'circle-color': [
+          'case',
+          ['==', ['get', 'hasPrayer'], 1],
+          COLOR_HAS_PRAYER,
+          COLOR_NO_PRAYER,
+        ],
+        'circle-opacity': 0.85,
+        'circle-stroke-width': 1,
+        'circle-stroke-color': '#ffffff',
+        'circle-stroke-opacity': 0.5,
+      },
+    });
+
+    map.on('click', 'people-groups-dots', function (e) {
+      if (e.features && e.features.length > 0) {
+        openModal(e.features[0].properties);
+      }
+    });
+
+    map.on('mouseenter', 'people-groups-dots', function () {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'people-groups-dots', function () {
+      map.getCanvas().style.cursor = '';
+    });
+  }
+})();

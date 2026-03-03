@@ -162,6 +162,11 @@ get_header( 'top' ); ?>
                 </div>
             </section>
             <section>
+                <div class="container">
+                    <div id="prayer-map"></div>
+                </div>
+            </section>
+            <section>
                 <div class="container stack stack--5xl">
                     <figure class="text-center font-size-5xl font-heading">
                         <blockquote><?php echo __('Pray earnestly to the Lord of the harvest ...that He would send laborers to the [Unengaged].', 'doxa-website'); ?></blockquote>
