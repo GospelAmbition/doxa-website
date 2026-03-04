@@ -1,0 +1,258 @@
+#prayer-map {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 400px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+#prayer-map .mapboxgl-canvas {
+  outline: none;
+}
+
+#prayer-map .mapboxgl-ctrl-bottom-left {
+  left: auto;
+  right: 0;
+}
+
+/* Legend */
+.prayer-map-legend {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.prayer-map-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prayer-map-legend__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Search */
+.prayer-map-search {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  width: 420px;
+  max-width: calc(100% - 5rem);
+}
+
+.prayer-map-search__input {
+  width: 100%;
+  padding: 0.875rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--color-text-on-white, #2a332a);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.prayer-map-search__input::placeholder {
+  color: var(--color-brand-lighter, #798279);
+}
+
+.prayer-map-search__input:focus {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.prayer-map-search__results {
+  display: none;
+  margin-top: 0.375rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.prayer-map-search__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  gap: 0.125rem;
+  font-family: var(--font-family-base, 'Poppins', sans-serif);
+  font-size: 1rem;
+  color: var(--color-text-on-white, #2a332a);
+}
+
+.prayer-map-search__item:hover {
+  background: var(--color-brand-secondary-very-light, #F3F3F1);
+}
+
+.prayer-map-search__item-sub {
+  font-size: 0.8125rem;
+  color: var(--color-brand-lighter, #798279);
+}
+
+/* Modal overlay */
+.prayer-map-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.prayer-map-overlay.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal card */
+.prayer-map-modal {
+  background: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  transform: translateY(10px);
+  transition: transform 0.2s ease;
+}
+
+.prayer-map-overlay.is-visible .prayer-map-modal {
+  transform: translateY(0);
+}
+
+.prayer-map-modal__image {
+  width: 180px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.prayer-map-modal__body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.prayer-map-modal__name {
+  margin: 0;
+}
+
+.prayer-map-modal__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.prayer-map-modal__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.prayer-map-modal__actions a {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.15s ease;
+}
+
+.prayer-map-modal__actions a:hover {
+  opacity: 0.85;
+}
+
+.prayer-map-modal__btn-pray {
+  background: var(--color-brand);
+  color: var(--color-white);
+}
+
+.prayer-map-modal__btn-info {
+  background: var(--color-brand-secondary);
+  color: var(--color-brand-dark);
+}
+
+.prayer-map-modal__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.prayer-map-modal__close:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Mobile: bottom sheet style */
+@media (max-width: 640px) {
+  .prayer-map-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .prayer-map-modal {
+    max-width: 100%;
+    flex-direction: row;
+    border-radius: 1rem 1rem 0 0;
+    max-height: 85vh;
+    transform: translateY(100%);
+  }
+
+  .prayer-map-overlay.is-visible .prayer-map-modal {
+    transform: translateY(0);
+  }
+
+  .prayer-map-modal__image {
+    width: 120px;
+    height: auto;
+    border-radius: 1rem 0 0 0;
+  }
+}
