@@ -52,7 +52,7 @@
   left: 1rem;
   z-index: 2;
   width: 420px;
-  max-width: calc(100% - 2rem);
+  max-width: calc(100% - 5rem);
 }
 
 .prayer-map-search__input {

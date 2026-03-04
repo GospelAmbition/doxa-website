@@ -7,7 +7,7 @@
   var t = config.t || {};
   var apiUrl = 'https://pray.doxa.life/api/people-groups/list?fields=slug,name,imb_lat,imb_lng,people_praying,population,picture_url,country,imb_reg_of_language&lang=' + languageCode;
 
-  var COLOR_NO_PRAYER = '#1a1a2e';
+  var COLOR_NO_PRAYER = '#e57373';
   var COLOR_HAS_PRAYER = '#4caf50';
 
   var allFeatures = [];
