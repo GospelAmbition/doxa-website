@@ -10,6 +10,8 @@
   var COLOR_NO_PRAYER = '#1a1a2e';
   var COLOR_HAS_PRAYER = '#4caf50';
 
+  var allFeatures = [];
+
   var container = document.getElementById('prayer-map');
   if (!container || !mapboxToken) return;
 
@@ -49,6 +51,141 @@
       '<span>' + (t.has_prayer || 'Has prayer coverage') + '</span>' +
     '</div>';
   container.appendChild(legend);
+
+  // Build search
+  var searchWrap = document.createElement('div');
+  searchWrap.className = 'prayer-map-search';
+  searchWrap.innerHTML =
+    '<input class="prayer-map-search__input" type="text" placeholder="' + (t.search_placeholder || 'Search people groups or locations') + '" autocomplete="off">' +
+    '<div class="prayer-map-search__results"></div>';
+  container.appendChild(searchWrap);
+
+  var searchInput = searchWrap.querySelector('.prayer-map-search__input');
+  var searchResults = searchWrap.querySelector('.prayer-map-search__results');
+  var debounceTimer = null;
+  var geocodeController = null;
+
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function closeSearch() {
+    searchResults.innerHTML = '';
+    searchResults.style.display = 'none';
+  }
+
+  function showResults(items) {
+    if (items.length === 0) {
+      closeSearch();
+      return;
+    }
+    searchResults.innerHTML = items.map(function (item) {
+      return '<button class="prayer-map-search__item" data-type="' + item.type + '" data-index="' + (item.index != null ? item.index : '') + '" data-lng="' + (item.lng || '') + '" data-lat="' + (item.lat || '') + '">' +
+        '<span class="prayer-map-search__item-name">' + escapeHtml(item.name) + '</span>' +
+        (item.sub ? '<span class="prayer-map-search__item-sub">' + escapeHtml(item.sub) + '</span>' : '') +
+      '</button>';
+    }).join('');
+    searchResults.style.display = 'block';
+  }
+
+  searchResults.addEventListener('click', function (e) {
+    var btn = e.target.closest('.prayer-map-search__item');
+    if (!btn) return;
+
+    var type = btn.getAttribute('data-type');
+    if (type === 'people') {
+      var idx = parseInt(btn.getAttribute('data-index'), 10);
+      var feature = allFeatures[idx];
+      if (feature) {
+        var coords = feature.geometry.coordinates;
+        map.flyTo({ center: coords, zoom: 8 });
+        highlightFeature(feature);
+      }
+    } else {
+      var lng = parseFloat(btn.getAttribute('data-lng'));
+      var lat = parseFloat(btn.getAttribute('data-lat'));
+      if (!isNaN(lng) && !isNaN(lat)) {
+        map.flyTo({ center: [lng, lat], zoom: 5 });
+      }
+    }
+
+    searchInput.value = '';
+    closeSearch();
+  });
+
+  searchInput.addEventListener('input', function () {
+    var query = searchInput.value.trim();
+    clearTimeout(debounceTimer);
+    if (geocodeController) {
+      geocodeController.abort();
+      geocodeController = null;
+    }
+
+    if (query.length < 2) {
+      closeSearch();
+      return;
+    }
+
+    debounceTimer = setTimeout(function () {
+      var lower = query.toLowerCase();
+      var peopleResults = [];
+      for (var i = 0; i < allFeatures.length && peopleResults.length < 5; i++) {
+        var name = allFeatures[i].properties.name;
+        if (name && name.toLowerCase().indexOf(lower) !== -1) {
+          peopleResults.push({
+            type: 'people',
+            name: allFeatures[i].properties.name,
+            sub: allFeatures[i].properties.country || '',
+            index: i,
+          });
+        }
+      }
+
+      if (peopleResults.length >= 2) {
+        showResults(peopleResults);
+        return;
+      }
+
+      geocodeController = new AbortController();
+      var geocodeUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' +
+        encodeURIComponent(query) + '.json?access_token=' + mapboxToken + '&limit=3';
+
+      fetch(geocodeUrl, { signal: geocodeController.signal })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          var locationResults = (data.features || []).map(function (f) {
+            return {
+              type: 'location',
+              name: f.place_name,
+              lng: f.center[0],
+              lat: f.center[1],
+            };
+          });
+          showResults(peopleResults.concat(locationResults));
+        })
+        .catch(function (err) {
+          if (err.name !== 'AbortError') {
+            showResults(peopleResults);
+          }
+        });
+    }, 300);
+  });
+
+  searchInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      searchInput.value = '';
+      closeSearch();
+      searchInput.blur();
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!searchWrap.contains(e.target)) {
+      closeSearch();
+    }
+  });
 
   // Build modal overlay (hidden by default)
   var overlay = document.createElement('div');
@@ -90,6 +227,50 @@
     if (n == null) return t.unknown || 'Unknown';
     return Number(n).toLocaleString();
   }
+
+  var highlightedSlug = null;
+
+  function highlightFeature(feature) {
+    highlightedSlug = feature.properties.slug;
+    map.setPaintProperty('people-groups-dots', 'circle-color', [
+      'case',
+      ['==', ['get', 'slug'], highlightedSlug],
+      '#ff9800',
+      ['==', ['get', 'hasPrayer'], 1],
+      COLOR_HAS_PRAYER,
+      COLOR_NO_PRAYER,
+    ]);
+    map.setPaintProperty('people-groups-dots', 'circle-radius', [
+      'case',
+      ['==', ['get', 'slug'], highlightedSlug],
+      12,
+      ['interpolate', ['linear'], ['zoom'], 1, 3, 5, 5, 10, 8],
+    ]);
+  }
+
+  function clearHighlight() {
+    if (!highlightedSlug) return;
+    highlightedSlug = null;
+    map.setPaintProperty('people-groups-dots', 'circle-color', [
+      'case',
+      ['==', ['get', 'hasPrayer'], 1],
+      COLOR_HAS_PRAYER,
+      COLOR_NO_PRAYER,
+    ]);
+    map.setPaintProperty('people-groups-dots', 'circle-radius', [
+      'interpolate', ['linear'], ['zoom'],
+      1, 3, 5, 5, 10, 8,
+    ]);
+  }
+
+  map.on('click', function (e) {
+    if (highlightedSlug) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ['people-groups-dots'] });
+      if (!features.length || features[0].properties.slug !== highlightedSlug) {
+        clearHighlight();
+      }
+    }
+  });
 
   function openModal(props) {
     var fallbackImage = prayBaseUrl + '/images/default-people-group.jpg';
@@ -137,6 +318,8 @@
             },
           });
         }
+
+        allFeatures = features;
 
         addSourceAndLayer({
           type: 'FeatureCollection',

@@ -122,6 +122,7 @@ function doxa_map_scripts() {
             'prayer_coverage'  => __( 'Prayer Coverage', 'doxa-website' ),
             'unknown'          => __( 'Unknown', 'doxa-website' ),
             'close'            => __( 'Close', 'doxa-website' ),
+            'search_placeholder' => __( 'Search people groups or locations', 'doxa-website' ),
         ),
     ) ) . ';', 'before' );
 }
