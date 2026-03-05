@@ -65,7 +65,7 @@ const mt=globalThis,Pt=mt.ShadowRoot&&(mt.ShadyCSS===void 0||mt.ShadyCSS.nativeS
                                         <p class="">${r.display_name}</p>
                                         <div class="repel">
                                             <p class="font-size-sm color-brand-lighter">${this.t.prayer_coverage}:</p>
-                                            <p class="font-size-xl font-button">${r.people_praying??0}/144</p>
+                                            <p class="font-size-xl font-button">${r.people_committed??0}/144</p>
                                         </div>
                                         <div class="switcher | text-center" data-width="md">
                                             <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl+r.slug}">${this.t.select}</a>

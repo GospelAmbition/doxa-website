@@ -124,7 +124,7 @@ if ( $lang_code !== 'en' ) {
                             <p class="font-size-lg"><?php echo __('People committed to praying', 'doxa-website'); ?></p>
                             <div class="stack stack--sm">
                                 <div class="progress-bar" data-size="md">
-                                    <div class="progress-bar__slider" style="width: <?php echo esc_attr( $uupg['people_praying'] / 144 * 100 ); ?>%"></div>
+                                    <div class="progress-bar__slider" style="width: <?php echo esc_attr( $uupg['people_committed'] / 144 * 100 ); ?>%"></div>
                                 </div>
                                 <p class="font-size-lg font-weight-medium"><?php echo __('24-Hour Prayer Coverage', 'doxa-website'); ?></p>
                             </div>

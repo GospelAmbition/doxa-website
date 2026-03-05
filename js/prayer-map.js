@@ -5,7 +5,7 @@
   var researchUrl = config.researchUrl || '/research';
   var languageCode = config.languageCode || 'en';
   var t = config.t || {};
-  var apiUrl = 'https://pray.doxa.life/api/people-groups/list?fields=slug,name,imb_lat,imb_lng,people_praying,population,picture_url,country,imb_reg_of_language&lang=' + languageCode;
+  var apiUrl = 'https://pray.doxa.life/api/people-groups/list?fields=slug,name,imb_lat,imb_lng,people_committed,population,picture_url,country,imb_reg_of_language&lang=' + languageCode;
 
   var COLOR_NO_PRAYER = '#e57373';
   var COLOR_HAS_PRAYER = '#4caf50';
@@ -281,7 +281,7 @@
       '<span><strong>' + (t.language || 'Language') + ':</strong> ' + (props.language || t.unknown || 'Unknown') + '</span>' +
       '<span><strong>' + (t.country || 'Country') + ':</strong> ' + (props.country || t.unknown || 'Unknown') + '</span>' +
       '<span><strong>' + (t.population || 'Population') + ':</strong> ' + formatNumber(props.population) + '</span>' +
-      '<span><strong>' + (t.prayer_coverage || 'Prayer Coverage') + ':</strong> ' + (props.people_praying || 0) + '/144</span>';
+      '<span><strong>' + (t.prayer_coverage || 'Prayer Coverage') + ':</strong> ' + (props.people_committed || 0) + '/144</span>';
     btnPray.href = prayBaseUrl + '/' + props.slug + '?source=doxalife';
     btnInfo.href = researchUrl.replace(/\/+$/, '') + '/' + props.slug;
     overlay.classList.add('is-visible');
@@ -309,12 +309,12 @@
             properties: {
               slug: p.slug,
               name: p.name,
-              people_praying: p.people_praying,
+              people_committed: p.people_committed,
               population: p.population,
               language: p.imb_reg_of_language ? p.imb_reg_of_language.label : null,
               country: p.country ? p.country.label : null,
               picture_url: p.picture_url,
-              hasPrayer: p.people_praying > 0 ? 1 : 0,
+              hasPrayer: p.people_committed > 0 ? 1 : 0,
             },
           });
         }
