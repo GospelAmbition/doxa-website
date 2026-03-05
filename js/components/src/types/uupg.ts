@@ -17,6 +17,7 @@ export interface Uupg {
     adopted?: boolean;
     adopted_by_churches?: number;
     people_praying?: number;
+    people_committed?: number;
 }
 
 interface KeyLabel {
