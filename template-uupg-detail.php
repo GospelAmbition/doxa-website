@@ -15,6 +15,7 @@ if ( $lang_code !== 'en' ) {
 } else {
     $pray_url = 'https://pray.doxa.life/' . $slug;
 }
+$pray_url .= '?source=doxalife';
 
 ?>
 
