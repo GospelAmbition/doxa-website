@@ -60,7 +60,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 </div>
                 <form id="adoption-form" class="text-card shadow">
                     <input type="email" name="email" style="display:none;" autocomplete="off" tabindex="-1">
-                    <input type="hidden" name="people_group" value="<?php echo esc_attr( $uupg['imb_display_name'] . ' (' . $uupg['imb_isoalpha3']['label'] . ')' ); ?>">
+                    <input type="hidden" name="people_group" value="<?php echo esc_attr( $slug ); ?>">
                     <div class="stack stack--lg | max-width-lg mx-auto">
                         <section class="stack">
                             <h3 class="highlight" data-highlight-index="4"><?php echo __('What is your commitment? Pray. Give. Send.', 'doxa-website'); ?></h3>
@@ -214,6 +214,8 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 country: form.querySelector('#country').value,
                 role: form.querySelector('#role').value,
                 confirm_adoption: form.querySelector('#confirm-adoption').checked,
+                permission_to_contact: form.querySelector('#permission-to-contact').checked,
+                confirm_public_display: form.querySelector('#confirm-public-display').checked,
                 people_group: form.querySelector('input[name="people_group"]').value,
                 cf_turnstile: turnstileToken
             };
