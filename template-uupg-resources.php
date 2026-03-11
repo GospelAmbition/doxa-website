@@ -50,7 +50,7 @@ if ( $lang_code !== 'en' ) {
     <?php get_header(); ?>
 
     <main class="site-main">
-        <div class="uupg-detail-page stack stack--2xl">
+        <div class="uupg-detail-page">
             <div class="surface-brand-light py-xl color-secondary">
                 <div class="container">
                     <h1 class="text-center"><?php echo __('Adoption Resources', 'doxa-website'); ?></h1>
@@ -71,7 +71,7 @@ if ( $lang_code !== 'en' ) {
                     </div>
                 </div>
             </div>
-            <section class="surface-white">
+            <section class="surface-white mt-2xl">
                 <div class="container stack stack--xl">
                     <h2><?php echo __('Introduction', 'doxa-website'); ?></h2>
                     <h3 class="color-brand-lighter stack-spacing-3xl"><?php echo __('Welcome to the adoption Journey', 'doxa-website'); ?></h3>
@@ -93,7 +93,14 @@ if ( $lang_code !== 'en' ) {
                     </ul>
                 </div>
             </section>
-
+            <section class="container">
+                <h2 class="text-center"><?php echo __('Your Promotional Resources', 'doxa-website'); ?></h2>
+            </section>
+            <section class="surface-secondary-light">
+                <div class="container">
+                    <h2 class="text-center"><?php echo __('General Resources', 'doxa-website'); ?></h2>
+                </div>
+            </section>
         </div>
     </main>
 
