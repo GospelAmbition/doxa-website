@@ -232,7 +232,27 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 return response.json().then(data => ({ ok: response.ok, data }));
             })
             .then(({ ok, data }) => {
-                if (ok && data === 'success') {
+                if (ok && data.status === 'needs_verification') {
+                    const userEmail = formData.email;
+                    const formContainer = document.querySelector('.stack.stack--lg');
+                    formContainer.innerHTML = `
+                        <div class="text-card shadow text-center">
+                            <div class="stack">
+                                <div class="color-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <h2 class="highlight" data-highlight-index="1"><?php echo esc_html(__('Success! Form submitted.', 'doxa-website')); ?></h2>
+                                <p>
+                                    <?php echo esc_html(__('To confirm your adoption, please verify your email address. We sent a verification email to', 'doxa-website')); ?>
+                                    <strong>${userEmail}</strong>.
+                                </p>
+                                <p class="font-size-xs">
+                                    <?php echo esc_html(__("Don't see the email? Check your spam folder.", 'doxa-website')); ?>
+                                </p>
+                            </div>
+                        </div>
+                    `;
+                } else if (ok && data.status === 'success') {
                     messageDiv.className = 'contact-message success';
                     messageDiv.textContent = '<?php echo esc_js(__('Thank you for your adoption commitment! We will be in touch soon.', 'doxa-website')); ?>';
                     messageDiv.style.display = 'block';

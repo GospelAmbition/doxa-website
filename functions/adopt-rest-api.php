@@ -115,5 +115,11 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
         return new WP_Error( 'api_error', 'Failed to submit adoption. Please try again.', [ 'status' => 500 ] );
     }
 
-    return new WP_REST_Response( 'success', 200 );
+    $response_body = json_decode( wp_remote_retrieve_body( $response ), true );
+
+    if ( ! empty( $response_body['needs_verification'] ) ) {
+        return new WP_REST_Response( [ 'status' => 'needs_verification' ], 200 );
+    }
+
+    return new WP_REST_Response( [ 'status' => 'success' ], 200 );
 }
