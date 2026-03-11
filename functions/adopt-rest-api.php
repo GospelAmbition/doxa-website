@@ -112,9 +112,7 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
 
     $response_code = wp_remote_retrieve_response_code( $response );
     if ( $response_code < 200 || $response_code >= 300 ) {
-        $body = json_decode( wp_remote_retrieve_body( $response ), true );
-        $message = $body['statusMessage'] ?? 'Failed to submit adoption. Please try again.';
-        return new WP_Error( 'api_error', $message, [ 'status' => $response_code ] );
+        return new WP_Error( 'api_error', 'Failed to submit adoption. Please try again.', [ 'status' => 500 ] );
     }
 
     return new WP_REST_Response( 'success', 200 );
