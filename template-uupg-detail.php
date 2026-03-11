@@ -56,7 +56,7 @@ $pray_url .= '?source=doxalife';
                 <div class="stack stack--2xl">
                     <div class="card switcher" padding-small>
                         <div class="center | grow-none">
-                            <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['image_url'] ); ?>" alt="<?php echo isset( $uupg['imb_display_name'] ) ? esc_attr( $uupg['imb_display_name'] ) : esc_attr( $uupg['imb_people_name'] ); ?>">
+                            <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['image_url'] ); ?>" alt="<?php echo isset( $uupg['name'] ) ? esc_attr( $uupg['name'] ) : 'People Group Photo'; ?>">
                             <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['key'] === 'engaged' ? 'true' : 'false'; ?>">
                                 <?php if ( $uupg['imb_engagement_status']['key'] === 'engaged' ) : ?>
                                     <span><?php echo __('Engaged', 'doxa-website'); ?></span>
@@ -66,7 +66,7 @@ $pray_url .= '?source=doxalife';
                             </div>
                         </div>
                         <div class="stack stack--xs | uupg__header">
-                            <h4 class="font-base font-weight-medium"><?php echo esc_html( $uupg['imb_display_name'] ); ?></h4>
+                            <h4 class="font-base font-weight-medium"><?php echo esc_html( $uupg['display_name'] ); ?></h4>
                             <p class="font-weight-medium font-size-lg"><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
                             <p><?php echo esc_html( $uupg['imb_people_description'] ); ?></p>
                         </div>
