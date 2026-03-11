@@ -216,6 +216,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 permission_to_contact: form.querySelector('#permission-to-contact').checked,
                 confirm_public_display: form.querySelector('#confirm-public-display').checked,
                 people_group: form.querySelector('input[name="people_group"]').value,
+                language: '<?php echo esc_js( doxa_get_language_code() ); ?>',
                 cf_turnstile: turnstileToken
             };
 

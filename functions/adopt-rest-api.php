@@ -66,6 +66,7 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
     $permission_to_contact = ! empty( $params['permission_to_contact'] ) ? 'Yes' : 'No';
     $confirm_public_display = ! empty( $params['confirm_public_display'] ) ? 'Yes' : 'No';
     $people_group     = sanitize_text_field( $params['people_group'] ?? '' );
+    $language         = sanitize_text_field( $params['language'] ?? 'en' );
 
     // Validate required fields
     if ( empty( $email ) || empty( $first_name ) || empty( $last_name ) ) {
@@ -96,6 +97,7 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
             'people_group'           => $people_group,
             'permission_to_contact'  => $permission_to_contact === 'Yes',
             'confirm_public_display' => $confirm_public_display === 'Yes',
+            'language'               => $language,
         ] ),
         'headers' => [
             'X-API-Key'    => $api_key,
