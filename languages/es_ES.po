@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-26T14:49:30+00:00\n"
-"PO-Revision-Date: 2026-02-26 16:05+0000\n"
+"PO-Revision-Date: 2026-03-06 20:05+0000\n"
 "Last-Translator: DeepL <noreply-mt-deepl@weblate.org>\n"
 "Language-Team: Spanish <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/es_ES/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 5.16.1\n"
 "X-Domain: doxa-website\n"
 
 #. Theme Name of the theme
@@ -770,6 +770,11 @@ msgid ""
 "a month for a congregation around 500. $1000 a month for a congregation "
 "around 1000, etc."
 msgstr ""
+"Recomendamos que las iglesias hagan una promesa de donación mensual basada "
+"en el tamaño de su congregación.  Por ejemplo, 100 dólares al mes para una "
+"congregación de alrededor de 100 personas.  500 dólares al mes para una "
+"congregación de alrededor de 500 personas. 1000 dólares al mes para una "
+"congregación de alrededor de 1000 personas, etc."
 
 #: template-adoption-form.php:81
 msgid "Send"
@@ -814,15 +819,15 @@ msgstr "Teléfono"
 
 #: template-adoption-form.php:105
 msgid "Please enter a valid phone number"
-msgstr ""
+msgstr "Introduzca un número de teléfono válido."
 
 #: template-adoption-form.php:106
 msgid "Phone number is too short"
-msgstr ""
+msgstr "El número de teléfono es demasiado corto."
 
 #: template-adoption-form.php:107
 msgid "Phone number is too long"
-msgstr ""
+msgstr "El número de teléfono es demasiado largo."
 
 #: template-adoption-form.php:113
 msgid "Role"
@@ -1018,7 +1023,7 @@ msgstr "Escritura en audio"
 
 #: template-uupg-resources.php:54
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #~ msgid "Enter your Phone"
 #~ msgstr "Introduzca su teléfono"

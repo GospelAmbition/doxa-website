@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: DOXA Life 1.1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/doxa-website\n"
 "POT-Creation-Date: 2026-02-26T14:49:30+00:00\n"
-"PO-Revision-Date: 2026-02-27 11:13+0000\n"
+"PO-Revision-Date: 2026-03-09 18:05+0000\n"
 "Last-Translator: Weblate Admin <translator@disciple.tools>\n"
 "Language-Team: German <https://translate.disciple.tools/projects/doxa/doxa-"
 "life/de_DE/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16.1\n"
+"X-Generator: Weblate 5.16.2\n"
 "X-Domain: doxa-website\n"
 
 #. Theme Name of the theme
@@ -56,12 +56,12 @@ msgstr "Home"
 #: 404.php:24 front-page.php:46 front-page.php:168 page-pray.php:66
 #: template-adoption-form.php:70
 msgid "Pray"
-msgstr "Beten"
+msgstr "Ich bete"
 
 #. Template Name of the theme
 #: 404.php:25 front-page.php:54 page-adopt.php:137
 msgid "Adopt"
-msgstr "Annehmen"
+msgstr "Adoptieren"
 
 #: 404.php:26
 msgid "Research"
@@ -93,40 +93,40 @@ msgstr "Unser Geschenk an Jesus"
 
 #: front-page.php:17 front-page.php:26
 msgid "Engage every people by 2033"
-msgstr "Bis 2033 alle Menschen einbeziehen"
+msgstr "Bis 2033 in allen Volksgruppen eine Gemeindegründungsarbeit"
 
 #: front-page.php:29
 msgid "The DOXA Vision: Click image to watch the video"
-msgstr "Die DOXA-Vision: Klicken Sie auf das Bild, um das Video anzusehen."
+msgstr "Klicke auf das Bild, um mehr über die Doxa-Vision zu erfahren"
 
 #: front-page.php:34
 msgctxt "number of unengaged people groups"
 msgid "%s unengaged people groups"
-msgstr "%s nicht-engagierte Volksgruppen"
+msgstr "%s völlig unerreichte Volksgruppen"
 
 #: front-page.php:36
 msgid ""
 "Our hope is to see each of them covered in 24-hour prayer, and your church "
 "can be part of it."
 msgstr ""
-"Wir hoffen, dass jeder von ihnen rund um die Uhr im Gebet begleitet wird, "
-"und Ihre Gemeinde kann dabei helfen."
+"Unsere Hoffnung ist es, mit der Hilfe deiner Gemeinde jede dieser "
+"Volksgruppen rund um die Uhr im Gebet abzudecken."
 
 #: front-page.php:41
 msgid "A simple path to faithful obedience"
-msgstr "Ein einfacher Weg zu treuem Gehorsam"
+msgstr "Drei einfache Schritte, die du gehen kannst"
 
 #: front-page.php:47
 msgid ""
 "Receive daily prayer points and join believers worldwide in prayer for the "
 "unengaged peoples."
 msgstr ""
-"Erhalten Sie täglich Gebetspunkte und schließen Sie sich Gläubigen weltweit "
-"im Gebet für die unerreichten Völker an."
+"Erhalte täglich Gebetsanliegen, die mit anderen Gläubigen weltweit geteilt "
+"werden."
 
 #: front-page.php:49
 msgid "Join"
-msgstr "Beitreten"
+msgstr "Jetzt mitbeten"
 
 #: front-page.php:55
 msgid ""
@@ -138,11 +138,11 @@ msgstr ""
 
 #: front-page.php:57 front-page.php:65
 msgid "Commit"
-msgstr "Verpflichten"
+msgstr "Jetzt mitmachen"
 
 #: front-page.php:62
 msgid "Engage"
-msgstr "Engagieren"
+msgstr "Bring dich ein"
 
 #: front-page.php:63
 msgid ""
@@ -154,7 +154,7 @@ msgstr ""
 
 #: front-page.php:72 front-page.php:76
 msgid "Who are the unengaged?"
-msgstr "Wer sind die Nicht-Engagierten?"
+msgstr "Wer sind die völlig unerreichten Volksgruppen?"
 
 #: front-page.php:81
 msgid "Unreached"
@@ -172,15 +172,15 @@ msgstr "%s Volksgruppen"
 
 #: front-page.php:90
 msgid "Under-Engaged"
-msgstr "Unterbesetzt"
+msgstr "Wenig erreicht"
 
 #: front-page.php:99
 msgid "Frontier People"
-msgstr "Grenzbewohner"
+msgstr "Frontier Gruppen"
 
 #: front-page.php:108
 msgid "Unengaged"
-msgstr "Nicht engagiert"
+msgstr "Völlig unerreicht"
 
 #: front-page.php:109
 msgctxt "number of millions"
@@ -197,31 +197,33 @@ msgstr "Vision 2033"
 
 #: front-page.php:138
 msgid "In partnership with the global church, our vision is for..."
-msgstr ""
-"In Zusammenarbeit mit der weltweiten Kirche ist es unsere Vision, dass..."
+msgstr "In Zusammenarbeit mit der globalen Kirche ist unsere Vision…"
 
 #: front-page.php:140
 msgid "Daily 24-hour prayer coverage for all 2,085 unengaged peoples"
 msgstr ""
-"Tägliche 24-Stunden-Gebetsabdeckung für alle 2.085 unengagierten Völker"
+"Täglich alle 2085 völlig unerreichte Volksgruppen durch kontinuierliches "
+"Gebet abzudecken"
 
 #: front-page.php:141
 msgid "No unengaged people groups by 2033"
-msgstr "Bis 2033 keine nicht-engagierten Volksgruppen mehr"
+msgstr "Dass es bis 2033 keine völlig unerreichte Volksgruppe mehr gibt"
 
 #: front-page.php:142
 msgid "Mobilization of 20,000+ DOXA partnership missionaries"
-msgstr "Mobilisierung von über 20.000 DOXA-Partnerschaftsmissionaren"
+msgstr "20,000 DOXA-Partnerschafts-Missionare zu mobilisieren"
 
 #: front-page.php:143
 msgid "Fruitful engagement among frontier peoples and the under-engaged"
 msgstr ""
-"Fruchtbare Zusammenarbeit zwischen Grenzvolksgruppen und unterbesetzten "
-"Volksgruppen"
+"Ein fruchtbares Zusammenwirken zwischen Frontier Gruppen und \"wenig-"
+"erreichten Gruppen\" zu haben"
 
 #: front-page.php:144
 msgid "Church planting movements among every unreached people on earth"
-msgstr "Gemeindegründungsbewegungen unter allen unerreichten Völkern der Erde"
+msgstr ""
+"Gemeindegründungsbewegungen unter jedem unerreichten Volk auf der Erde zu "
+"sehen"
 
 #: front-page.php:147
 msgid "More"
@@ -229,16 +231,15 @@ msgstr "Mehr"
 
 #: front-page.php:160 front-page.php:163 front-page.php:184
 msgid "Engagement starts with prayer"
-msgstr "Das Engagement beginnt mit dem Gebet."
+msgstr "Dein Engagement beginnt mit Gebet."
 
 #: front-page.php:167
 msgid ""
 "Every movement of the gospel begins with intercession. Cover an unengaged "
 "people group in daily prayer and help prepare the way."
 msgstr ""
-"Jede Bewegung des Evangeliums beginnt mit Fürbitte. Bedecken Sie eine "
-"unengagierte Volksgruppe mit täglichem Gebet und helfen Sie dabei, den Weg "
-"zu bereiten."
+"Jede Bewegung des Evangeliums beginnt mit Fürbitte. Sege eine unerreichte "
+"Volksgruppe täglich durch dein Gebet und bringe sie somit näher zu Jesus."
 
 #: front-page.php:178
 msgid "What does \"DOXA\" mean?"
@@ -246,7 +247,7 @@ msgstr "Was bedeutet „DOXA“?"
 
 #: front-page.php:179
 msgid "DOXA is the Greek word for \"GLORY\"."
-msgstr "DOXA ist das griechische Wort für „RUHM“."
+msgstr "DOXA ist das griechische Wort für „EHRE“."
 
 #: front-page.php:180
 msgid ""
@@ -259,7 +260,7 @@ msgstr ""
 "Völker und Nationen würdig ist. DOXA erinnert uns daran, dass wir mit der "
 "gesamten Kirche zusammenarbeiten, um das ganze Evangelium in die ganze Welt "
 "zu tragen – bis Menschen aus allen Nationen Jesus anbeten und ihm allein "
-"alle Ehre zuteilwird."
+"alle Ehre zuteil wird."
 
 #: functions.php:87
 msgid "Click again to interact with map"
@@ -267,7 +268,7 @@ msgstr "Klicken Sie erneut, um mit der Karte zu interagieren."
 
 #: header.php:35
 msgid "World assemblies of God Fellowship"
-msgstr "Weltversammlungen der God Fellowship"
+msgstr "World assemblies of God Fellowship"
 
 #: index.php:24
 msgid "Let's TOGETHER give Jesus a gift:"
@@ -281,26 +282,26 @@ msgstr ""
 #: page-adopt.php:19 page-adopt.php:99 page-adopt.php:108 page-adopt.php:116
 #: page-pray.php:101 page-pray.php:110 page-pray.php:118
 msgid "Adopt an unengaged people group"
-msgstr "Eine nicht engagierte Volksgruppe adoptieren"
+msgstr "Adoptiere eine völlig unerreichte Volksgruppe"
 
 #: page-adopt.php:20
 msgid ""
 "A church-led commitment to pray, give, and send so that gospel access begins"
 msgstr ""
-"Eine von der Kirche geleitete Verpflichtung zum Beten, Geben und Senden, "
-"damit der Zugang zum Evangelium beginnt."
+"Verpflichtung einer Ortsgemeinde zum Beten, Geben und Senden, damit ein Volk "
+"Zugang zum Evangelium erhält"
 
 #: page-adopt.php:25
 msgid "Adoption Goal"
-msgstr "Adoptionsziel"
+msgstr "Unser Ziel"
 
 #: page-adopt.php:26
 msgid ""
 "Every unengaged people group adopted by a church committed to prayer, "
 "giving, and sending"
 msgstr ""
-"Jede nicht-engagierte Volksgruppe, die von einer Kirche übernommen wurde, "
-"die sich zu Gebet, Geben und Senden verpflichtet hat"
+"Jede einzelne der völlig unerreichten Volksgruppen soll von einer "
+"Ortsgemeinde adoptiert werden, durch Beten, Geben und Senden"
 
 #: page-adopt.php:29 page-pray.php:30
 msgid "Current Status"
@@ -316,22 +317,21 @@ msgstr "Wie Adoption funktioniert"
 
 #: page-adopt.php:51 page-pray.php:52
 msgid "Choose"
-msgstr "Wählen Sie"
+msgstr "Choose"
 
 #: page-adopt.php:52
 msgid "Prayerfully select an unengaged people group to adopt."
 msgstr ""
-"Wählen Sie unter Gebet eine unengagierte Volksgruppe aus, die Sie adoptieren "
-"möchten."
+"Wähle im Gebet eine völlig unerreichte Volksgruppe aus, welche du adoptieren "
+"möchtest."
 
 #: page-adopt.php:58
 msgid "Mobilize"
-msgstr "Mobilisieren"
+msgstr "Mobilize"
 
 #: page-adopt.php:59
 msgid "Raise up 144+ daily intercessors to pray 10 minutes a day."
-msgstr ""
-"Gewinne täglich mehr als 144 Fürbitter, die jeden Tag 10 Minuten beten."
+msgstr "Mobilisiere 144+ Fürbitter, welche 10 Minuten am Tag beten."
 
 #: page-adopt.php:65
 msgid "Partner"
@@ -341,8 +341,8 @@ msgstr "Partner"
 msgid ""
 "Partner through prayer, giving, and sending so that gospel access begins."
 msgstr ""
-"Partner durch Gebet, Spenden und Entsendung, damit der Zugang zum Evangelium "
-"beginnt."
+"Nimm durch Beten, Geben und Senden daran teil, damit der Zugang zum "
+"Evangelium möglich wird."
 
 #: page-adopt.php:70 page-pray.php:71
 msgid "Get Started"
@@ -355,18 +355,18 @@ msgstr "Adoptionsleitfaden und Ressourcen"
 #: page-adopt.php:80
 msgid "Step-by-step guidance for churches adopting a people group"
 msgstr ""
-"Schritt-für-Schritt-Anleitung für Kirchen, die eine Volksgruppe aufnehmen "
-"möchten"
+"Schritt-für-Schritt Anleitung für Gemeinden, die eine Volksgruppe adoptieren "
+"möchten."
 
 #: page-adopt.php:81
 msgid "Tools to mobilize prayer and participation across your congregation"
-msgstr "Werkzeuge, um Gebet und Beteiligung in Ihrer Gemeinde zu mobilisieren"
+msgstr "Werkzeuge, um viele in deiner Gemeinde zu mobilisieren"
 
 #: page-adopt.php:82
 msgid "Printable and digital resources to promote awareness and engagement"
 msgstr ""
-"Druckbare und digitale Ressourcen zur Förderung des Bewusstseins und des "
-"Engagements"
+"Digitale Ressourcen um Doxa bekannt zu machen und andere einladen zu können "
+"(zum Ausdrucken)"
 
 #: page-adopt.php:83
 msgid "Helpful tips for sustaining long-term commitment"
@@ -374,7 +374,7 @@ msgstr "Hilfreiche Tipps für ein langfristiges Engagement"
 
 #: page-adopt.php:88 page-pray.php:79 page-pray.php:90
 msgid "Your daily prayer guide"
-msgstr "Ihr täglicher Gebetsleitfaden"
+msgstr "Dein Täglicher Prayer Guide"
 
 #: page-adopt.php:96
 msgid "Why adoption matters"
@@ -427,15 +427,15 @@ msgstr ""
 
 #: page-adopt.php:129 page-pray.php:131
 msgid "Choose a people group"
-msgstr "Wählen Sie eine Volksgruppe aus"
+msgstr "Wähle eine Volksgruppe aus"
 
 #: page-adopt.php:130 page-pray.php:132
 msgid ""
 "Select a highlighted unengaged people group, or search for a specific group "
 "or location below."
 msgstr ""
-"Wählen Sie eine hervorgehobene, nicht-engagierte Volksgruppe aus oder suchen "
-"Sie unten nach einer bestimmten Gruppe oder einem bestimmten Ort."
+"Wähle eine der hier vorgestellten völlig unerreichten Volksgruppen aus oder "
+"suche nach einer bestimmten Gruppe oder nach einem bestimmten Ort."
 
 #: page-adopt.php:138 page-pray.php:140 page-uupgs.php:23
 #: shortcodes/uupg-list-shortcode.php:14
@@ -527,13 +527,12 @@ msgstr ""
 
 #: page-pray.php:19
 msgid "Prayer for an unengaged people group"
-msgstr "Gebet für eine nicht-engagierte Volksgruppe"
+msgstr "Gebet für eine völlig unerreichte Volksgruppe"
 
 #: page-pray.php:20
 msgid "Help prepare the way for gospel engagement through prayer"
 msgstr ""
-"Helfen Sie mit, durch Gebet den Weg für die Verkündigung des Evangeliums zu "
-"bereiten."
+"Bete mit uns, um den Weg für die Verkündigung des Evangeliums zu bereiten"
 
 #: page-pray.php:25
 msgid "Prayer Goal"
@@ -541,14 +540,14 @@ msgstr "Gebetsziel"
 
 #: page-pray.php:26 template-uupg-detail.php:129
 msgid "24-Hour Prayer Coverage"
-msgstr "24-Stunden-Gebetsdienst"
+msgstr "24-Stunden-Gebetsabdeckung"
 
 #: page-pray.php:27
 msgid ""
 "Mobilize 144+ people praying 10 minutes a day for all 2,085 people groups"
 msgstr ""
-"Mobilisiere 144+ Beter, die täglich 10 Minuten für alle 2.085 Volksgruppen "
-"beten"
+"Mobilisiere 144+ Fürbitter, welche 10 Minuten am Tag für alle 2085 "
+"Volksgruppen beten"
 
 #: page-pray.php:33
 msgid "People groups with committed 24-hour prayer coverage"
@@ -556,50 +555,48 @@ msgstr "Volksgruppen mit zugesagter 24-Stunden-Gebetsabdeckung"
 
 #: page-pray.php:47
 msgid "Where do I start?"
-msgstr "Wo soll ich anfangen?"
+msgstr "Wie kann ich mitmachen?"
 
 #: page-pray.php:53
 msgid "Choose an unengaged people group you will commit to pray for daily."
-msgstr ""
-"Wählen Sie eine Gruppe von Menschen, für die Sie sich engagieren möchten, "
-"und für die Sie täglich beten werden."
+msgstr "Wähle eine Volksgruppe aus, für die du täglich beten möchtest."
 
 #: page-pray.php:59
 msgid "Sign up"
-msgstr "Anmelden"
+msgstr "Sign up"
 
 #: page-pray.php:60
 msgid ""
 "Sign up to receive daily prayer points and updates for this people group."
 msgstr ""
-"Melden Sie sich an, um täglich Gebetspunkte und Neuigkeiten zu dieser "
-"Volksgruppe zu erhalten."
+"Melde dich an, um täglich Gebetsanliegen und Updates über deine Volksgruppe "
+"zu erhalten."
 
 #: page-pray.php:67
 msgid "Pray for 10 minutes a day and help provide 24-hour prayer coverage."
 msgstr ""
-"Beten Sie täglich 10 Minuten lang und helfen Sie dabei, eine 24-Stunden-"
-"Gebetsabdeckung zu gewährleisten."
+"Bete täglich 10 Minuten lang und sei Teil von einer 24-Stunden-"
+"Gebetsabdeckung."
 
 #: page-pray.php:81
 msgid "Scripture-centered prayer themes"
-msgstr "Auf der Heiligen Schrift basierende Gebetsthemen"
+msgstr "Auf die Bibel basierende Gebetsthemen"
 
 #: page-pray.php:82
 msgid "Spirit-led reflection and guidance"
-msgstr "Vom Geist geleitete Reflexion und Führung"
+msgstr "Geist-geleitete Reflexion und Anleitung"
 
 #: page-pray.php:83
 msgid "Real prayer needs from the field"
-msgstr "Echte Gebetsanliegen aus der Praxis"
+msgstr "Echte Gebetsanliegen vom Missionsfeld"
 
 #: page-pray.php:84
 msgid "Photos, stories and testimonies"
-msgstr "Fotos, Geschichten und Erfahrungsberichte"
+msgstr "Fotos, Geschichten und Zeugnisse"
 
 #: page-pray.php:85
 msgid "Key insights about the people group"
-msgstr "Wichtige Erkenntnisse über die Volksgruppe"
+msgstr "Besondere Einsichten über die Volksgruppe"
 
 #: page-pray.php:98
 msgid "Why prayer matters"
@@ -615,9 +612,9 @@ msgid ""
 "believers, meaning little to no consistent prayer is being offered on their "
 "behalf."
 msgstr ""
-"Viele nicht engagierte Volksgruppen haben keine Kirchen, keine Missionare "
-"und oft auch keine Gläubigen, was bedeutet, dass kaum oder gar nicht für sie "
-"gebetet wird."
+"Viele der völlig unerreichten Volksgruppen haben keine Kirchen, keine "
+"Missionare und oft auch keine Gläubigen, was bedeutet, dass kaum oder gar "
+"nicht für sie gebetet wird."
 
 #: page-pray.php:113
 msgid "Prayer prepares the way for the gospel"
@@ -654,8 +651,8 @@ msgid ""
 "Pray earnestly to the Lord of the harvest ...that He would send laborers to "
 "the [Unengaged]."
 msgstr ""
-"Betet inständig zum Herrn der Ernte, dass er Arbeiter zu den [Nicht-"
-"Engagierten] sende."
+"Bittet den Herrn der Ernte, dass er Arbeiter zu den [völlig Unerreichten] "
+"sende!"
 
 #. Template Name of the theme
 msgid "Simple Page"
