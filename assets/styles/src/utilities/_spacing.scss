@@ -1,0 +1,54 @@
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ms-auto {
+  margin-inline-start: auto;
+}
+
+.margin-bottom-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.padding-clamp-2xl {
+  padding: clamp(var(--spacing-md), 6vw, var(--spacing-2xl));
+}
+
+.gap-xs {
+  gap: var(--spacing-xs);
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
+.grow-1 {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.grow-2 {
+  flex-grow: 2;
+  flex-basis: 0;
+}
+.grow-none {
+  flex-grow: 0;
+  flex-basis: auto;
+}

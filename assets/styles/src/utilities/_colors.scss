@@ -1,0 +1,84 @@
+/* Colors */
+.color-primary {
+  color: var(--color-brand-primary);
+}
+
+.color-primary-darker {
+  color: var(--color-brand-primary-darker);
+}
+
+.color-secondary-light {
+  color: var(--color-brand-secondary-light);
+}
+
+.color-secondary-very-light {
+  color: var(--color-brand-secondary-very-light);
+}
+
+.color-brand {
+  color: var(--color-brand);
+}
+
+.color-brand-light {
+  color: var(--color-brand-light);
+}
+
+.color-brand-lighter {
+  color: var(--color-brand-lighter);
+}
+
+.color-brand-dark {
+  color: var(--color-brand-dark);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.surface-white {
+  background-color: var(--color-surface-white);
+  color: var(--color-text-on-white);
+}
+
+.surface-primary {
+  background-color: var(--color-surface-default);
+}
+
+.surface-brand-dark {
+  background-color: var(--color-surface-brand-dark);
+  color: var(--color-text-on-brand-dark);
+}
+
+.surface-brand {
+  background-color: var(--color-surface-brand);
+  color: var(--color-text-on-brand);
+}
+
+.surface-brand-light {
+  background-color: var(--color-surface-brand-light);
+  color: var(--color-text-on-brand-light);
+}
+
+.surface-brand-lighter {
+  background-color: var(--color-surface-brand-lighter);
+  color: var(--color-text-on-brand-lighter);
+}
+
+.surface-brand-lightest {
+  background-color: var(--color-surface-brand-lightest);
+  color: var(--color-text-on-brand-lightest);
+}
+
+.surface-secondary {
+  background-color: var(--color-surface-brand-dark);
+  color: var(--color-text-on-brand-light);
+}
+
+.surface-secondary-light {
+  background-color: var(--color-surface-secondary-light);
+  color: var(--color-text-on-secondary-light);
+}
+
+.shadow {
+  box-shadow: 0 2px 5px var(--color-brand-secondary);
+}

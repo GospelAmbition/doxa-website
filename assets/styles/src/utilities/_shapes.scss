@@ -1,0 +1,34 @@
+/* Shapes */
+
+.rounded-md {
+  border-radius: var(--border-radius-lg);
+}
+
+.rounded-xlg {
+  border-radius: var(--border-radius-xlg);
+}
+
+.square {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+
+  [dir="rtl"] & {
+    transform: rotate(-90deg);
+  }
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+
+  [dir="rtl"] & {
+    transform: rotate(-270deg);
+  }
+}
