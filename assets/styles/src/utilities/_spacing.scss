@@ -19,6 +19,11 @@
   margin-bottom: var(--spacing-md);
 }
 
+.py-xl {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
 .padding-clamp-2xl {
   padding: clamp(var(--spacing-md), 6vw, var(--spacing-2xl));
 }
