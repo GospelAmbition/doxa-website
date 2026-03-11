@@ -146,7 +146,7 @@ get_header( 'top' ); ?>
                         t="<?php echo esc_attr( json_encode( [
                             'select' => __('Select', 'doxa-website'),
                             'full_profile' => __('Full Profile', 'doxa-website'),
-                            'prayer_coverage' => __('Prayer Coverage', 'doxa-website'),
+                            'prayer_coverage' => __('Intercessors', 'doxa-website'),
                             'loading' => __('Loading results...', 'doxa-website'),
                             'load_more' => __('Load More', 'doxa-website'),
                             'total' => __('Total', 'doxa-website'),
