@@ -57,8 +57,8 @@ $pray_url .= '?source=doxalife';
                     <div class="card switcher" padding-small>
                         <div class="center | grow-none">
                             <img class="uupg__image" data-size="medium" src="<?php echo esc_attr( $uupg['image_url'] ); ?>" alt="<?php echo isset( $uupg['name'] ) ? esc_attr( $uupg['name'] ) : 'People Group Photo'; ?>">
-                            <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['key'] === 'engaged' ? 'true' : 'false'; ?>">
-                                <?php if ( $uupg['imb_engagement_status']['key'] === 'engaged' ) : ?>
+                            <div class="engaged-stamp" data-engaged="<?php echo $uupg['imb_engagement_status']['value'] === 'engaged' ? 'true' : 'false'; ?>">
+                                <?php if ( $uupg['imb_engagement_status']['value'] === 'engaged' ) : ?>
                                     <span><?php echo __('Engaged', 'doxa-website'); ?></span>
                                 <?php else : ?>
                                     <span><?php echo __('Not Engaged', 'doxa-website'); ?></span>
@@ -185,7 +185,7 @@ $pray_url .= '?source=doxalife';
                         <div class="stack | card" data-variant="primary">
                             <h2 class="color-primary"><?php echo __('Progress', 'doxa-website'); ?></h2>
                             <p class="progress-item">
-                                <?php if ( $uupg['imb_bible_available']['key'] === '1' ) : ?>
+                                <?php if ( $uupg['imb_bible_available']['value'] === '1' ) : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                 <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
@@ -193,7 +193,7 @@ $pray_url .= '?source=doxalife';
                                 <strong><?php echo __('Bible Translation', 'doxa-website'); ?>:</strong> <?php echo esc_html( $uupg['imb_bible_available']['label'] ); ?>
                             </p>
                             <p class="progress-item">
-                                <?php if ( $uupg['imb_bible_stories_available']['key'] === '1' ) : ?>
+                                <?php if ( $uupg['imb_bible_stories_available']['value'] === '1' ) : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                 <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
@@ -201,7 +201,7 @@ $pray_url .= '?source=doxalife';
                                 <strong><?php echo __('Bible Stories', 'doxa-website'); ?>:</strong> <?php echo esc_html( $uupg['imb_bible_stories_available']['label'] ); ?>
                             </p>
                             <p class="progress-item">
-                                <?php if ( $uupg['imb_jesus_film_available']['key'] === '1' ) : ?>
+                                <?php if ( $uupg['imb_jesus_film_available']['value'] === '1' ) : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                 <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
@@ -209,7 +209,7 @@ $pray_url .= '?source=doxalife';
                                 <strong><?php echo __('Jesus Film', 'doxa-website'); ?>:</strong> <?php echo esc_html( $uupg['imb_jesus_film_available']['label'] ); ?>
                             </p>
                             <p class="progress-item">
-                                <?php if ( $uupg['imb_radio_broadcast_available']['key'] === '1' ) : ?>
+                                <?php if ( $uupg['imb_radio_broadcast_available']['value'] === '1' ) : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                 <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
@@ -217,7 +217,7 @@ $pray_url .= '?source=doxalife';
                                 <strong><?php echo __('Radio Broadcasts', 'doxa-website'); ?>:</strong> <?php echo esc_html( $uupg['imb_radio_broadcast_available']['label'] ); ?>
                             </p>
                             <p class="progress-item">
-                                <?php if ( $uupg['imb_gospel_recordings_available']['key'] === '1' ) : ?>
+                                <?php if ( $uupg['imb_gospel_recordings_available']['value'] === '1' ) : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                 <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
@@ -225,7 +225,7 @@ $pray_url .= '?source=doxalife';
                                 <strong><?php echo __('Gospel Recordings', 'doxa-website'); ?>:</strong> <?php echo esc_html( $uupg['imb_gospel_recordings_available']['label'] ); ?>
                             </p>
                             <p class="progress-item">
-                                <?php if ( $uupg['imb_audio_scripture_available']['key'] === '1' ) : ?>
+                                <?php if ( $uupg['imb_audio_scripture_available']['value'] === '1' ) : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/Check-GreenCircle.png" alt="<?php echo __('Done', 'doxa-website'); ?>">
                                 <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/RedX-Circle.png" alt="<?php echo __('Not Done', 'doxa-website'); ?>">
