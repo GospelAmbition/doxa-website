@@ -143,19 +143,22 @@
 }
 
 .uupg__image {
-    width: 100px;
-    height: 100px;
+    --aspect-ratio: 1;
+    --image-width: 100px;
+    width: var(--image-width);
+    height: calc(var(--image-width) * var(--aspect-ratio));
     object-fit: cover;
     grid-area: image;
     border-radius: var(--border-radius-sm);
 }
 .uupg__image[data-size="small"] {
-    width: 150px;
-    height: 150px;
+    --image-width: 150px;
 }
 .uupg__image[data-size="medium"] {
-    width: 200px;
-    height: 200px;
+    --image-width: 200px;
+}
+.uupg__image[data-shape="portrait"] {
+    --aspect-ratio: 5/4;
 }
 
 .uupg__header {

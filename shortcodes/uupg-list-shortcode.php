@@ -12,7 +12,7 @@ function uupg_list_shortcode( $atts ) {
     $translations = [
         'select' => $atts['select_text'],
         'full_profile' => __('Full Profile', 'doxa-website'),
-        'prayer_coverage' => __('Prayer Coverage', 'doxa-website'),
+        'prayer_coverage' => __('Intercessors', 'doxa-website'),
         'loading' => __('Loading results...', 'doxa-website'),
         'load_more' => __('Load More', 'doxa-website'),
         'total' => __('Total', 'doxa-website'),

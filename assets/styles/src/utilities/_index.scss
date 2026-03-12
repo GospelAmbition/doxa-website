@@ -1,1 +1,9 @@
-@use 'utilities';
+// Utilities Layer
+// Single-purpose utility classes using semantic tokens
+@use 'alignment';
+@use 'colors';
+@use 'shapes';
+@use 'sizes';
+@use 'spacing';
+@use 'typography';
+@use 'visibility';

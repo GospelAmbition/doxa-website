@@ -68,7 +68,7 @@ const mt=globalThis,Pt=mt.ShadowRoot&&(mt.ShadyCSS===void 0||mt.ShadyCSS.nativeS
                                             <p class="font-size-xl font-button">${r.people_committed??0}/144</p>
                                         </div>
                                         <div class="switcher | text-center" data-width="md">
-                                            <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl+r.slug}">${this.t.select}</a>
+                                            <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl+r.slug+"?source=doxalife"}">${this.t.select}</a>
                                             <a class="highlighted-uupg__more-button button compact outline" href="${this.researchUrl+r.slug}">${this.t.full_profile}</a>
                                         </div>
                                     </div>
