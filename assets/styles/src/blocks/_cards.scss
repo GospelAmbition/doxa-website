@@ -367,3 +367,12 @@
         height: 20px;
     }
 }
+
+.resource-card__image[data-shape="portrait"] {
+    aspect-ratio: 1/0.6262626262;
+
+    img {
+        width: 66%;
+        margin-inline: auto;
+    }
+}

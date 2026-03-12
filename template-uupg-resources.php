@@ -93,8 +93,69 @@ if ( $lang_code !== 'en' ) {
                     </ul>
                 </div>
             </section>
-            <section class="container">
+            <section class="container stack stack--3xl">
                 <h2 class="text-center"><?php echo __('Your Promotional Resources', 'doxa-website'); ?></h2>
+
+                <?php
+
+                    $s3_url = 'https://s3.doxa.life/';
+                    $image_url = get_template_directory_uri() . '/assets/images/';
+                    $promotional_resources = [
+                        'adoption_certificate' => [
+                            'title' => __('Adoption Certificate', 'doxa-website'),
+                            'image_url' => $image_url . 'certificate-01.png',
+                            'image_shape' => 'landscape',
+                            'download_link' => $s3_url . "adoption-resources/adoption-certificate-$uupg_slug-$lang_code.png",
+                        ],
+                        'uupg_photo' => [
+                            'title' => __('UUPG Photo', 'doxa-website'),
+                            'image_url' => $image_url . 'profile-image-01.png',
+                            'image_shape' => 'portrait',
+                            'download_link' => $s3_url . "adoption-resources/uupg-photo-$uupg_slug.jpg",
+                        ],
+                        'prayer_campaign_qr_code' => [
+                            'title' => __('Prayer Campaign QR Code', 'doxa-website'),
+                            'image_url' => $image_url . 'qr-image-01.png',
+                            'image_shape' => 'portrait',
+                            'download_link' => $s3_url . "adoption-resources/qr-code-$uupg_slug-$lang_code.png",
+                        ],
+                        'prayer_card' => [
+                            'title' => __('Printable Prayer Cards', 'doxa-website'),
+                            'image_url' => $image_url . 'prayer-card-01.png',
+                            'image_shape' => 'landscape',
+                            'download_link' => $s3_url . "adoption-resources/prayer-card-$uupg_slug-$lang_code.pdf",
+                        ],
+                        'promo_slide' => [
+                            'title' => __('Promo Slide', 'doxa-website'),
+                            'image_url' => $image_url . 'promo-slide-01.png',
+                            'image_shape' => 'landscape',
+                            'download_link' => $s3_url . "adoption-resources/promo-slide-$uupg_slug-$lang_code.jpg",
+                        ],
+                        'social_share' => [
+                            'title' => __('Social Share', 'doxa-website'),
+                            'image_url' => $image_url . 'social-share-01.png',
+                            'image_shape' => 'portrait',
+                            'download_link' => $s3_url . "adoption-resources/social-share-$uupg_slug-$lang_code.jpg",
+                        ],
+                    ];
+
+                    ?>
+
+
+                    <div class="grid" data-width-md>
+
+                        <?php foreach ( $promotional_resources as $resource ) : ?>
+
+                            <div class="card | resource-card | stack stack--xs | align-center" padding-small>
+                                <div class="resource-card__image" data-shape="<?php echo esc_attr( $resource['image_shape'] ); ?>"><img src="<?php echo esc_attr( $resource['image_url'] ); ?>" alt="<?php echo esc_attr( $resource['title'] ); ?>"></div>
+                                <h3 class="h4 text-center font-heading mb-auto"><?php echo esc_html( $resource['title'] ); ?></h3>
+                                <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button compact"><?php echo __('Download', 'doxa-website'); ?></a>
+                            </div>
+
+                        <?php endforeach; ?>
+
+                    </div>
+
             </section>
             <section class="surface-secondary-light">
                 <div class="container">
