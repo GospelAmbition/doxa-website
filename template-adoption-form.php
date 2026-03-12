@@ -60,7 +60,7 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 </div>
                 <form id="adoption-form" class="text-card shadow">
                     <input type="email" name="email" style="display:none;" autocomplete="off" tabindex="-1">
-                    <input type="hidden" name="people_group" value="<?php echo esc_attr( $uupg['name'] . ' (' . $uupg['imb_isoalpha3']['label'] . ')' ); ?>">
+                    <input type="hidden" name="people_group" value="<?php echo esc_attr( $slug ); ?>">
                     <div class="stack stack--lg | max-width-lg mx-auto">
                         <section class="stack">
                             <h3 class="highlight" data-highlight-index="4"><?php echo __('What is your commitment? Pray. Give. Send.', 'doxa-website'); ?></h3>
@@ -106,7 +106,6 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                                         'phone_error_too_short' => __('Phone number is too short', 'doxa-website'),
                                         'phone_error_too_long' => __('Phone number is too long', 'doxa-website'),
                                     ]); ?>'
-                                    required
                                 ></phone-input>
                             </div>
                             <div class="">
@@ -117,10 +116,10 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                         <div class="stack">
                             <h3 class="h5"><?php echo __('Partnering Church', 'doxa-website'); ?></h3>
                             <div class="">
-                                <input type="text" id="church-name" name="church_name" required placeholder="<?php echo __('Enter Church/Group Name', 'doxa-website'); ?>">
                                 <label for="church-name"><?php echo __('Church/Group Name', 'doxa-website'); ?></label>
+                                <input type="text" id="church-name" name="church_name" required placeholder="<?php echo __('Enter Church/Group Name', 'doxa-website'); ?>">
                             </div>
-                            <div class="form-control color-primary-darker font-weight-medium">
+                            <div class="form-control color-primary-darker">
                                 <input type="checkbox" id="confirm-public-display" name="confirm_public_display">
                                 <label for="confirm-public-display"><?php echo __('I am happy for this church name to appear publicly on this site.', 'doxa-website'); ?></label>
                             </div>
@@ -134,11 +133,11 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                                 </select>
                             </div>
                         </div>
-                        <div class="form-control color-primary-darker font-weight-medium">
+                        <div class="form-control color-primary-darker">
                             <input type="checkbox" id="confirm-adoption" name="confirm_adoption">
                             <label for="confirm-adoption"><?php echo __('I/my church/group commits to adopting this People Group for prayer, partnership and support.', 'doxa-website'); ?></label>
                         </div>
-                        <div class="form-control color-primary-darker font-weight-medium">
+                        <div class="form-control color-primary-darker">
                             <input type="checkbox" id="permission-to-contact" name="permission_to_contact">
                             <label for="permission-to-contact"><?php echo __('I give permission for DOXA to connect me with others adopting this people group.', 'doxa-website'); ?></label>
                         </div>
@@ -214,7 +213,10 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 country: form.querySelector('#country').value,
                 role: form.querySelector('#role').value,
                 confirm_adoption: form.querySelector('#confirm-adoption').checked,
+                permission_to_contact: form.querySelector('#permission-to-contact').checked,
+                confirm_public_display: form.querySelector('#confirm-public-display').checked,
                 people_group: form.querySelector('input[name="people_group"]').value,
+                language: '<?php echo esc_js( doxa_get_language_code() ); ?>',
                 cf_turnstile: turnstileToken
             };
 
@@ -230,7 +232,27 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                 return response.json().then(data => ({ ok: response.ok, data }));
             })
             .then(({ ok, data }) => {
-                if (ok && data === 'success') {
+                if (ok && data.status === 'needs_verification') {
+                    const userEmail = formData.email;
+                    const formContainer = document.querySelector('.stack.stack--lg');
+                    formContainer.innerHTML = `
+                        <div class="text-card shadow text-center">
+                            <div class="stack">
+                                <div class="color-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <h2 class="highlight" data-highlight-index="1"><?php echo esc_html(__('Success! Form submitted.', 'doxa-website')); ?></h2>
+                                <p>
+                                    <?php echo esc_html(__('To confirm your adoption, please verify your email address. We sent a verification email to', 'doxa-website')); ?>
+                                    <strong>${userEmail}</strong>.
+                                </p>
+                                <p class="font-size-xs">
+                                    <?php echo esc_html(__("Don't see the email? Check your spam folder.", 'doxa-website')); ?>
+                                </p>
+                            </div>
+                        </div>
+                    `;
+                } else if (ok && data.status === 'success') {
                     messageDiv.className = 'contact-message success';
                     messageDiv.textContent = '<?php echo esc_js(__('Thank you for your adoption commitment! We will be in touch soon.', 'doxa-website')); ?>';
                     messageDiv.style.display = 'block';

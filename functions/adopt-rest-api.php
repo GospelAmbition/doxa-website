@@ -66,6 +66,7 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
     $permission_to_contact = ! empty( $params['permission_to_contact'] ) ? 'Yes' : 'No';
     $confirm_public_display = ! empty( $params['confirm_public_display'] ) ? 'Yes' : 'No';
     $people_group     = sanitize_text_field( $params['people_group'] ?? '' );
+    $language         = sanitize_text_field( $params['language'] ?? 'en' );
 
     // Validate required fields
     if ( empty( $email ) || empty( $first_name ) || empty( $last_name ) ) {
@@ -76,67 +77,49 @@ function doxa_handle_adopt_form( WP_REST_Request $request ) {
         return new WP_Error( 'missing_confirmation', 'Please confirm your adoption commitment', [ 'status' => 400 ] );
     }
 
-    // Load Site_Link_System if not already loaded
-    if ( ! class_exists( 'Site_Link_System' ) ) {
-        $site_link_path = WP_PLUGIN_DIR . '/disciple-tools-webform/includes/site-link-post-type.php';
-        if ( file_exists( $site_link_path ) ) {
-            require_once $site_link_path;
-            Site_Link_System::instance();
-        } else {
-            return new WP_Error( 'no_site_link', 'Site Link System not available', [ 'status' => 500 ] );
-        }
+    // Send to Prayer Tools app
+    $api_url = defined( 'DOXA_PRAYER_TOOLS_URL' ) ? DOXA_PRAYER_TOOLS_URL : '';
+    $api_key = defined( 'DOXA_FORM_API_KEY' ) ? DOXA_FORM_API_KEY : '';
+
+    if ( empty( $api_url ) || empty( $api_key ) ) {
+        return new WP_Error( 'config_error', 'Prayer Tools integration not configured', [ 'status' => 500 ] );
     }
 
-    $keys = Site_Link_System::get_site_keys();
-    $crm_link = '';
-    foreach ( $keys ?? [] as $key ) {
-        if ( $key['dev_key'] === 'crm_link' ) {
-            $crm_link = $key;
-        }
-    }
-
-    if ( empty( $crm_link ) ) {
-        return new WP_Error( 'no_crm_link', 'CRM not configured', [ 'status' => 400 ] );
-    }
-
-    $var = Site_Link_System::get_site_connection_vars( $crm_link['post_id'] );
-
-    // Build note with adoption form details
-    $note = "Adoption Form Submission\n\n";
-    $note .= "People Group: " . $people_group . "\n";
-    $note .= "Church Name: " . $church_name . "\n";
-    $note .= "Country: " . $country . "\n";
-    $note .= "Role: " . $role . "\n";
-    $note .= "Champion Commitment Confirmed: Yes";
-    $note .= "Permission to Contact: " . $permission_to_contact . "\n";
-    $note .= "Confirm Public Display: " . $confirm_public_display . "\n";
-
-    $full_name = trim( $first_name . ' ' . $last_name );
-
-    // Send to CRM
-    $crm_response = wp_remote_post( 'https://' . $var['url'] . '/wp-json/dt-posts/v2/contacts?check_for_duplicates=contact_email', [
+    $response = wp_remote_post( rtrim( $api_url, '/' ) . '/api/adopt', [
         'body'    => wp_json_encode( [
-            'title'         => $full_name ?: $email,
-            'contact_email' => [ [ 'value' => $email ] ],
-            'contact_phone' => [ [ 'value' => $phone ] ],
-            'sources'       => [ 'values' => [ [ 'value' => 'doxa_adoption_form' ] ] ],
-            'notes'         => [ $note ],
-            'tags'          => [ 'values' => [ [ 'value' => 'adoption_form' ] ] ],
+            'first_name'             => $first_name,
+            'last_name'              => $last_name,
+            'email'                  => $email,
+            'phone'                  => $phone,
+            'role'                   => $role,
+            'church_name'            => $church_name,
+            'country'                => $country,
+            'people_group'           => $people_group,
+            'permission_to_contact'  => $permission_to_contact === 'Yes',
+            'confirm_public_display' => $confirm_public_display === 'Yes',
+            'language'               => $language,
         ] ),
         'headers' => [
-            'Authorization' => 'Bearer ' . $var['transfer_token'],
-            'Content-Type'  => 'application/json',
+            'X-API-Key'    => $api_key,
+            'Content-Type' => 'application/json',
         ],
+        'timeout' => 15,
     ] );
 
-    if ( is_wp_error( $crm_response ) ) {
-        return new WP_Error( 'crm_error', 'Failed to submit adoption. Please try again.', [ 'status' => 500 ] );
+    if ( is_wp_error( $response ) ) {
+        return new WP_Error( 'api_error', 'Failed to submit adoption. Please try again.', [ 'status' => 500 ] );
     }
 
-    $response_code = wp_remote_retrieve_response_code( $crm_response );
-    if ( $response_code !== 200 ) {
-        return new WP_Error( 'crm_error', 'Failed to submit adoption. Please try again.', [ 'status' => 500 ] );
+    $response_code = wp_remote_retrieve_response_code( $response );
+    if ( $response_code < 200 || $response_code >= 300 ) {
+        return new WP_Error( 'api_error', 'Failed to submit adoption. Please try again.', [ 'status' => 500 ] );
     }
 
-    return new WP_REST_Response( 'success', 200 );
+    $response_body = json_decode( wp_remote_retrieve_body( $response ), true );
+
+    if ( ! empty( $response_body['needs_verification'] ) ) {
+        return new WP_REST_Response( [ 'status' => 'needs_verification' ], 200 );
+    }
+
+    return new WP_REST_Response( [ 'status' => 'success' ], 200 );
 }
