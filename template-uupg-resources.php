@@ -189,17 +189,17 @@ if ( $lang_code !== 'en' ) {
                             'champion_tips' => [
                                 'title' => __('Champion Tips', 'doxa-website'),
                                 'download_type' => 'link',
-                                'download_link' => '/resources/champion-tips/',
+                                'download_link' => doxa_translation_url( 'resources/tips-for-prayer-champions/' ),
                             ],
                             'discussion_guide' => [
                                 'title' => __('Discussion Guide', 'doxa-website'),
                                 'download_type' => 'link',
-                                'download_link' => '/resources/discussion-guide/',
+                                'download_link' => doxa_translation_url( 'resources/small-group-discussion-guide/' ),
                             ],
                             'email_templates' => [
                                 'title' => __('Email Templates', 'doxa-website'),
                                 'download_type' => 'link',
-                                'download_link' => '/resources/email-templates/',
+                                'download_link' => doxa_translation_url( 'resources/email-templates/' ),
                             ],
                         ];
                     ?>
