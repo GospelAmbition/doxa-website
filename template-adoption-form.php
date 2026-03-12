@@ -48,12 +48,12 @@ $cf_site_key = get_option( 'dt_webform_cf_site_key', '' );
                             class="uupg__image"
                             data-size="small"
                             src="<?php echo esc_attr( $uupg['image_url'] ); ?>"
-                            alt="<?php echo isset( $uupg['imb_display_name'] ) ? esc_attr( $uupg['imb_display_name'] ) : esc_attr( $uupg['imb_people_name'] ); ?>"
+                            alt="<?php echo isset( $uupg['name'] ) ? esc_attr( $uupg['name'] ) : 'People Group Photo'; ?>"
                         >
                     </div>
                     <div class="repel align-center">
                         <div class="stack stack--md lh-0">
-                            <p class="font-size-xl font-weight-medium"><?php echo esc_html( $uupg['imb_display_name'] ); ?></p>
+                            <p class="font-size-xl font-weight-medium"><?php echo esc_html( $uupg['name'] ); ?></p>
                             <p class="font-size-lg font-weight-medium"><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
                         </div>
                     </div>

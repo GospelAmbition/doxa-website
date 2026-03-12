@@ -50,8 +50,22 @@ if ( $lang_code !== 'en' ) {
     <?php get_header(); ?>
 
     <main class="site-main">
-        <div class="container page-content uupg-detail-page">
-            <h1><?php echo $uupg['display_name']; ?> <?php echo __('Resources', 'doxa-website'); ?></h1>
+        <div class="page-content uupg-detail-page">
+            <div class="surface-white">
+                <div class="container">
+                    <div class="switcher">
+                        <div class="center | grow-none">
+                            <img class="uupg__image" data-size="medium" data-shape="portrait" src="<?php echo esc_attr( $uupg['image_url'] ); ?>" alt="<?php echo isset( $uupg['name'] ) ? esc_attr( $uupg['name'] ) : 'People Group Photo'; ?>">
+                        </div>
+                        <div class="stack stack--xs | uupg__header">
+                            <h2 class="color-primary"><?php echo __('Your UUPG', 'doxa-website'); ?></h2>
+                            <h1 class="font-weight-medium"><?php echo esc_html( $uupg['display_name'] ); ?></h1>
+                            <p class="font-weight-medium font-size-lg"><?php echo esc_html( $uupg['imb_isoalpha3']['label'] ); ?> (<?php echo esc_html( $uupg['imb_reg_of_people_1']['label'] ); ?>)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 

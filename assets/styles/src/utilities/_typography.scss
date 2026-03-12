@@ -1,0 +1,107 @@
+// Typography utilities
+.text-primary {
+  color: var(--color-text-on-default);
+}
+
+.text-secondary {
+  color: var(--color-text-on-brand-light);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-link {
+  color: var(--color-text-on-link);
+
+  &:hover {
+    color: var(--color-text-on-link-hover);
+  }
+}
+
+.text-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-base {
+  font-family: var(--font-family-base);
+}
+
+.font-heading {
+  font-family: var(--font-family-heading);
+}
+
+.font-button {
+  font-family: var(--font-family-buttons);
+}
+
+.font-weight-regular {
+  font-weight: var(--font-weight-regular);
+}
+
+.font-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-size-xs {
+  font-size: var(--font-size-xs);
+}
+
+.font-size-sm {
+  font-size: var(--font-size-sm);
+}
+
+.font-size-md {
+  font-size: var(--font-size-md);
+}
+
+.font-size-lg {
+  font-size: var(--font-size-lg);
+}
+
+.font-size-xl {
+  font-size: var(--font-size-xl);
+}
+
+.font-size-2xl {
+  font-size: var(--font-size-2xl);
+}
+
+.font-size-3xl {
+  font-size: var(--font-size-3xl);
+  font-size: clamp(var(--font-size-xl), 5vw, var(--font-size-3xl));
+}
+
+.font-size-4xl {
+  font-size: var(--font-size-4xl);
+  font-size: clamp(var(--font-size-2xl), 6vw, var(--font-size-4xl));
+}
+
+.font-size-5xl {
+  font-size: var(--font-size-5xl);
+  font-size: clamp(var(--font-size-3xl), 7vw, var(--font-size-5xl));
+}
+
+.lh-0 {
+  line-height: var(--line-height-none);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
