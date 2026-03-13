@@ -103,38 +103,35 @@ if ( $lang_code !== 'en' ) {
                     $promotional_resources = [
                         'adoption_certificate' => [
                             'title' => __('Adoption Certificate', 'doxa-website'),
-                            'image_url' => $image_url . 'certificate-01.png',
-                            'image_shape' => 'landscape',
+                            'image_url' => $image_url . 'certificate.png',
                             'download_link' => $s3_url . "adoption-resources/adoption-certificate-$uupg_slug-$lang_code.png",
                         ],
                         'uupg_photo' => [
                             'title' => __('UUPG Photo', 'doxa-website'),
-                            'image_url' => $image_url . 'profile-image-01.png',
-                            'image_shape' => 'portrait',
+                            'image_url' => $image_url . 'profile.png',
+                            'style' => 'width: 50%;',
                             'download_link' => $s3_url . "adoption-resources/uupg-photo-$uupg_slug.jpg",
                         ],
                         'prayer_campaign_qr_code' => [
                             'title' => __('Prayer Campaign QR Code', 'doxa-website'),
-                            'image_url' => $image_url . 'qr-image-01.png',
-                            'image_shape' => 'portrait',
+                            'image_url' => $image_url . 'qr.png',
+                            'style' => 'width: 50%; padding-top: 5%; padding-bottom: 5%;',
                             'download_link' => $s3_url . "adoption-resources/qr-code-$uupg_slug-$lang_code.png",
                         ],
                         'prayer_card' => [
                             'title' => __('Printable Prayer Cards', 'doxa-website'),
-                            'image_url' => $image_url . 'prayer-card-01.png',
-                            'image_shape' => 'landscape',
+                            'image_url' => $image_url . 'card.png',
                             'download_link' => $s3_url . "adoption-resources/prayer-card-$uupg_slug-$lang_code.pdf",
                         ],
                         'promo_slide' => [
                             'title' => __('Promo Slide', 'doxa-website'),
-                            'image_url' => $image_url . 'promo-slide-01.png',
-                            'image_shape' => 'landscape',
+                            'image_url' => $image_url . 'slide.png',
                             'download_link' => $s3_url . "adoption-resources/promo-slide-$uupg_slug-$lang_code.jpg",
                         ],
                         'social_share' => [
                             'title' => __('Social Share', 'doxa-website'),
-                            'image_url' => $image_url . 'social-share-01.png',
-                            'image_shape' => 'portrait',
+                            'image_url' => $image_url . 'social.png',
+                            'style' => 'width: 40%;',
                             'download_link' => $s3_url . "adoption-resources/social-share-$uupg_slug-$lang_code.jpg",
                         ],
                     ];
@@ -147,7 +144,7 @@ if ( $lang_code !== 'en' ) {
                         <?php foreach ( $promotional_resources as $resource ) : ?>
 
                             <div class="card | resource-card | stack stack--xs | align-center rounded-md" padding-small>
-                                <div class="resource-card__image" data-shape="<?php echo esc_attr( $resource['image_shape'] ); ?>"><img src="<?php echo esc_attr( $resource['image_url'] ); ?>" alt="<?php echo esc_attr( $resource['title'] ); ?>"></div>
+                                <div class="resource-card__image" style="<?php echo isset( $resource['style'] ) ? esc_attr( $resource['style'] ) : ''; ?>"><img src="<?php echo esc_attr( $resource['image_url'] ); ?>" alt="<?php echo esc_attr( $resource['title'] ); ?>"></div>
                                 <h3 class="h4 text-center font-heading mb-auto"><?php echo esc_html( $resource['title'] ); ?></h3>
                                 <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button compact"><?php echo __('Download', 'doxa-website'); ?></a>
                             </div>
@@ -165,22 +162,22 @@ if ( $lang_code !== 'en' ) {
                         $general_resources = [
                             'doxa_playbook' => [
                                 'title' => __('DOXA Playbook', 'doxa-website'),
-                                'image_url' => $image_url . 'doxa-playbook-01.png',
-                                'image_shape' => 'portrait',
+                                'image_url' => $image_url . 'playbook.png',
+                                'style' => 'width: 55%;',
                                 'download_type' => 'file',
                                 'download_link' => $s3_url . "documents/doxa-playbook-$lang_code.pdf",
                             ],
                             'doxa_playbook_slides' => [
                                 'title' => __('DOXA Playbook Slides', 'doxa-website'),
-                                'image_url' => $image_url . 'doxa-ppt-slides-01.png',
-                                'image_shape' => 'landscape',
+                                'image_url' => $image_url . 'doxa-slides.png',
+                                'style' => 'width: 80%; padding-top: 10%; padding-bottom: 10%;',
                                 'download_type' => 'file',
                                 'download_link' => $s3_url . "documents/doxa-playbook-slides-$lang_code.pdf",
                             ],
                             'doxa_promo_video' => [
                                 'title' => __('DOXA Promo Video', 'doxa-website'),
-                                'image_url' => $image_url . 'home-01-hero.jpg',
-                                'image_shape' => 'landscape',
+                                'image_url' => $image_url . 'video.png',
+                                'style' => 'width: 80%; padding-top: 10%; padding-bottom: 10%;',
                                 'download_type' => 'link',
                                 'download_link' => 'https://vimeo.com/1143355099/39f8c1f131?fl=pl&fe=vl',
                             ],
@@ -208,7 +205,7 @@ if ( $lang_code !== 'en' ) {
                         <div class="grid" data-width-md>
                             <?php foreach ( $general_resources as $resource ) : ?>
                                 <div class="card | resource-card | stack stack--xs | align-center rounded-md" padding-small>
-                                    <div class="resource-card__image" data-shape="<?php echo esc_attr( $resource['image_shape'] ); ?>"><img src="<?php echo esc_attr( $resource['image_url'] ); ?>" alt="<?php echo esc_attr( $resource['title'] ); ?>"></div>
+                                    <div class="resource-card__image" style="<?php echo isset( $resource['style'] ) ? esc_attr( $resource['style'] ) : ''; ?>"><img src="<?php echo esc_attr( $resource['image_url'] ); ?>" alt="<?php echo esc_attr( $resource['title'] ); ?>"></div>
                                     <h3 class="h4 text-center font-heading mb-auto"><?php echo esc_html( $resource['title'] ); ?></h3>
                                     <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button compact">
 
