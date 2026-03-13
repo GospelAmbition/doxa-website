@@ -75,7 +75,7 @@ if ( $lang_code !== 'en' ) {
                 <div class="container stack stack--xl">
                     <h2><?php echo __('Introduction', 'doxa-website'); ?></h2>
                     <h3 class="color-brand-lighter stack-spacing-3xl"><?php echo __('Welcome to the adoption Journey', 'doxa-website'); ?></h3>
-                    <p><?php echo __('Thank you for adopting this Unengaged, Unreached People Group. Your church is joining a global movement asking God to open the way for the gospel among people who currently have little or no access to it. This page provides resources to help your church stay informed, mobilize prayer, and explore how God may use your community to help bring the good news of Jesus to this people group.', 'doxa-website'); ?></p>
+                    <p class="max-width-lg"><?php echo __('Thank you for adopting this Unengaged, Unreached People Group. Your church is joining a global movement asking God to open the way for the gospel among people who currently have little or no access to it. This page provides resources to help your church stay informed, mobilize prayer, and explore how God may use your community to help bring the good news of Jesus to this people group.', 'doxa-website'); ?></p>
 
                     <h3 class="color-brand-lighter stack-spacing-3xl"><?php echo __('Your role as an adopting church', 'doxa-website'); ?></h3>
                     <ul>
