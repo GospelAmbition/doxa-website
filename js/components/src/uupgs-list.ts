@@ -103,7 +103,7 @@ export class UupgsList extends LitElement {
                                         </div>
                                         <div class="switcher | text-center" data-width="md">
                                             <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl + uupg.slug + '?source=doxalife'}">${this.t.select}</a>
-                                            <a class="highlighted-uupg__more-button button compact outline" href="${this.researchUrl + uupg.slug}">${this.t.full_profile}</a>
+                                            <a class="highlighted-uupg__more-button button compact link" href="${this.researchUrl + uupg.slug}">${this.t.full_profile}</a>
                                         </div>
                                     </div>
                                 `

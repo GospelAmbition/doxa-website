@@ -69,7 +69,7 @@ const mt=globalThis,Pt=mt.ShadowRoot&&(mt.ShadyCSS===void 0||mt.ShadyCSS.nativeS
                                         </div>
                                         <div class="switcher | text-center" data-width="md">
                                             <a class="highlighted-uupg__prayer-coverage-button button compact" href="${this.selectUrl+r.slug+"?source=doxalife"}">${this.t.select}</a>
-                                            <a class="highlighted-uupg__more-button button compact outline" href="${this.researchUrl+r.slug}">${this.t.full_profile}</a>
+                                            <a class="highlighted-uupg__more-button button compact link" href="${this.researchUrl+r.slug}">${this.t.full_profile}</a>
                                         </div>
                                     </div>
                                 `;const t=r.adopted_by_churches&&r.adopted_by_churches>0,o=t?window.uupgsData.icons_url+"/Check-GreenCircle.png":window.uupgsData.icons_url+"/RedX-Circle.png",l=t?this.t.adopted:this.t.not_adopted;return F`<div class="card | uupg__card">

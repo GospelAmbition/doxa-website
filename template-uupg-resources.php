@@ -104,7 +104,7 @@ if ( $lang_code !== 'en' ) {
                         'adoption_certificate' => [
                             'title' => __('Adoption Certificate', 'doxa-website'),
                             'image_url' => $image_url . 'certificate.png',
-                            'download_link' => $s3_url . "adoption-resources/adoption-certificate-$uupg_slug-$lang_code.png",
+                            'download_link' => $s3_url . "adoption-resources/certificate-$uupg_slug-$lang_code.pdf",
                         ],
                         'uupg_photo' => [
                             'title' => __('UUPG Photo', 'doxa-website'),
@@ -146,7 +146,10 @@ if ( $lang_code !== 'en' ) {
                             <div class="card | resource-card | stack stack--xs | align-center rounded-md" padding-small>
                                 <div class="resource-card__image" style="<?php echo isset( $resource['style'] ) ? esc_attr( $resource['style'] ) : ''; ?>"><img src="<?php echo esc_attr( $resource['image_url'] ); ?>" alt="<?php echo esc_attr( $resource['title'] ); ?>"></div>
                                 <h3 class="h4 text-center font-heading mb-auto"><?php echo esc_html( $resource['title'] ); ?></h3>
-                                <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button compact"><?php echo __('Download', 'doxa-website'); ?></a>
+                                <div class="switcher | text-center gap-md" data-width="xs">
+                                    <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button extra-compact outline"><?php echo __('View', 'doxa-website'); ?></a>
+                                    <a download href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button extra-compact"><?php echo __('Download', 'doxa-website'); ?></a>
+                                </div>
                             </div>
 
                         <?php endforeach; ?>
@@ -207,19 +210,20 @@ if ( $lang_code !== 'en' ) {
                                 <div class="card | resource-card | stack stack--xs | align-center rounded-md" padding-small>
                                     <div class="resource-card__image" style="<?php echo isset( $resource['style'] ) ? esc_attr( $resource['style'] ) : ''; ?>"><img src="<?php echo esc_attr( $resource['image_url'] ); ?>" alt="<?php echo esc_attr( $resource['title'] ); ?>"></div>
                                     <h3 class="h4 text-center font-heading mb-auto"><?php echo esc_html( $resource['title'] ); ?></h3>
-                                    <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button compact">
+                                    <div class="switcher | text-center gap-md" data-width="xs">
+                                        <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button extra-compact <?php echo $resource['download_type'] === 'file' ? 'outline' : ''; ?>">
+                                            <?php echo __('View', 'doxa-website'); ?>
+                                        </a>
 
                                         <?php if ( $resource['download_type'] === 'file' ) : ?>
 
-                                            <?php echo __('Download', 'doxa-website'); ?>
-
-                                        <?php else : ?>
-
-                                            <?php echo __('View', 'doxa-website'); ?>
+                                            <a download target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button extra-compact">
+                                                <?php echo __('Download', 'doxa-website'); ?>
+                                            </a>
 
                                         <?php endif; ?>
 
-                                    </a>
+                                    </div>
                                 </div>
                             <?php endforeach; ?>
                         </div>
@@ -227,19 +231,20 @@ if ( $lang_code !== 'en' ) {
                             <?php foreach ( $general_resources_no_image as $resource ) : ?>
                                 <div class="card | resource-card | repel | align-center rounded-md" padding-small>
                                     <h3 class="h5 text-center font-weight-medium"><?php echo esc_html( $resource['title'] ); ?></h3>
-                                    <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>"" class="button compact">
+                                    <div class="switcher gap-md | text-center" data-width="xs">
+                                        <a target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button extra-compact <?php echo $resource['download_type'] === 'file' ? 'outline' : ''; ?>">
+                                            <?php echo __('View', 'doxa-website'); ?>
+                                        </a>
 
                                         <?php if ( $resource['download_type'] === 'file' ) : ?>
 
-                                            <?php echo __('Download', 'doxa-website'); ?>
-
-                                        <?php else : ?>
-
-                                            <?php echo __('View', 'doxa-website'); ?>
+                                            <a download target="_blank" href="<?php echo esc_url( $resource['download_link'] ); ?>" class="button extra-compact">
+                                                <?php echo __('Download', 'doxa-website'); ?>
+                                            </a>
 
                                         <?php endif; ?>
 
-                                    </a>
+                                    </div>
                                 </div>
                             <?php endforeach; ?>
                         </div>
@@ -254,6 +259,38 @@ if ( $lang_code !== 'en' ) {
     <?php get_footer(); ?>
 
 </div>
+
+<script>
+document.querySelectorAll('a[download]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var url = this.href;
+        var filename = url.split('/').pop().split('?')[0];
+        var a;
+        fetch(url)
+            .then(function(response) {
+                if (!response.ok) throw new Error('Download failed');
+                return response.blob();
+            })
+            .then(function(blob) {
+                a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+            })
+            .catch(function() {
+                window.open(url, '_blank');
+            })
+            .finally(function() {
+                if (a) {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(a.href);
+                }
+            });
+    });
+});
+</script>
 
 <?php get_footer( 'bottom' ); ?>
 

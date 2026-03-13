@@ -57,12 +57,24 @@ a.wp-element-button {
     padding: var(--spacing-xs) var(--spacing-2xl);
 }
 
-.button.outline {
+.button.extra-compact {
+    padding: var(--spacing-xs) var(--spacing-md);
+}
+
+.button.link {
     --button-text-color: var(--color-brand);
     --button-background-color: var(--color-surface-white);
     --button-text-color-hover: var(--color-surface-white);
     --button-background-color-hover: var(--color-brand-primary);
     --button-border-color: transparent;
+}
+.button.outline {
+    --button-text-color: var(--color-brand-primary);
+    --button-background-color: var(--color-surface-white);
+    --button-text-color-hover: var(--color-surface-white);
+    --button-background-color-hover: var(--color-brand-primary);
+    --button-border-color: var(--color-brand-primary);
+    border-width: 2px;
 }
 .button.white {
     --button-background-color: var(--color-surface-white);

@@ -27,6 +27,10 @@
     gap: var(--spacing-2xs);
 }
 
+.switcher[data-width="xs"] {
+    --switcher-width: 10rem;
+}
+
 .switcher-item {
     display: flex;
 }
